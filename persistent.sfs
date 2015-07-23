@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16400.2637304967
+							_currentUT = 16632.9837305018
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.998994168554
+							ORBITING = 16265.718994173656
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16400.2637304967
+							_currentUT = 16632.9837305018
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.998994168565
+							ORBITING = 16265.718994173667
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16400.2637304967
+							_currentUT = 16632.9837305018
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.998994168587
+							ORBITING = 16265.718994173689
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16400.2637304967
+							_currentUT = 16632.9837305018
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.998994168544
+							ORBITING = 16265.718994173645
 						}
 					}
 				}
@@ -961,8 +961,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16632.9637305018
-		activeVessel = 13
+		UT = 16633.1037305018
+		activeVessel = 0
 		mapViewFiltering = 1022
 		VESSEL
 		{
@@ -17287,340 +17287,6 @@ GAME
 				trimYaw = 0
 				trimRoll = 0
 				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = e76e79fdfbde4dceb8a03b9d25d807bf
-			name = Untitled Space Craft
-			type = Debris
-			sit = PRELAUNCH
-			landed = True
-			landedAt = KSC_LaunchPad_Platform
-			splashed = False
-			met = 0
-			lct = 16632.9437305018
-			root = 0
-			lat = -0.0972077845208492
-			lon = 285.442328083239
-			alt = 74.8120209081098
-			hgt = 2.314822
-			nrm = -2.578877E-05,0.9999999,1.390885E-05
-			rot = -0.7009921,-0.09222408,-0.097277,0.7004585
-			CoM = 0,0,0
-			stg = 1
-			prst = False
-			ref = 3861172589
-			ctrl = False
-			cPch = 0.2
-			cHdg = 0.3
-			cMod = 0
-			ORBIT
-			{
-				SMA = 300816.106745614
-				ECC = 0.994822745699907
-				INC = 0.0972077834470321
-				LPE = 89.9982886370125
-				LAN = 22.6615636352444
-				MNA = 3.14159265358979
-				EPH = 16632.9637305018
-				REF = 1
-			}
-			PART
-			{
-				name = OKS.AgModule
-				cid = 4286498624
-				uid = 3861172589
-				mid = 28008975
-				launchID = 3
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, -1
-				mass = 1.25
-				temp = 296.823308577956
-				tempExt = 297.335984972683
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = OKS.AgModule
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = USIAnimation
-					isEnabled = True
-					isDeployed = False
-					inflatedCost = 0
-					EVENTS
-					{
-						DeployModule
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Deploy
-							guiName = Deploy
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 3
-							externalToEVAOnly = True
-						}
-						RetractModule
-						{
-							active = False
-							guiActive = False
-							guiIcon = Retract
-							guiName = Retract
-							category = Retract
-							guiActiveUnfocused = True
-							unfocusedRange = 3
-							externalToEVAOnly = False
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-						ToggleScoopAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = FStextureSwitch2
-					isEnabled = True
-					selectedTexture = 0
-					selectedTextureURL = UmbraSpaceIndustries/Kolonization/Assets/FrostedGlass30
-					selectedMapURL = 
-					EVENTS
-					{
-						listAllObjects
-						{
-							active = True
-							guiActive = False
-							guiIcon = Debug: Log Objects
-							guiName = Debug: Log Objects
-							category = Debug: Log Objects
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						nextTextureEvent
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Next Texture
-							guiName = Next Texture
-							category = Next Texture
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						previousTextureEvent
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Previous Texture
-							guiName = Previous Texture
-							category = Previous Texture
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						nextTextureEVAEvent
-						{
-							active = True
-							guiActive = False
-							guiIcon = Repaint
-							guiName = Repaint
-							category = Repaint
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = Organics
-					amount = 0
-					maxAmount = 1000
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Water
-					amount = 0
-					maxAmount = 1000
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Substrate
-					amount = 0
-					maxAmount = 1000
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Fertilizer
-					amount = 0
-					maxAmount = 1000
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Mulch
-					amount = 0
-					maxAmount = 1000
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0.5
 			}
 		}
 	}
