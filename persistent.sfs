@@ -85,14 +85,6 @@ GAME
 	}
 	SCENARIO
 	{
-		name = ScenarioNewGameIntro
-		scene = 5, 6, 8
-		kscComplete = True
-		editorComplete = True
-		tsComplete = True
-	}
-	SCENARIO
-	{
 		name = ProgressTracking
 		scene = 7, 8, 5
 		Progress
@@ -582,11 +574,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2653.23791015563
+							_currentUT = 2751.39791015554
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2286.0131738274849
+							ORBITING = 2384.1731738273947
 						}
 					}
 				}
@@ -606,11 +598,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2653.23791015563
+							_currentUT = 2751.39791015554
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2286.0131738274849
+							ORBITING = 2384.1731738273947
 						}
 					}
 				}
@@ -630,33 +622,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2653.23791015563
+							_currentUT = 2751.39791015554
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2286.0131738274849
+							ORBITING = 2384.1731738273947
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -677,6 +649,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -684,11 +676,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2653.23791015563
+							_currentUT = 2751.39791015554
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2286.0131738274849
+							ORBITING = 2384.1731738273947
 						}
 					}
 				}
@@ -871,7 +863,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 13
+		LastSave = 14
 	}
 	SCENARIO
 	{
@@ -895,47 +887,47 @@ GAME
 			STATUS_DATA
 			{
 				KerbalName = Loley Kerman
-				LastMeal = 2560.27791015572
+				LastMeal = 2751.37791015554
 				IsGrouchy = False
-				LastUpdate = 2560.27791015572
+				LastUpdate = 2751.37791015554
 			}
 			STATUS_DATA
 			{
 				KerbalName = Sherfield Kerman
-				LastMeal = 2560.27791015572
+				LastMeal = 2751.37791015554
 				IsGrouchy = False
-				LastUpdate = 2560.27791015572
+				LastUpdate = 2751.37791015554
 			}
 			STATUS_DATA
 			{
 				KerbalName = Hudbas Kerman
-				LastMeal = 2560.27791015572
+				LastMeal = 2751.37791015554
 				IsGrouchy = False
-				LastUpdate = 2560.27791015572
+				LastUpdate = 2751.37791015554
 			}
 			STATUS_DATA
 			{
 				KerbalName = Jaree Kerman
-				LastMeal = 2560.27791015572
+				LastMeal = 2751.37791015554
 				IsGrouchy = False
-				LastUpdate = 2560.27791015572
+				LastUpdate = 2751.37791015554
 			}
 			VESSEL_DATA
 			{
 				VesselId = b7b2994c-d65e-408a-bff3-286c3efc47e3
 				VesselName = L-SS-Core
-				SuppliesLeft = 1997449.31261918
+				SuppliesLeft = 1997258.21261974
 				NumCrew = 4
-				LastFeeding = 2560.27791015572
-				LastUpdate = 2560.27791015572
+				LastFeeding = 2751.37791015554
+				LastUpdate = 2751.37791015554
 			}
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 2653.53791015563
-		activeVessel = 3
+		UT = 2751.39791015554
+		activeVessel = 0
 		mapViewFiltering = 1022
 		VESSEL
 		{
@@ -1192,32 +1184,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 2638.83791015563
+			met = 2736.67791015554
 			lct = 14.6999999999998
 			root = 0
-			lat = 0.0675650510055207
-			lon = -55.290313561702
-			alt = 199984.916849598
+			lat = 0.0921252358717594
+			lon = -42.2010174407075
+			alt = 199969.166214606
 			hgt = -1
-			nrm = -0.751013,0.002661143,0.6602821
-			rot = -0.5758275,-0.6887861,-0.4091276,0.1631291
-			CoM = -7.447051E-06,-4.399257,6.397458E-06
+			nrm = -0.6669781,0.4595788,0.5864533
+			rot = -0.5815909,-0.6863954,-0.4008922,0.172913
+			CoM = 4.290245E-05,-4.294733,-4.064234E-05
 			stg = 0
 			prst = False
 			ref = 1670939495
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = 
+			cHdg = 
 			cMod = 0
 			ORBIT
 			{
-				SMA = 799928.691858679
-				ECC = 6.92743808855473E-05
-				INC = 0.125183689276072
-				LPE = 216.579648778875
-				LAN = 46.2704706525807
-				MNA = 2.82829092748809
-				EPH = 2560.27791015572
+				SMA = 799929.042069191
+				ECC = 4.89172757455151E-05
+				INC = 0.125186587704982
+				LPE = 214.527351012487
+				LAN = 46.2719132408631
+				MNA = 3.36604649200931
+				EPH = 2751.37791015554
 				REF = 1
 			}
 			PART
@@ -1242,8 +1234,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 1
 				mass = 0.05
-				temp = 343.274143862025
-				tempExt = 343.064531940868
+				temp = 343.089753232289
+				tempExt = 342.894196360558
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1536,8 +1528,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.15
-				temp = 343.292432670724
-				tempExt = 343.066297811448
+				temp = 343.109407411111
+				tempExt = 342.899932733633
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1671,8 +1663,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 5.5
-				temp = 343.307722186899
-				tempExt = 342.933878307981
+				temp = 343.126186748649
+				tempExt = 342.904568807989
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1757,7 +1749,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 2560.27791015572
+					lastUpdateTime = 2751.37791015554
 					EVENTS
 					{
 						StartResourceConverter
@@ -1810,7 +1802,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 2653.5379101556296
+					lastUpdateString = 2751.3779101555406
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -2075,7 +2067,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 2560.27791015572
+					lastUpdateTime = 2751.37791015554
 					EVENTS
 					{
 					}
@@ -2195,7 +2187,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 119986.66291794
+					amount = 119983.066811701
 					maxAmount = 120000
 					flowState = True
 					isTweakable = False
@@ -2225,8 +2217,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 343.296673665162
-				tempExt = 343.092439456834
+				temp = 343.11248462236
+				tempExt = 342.903831775437
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2374,8 +2366,8 @@ GAME
 				attN = top, 3
 				attN = bottom, 5
 				mass = 0.2
-				temp = 343.296567419488
-				tempExt = 343.109195846662
+				temp = 343.111189704437
+				tempExt = 342.964547725612
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2466,7 +2458,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3990.19908576994
+					amount = 3986.60297957909
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -2496,8 +2488,8 @@ GAME
 				attN = top, 4
 				attN = bottom, 6
 				mass = 3.75
-				temp = 343.299047750825
-				tempExt = 343.003054804029
+				temp = 343.112486059029
+				tempExt = 342.945144040476
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2608,7 +2600,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 1
 					IsActivated = False
-					lastUpdateTime = 2560.27791015572
+					lastUpdateTime = 2751.37791015554
 					EVENTS
 					{
 						StartResourceConverter
@@ -2723,7 +2715,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 2560.27791015572
+					lastUpdateTime = 2751.37791015554
 					EVENTS
 					{
 						StartResourceConverter
@@ -2776,7 +2768,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 2653.5379101556296
+					lastUpdateString = 2751.3779101555406
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -3041,7 +3033,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 2560.27791015572
+					lastUpdateTime = 2751.37791015554
 					EVENTS
 					{
 					}
@@ -3151,7 +3143,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9990.19908575928
+					amount = 9986.6029795574
 					maxAmount = 10000
 					flowState = True
 					isTweakable = False
@@ -3171,7 +3163,7 @@ GAME
 				RESOURCE
 				{
 					name = Mulch
-					amount = 0.510147569144141
+					amount = 0.548367568178173
 					maxAmount = 500
 					flowState = True
 					isTweakable = True
@@ -3201,8 +3193,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 5
 				mass = 0.15
-				temp = 343.295467285234
-				tempExt = 343.185912638773
+				temp = 343.10902639931
+				tempExt = 343.0086318342
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3336,8 +3328,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 6
 				mass = 0.05
-				temp = 343.291440697237
-				tempExt = 343.230540318042
+				temp = 343.105941629749
+				tempExt = 343.056225243722
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3629,8 +3621,8 @@ GAME
 				sym = 9
 				srfN = srfAttach, 5
 				mass = 0.02
-				temp = 343.270887320777
-				tempExt = 343.130562629247
+				temp = 343.081242314272
+				tempExt = 342.943307906179
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3706,7 +3698,7 @@ GAME
 				RESOURCE
 				{
 					name = Supplies
-					amount = 99.8724631079685
+					amount = 99.8629081082375
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -3735,8 +3727,8 @@ GAME
 				sym = 8
 				srfN = srfAttach, 5
 				mass = 0.02
-				temp = 343.270881644612
-				tempExt = 343.130422994553
+				temp = 343.081239025865
+				tempExt = 342.943293982015
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3812,7 +3804,7 @@ GAME
 				RESOURCE
 				{
 					name = Supplies
-					amount = 99.8724631079685
+					amount = 99.8629081082375
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -3841,8 +3833,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 5
 				mass = 0.02
-				temp = 343.27087660625
-				tempExt = 343.13032094501
+				temp = 343.081235736419
+				tempExt = 342.943280054595
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3918,7 +3910,7 @@ GAME
 				RESOURCE
 				{
 					name = Supplies
-					amount = 99.8724631079685
+					amount = 99.8629081082375
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -3947,8 +3939,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 5
 				mass = 0.02
-				temp = 343.270872031498
-				tempExt = 343.130245451583
+				temp = 343.081232451037
+				tempExt = 342.943266143919
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4024,7 +4016,7 @@ GAME
 				RESOURCE
 				{
 					name = Supplies
-					amount = 99.8724631079685
+					amount = 99.8629081082375
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -4053,8 +4045,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 5
 				mass = 0.001
-				temp = 343.276705148573
-				tempExt = 343.145302067424
+				temp = 343.087529746124
+				tempExt = 342.947937040023
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4075,7 +4067,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 4
+					navLightSwitch = 0
 					EVENTS
 					{
 						FlashEvent
@@ -4127,7 +4119,7 @@ GAME
 					{
 						LightToggle
 						{
-							actionGroup = None
+							actionGroup = Light
 						}
 						FlashToggle
 						{
@@ -4225,8 +4217,8 @@ GAME
 				sym = 12
 				srfN = srfAttach, 5
 				mass = 0.001
-				temp = 343.276704956369
-				tempExt = 343.145300941879
+				temp = 343.087529479857
+				tempExt = 342.947935373528
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4247,7 +4239,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 4
+					navLightSwitch = 0
 					EVENTS
 					{
 						FlashEvent
@@ -4299,7 +4291,7 @@ GAME
 					{
 						LightToggle
 						{
-							actionGroup = None
+							actionGroup = Light
 						}
 						FlashToggle
 						{
@@ -4397,8 +4389,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 4
 				mass = 0.005
-				temp = 343.295393009358
-				tempExt = 343.131681103936
+				temp = 343.111135536421
+				tempExt = 342.950219054175
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4493,8 +4485,8 @@ GAME
 				sym = 14
 				srfN = srfAttach, 4
 				mass = 0.005
-				temp = 343.295317614104
-				tempExt = 343.131269309224
+				temp = 343.11113186192
+				tempExt = 342.94741280527
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4589,8 +4581,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 3
 				mass = 0.005
-				temp = 343.289694532134
-				tempExt = 343.097803371842
+				temp = 343.098403122186
+				tempExt = 342.903199566631
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4685,8 +4677,8 @@ GAME
 				sym = 16
 				srfN = srfAttach, 3
 				mass = 0.005
-				temp = 343.289637764827
-				tempExt = 343.097479902985
+				temp = 343.098351233881
+				tempExt = 342.903011549722
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4781,8 +4773,8 @@ GAME
 				sym = 19
 				srfN = srfAttach, 2
 				mass = 0.0001
-				temp = 343.275400488297
-				tempExt = 343.131067644868
+				temp = 343.09148051532
+				tempExt = 342.941328391963
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5041,8 +5033,8 @@ GAME
 				sym = 18
 				srfN = srfAttach, 2
 				mass = 0.0001
-				temp = 343.275400456534
-				tempExt = 343.131067475275
+				temp = 343.091480469319
+				tempExt = 342.94132815593
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5503,7 +5495,7 @@ GAME
 							markUT = 2263.45791015599
 							deltaVExpended = 0
 							dragLosses = 0
-							gravityLosses = -0.00232287121406139
+							gravityLosses = -0.035802442288169
 							steeringLosses = 0
 							markLatitude = -0.0054948279927568
 							markLongitude = -10.7489382038554
@@ -5630,7 +5622,7 @@ GAME
 			{
 				Stage = True, 2223.23791015602
 				Gear = True, 0
-				Light = False, 2523.89791015575
+				Light = False, 2735.53791015556
 				RCS = False, 0
 				SAS = True, 2340.27791015592
 				Brakes = False, 0
@@ -5659,9 +5651,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.002924085
-				yaw = 0.004140981
-				roll = -1.090282E-05
+				pitch = 0.0003707001
+				yaw = 0.0005348497
+				roll = 1.534006E-05
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
