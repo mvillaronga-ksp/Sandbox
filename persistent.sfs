@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16399.7637304967
+							_currentUT = 16400.2637304967
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.498994168544
+							ORBITING = 16032.998994168554
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16399.7637304967
+							_currentUT = 16400.2637304967
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.498994168554
+							ORBITING = 16032.998994168565
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16399.7637304967
+							_currentUT = 16400.2637304967
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.498994168576
+							ORBITING = 16032.998994168587
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16399.7637304967
+							_currentUT = 16400.2637304967
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16032.498994168533
+							ORBITING = 16032.998994168544
 						}
 					}
 				}
@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 34
+		LastSave = 35
 	}
 	SCENARIO
 	{
@@ -961,7 +961,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16400.0437304967
+		UT = 16632.9637305018
 		activeVessel = 13
 		mapViewFiltering = 1022
 		VESSEL
@@ -17296,18 +17296,18 @@ GAME
 			type = Debris
 			sit = PRELAUNCH
 			landed = True
-			landedAt = LaunchPad
+			landedAt = KSC_LaunchPad_Platform
 			splashed = False
 			met = 0
-			lct = 16400.0437304967
+			lct = 16632.9437305018
 			root = 0
-			lat = -0.0972077803051735
-			lon = 285.442327680287
-			alt = 74.8333570925752
-			hgt = 2.364818
-			nrm = 0.0007454078,0.9999998,-9.52422E-08
-			rot = -0.7009887,-0.09221788,-0.0972654,0.7004643
-			CoM = 3.309076E-08,-2.644985E-07,2.491061E-10
+			lat = -0.0972077845208492
+			lon = 285.442328083239
+			alt = 74.8120209081098
+			hgt = 2.314822
+			nrm = -2.578877E-05,0.9999999,1.390885E-05
+			rot = -0.7009921,-0.09222408,-0.097277,0.7004585
+			CoM = 0,0,0
 			stg = 1
 			prst = False
 			ref = 3861172589
@@ -17317,13 +17317,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300816.117004133
-				ECC = 0.99482274860427
-				INC = 0.0972077803050863
-				LPE = 89.9999999999998
-				LAN = 18.7778365936807
+				SMA = 300816.106745614
+				ECC = 0.994822745699907
+				INC = 0.0972077834470321
+				LPE = 89.9982886370125
+				LAN = 22.6615636352444
 				MNA = 3.14159265358979
-				EPH = 16400.0437304967
+				EPH = 16632.9637305018
 				REF = 1
 			}
 			PART
@@ -17348,8 +17348,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 1.25
-				temp = 287.544155348872
-				tempExt = 287.781017288072
+				temp = 296.823308577956
+				tempExt = 297.335984972683
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17620,7 +17620,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0
+				mainThrottle = 0.5
 			}
 		}
 	}
