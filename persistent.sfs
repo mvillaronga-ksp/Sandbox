@@ -89,7 +89,7 @@ GAME
 		scene = 5, 6, 8
 		kscComplete = True
 		editorComplete = True
-		tsComplete = False
+		tsComplete = True
 	}
 	SCENARIO
 	{
@@ -582,11 +582,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2560.29791015572
+							_currentUT = 2614.47791015567
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2193.0731738275749
+							ORBITING = 2247.2531738275252
 						}
 					}
 				}
@@ -606,11 +606,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2560.29791015572
+							_currentUT = 2614.47791015567
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2193.0731738275749
+							ORBITING = 2247.2531738275252
 						}
 					}
 				}
@@ -630,33 +630,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2560.29791015572
+							_currentUT = 2614.47791015567
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2193.0731738275749
+							ORBITING = 2247.2531738275252
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -677,6 +657,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -684,11 +684,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 2560.29791015572
+							_currentUT = 2614.47791015567
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.704892578093336
-							ORBITING = 2193.0731738275749
+							ORBITING = 2247.2531738275252
 						}
 					}
 				}
@@ -881,7 +881,7 @@ GAME
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5, 6, 7
+		scene = 5, 6, 7, 8
 		KACAlarmListStorage
 		{
 		}
@@ -934,7 +934,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 2612.89791015567
+		UT = 2615.99791015567
 		activeVessel = 0
 		mapViewFiltering = -1026
 		VESSEL
