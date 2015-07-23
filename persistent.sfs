@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = 000_USITools/Flags/USI-LD
-	launchID = 4
+	launchID = 5
 	PARAMETERS
 	{
 		preset = Custom
@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16806.8237305056
+							_currentUT = 16810.8637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16439.558994177467
+							ORBITING = 16443.59899417757
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16806.8237305056
+							_currentUT = 16810.8637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16439.558994177482
+							ORBITING = 16443.598994177584
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16806.8237305056
+							_currentUT = 16810.8637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16439.558994177503
+							ORBITING = 16443.598994177606
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16806.8237305056
+							_currentUT = 16810.8637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16439.55899417746
+							ORBITING = 16443.598994177562
 						}
 					}
 				}
@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 38
+		LastSave = 40
 	}
 	SCENARIO
 	{
@@ -961,8 +961,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16810.8437305057
-		activeVessel = 0
+		UT = 16811.1237305057
+		activeVessel = 13
 		mapViewFiltering = 1022
 		VESSEL
 		{
@@ -17254,6 +17254,2798 @@ GAME
 				Light = False, 0
 				RCS = False, 0
 				SAS = True, 7728.74779297703
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 28d092f6d24243a7a286067ed05ce914
+			name = Untitled Space Craft
+			type = Debris
+			sit = PRELAUNCH
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 0
+			lct = 16811.1237305057
+			root = 0
+			lat = -0.0972410305832272
+			lon = 285.442331941022
+			alt = 76.5156981535256
+			hgt = 4.027544
+			nrm = 0.0007454379,0.9999999,-5.396101E-07
+			rot = -0.7009888,-0.09221788,-0.09726541,0.7004642
+			CoM = -2.035137E-07,1.964973E-05,-2.364101E-07
+			stg = 1
+			prst = False
+			ref = 2455774377
+			ctrl = False
+			cPch = 0.2
+			cHdg = 0.3
+			cMod = 0
+			ORBIT
+			{
+				SMA = 300816.966932788
+				ECC = 0.994822705069743
+				INC = 0.0972410306079337
+				LPE = 90.0000000000001
+				LAN = 25.629202096203
+				MNA = 3.14159148519757
+				EPH = 16811.1237305057
+				REF = 1
+			}
+			PART
+			{
+				name = TAL.Large.Spherical.Tank.Fuel
+				cid = 4286082332
+				uid = 2455774377
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 2
+				mass = 13.5
+				temp = 287.568785000219
+				tempExt = 293.87556736632
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = TAL.Large.Spherical.Tank.Fuel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = TalUtility
+					utilization = 86
+					mass = 13.5
+					volume = 43200
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						HideUI
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Hide UI
+							guiName = Hide UI
+							category = Hide UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ShowUI
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Show UI
+							guiName = Show UI
+							category = Show UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = RocketParts
+						note = (EL Mod Required)
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Ore
+						note = (EL Mod Required)
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Food
+						note = (TAC Life Support Mod Required)
+						utilization = 0.78207
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Water
+						note = (TAC Life Support Mod Required)
+						utilization = 0.78207
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxygen
+						note = (TAC Life Support Mod Required)
+						utilization = 0.78207
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = CarbonDioxide
+						note = (TAC Life Support Mod Required)
+						utilization = 0.0001021463
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Waste
+						note = (TAC Life Support Mod Required)
+						utilization = 1.12361E-05
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = WasteWater
+						note = (TAC Life Support Mod Required)
+						utilization = 0.0003953062
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+				}
+				MODULE
+				{
+					name = FStextureSwitch
+					isEnabled = True
+					selectedTexture = 3
+					selectedTextureURL = ModsByTal/Parts/FuelTank/Spherical/Textures/Green
+					selectedMapURL = 
+					EVENTS
+					{
+						listAllObjects
+						{
+							active = True
+							guiActive = False
+							guiIcon = Debug: Log Objects
+							guiName = Debug: Log Objects
+							category = Debug: Log Objects
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						nextTextureEvent
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Next Texture
+							guiName = Next Texture
+							category = Next Texture
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						previousTextureEvent
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Previous Texture
+							guiName = Previous Texture
+							category = Previous Texture
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						nextTextureEVAEvent
+						{
+							active = True
+							guiActive = False
+							guiIcon = Repaint
+							guiName = Repaint
+							category = Repaint
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				cid = 4285925806
+				uid = 3546924155
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 0,3.75,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, 0
+				mass = 0.2
+				temp = 287.538311010115
+				tempExt = 287.956655007008
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				cid = 4285925462
+				uid = 3913420047
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 0,-3.75,0
+				rotation = 1,0,0,0
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, 0
+				mass = 0.2
+				temp = 287.56278784758
+				tempExt = 287.965627831491
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4286005382
+				uid = 692375712
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = -3.73139905929565,3.0517578125E-05,1.78813934326172E-07
+				rotation = 0.5000001,-0.4999999,0.5000001,0.4999999
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.59642548824
+				tempExt = 290.950671962741
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4285925136
+				uid = 3497849401
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = -1.86569905281067,3.0517578125E-05,3.23148608207703
+				rotation = 0.6830128,-0.1830127,0.1830127,0.6830125
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 5
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.596403701219
+				tempExt = 290.949667062787
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4285925082
+				uid = 4131308941
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 1.86569976806641,3.0517578125E-05,3.23148608207703
+				rotation = 0.6830128,0.1830127,-0.1830128,0.6830126
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 6
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.596381930587
+				tempExt = 290.948662885394
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4285925028
+				uid = 3702618167
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 3.73139882087708,3.0517578125E-05,-5.0663948059082E-07
+				rotation = 0.5000001,0.4999999,-0.5000001,0.4999999
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 7
+				sym = 8
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.596360176333
+				tempExt = 290.94765943005
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4285924974
+				uid = 2226025368
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = 1.86569881439209,3.0517578125E-05,-3.23148679733276
+				rotation = 0.1830127,0.6830126,-0.6830129,0.1830126
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 8
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.596338438442
+				tempExt = 290.946656696246
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				cid = 4285924920
+				uid = 3635114805
+				mid = 3834793556
+				launchID = 4
+				parent = 0
+				position = -1.86569905281067,3.0517578125E-05,-3.23148679733276
+				rotation = -0.1830127,0.6830126,-0.6830129,-0.1830126
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 0
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.05
+				temp = 287.596316716904
+				tempExt = 290.945654683472
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RMMModule
+					isEnabled = True
+					trackingActive = False
+					trackingPrimary = False
+					trackID = 
+					trackPartCount = 0
+					returnMission = False
+					returnMissionDeparted = False
+					trackFolderName = 
+					trackName = 
+					trackCompanyName = 
+					trackVehicleName = 
+					trackLaunchSystemName = 
+					trackPrice = 0
+					trackVehicleReturnFee = 0
+					trackMissionStartTime = 0
+					trackMissionTime = 0
+					trackBody = 
+					trackMaxOrbitAltitude = 0
+					trackDescription = 
+					trackMinimumCrew = 0
+					trackMaximumCrew = 0
+					trackReturnEnabled = False
+					trackSafeReturn = False
+					trackReturnResources = 
+					trackReturnCargoMass = 0
+					trackPort = 0
+					trackDockingDistance = 0.15
+					missionUnderway = False
+					missionFolderName = 
+					missionArrivalTime = 0
+					missionCrewCount = 0
+					missionRepeat = False
+					missionRepeatDelay = 0
+					missionPreferedCrew = 
+					SMAsave = 0
+					ECCsave = 0
+					INCsave = 0
+					PortCode = 
+					OrderingEnabled = True
+					commercialvehiclemode = False
+					vehicleAutoDepart = False
+					commercialvehicleFolderName = 
+					commercialvehiclePartCount = 0
+					EVENTS
+					{
+						tracking
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Track Mission
+							guiName = Track Mission
+							category = Track Mission
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						setAutoDepart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Commence Return
+							guiName = Commence Return
+							category = Commence Return
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						register
+						{
+							active = True
+							guiActive = False
+							guiIcon = Register Docking Port
+							guiName = Register Docking Port
+							category = Register Docking Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
