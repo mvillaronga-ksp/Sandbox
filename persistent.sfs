@@ -309,7 +309,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 559298752
+		lastSeed = 473604762
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -581,7 +581,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 1.38
+		UT = 8.49999999999991
 		activeVessel = 0
 		mapViewFiltering = 0
 		VESSEL
@@ -658,6 +658,170 @@ GAME
 				lifetime = 586354.751586914
 				refTime = 1728000
 				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = e4c735bab71f42ab996d33f8c561efe7
+			name = Ast. LEB-580
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3.02
+			lct = 3.02
+			root = 0
+			lat = 0.871057998150096
+			lon = 181.239742506955
+			alt = 13855582731.52
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.7219114,-0.1069876,0.3451731,0.5901297
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13943072258.2187
+				ECC = 0.0268535488338177
+				INC = 1.35508240683128
+				LPE = 159.069055531215
+				LAN = 141.245985731323
+				MNA = 0.340744569840067
+				EPH = 3605955.85203125
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 855228628
+				mid = 855228628
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3.02
+				lifetime = 407848.274230957
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 05b26be6b5b849bc980fabef17f49a45
+			name = Ast. AKN-787
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3.02
+			lct = 3.02
+			root = 0
+			lat = 0.206501124012162
+			lon = 189.134479213587
+			alt = 15390541764.917
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.07353374,-0.02213096,0.6936222,0.716234
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14922790002.6103
+				ECC = 0.0887756328929805
+				INC = 0.575263635468674
+				LPE = 148.592692367687
+				LAN = 168.100822795411
+				MNA = 0.141800384732618
+				EPH = 3740218.88914063
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 473604762
+				mid = 473604762
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3.02
+				lifetime = 580524.224853516
+				refTime = 1728000
+				size = 2
 			}
 			FLIGHTPLAN
 			{
