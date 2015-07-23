@@ -88,7 +88,7 @@ GAME
 		name = ScenarioNewGameIntro
 		scene = 5, 6, 8
 		kscComplete = True
-		editorComplete = False
+		editorComplete = True
 		tsComplete = False
 	}
 	SCENARIO
@@ -565,7 +565,7 @@ GAME
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5
+		scene = 5, 6
 		KACAlarmListStorage
 		{
 		}
