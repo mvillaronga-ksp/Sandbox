@@ -2,7 +2,7 @@ ship = Spherical Core - Test
 version = 1.0.4
 description = 
 type = VAB
-size = 8.665031,30.12373,9.670395
+size = 8.665031,30.12373,9.670396
 PART
 {
 	part = probeStackLarge_4294381140
@@ -1447,7 +1447,7 @@ PART
 {
 	part = dockingPort2_4294206558
 	partName = Part
-	pos = 0.8596553,54.67536,4.124926
+	pos = 0.8596554,54.67536,4.124926
 	attPos = 0,0,0
 	attPos0 = -1.866614,0.01624012,3.23307
 	rot = 0.6830128,-0.1830127,0.1830127,0.6830125
@@ -2631,7 +2631,7 @@ PART
 {
 	part = dockingPort2_4294206350
 	partName = Part
-	pos = 0.8596553,54.67536,-2.341214
+	pos = 0.8596554,54.67536,-2.341214
 	attPos = 0,0,0
 	attPos0 = -1.866614,0.01624012,-3.23307
 	rot = -0.1830127,0.6830126,-0.6830129,-0.1830126
@@ -4276,11 +4276,11 @@ PART
 	attRot0 = -1,0,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	istg = 1
 	dstg = 1
 	sidx = 0
-	sqor = 0
-	sepI = 0
+	sqor = 1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5060,7 +5060,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 2311.645
 	modMass = 2.311645
@@ -5318,7 +5318,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5417,7 +5417,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 734.4
 	modMass = 0
@@ -5708,7 +5708,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -6000,7 +6000,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6123,7 +6123,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6274,7 +6274,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -6559,7 +6559,7 @@ PART
 {
 	part = strutConnector_4292819904
 	partName = CompoundPart
-	pos = 2.117092,36.21738,-0.589063
+	pos = 2.117094,36.21738,-0.5890625
 	attPos = 0,0,0
 	attPos0 = 0.3190779,-1.562409,-1.190817
 	rot = 8.526931E-07,-0.9914451,1.122591E-07,-0.130526
@@ -6571,7 +6571,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -6690,11 +6690,11 @@ PART
 	attRot0 = 0,0.7071068,0,0.7071069
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 8
-	sqor = 1
-	sepI = 0
+	sidx = 0
+	sqor = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6992,7 +6992,7 @@ PART
 {
 	part = smallRadialEngine_4292819664
 	partName = Part
-	pos = 2.126142,36.12957,-1.600888
+	pos = 2.126144,36.12957,-1.600888
 	attPos = 0,0,0
 	attPos0 = -0.6927442,-1.650223,-1.199867
 	rot = 4.048192E-07,-0.8660259,-7.011681E-07,-0.4999996
@@ -7000,11 +7000,11 @@ PART
 	attRot0 = 2.095503E-07,0.9659257,7.820511E-07,-0.2588196
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 9
-	sqor = 1
-	sepI = 0
+	sidx = 1
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7232,7 +7232,7 @@ PART
 {
 	part = smallRadialEngine_4292819594
 	partName = Part
-	pos = -0.06257725,36.21807,-1.89699
+	pos = -0.0625782,36.21807,-1.89699
 	attPos = 0,0,0
 	attPos0 = -0.9888448,-1.561722,0.9888446
 	rot = 2.883845E-07,-0.9238797,6.962219E-07,0.3826834
@@ -7240,11 +7240,11 @@ PART
 	attRot0 = -6.962213E-07,0.3826836,-2.883845E-07,-0.9238795
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 10
-	sqor = 1
-	sepI = 0
+	sidx = 2
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7472,7 +7472,7 @@ PART
 {
 	part = smallRadialEngine_4292819524
 	partName = Part
-	pos = 1.915029,36.11718,0.08061624
+	pos = 1.91503,36.11718,0.08061719
 	attPos = 0,0,0
 	attPos0 = 0.9887564,-1.662606,-0.9887568
 	rot = -4.655363E-07,0.3826835,1.928314E-07,0.9238797
@@ -7480,11 +7480,11 @@ PART
 	attRot0 = 1.928314E-07,-0.9238796,-4.655361E-07,-0.3826834
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 11
-	sqor = 1
-	sepI = 0
+	sidx = 3
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7712,7 +7712,7 @@ PART
 {
 	part = basicFin_4292819454
 	partName = Part
-	pos = 0.9262693,36.32274,0.3007357
+	pos = 0.9262693,36.32274,0.3007366
 	attPos = 0,0,0
 	attPos0 = 1.208878,-1.457051,4.450893E-08
 	rot = 1.159035E-07,-0.7071065,1.159037E-07,-0.7071073
@@ -7724,7 +7724,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7835,10 +7835,10 @@ PART
 {
 	part = basicFin_4292819412
 	partName = Part
-	pos = -0.2889752,36.18969,-0.9081445
+	pos = -0.2889762,36.18969,-0.9081445
 	attPos = 0,0,0
 	attPos0 = -3.319689E-07,-1.590103,1.215244
-	rot = 4.019437E-13,4.214685E-07,-7.768241E-07,-1
+	rot = 4.019437E-13,4.214685E-07,-7.768245E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = 5.492967E-07,0.7071065,5.492972E-07,0.7071071
 	mir = 1,1,1
@@ -7847,7 +7847,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -7970,7 +7970,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 734.4
 	modMass = 0
@@ -8261,7 +8261,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -8541,7 +8541,7 @@ PART
 {
 	part = strutConnector_4293212744
 	partName = CompoundPart
-	pos = 4.20719,40.46738,0.2826782
+	pos = 4.20719,40.46738,0.2826794
 	attPos = 0,0,0
 	attPos0 = 0.3190783,-1.562409,-1.190817
 	rot = 5.235659E-07,-0.6087615,6.823242E-07,-0.7933535
@@ -8553,7 +8553,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -8676,7 +8676,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -8827,7 +8827,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -9112,7 +9112,7 @@ PART
 {
 	part = strutConnector_4292819324
 	partName = CompoundPart
-	pos = 4.207188,36.21738,0.2826802
+	pos = 4.207188,36.21738,0.2826824
 	attPos = 0,0,0
 	attPos0 = 0.3190779,-1.562409,-1.190817
 	rot = 5.235659E-07,-0.6087617,6.823244E-07,-0.7933534
@@ -9124,7 +9124,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9243,11 +9243,11 @@ PART
 	attRot0 = 0,0.7071068,0,0.7071069
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 12
-	sqor = 1
-	sepI = 0
+	sidx = 4
+	sqor = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9545,7 +9545,7 @@ PART
 {
 	part = smallRadialEngine_4292819084
 	partName = Part
-	pos = 5.219013,36.12957,0.2917284
+	pos = 5.219013,36.12957,0.2917301
 	attPos = 0,0,0
 	attPos0 = -0.6927442,-1.650223,-1.199867
 	rot = 7.820511E-07,-0.2588197,-2.095503E-07,-0.9659259
@@ -9553,11 +9553,11 @@ PART
 	attRot0 = 2.095503E-07,0.9659257,7.820511E-07,-0.2588196
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 13
-	sqor = 1
-	sepI = 0
+	sidx = 5
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -9785,7 +9785,7 @@ PART
 {
 	part = smallRadialEngine_4292819014
 	partName = Part
-	pos = 5.515119,36.21806,-1.896995
+	pos = 5.515121,36.21806,-1.896997
 	attPos = 0,0,0
 	attPos0 = -0.9888448,-1.561722,0.9888446
 	rot = -2.883847E-07,-0.9238798,6.962219E-07,-0.3826836
@@ -9793,11 +9793,11 @@ PART
 	attRot0 = -6.962213E-07,0.3826836,-2.883845E-07,-0.9238795
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 14
-	sqor = 1
-	sepI = 0
+	sidx = 6
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -10025,7 +10025,7 @@ PART
 {
 	part = smallRadialEngine_4292818944
 	partName = Part
-	pos = 3.537508,36.11718,0.08061689
+	pos = 3.537506,36.11718,0.08061832
 	attPos = 0,0,0
 	attPos0 = 0.9887564,-1.662606,-0.9887568
 	rot = -4.655363E-07,-0.3826835,-1.928315E-07,0.9238798
@@ -10033,11 +10033,11 @@ PART
 	attRot0 = 1.928314E-07,-0.9238796,-4.655361E-07,-0.3826834
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 15
-	sqor = 1
-	sepI = 0
+	sidx = 7
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -10265,7 +10265,7 @@ PART
 {
 	part = basicFin_4292818874
 	partName = Part
-	pos = 3.317389,36.32274,-0.9081431
+	pos = 3.317389,36.32274,-0.9081426
 	attPos = 0,0,0
 	attPos0 = 1.208878,-1.457051,4.450893E-08
 	rot = -9.546163E-14,5.900559E-07,1.639125E-07,-1
@@ -10277,7 +10277,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -10400,7 +10400,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -10523,7 +10523,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 734.4
 	modMass = 0
@@ -10814,7 +10814,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -11106,7 +11106,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -11229,7 +11229,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -11380,7 +11380,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -11665,7 +11665,7 @@ PART
 {
 	part = strutConnector_4292820484
 	partName = CompoundPart
-	pos = 3.335446,36.21738,2.372776
+	pos = 3.335444,36.21738,2.372776
 	attPos = 0,0,0
 	attPos0 = 0.3190779,-1.562409,-1.190817
 	rot = -1.122591E-07,0.1305259,8.526932E-07,-0.9914452
@@ -11677,7 +11677,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -11796,11 +11796,11 @@ PART
 	attRot0 = 0,0.7071068,0,0.7071069
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 4
-	sqor = 1
-	sepI = 0
+	sidx = 8
+	sqor = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -12098,7 +12098,7 @@ PART
 {
 	part = smallRadialEngine_4292820244
 	partName = Part
-	pos = 3.326396,36.12957,3.3846
+	pos = 3.326394,36.12957,3.3846
 	attPos = 0,0,0
 	attPos0 = -0.6927442,-1.650223,-1.199867
 	rot = 7.011682E-07,0.4999995,4.048192E-07,-0.866026
@@ -12106,11 +12106,11 @@ PART
 	attRot0 = 2.095503E-07,0.9659257,7.820511E-07,-0.2588196
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 5
-	sqor = 1
-	sepI = 0
+	sidx = 9
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -12338,7 +12338,7 @@ PART
 {
 	part = smallRadialEngine_4292820174
 	partName = Part
-	pos = 5.51512,36.21807,3.680702
+	pos = 5.515121,36.21807,3.680702
 	attPos = 0,0,0
 	attPos0 = -0.9888448,-1.561722,0.9888446
 	rot = -6.962218E-07,-0.3826835,2.883847E-07,-0.9238797
@@ -12346,11 +12346,11 @@ PART
 	attRot0 = -6.962213E-07,0.3826836,-2.883845E-07,-0.9238795
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 6
-	sqor = 1
-	sepI = 0
+	sidx = 10
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -12578,7 +12578,7 @@ PART
 {
 	part = smallRadialEngine_4292820104
 	partName = Part
-	pos = 3.537509,36.11718,1.703094
+	pos = 3.537508,36.11718,1.703092
 	attPos = 0,0,0
 	attPos0 = 0.9887564,-1.662606,-0.9887568
 	rot = -1.928314E-07,-0.9238797,-4.655363E-07,0.3826835
@@ -12586,11 +12586,11 @@ PART
 	attRot0 = 1.928314E-07,-0.9238796,-4.655361E-07,-0.3826834
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 7
-	sqor = 1
-	sepI = 0
+	sidx = 11
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -12818,7 +12818,7 @@ PART
 {
 	part = basicFin_4292820034
 	partName = Part
-	pos = 4.526269,36.32274,1.482974
+	pos = 4.526269,36.32274,1.482972
 	attPos = 0,0,0
 	attPos0 = 1.208878,-1.457051,4.450893E-08
 	rot = -1.159037E-07,0.7071074,1.159035E-07,-0.7071064
@@ -12830,7 +12830,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -12941,10 +12941,10 @@ PART
 {
 	part = basicFin_4292819992
 	partName = Part
-	pos = 5.741517,36.18969,2.691856
+	pos = 5.741519,36.18969,2.691856
 	attPos = 0,0,0
 	attPos0 = -3.319689E-07,-1.590103,1.215244
-	rot = 7.768243E-07,1,2.498353E-13,3.808862E-07
+	rot = 7.768249E-07,1,1.694465E-13,3.808862E-07
 	attRot = 0,0,0,1
 	attRot0 = 5.492967E-07,0.7071065,5.492972E-07,0.7071071
 	mir = 1,1,1
@@ -12953,7 +12953,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -13076,7 +13076,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 734.4
 	modMass = 0
@@ -13367,7 +13367,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -13659,7 +13659,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -13782,7 +13782,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -13933,7 +13933,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 1468.8
 	modMass = 0
@@ -14218,7 +14218,7 @@ PART
 {
 	part = strutConnector_4293195608
 	partName = CompoundPart
-	pos = 1.245349,36.21738,1.501032
+	pos = 1.245349,36.21738,1.50103
 	attPos = 0,0,0
 	attPos0 = 0.3190779,-1.562409,-1.190817
 	rot = -6.823244E-07,0.7933534,5.235659E-07,-0.6087617
@@ -14230,7 +14230,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -14349,11 +14349,11 @@ PART
 	attRot0 = 0,0.7071068,0,0.7071069
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 0
-	sqor = 1
-	sepI = 0
+	sidx = 12
+	sqor = 2
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -14651,7 +14651,7 @@ PART
 {
 	part = smallRadialEngine_4292958576
 	partName = Part
-	pos = 0.2335215,36.12957,1.491983
+	pos = 0.23352,36.12957,1.491981
 	attPos = 0,0,0
 	attPos0 = -0.6927442,-1.650223,-1.199867
 	rot = 2.095503E-07,0.9659259,7.820511E-07,-0.2588197
@@ -14659,11 +14659,11 @@ PART
 	attRot0 = 2.095503E-07,0.9659257,7.820511E-07,-0.2588196
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 1
-	sqor = 1
-	sepI = 0
+	sidx = 13
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -14891,7 +14891,7 @@ PART
 {
 	part = smallRadialEngine_4292957304
 	partName = Part
-	pos = -0.06257701,36.21806,3.680702
+	pos = -0.06257749,36.21806,3.680702
 	attPos = 0,0,0
 	attPos0 = -0.9888448,-1.561722,0.9888446
 	rot = -6.962219E-07,0.3826836,-2.883847E-07,-0.9238798
@@ -14899,11 +14899,11 @@ PART
 	attRot0 = -6.962213E-07,0.3826836,-2.883845E-07,-0.9238795
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 2
-	sqor = 1
-	sepI = 0
+	sidx = 14
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15139,11 +15139,11 @@ PART
 	attRot0 = 1.928314E-07,-0.9238796,-4.655361E-07,-0.3826834
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 2
 	dstg = 2
-	sidx = 3
-	sqor = 1
-	sepI = 0
+	sidx = 15
+	sqor = 2
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15383,7 +15383,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15494,7 +15494,7 @@ PART
 {
 	part = basicFin_4292828254
 	partName = Part
-	pos = 0.9262695,36.18969,3.9071
+	pos = 0.92627,36.18969,3.9071
 	attPos = 0,0,0
 	attPos0 = -3.319689E-07,-1.590103,1.215244
 	rot = 5.492968E-07,0.7071067,5.492973E-07,0.7071073
@@ -15506,7 +15506,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15617,7 +15617,7 @@ PART
 {
 	part = KzProcFairingSide2_4292573326
 	partName = Part
-	pos = 0.9762686,48.42379,3.922945
+	pos = 0.9762685,48.42379,3.922945
 	attPos = 0,0,0
 	attPos0 = -1.75,0.144001,3.031089
 	rot = 0,0,0,1
@@ -15625,11 +15625,11 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 0
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -15794,11 +15794,11 @@ PART
 	attRot0 = 0,0.5,0,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 1
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -15963,11 +15963,11 @@ PART
 	attRot0 = 0,0.8660254,0,0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 2
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -16000,7 +16000,7 @@ PART
 		topRad = 0
 		inlineHeight = 0
 		sideThickness = 0.28
-		meshPos = (1.750001, -0.144001, -3.031089)
+		meshPos = (1.75, -0.144001, -3.031089)
 		meshRot = (0, -0.8660254, 0, 0.5)
 		shapeLock = False
 		shapeLock_UIFlight
@@ -16132,11 +16132,11 @@ PART
 	attRot0 = 0,1,0,-4.371139E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 3
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -16301,11 +16301,11 @@ PART
 	attRot0 = 0,0.8660254,0,-0.5000001
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 4
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -16339,7 +16339,7 @@ PART
 		inlineHeight = 0
 		sideThickness = 0.28
 		meshPos = (1.750001, -0.144001, -3.031089)
-		meshRot = (0, -0.8660255, 0, 0.4999999)
+		meshRot = (0, -0.8660256, 0, 0.4999999)
 		shapeLock = False
 		shapeLock_UIFlight
 		{
@@ -16470,11 +16470,11 @@ PART
 	attRot0 = 0,0.5000001,0,-0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 0
 	dstg = 3
 	sidx = 5
-	sqor = 2
-	sepI = 0
+	sqor = 0
+	sepI = 1
 	attm = 0
 	modCost = 6587.042
 	modMass = 1.317408
@@ -16507,8 +16507,8 @@ PART
 		topRad = 0
 		inlineHeight = 0
 		sideThickness = 0.28
-		meshPos = (1.75, -0.144001, -3.031089)
-		meshRot = (0, -0.8660254, 0, 0.5000001)
+		meshPos = (1.75, -0.144001, -3.03109)
+		meshRot = (0, -0.8660254, 0, 0.5000002)
 		shapeLock = False
 		shapeLock_UIFlight
 		{
