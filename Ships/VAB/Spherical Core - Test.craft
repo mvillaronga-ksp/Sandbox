@@ -2,7 +2,7 @@ ship = Spherical Core - Test
 version = 1.0.4
 description = 
 type = VAB
-size = 12.85334,49.08704,12.85334
+size = 18.96554,30.38565,18.96554
 PART
 {
 	part = probeStackLarge_4294381140
@@ -5065,9 +5065,9 @@ PART
 	modCost = 5958.963
 	modMass = 9.931605
 	modSize = (0.0, 0.0, 0.0)
-	link = decoupler1-2_4292833974
+	link = decoupler1-2_4292508128
 	attN = top,decoupler1-2_4294109244
-	attN = bottom,decoupler1-2_4292833974
+	attN = bottom,decoupler1-2_4292508128
 	EVENTS
 	{
 	}
@@ -5241,7 +5241,7 @@ PART
 }
 PART
 {
-	part = decoupler1-2_4292833974
+	part = decoupler1-2_4292508128
 	partName = Part
 	pos = 0.1012688,48.12193,0.8918559
 	attPos = 0,0,0
@@ -5251,17 +5251,17 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	istg = 2
 	dstg = 5
-	sidx = 1
-	sqor = 0
-	sepI = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = KzResizableFairingBaseRing_4292833894
-	attN = bottom,KzResizableFairingBaseRing_4292833894
+	link = fuelTank2-2_4292395438
+	attN = bottom,fuelTank2-2_4292395438
 	attN = top,fairingSize3_4292236774
 	EVENTS
 	{
@@ -5420,1319 +5420,9 @@ PART
 }
 PART
 {
-	part = KzResizableFairingBaseRing_4292833894
+	part = fuelTank2-2_4292395438
 	partName = Part
-	pos = 0.1012688,47.22746,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-0.9864702,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 235.298
-	modMass = 0.235298
-	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank4-2_4292833840
-	attN = bottom,fuelTank4-2_4292833840
-	attN = top,decoupler1-2_4292833974
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingBase
-		isEnabled = True
-		extraRadius = 0.14
-		fuelCrossFeed = False
-		autoStrutSides = True
-		autoShape = True
-		manualMaxSize = 9.547269
-		manualCylStart = 5.629
-		manualCylEnd = 9.829
-		extraRadius_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 2
-			stepIncrement = 0.01
-		}
-		autoStrutSides_UIFlight
-		{
-			controlEnabled = True
-		}
-		autoShape_UIFlight
-		{
-			controlEnabled = True
-		}
-		manualMaxSize_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 100
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		manualCylStart_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		manualCylEnd_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 50
-			incrementLarge = 1
-			incrementSmall = 0.1
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-			ToggleCrossFeed
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Toggle crossfeed
-				guiName = Toggle crossfeed
-				category = Toggle crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzNodeNumberTweaker
-		isEnabled = True
-		numNodes = 4
-		radius = 1.4375
-		radius_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 5
-			incrementLarge = 0.625
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-			IncrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = More nodes
-				guiName = More nodes
-				category = More nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DecrementNodes
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Fewer nodes
-				guiName = Fewer nodes
-				category = Fewer nodes
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzFairingBaseResizer
-		isEnabled = True
-		size = 2.875
-		size_UIEditor
-		{
-			controlEnabled = True
-			minValue = 0.1
-			maxValue = 50
-			incrementLarge = 1.25
-			incrementSmall = 0.125
-			incrementSlide = 0.001
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzFairingBaseShielding
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = fuelTank4-2_4292833840
-	partName = Part
-	pos = 0.1012688,46.75871,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-0.46875,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 367.2
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank1-2_4292833796
-	attN = top,KzResizableFairingBaseRing_4292833894
-	attN = bottom,fuelTank1-2_4292833796
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = Default
-		utilization = 86
-		mass = 0.5
-		volume = 800
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT0
-			{
-				active = True
-				guiActive = False
-				guiIcon = 45% LiquidFuel / 55% Oxidizer
-				guiName = 45% LiquidFuel / 55% Oxidizer
-				category = 45% LiquidFuel / 55% Oxidizer
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = LiquidFuel
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 360
-			maxAmount = 360
-		}
-		TANK
-		{
-			name = Oxidizer
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 440
-			maxAmount = 440
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = 
-			utilization = 1
-			mass = 0.000625
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = XenonGas
-			note = (pressurized)
-			utilization = 56
-			mass = 0.000625
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Karbonite
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Karborundum
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 2000
-			loss_rate = 0
-			temperature = 300
-			fillable = False
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 432.8
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 360
-		maxAmount = 360
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 440
-		maxAmount = 440
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = fuelTank1-2_4292833796
-	partName = Part
-	pos = 0.1012688,44.41496,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-2.34375,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 6
-	dstg = 6
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 1468.8
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4292833752
-	attN = top,fuelTank4-2_4292833840
-	attN = bottom,engineLargeSkipper_4292833752
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = Default
-		utilization = 86
-		mass = 2
-		volume = 3200
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT0
-			{
-				active = True
-				guiActive = False
-				guiIcon = 45% LiquidFuel / 55% Oxidizer
-				guiName = 45% LiquidFuel / 55% Oxidizer
-				category = 45% LiquidFuel / 55% Oxidizer
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = LiquidFuel
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 1440
-			maxAmount = 1440
-		}
-		TANK
-		{
-			name = Oxidizer
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 1760
-			maxAmount = 1760
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = 
-			utilization = 1
-			mass = 0.000625
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = XenonGas
-			note = (pressurized)
-			utilization = 56
-			mass = 0.000625
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Karbonite
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Karborundum
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 2000
-			loss_rate = 0
-			temperature = 300
-			fillable = False
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 1531.2
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 1440
-		maxAmount = 1440
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 1760
-		maxAmount = 1760
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = engineLargeSkipper_4292833752
-	partName = Part
-	pos = 0.1012688,42.53996,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-1.875,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 1
-	dstg = 6
-	sidx = 1
-	sqor = 1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = decoupler1-2_4292833628
-	attN = top,fuelTank1-2_4292833796
-	attN = bottom,decoupler1-2_4292833628
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = False
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = decoupler1-2_4292833628
-	partName = Part
-	pos = 0.1012688,39.7141,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-2.825859,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 1
-	dstg = 7
-	sidx = 2
-	sqor = 1
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank2-2_4292833548
-	attN = bottom,fuelTank2-2_4292833548
-	attN = top,engineLargeSkipper_4292833752
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 550
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_DecouplerLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = fuelTank2-2_4292833548
-	partName = Part
-	pos = 0.1012688,38.41113,0.8918559
+	pos = 0.1012688,46.81896,0.8918559
 	attPos = 0,0,0
 	attPos0 = 0,-1.302971,0
 	rot = 0,0,0,1
@@ -6740,18 +5430,18 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 8
-	dstg = 8
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 2
 	attm = 0
 	modCost = 734.4
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank1-2_4292833504
-	attN = top,decoupler1-2_4292833628
-	attN = bottom,fuelTank1-2_4292833504
+	link = fuelTank3-2_4292489240
+	attN = top,decoupler1-2_4292508128
+	attN = bottom,fuelTank3-2_4292489240
 	EVENTS
 	{
 	}
@@ -7018,32 +5708,34 @@ PART
 }
 PART
 {
-	part = fuelTank1-2_4292833504
+	part = fuelTank3-2_4292489240
 	partName = Part
-	pos = 0.1012688,35.59863,0.8918559
+	pos = 0.1012688,42.13146,0.8918559
 	attPos = 0,0,0
-	attPos0 = 0,-2.8125,0
+	attPos0 = 0,-4.6875,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 8
-	dstg = 8
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 2
 	attm = 0
-	modCost = 1468.8
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = liquidEngine1-2_4292833460
-	link = wingShuttleRudder_4292829742
-	link = wingShuttleRudder_4292828290
-	link = wingShuttleRudder_4292828230
-	link = wingShuttleRudder_4292828170
-	attN = top,fuelTank2-2_4292833548
-	attN = bottom,liquidEngine1-2_4292833460
+	link = FTT.Structural.375.05_4292447094
+	link = FTT.Structural.375.05_4292446068
+	link = FTT.Structural.375.05_4292446020
+	link = FTT.Structural.375.05_4292445972
+	link = FTT.Structural.375.05_4292445924
+	link = FTT.Structural.375.05_4292445876
+	link = asasmodule1-2_4292474918
+	attN = top,fuelTank2-2_4292395438
+	attN = bottom,asasmodule1-2_4292474918
 	EVENTS
 	{
 	}
@@ -7077,8 +5769,8 @@ PART
 		isEnabled = True
 		type = Default
 		utilization = 86
-		mass = 2
-		volume = 3200
+		mass = 4
+		volume = 6400
 		type_UIEditor
 		{
 			controlEnabled = True
@@ -7154,8 +5846,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1440
-			maxAmount = 1440
+			amount = 2880
+			maxAmount = 2880
 		}
 		TANK
 		{
@@ -7168,8 +5860,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1760
-			maxAmount = 1760
+			amount = 3520
+			maxAmount = 3520
 		}
 		TANK
 		{
@@ -7235,7 +5927,7 @@ PART
 		currentScale = 2.5
 		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 1531.2
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -7290,8 +5982,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 1440
-		maxAmount = 1440
+		amount = 2880
+		maxAmount = 2880
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -7300,8 +5992,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 1760
-		maxAmount = 1760
+		amount = 3520
+		maxAmount = 3520
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -7310,28 +6002,2538 @@ PART
 }
 PART
 {
-	part = liquidEngine1-2_4292833460
+	part = FTT.Structural.375.05_4292447094
 	partName = Part
-	pos = 0.1012688,32.65833,0.8918559
+	pos = -0.9261492,45.42849,4.72623
 	attPos = 0,0,0
-	attPos0 = 0,-2.940308,0
+	attPos0 = -1.027418,3.297028,3.834374
+	rot = -1.040719E-07,-0.7933534,7.985717E-08,0.6087615
+	attRot = 0,0,0,1
+	attRot0 = -1.040719E-07,-0.7933534,7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292400522
+	sym = FTT.Structural.375.05_4292446068
+	sym = FTT.Structural.375.05_4292446020
+	sym = FTT.Structural.375.05_4292445972
+	sym = FTT.Structural.375.05_4292445924
+	sym = FTT.Structural.375.05_4292445876
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292400522
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292400522
+	partName = Part
+	pos = -0.9261492,44.24099,4.72623
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292391712
+	sym = fuelTank2-2_4292399412
+	sym = fuelTank2-2_4292399368
+	sym = fuelTank2-2_4292399324
+	sym = fuelTank2-2_4292399280
+	sym = fuelTank2-2_4292399236
+	attN = top,FTT.Structural.375.05_4292447094
+	attN = bottom,fuelTank3-2_4292391712
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4292446068
+	partName = Part
+	pos = 2.908225,45.42849,3.698813
+	attPos = 0,0,0
+	attPos0 = 2.806956,3.297028,2.806957
+	rot = -5.020031E-08,-0.3826834,1.211943E-07,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = -5.020031E-08,-0.3826834,1.211943E-07,0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292399412
+	sym = FTT.Structural.375.05_4292447094
+	sym = FTT.Structural.375.05_4292446020
+	sym = FTT.Structural.375.05_4292445972
+	sym = FTT.Structural.375.05_4292445924
+	sym = FTT.Structural.375.05_4292445876
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292399412
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292399412
+	partName = Part
+	pos = 2.908225,44.24099,3.698813
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,0
+	rot = -6.534371E-15,0.5000001,2.342943E-15,0.8660255
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292488516
+	sym = fuelTank2-2_4292400522
+	sym = fuelTank2-2_4292399368
+	sym = fuelTank2-2_4292399324
+	sym = fuelTank2-2_4292399280
+	sym = fuelTank2-2_4292399236
+	attN = top,FTT.Structural.375.05_4292446068
+	attN = bottom,fuelTank3-2_4292488516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4292446020
+	partName = Part
+	pos = 3.935643,45.42849,-0.1355613
+	attPos = 0,0,0
+	attPos0 = 3.834374,3.297028,-1.027417
+	rot = 1.71224E-08,0.1305263,1.300575E-07,0.9914449
+	attRot = 0,0,0,1
+	attRot0 = 1.71224E-08,0.1305263,1.300575E-07,0.9914449
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292399368
+	sym = FTT.Structural.375.05_4292447094
+	sym = FTT.Structural.375.05_4292446068
+	sym = FTT.Structural.375.05_4292445972
+	sym = FTT.Structural.375.05_4292445924
+	sym = FTT.Structural.375.05_4292445876
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292399368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292399368
+	partName = Part
+	pos = 3.935643,44.24099,-0.1355613
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,0
+	rot = -1.727151E-15,0.8660255,1.816143E-15,0.5
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292391496
+	sym = fuelTank2-2_4292400522
+	sym = fuelTank2-2_4292399412
+	sym = fuelTank2-2_4292399324
+	sym = fuelTank2-2_4292399280
+	sym = fuelTank2-2_4292399236
+	attN = top,FTT.Structural.375.05_4292446020
+	attN = bottom,fuelTank3-2_4292391496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4292445972
+	partName = Part
+	pos = 1.128686,45.42849,-2.942518
+	attPos = 0,0,0
+	attPos0 = 1.027418,3.297028,-3.834374
+	rot = 7.985717E-08,0.6087615,1.040719E-07,0.7933533
+	attRot = 0,0,0,1
+	attRot0 = 7.985717E-08,0.6087615,1.040719E-07,0.7933533
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292399324
+	sym = FTT.Structural.375.05_4292447094
+	sym = FTT.Structural.375.05_4292446068
+	sym = FTT.Structural.375.05_4292446020
+	sym = FTT.Structural.375.05_4292445924
+	sym = FTT.Structural.375.05_4292445876
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292399324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292399324
+	partName = Part
+	pos = 1.128686,44.24099,-2.942518
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,0
+	rot = 4.325511E-15,1,5.637114E-15,-1.578857E-17
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933533,-7.985716E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292391280
+	sym = fuelTank2-2_4292400522
+	sym = fuelTank2-2_4292399412
+	sym = fuelTank2-2_4292399368
+	sym = fuelTank2-2_4292399280
+	sym = fuelTank2-2_4292399236
+	attN = top,FTT.Structural.375.05_4292445972
+	attN = bottom,fuelTank3-2_4292391280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4292445924
+	partName = Part
+	pos = -2.705688,45.42849,-1.915101
+	attPos = 0,0,0
+	attPos0 = -2.806957,3.297028,-2.806957
+	rot = 1.211943E-07,0.9238796,5.02003E-08,0.3826834
+	attRot = 0,0,0,1
+	attRot0 = 1.211943E-07,0.9238796,5.02003E-08,0.3826834
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292399280
+	sym = FTT.Structural.375.05_4292447094
+	sym = FTT.Structural.375.05_4292446068
+	sym = FTT.Structural.375.05_4292446020
+	sym = FTT.Structural.375.05_4292445972
+	sym = FTT.Structural.375.05_4292445876
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292399280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292399280
+	partName = Part
+	pos = -2.705688,44.24099,-1.915101
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,8.437695E-15
+	rot = 4.595448E-15,0.8660254,4.805963E-15,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292391064
+	sym = fuelTank2-2_4292400522
+	sym = fuelTank2-2_4292399412
+	sym = fuelTank2-2_4292399368
+	sym = fuelTank2-2_4292399324
+	sym = fuelTank2-2_4292399236
+	attN = top,FTT.Structural.375.05_4292445924
+	attN = bottom,fuelTank3-2_4292391064
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4292445876
+	partName = Part
+	pos = -3.733106,45.42849,1.919272
+	attPos = 0,0,0
+	attPos0 = -3.834374,3.297028,1.027416
+	rot = 1.300575E-07,0.9914449,-1.712239E-08,-0.1305261
+	attRot = 0,0,0,1
+	attRot0 = 1.300575E-07,0.9914449,-1.712239E-08,-0.1305261
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank2-2_4292399236
+	sym = FTT.Structural.375.05_4292447094
+	sym = FTT.Structural.375.05_4292446068
+	sym = FTT.Structural.375.05_4292446020
+	sym = FTT.Structural.375.05_4292445972
+	sym = FTT.Structural.375.05_4292445924
+	srfN = srfAttach,fuelTank3-2_4292489240
+	attN = bottom,fuelTank2-2_4292399236
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = fuelTank2-2_4292399236
+	partName = Part
+	pos = -3.733106,44.24099,1.919272
+	attPos = 0,0,0
+	attPos0 = -3.115519E-07,-1.1875,4.218847E-15
+	rot = 2.948248E-15,0.5000001,8.584559E-16,-0.8660254
+	attRot = 0,0,0,1
+	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 734.4
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = fuelTank3-2_4292390848
+	sym = fuelTank2-2_4292400522
+	sym = fuelTank2-2_4292399412
+	sym = fuelTank2-2_4292399368
+	sym = fuelTank2-2_4292399324
+	sym = fuelTank2-2_4292399280
+	attN = top,FTT.Structural.375.05_4292445876
+	attN = bottom,fuelTank3-2_4292390848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 1
+		volume = 1600
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 720
+			maxAmount = 720
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 880
+			maxAmount = 880
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 815.6
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 720
+		maxAmount = 720
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 880
+		maxAmount = 880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = asasmodule1-2_4292474918
+	partName = Part
+	pos = 0.1012688,38.13146,0.8918559
+	attPos = 0,0,0
+	attPos0 = 0,-4,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
-	dstg = 8
-	sidx = 0
-	sqor = 2
-	sepI = 1
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = decoupler1-2_4292833344
-	attN = top,fuelTank1-2_4292833504
-	attN = bottom,decoupler1-2_4292833344
+	link = liquidEngine1-2_4292427232
+	attN = top,fuelTank3-2_4292489240
+	attN = bottom,liquidEngine1-2_4292427232
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = liquidEngine1-2_4292427232
+	partName = Part
+	pos = 0.1012688,36.81615,0.8918559
+	attPos = 0,0,0
+	attPos0 = 0,-1.315308,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 0
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,asasmodule1-2_4292474918
 	EVENTS
 	{
 	}
@@ -7404,7 +8606,7 @@ PART
 	{
 		name = ModuleJettison
 		isEnabled = True
-		isJettisoned = False
+		isJettisoned = True
 		EVENTS
 		{
 			Jettison
@@ -7619,28 +8821,35 @@ PART
 }
 PART
 {
-	part = decoupler1-2_4292833344
+	part = fuelTank3-2_4292488516
 	partName = Part
-	pos = 0.1012688,30.27668,0.8918559
+	pos = 2.908225,39.55349,3.698813
 	attPos = 0,0,0
-	attPos0 = 0,-2.381645,0
-	rot = 0,0,0,1
+	attPos0 = 2.715749E-13,-4.6875,-1.618651E-13
+	rot = -2.992172E-15,-2.280971E-08,7.223742E-15,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
-	dstg = 9
-	sidx = 1
-	sqor = 2
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
 	sepI = 2
 	attm = 0
-	modCost = 0
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3to2Adapter_4292833264
-	attN = bottom,Size3to2Adapter_4292833264
-	attN = top,liquidEngine1-2_4292833460
+	link = engineLargeSkipper_4292383194
+	link = wingShuttleRudder_4292377502
+	link = strutConnector_4292368506
+	sym = fuelTank3-2_4292391712
+	sym = fuelTank3-2_4292391496
+	sym = fuelTank3-2_4292391280
+	sym = fuelTank3-2_4292391064
+	sym = fuelTank3-2_4292390848
+	attN = top,fuelTank2-2_4292399412
+	attN = bottom,engineLargeSkipper_4292383194
 	EVENTS
 	{
 	}
@@ -7649,63 +8858,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -7723,6 +8875,163 @@ PART
 		}
 		HOLD
 		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 4
+		volume = 6400
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 2880
+			maxAmount = 2880
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 3520
+			maxAmount = 3520
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
 		}
 	}
 	MODULE
@@ -7732,7 +9041,7 @@ PART
 		currentScale = 2.5
 		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 550
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -7784,153 +9093,58 @@ PART
 		{
 		}
 	}
-	MODULE
+	RESOURCE
 	{
-		name = tjs_DecouplerLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
+		name = LiquidFuel
+		amount = 2880
+		maxAmount = 2880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3520
+		maxAmount = 3520
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
 }
 PART
 {
-	part = Size3to2Adapter_4292833264
+	part = fuelTank3-2_4292391712
 	partName = Part
-	pos = 0.1012688,28.81121,0.8918559
+	pos = -0.9261492,39.55349,4.72623
 	attPos = 0,0,0
-	attPos0 = 0,-1.465471,0
-	rot = 0,0,0,1
+	attPos0 = 2.715749E-13,-4.6875,-1.618651E-13
+	rot = 1.355101E-14,-0.5000001,-3.698574E-15,0.8660256
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
-	dstg = 10
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
 	sepI = 2
 	attm = 0
-	modCost = 0
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3SmallTank_4292833230
-	attN = top,decoupler1-2_4292833344
-	attN = bottom,Size3SmallTank_4292833230
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 3.75
-		defaultScale = 3.75
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2600
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = Size3SmallTank_4292833230
-	partName = Part
-	pos = 0.1012688,26.7512,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-2.060001,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 0
-	modCost = 1652.4
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = Size3LargeTank_4292833186
-	attN = top,Size3to2Adapter_4292833264
-	attN = bottom,Size3LargeTank_4292833186
+	link = engineLargeSkipper_4292391668
+	link = wingShuttleRudder_4292378224
+	link = strutConnector_4292369806
+	sym = fuelTank3-2_4292488516
+	sym = fuelTank3-2_4292391496
+	sym = fuelTank3-2_4292391280
+	sym = fuelTank3-2_4292391064
+	sym = fuelTank3-2_4292390848
+	attN = top,fuelTank2-2_4292400522
+	attN = bottom,engineLargeSkipper_4292391668
 	EVENTS
 	{
 	}
@@ -7964,8 +9178,8 @@ PART
 		isEnabled = True
 		type = Default
 		utilization = 86
-		mass = 2.25
-		volume = 3600
+		mass = 4
+		volume = 6400
 		type_UIEditor
 		{
 			controlEnabled = True
@@ -8041,8 +9255,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1620
-			maxAmount = 1620
+			amount = 2880
+			maxAmount = 2880
 		}
 		TANK
 		{
@@ -8055,8 +9269,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1980
-			maxAmount = 1980
+			amount = 3520
+			maxAmount = 3520
 		}
 		TANK
 		{
@@ -8119,10 +9333,10 @@ PART
 	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 3.75
-		defaultScale = 3.75
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 1597.6
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -8177,8 +9391,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 1620
-		maxAmount = 1620
+		amount = 2880
+		maxAmount = 2880
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -8187,8 +9401,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 1980
-		maxAmount = 1980
+		amount = 3520
+		maxAmount = 3520
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -8197,36 +9411,35 @@ PART
 }
 PART
 {
-	part = Size3LargeTank_4292833186
+	part = fuelTank3-2_4292391496
 	partName = Part
-	pos = 0.1012688,22.0442,0.8918559
+	pos = 3.935643,39.55349,-0.1355613
 	attPos = 0,0,0
-	attPos0 = 0,-4.706999,0
-	rot = 0,0,0,1
+	attPos0 = 2.715749E-13,-4.6875,-1.618651E-13
+	rot = 1.671027E-15,0.5000001,3.358028E-15,0.8660255
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
-	dstg = 10
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
 	sepI = 2
 	attm = 0
-	modCost = 6609.6
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = basicFin_4292833028
-	link = basicFin_4292832990
-	link = basicFin_4292832952
-	link = basicFin_4292832914
-	link = wingShuttleRudder_4293373578
-	link = wingShuttleRudder_4292830718
-	link = wingShuttleRudder_4292830660
-	link = wingShuttleRudder_4292830602
-	link = Size3EngineCluster_4292719294
-	attN = top,Size3SmallTank_4292833230
-	attN = bottom,Size3EngineCluster_4292719294
+	link = engineLargeSkipper_4292383022
+	link = wingShuttleRudder_4292377444
+	link = strutConnector_4292368434
+	sym = fuelTank3-2_4292488516
+	sym = fuelTank3-2_4292391712
+	sym = fuelTank3-2_4292391280
+	sym = fuelTank3-2_4292391064
+	sym = fuelTank3-2_4292390848
+	attN = top,fuelTank2-2_4292399368
+	attN = bottom,engineLargeSkipper_4292383022
 	EVENTS
 	{
 	}
@@ -8260,8 +9473,8 @@ PART
 		isEnabled = True
 		type = Default
 		utilization = 86
-		mass = 9
-		volume = 14400
+		mass = 4
+		volume = 6400
 		type_UIEditor
 		{
 			controlEnabled = True
@@ -8337,8 +9550,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 6480
-			maxAmount = 6480
+			amount = 2880
+			maxAmount = 2880
 		}
 		TANK
 		{
@@ -8351,8 +9564,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 7920
-			maxAmount = 7920
+			amount = 3520
+			maxAmount = 3520
 		}
 		TANK
 		{
@@ -8415,10 +9628,10 @@ PART
 	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 3.75
-		defaultScale = 3.75
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 6390.4
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -8473,8 +9686,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 6480
-		maxAmount = 6480
+		amount = 2880
+		maxAmount = 2880
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -8483,8 +9696,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 7920
-		maxAmount = 7920
+		amount = 3520
+		maxAmount = 3520
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -8493,29 +9706,35 @@ PART
 }
 PART
 {
-	part = basicFin_4292833028
+	part = fuelTank3-2_4292391280
 	partName = Part
-	pos = -1.755696,18.66418,0.8918559
+	pos = 1.128686,39.55349,-2.942518
 	attPos = 0,0,0
-	attPos0 = -1.856965,-3.380028,1.192093E-07
-	rot = 6.28037E-16,0,1.977312E-08,1
+	attPos0 = 1.167205E-14,-4.6875,-2.151005E-13
+	rot = 7.686248E-16,0.8660254,-8.472291E-15,0.5
 	attRot = 0,0,0,1
-	attRot0 = 6.28037E-16,0,1.977312E-08,1
+	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
-	dstg = 10
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
 	sepI = 2
-	attm = 1
-	modCost = 0
+	attm = 0
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4292832990
-	sym = basicFin_4292832952
-	sym = basicFin_4292832914
-	srfN = srfAttach,Size3LargeTank_4292833186
+	link = engineLargeSkipper_4292382850
+	link = wingShuttleRudder_4292377386
+	link = strutConnector_4292368362
+	sym = fuelTank3-2_4292488516
+	sym = fuelTank3-2_4292391712
+	sym = fuelTank3-2_4292391496
+	sym = fuelTank3-2_4292391064
+	sym = fuelTank3-2_4292390848
+	attN = top,fuelTank2-2_4292399324
+	attN = bottom,engineLargeSkipper_4292382850
 	EVENTS
 	{
 	}
@@ -8524,17 +9743,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -8556,12 +9764,169 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 4
+		volume = 6400
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 2880
+			maxAmount = 2880
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 3520
+			maxAmount = 3520
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -8613,32 +9978,58 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 2880
+		maxAmount = 2880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3520
+		maxAmount = 3520
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = basicFin_4292832990
+	part = fuelTank3-2_4292391064
 	partName = Part
-	pos = 0.1012688,18.66418,2.74882
+	pos = -2.705688,39.55349,-1.915101
 	attPos = 0,0,0
-	attPos0 = 1.490116E-08,-3.380028,1.856964
-	rot = 1.398171E-08,0.7071068,1.398171E-08,0.7071068
+	attPos0 = 2.394031E-13,-4.6875,-1.704855E-13
+	rot = 2.404887E-15,1,-2.077013E-15,-9.448101E-09
 	attRot = 0,0,0,1
-	attRot0 = 1.398171E-08,0.7071068,1.398171E-08,0.7071068
+	attRot0 = 6.53437E-15,-0.5000001,-2.342943E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
-	dstg = 10
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
 	sepI = 2
-	attm = 1
-	modCost = 0
+	attm = 0
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4292833028
-	sym = basicFin_4292832952
-	sym = basicFin_4292832914
-	srfN = srfAttach,Size3LargeTank_4292833186
+	link = engineLargeSkipper_4292382678
+	link = wingShuttleRudder_4292377328
+	link = strutConnector_4292368290
+	sym = fuelTank3-2_4292488516
+	sym = fuelTank3-2_4292391712
+	sym = fuelTank3-2_4292391496
+	sym = fuelTank3-2_4292391280
+	sym = fuelTank3-2_4292390848
+	attN = top,fuelTank2-2_4292399280
+	attN = bottom,engineLargeSkipper_4292382678
 	EVENTS
 	{
 	}
@@ -8647,17 +10038,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -8679,12 +10059,169 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 4
+		volume = 6400
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 2880
+			maxAmount = 2880
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 3520
+			maxAmount = 3520
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -8736,32 +10273,58 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 2880
+		maxAmount = 2880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 3520
+		maxAmount = 3520
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = basicFin_4292832952
+	part = fuelTank3-2_4292390848
 	partName = Part
-	pos = 1.958233,18.66418,0.8918549
+	pos = -3.733106,39.55349,1.919272
 	attPos = 0,0,0
-	attPos0 = 1.856965,-3.380028,-2.980232E-07
-	rot = 1.977312E-08,1,-1.492347E-15,-4.371139E-08
+	attPos0 = 2.55489E-13,-4.6875,-1.661753E-13
+	rot = 3.904113E-15,0.8660255,-2.989391E-15,-0.5
 	attRot = 0,0,0,1
-	attRot0 = 1.977312E-08,1,-1.492347E-15,-4.371139E-08
+	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
-	dstg = 10
+	istg = 6
+	dstg = 6
 	sidx = -1
 	sqor = -1
 	sepI = 2
-	attm = 1
-	modCost = 0
+	attm = 0
+	modCost = 2937.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4292833028
-	sym = basicFin_4292832990
-	sym = basicFin_4292832914
-	srfN = srfAttach,Size3LargeTank_4292833186
+	link = engineLargeSkipper_4292382506
+	link = wingShuttleRudder_4292377270
+	link = strutConnector_4292368218
+	sym = fuelTank3-2_4292488516
+	sym = fuelTank3-2_4292391712
+	sym = fuelTank3-2_4292391496
+	sym = fuelTank3-2_4292391280
+	sym = fuelTank3-2_4292391064
+	attN = top,fuelTank2-2_4292399236
+	attN = bottom,engineLargeSkipper_4292382506
 	EVENTS
 	{
 	}
@@ -8770,17 +10333,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
 	}
 	MODULE
 	{
@@ -8802,12 +10354,169 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = Default
+		utilization = 86
+		mass = 4
+		volume = 6400
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45% LiquidFuel / 55% Oxidizer
+				guiName = 45% LiquidFuel / 55% Oxidizer
+				category = 45% LiquidFuel / 55% Oxidizer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 2880
+			maxAmount = 2880
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 3520
+			maxAmount = 3520
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 56
+			mass = 0.000625
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karbonite
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Karborundum
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 2000
+			loss_rate = 0
+			temperature = 300
+			fillable = False
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
+		DryCost = 2812.4
 		EVENTS
 		{
 		}
@@ -8859,1432 +10568,54 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = basicFin_4292832914
-	partName = Part
-	pos = 0.1012686,18.66418,-0.9651089
-	attPos = 0,0,0
-	attPos0 = -2.235174E-07,-3.380028,-1.856964
-	rot = 1.398171E-08,0.7071068,-1.398171E-08,-0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 1.398171E-08,0.7071068,-1.398171E-08,-0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4292833028
-	sym = basicFin_4292832990
-	sym = basicFin_4292832952
-	srfN = srfAttach,Size3LargeTank_4292833186
-	EVENTS
+	RESOURCE
 	{
+		name = LiquidFuel
+		amount = 2880
+		maxAmount = 2880
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
-	ACTIONS
+	RESOURCE
 	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
+		name = Oxidizer
+		amount = 3520
+		maxAmount = 3520
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
 }
 PART
 {
-	part = wingShuttleRudder_4293373578
+	part = engineLargeSkipper_4292391668
 	partName = Part
-	pos = -1.749051,19.08922,0.891856
+	pos = -0.9261492,35.80349,4.72623
 	attPos = 0,0,0
-	attPos0 = -1.85032,-2.954977,1.192093E-07
-	rot = 0,0,-1.977312E-08,1
+	attPos0 = 1.326748E-13,-3.75,-1.227762E-13
+	rot = -5.760258E-15,2.528248E-08,-6.334873E-15,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,-1.977312E-08,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4292830718
-	sym = wingShuttleRudder_4292830660
-	sym = wingShuttleRudder_4292830602
-	srfN = srfAttach,Size3LargeTank_4292833186
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292830718
-	partName = Part
-	pos = 0.1012688,19.08922,2.742176
-	attPos = 0,0,0
-	attPos0 = 7.450581E-09,-2.954977,1.85032
-	rot = -1.398171E-08,0.7071068,-1.398171E-08,0.7071068
-	attRot = 0,0,0,1
-	attRot0 = -1.398171E-08,0.7071068,-1.398171E-08,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4293373578
-	sym = wingShuttleRudder_4292830660
-	sym = wingShuttleRudder_4292830602
-	srfN = srfAttach,Size3LargeTank_4292833186
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292830660
-	partName = Part
-	pos = 1.951589,19.08922,0.8918556
-	attPos = 0,0,0
-	attPos0 = 1.85032,-2.954977,-2.980232E-07
-	rot = -1.977312E-08,1,8.643104E-16,-4.371139E-08
-	attRot = 0,0,0,1
-	attRot0 = -1.977312E-08,1,8.643104E-16,-4.371139E-08
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4293373578
-	sym = wingShuttleRudder_4292830718
-	sym = wingShuttleRudder_4292830602
-	srfN = srfAttach,Size3LargeTank_4292833186
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292830602
-	partName = Part
-	pos = 0.1012686,19.08922,-0.958464
-	attPos = 0,0,0
-	attPos0 = -2.30968E-07,-2.954977,-1.85032
-	rot = -1.398171E-08,0.7071068,1.398171E-08,-0.7071068
-	attRot = 0,0,0,1
-	attRot0 = -1.398171E-08,0.7071068,1.398171E-08,-0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 10
-	dstg = 10
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4293373578
-	sym = wingShuttleRudder_4292830718
-	sym = wingShuttleRudder_4292830660
-	srfN = srfAttach,Size3LargeTank_4292833186
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292829742
-	partName = Part
-	pos = -1.106497,33.8479,0.891856
-	attPos = 0,0,0
-	attPos0 = -1.207766,-1.750732,5.960464E-08
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 8
-	dstg = 8
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4292828290
-	sym = wingShuttleRudder_4292828230
-	sym = wingShuttleRudder_4292828170
-	srfN = srfAttach,fuelTank1-2_4292833504
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292828290
-	partName = Part
-	pos = 0.1012688,33.8479,2.099622
-	attPos = 0,0,0
-	attPos0 = -1.490116E-08,-1.750732,1.207766
-	rot = 0,0.7071068,0,0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071068,0,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 8
-	dstg = 8
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4292829742
-	sym = wingShuttleRudder_4292828230
-	sym = wingShuttleRudder_4292828170
-	srfN = srfAttach,fuelTank1-2_4292833504
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292828230
-	partName = Part
-	pos = 1.309035,33.8479,0.8918557
-	attPos = 0,0,0
-	attPos0 = 1.207766,-1.750732,-1.788139E-07
-	rot = 0,1,0,-4.371139E-08
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,-4.371139E-08
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 8
-	dstg = 8
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4292829742
-	sym = wingShuttleRudder_4292828290
-	sym = wingShuttleRudder_4292828170
-	srfN = srfAttach,fuelTank1-2_4292833504
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = wingShuttleRudder_4292828170
-	partName = Part
-	pos = 0.1012687,33.8479,-0.3159102
-	attPos = 0,0,0
-	attPos0 = -1.341105E-07,-1.750732,-1.207766
-	rot = 0,0.7071068,0,-0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071068,0,-0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 8
-	dstg = 8
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = wingShuttleRudder_4292829742
-	sym = wingShuttleRudder_4292828290
-	sym = wingShuttleRudder_4292828230
-	srfN = srfAttach,fuelTank1-2_4292833504
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleControlSurface
-		isEnabled = True
-		ignorePitch = False
-		ignoreYaw = False
-		ignoreRoll = False
-		deploy = False
-		deployInvert = False
-		ignorePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		ignoreRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		deploy_UIFlight
-		{
-			controlEnabled = True
-		}
-		deployInvert_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = None
-			}
-			ActionExtend
-			{
-				actionGroup = None
-			}
-			ActionRetract
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 2500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = Size3EngineCluster_4292719294
-	partName = Part
-	pos = 0.1012688,16.77695,0.8918559
-	attPos = 0,0,0
-	attPos0 = 0,-5.26725,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = -1.355101E-14,0.5,3.698574E-15,0.8660254
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 3
-	dstg = 10
-	sidx = 0
+	dstg = 6
+	sidx = 6
 	sqor = 3
 	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	attN = top,Size3LargeTank_4292833186
+	sym = engineLargeSkipper_4292383194
+	sym = engineLargeSkipper_4292383022
+	sym = engineLargeSkipper_4292382850
+	sym = engineLargeSkipper_4292382678
+	sym = engineLargeSkipper_4292382506
+	attN = top,fuelTank3-2_4292391712
 	EVENTS
 	{
 	}
@@ -10296,7 +10627,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		staged = False
 		flameout = False
@@ -10355,13 +10686,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAlternator
+		name = ModuleJettison
 		isEnabled = True
+		isJettisoned = True
 		EVENTS
 		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
@@ -10403,6 +10750,17 @@ PART
 	MODULE
 	{
 		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
 		isEnabled = True
 		EVENTS
 		{
@@ -10466,10 +10824,10 @@ PART
 	{
 		name = TweakScale
 		isEnabled = True
-		currentScale = 3.75
-		defaultScale = 3.75
+		currentScale = 2.5
+		defaultScale = 2.5
 		defaultTransformScale = (1, 1, 1)
-		DryCost = 39000
+		DryCost = 5300
 		EVENTS
 		{
 		}
@@ -10541,5 +10899,3287 @@ PART
 		isTweakable = False
 		hideFlow = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4292383194
+	partName = Part
+	pos = 2.908225,35.80349,3.698813
+	attPos = 0,0,0
+	attPos0 = 1.326748E-13,-3.75,-1.227762E-13
+	rot = -1.271279E-14,0.5,5.560384E-16,0.8660255
+	attRot = 0,0,0,1
+	attRot0 = -1.355101E-14,0.4999999,3.698574E-15,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 1
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4292391668
+	sym = engineLargeSkipper_4292383022
+	sym = engineLargeSkipper_4292382850
+	sym = engineLargeSkipper_4292382678
+	sym = engineLargeSkipper_4292382506
+	attN = top,fuelTank3-2_4292488516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4292383022
+	partName = Part
+	pos = 3.935643,35.80349,-0.1355613
+	attPos = 0,0,0
+	attPos0 = 1.326748E-13,-3.75,-1.227762E-13
+	rot = -8.77179E-15,0.8660255,2.743588E-15,0.5
+	attRot = 0,0,0,1
+	attRot0 = -1.355101E-14,0.5,3.698574E-15,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 2
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4292391668
+	sym = engineLargeSkipper_4292383194
+	sym = engineLargeSkipper_4292382850
+	sym = engineLargeSkipper_4292382678
+	sym = engineLargeSkipper_4292382506
+	attN = top,fuelTank3-2_4292391496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4292382850
+	partName = Part
+	pos = 1.128686,35.80349,-2.942518
+	attPos = 0,0,0
+	attPos0 = -8.168917E-15,-3.75,3.59956E-14
+	rot = -1.311604E-15,1,9.962625E-15,-1.578857E-17
+	attRot = 0,0,0,1
+	attRot0 = -1.355101E-14,0.5,3.698574E-15,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 3
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4292391668
+	sym = engineLargeSkipper_4292383194
+	sym = engineLargeSkipper_4292383022
+	sym = engineLargeSkipper_4292382678
+	sym = engineLargeSkipper_4292382506
+	attN = top,fuelTank3-2_4292391280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4292382678
+	partName = Part
+	pos = -2.705688,35.80349,-1.915101
+	attPos = 0,0,0
+	attPos0 = 1.138336E-13,-3.75,-1.039351E-13
+	rot = 1.014538E-14,0.8660256,1.556796E-14,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = -1.355101E-14,0.4999999,3.698574E-15,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 4
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4292391668
+	sym = engineLargeSkipper_4292383194
+	sym = engineLargeSkipper_4292383022
+	sym = engineLargeSkipper_4292382850
+	sym = engineLargeSkipper_4292382506
+	attN = top,fuelTank3-2_4292391064
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4292382506
+	partName = Part
+	pos = -3.733106,35.80349,1.919272
+	attPos = 0,0,0
+	attPos0 = 1.232542E-13,-3.75,-1.133556E-13
+	rot = 1.092033E-14,0.5000001,6.975652E-15,-0.8660254
+	attRot = 0,0,0,1
+	attRot0 = -1.355101E-14,0.5,3.698574E-15,0.8660254
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 3
+	dstg = 6
+	sidx = 5
+	sqor = 3
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4292391668
+	sym = engineLargeSkipper_4292383194
+	sym = engineLargeSkipper_4292383022
+	sym = engineLargeSkipper_4292382850
+	sym = engineLargeSkipper_4292382678
+	attN = top,fuelTank3-2_4292390848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292378224
+	partName = Part
+	pos = -1.243322,35.49939,5.909932
+	attPos = 0,0,0
+	attPos0 = 0.8665301,-4.0541,0.8665304
+	rot = -3.264748E-07,0.6087614,-4.254705E-07,0.7933536
+	attRot = 0,0,0,1
+	attRot0 = -4.954707E-07,0.9238794,-2.052308E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292377502
+	sym = wingShuttleRudder_4292377444
+	sym = wingShuttleRudder_4292377386
+	sym = wingShuttleRudder_4292377328
+	sym = wingShuttleRudder_4292377270
+	srfN = srfAttach,fuelTank3-2_4292391712
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292377502
+	partName = Part
+	pos = 3.774755,35.49939,4.565343
+	attPos = 0,0,0
+	attPos0 = 0.8665302,-4.0541,0.8665303
+	rot = -4.954707E-07,0.9238795,-2.052308E-07,0.3826836
+	attRot = 0,0,0,1
+	attRot0 = -4.954707E-07,0.9238794,-2.052308E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292378224
+	sym = wingShuttleRudder_4292377444
+	sym = wingShuttleRudder_4292377386
+	sym = wingShuttleRudder_4292377328
+	sym = wingShuttleRudder_4292377270
+	srfN = srfAttach,fuelTank3-2_4292488516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292377444
+	partName = Part
+	pos = 5.119346,35.49939,-0.4527336
+	attPos = 0,0,0
+	attPos0 = 0.8665302,-4.0541,0.8665305
+	rot = -5.317056E-07,0.9914449,7.000029E-08,-0.130526
+	attRot = 0,0,0,1
+	attRot0 = -4.954707E-07,0.9238794,-2.052308E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292378224
+	sym = wingShuttleRudder_4292377502
+	sym = wingShuttleRudder_4292377386
+	sym = wingShuttleRudder_4292377328
+	sym = wingShuttleRudder_4292377270
+	srfN = srfAttach,fuelTank3-2_4292391496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292377386
+	partName = Part
+	pos = 1.445859,35.49939,-4.12622
+	attPos = 0,0,0
+	attPos0 = 0.8665301,-4.0541,0.8665304
+	rot = -4.254703E-07,0.7933535,3.264748E-07,-0.6087613
+	attRot = 0,0,0,1
+	attRot0 = -4.954706E-07,0.9238794,-2.052307E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292378224
+	sym = wingShuttleRudder_4292377502
+	sym = wingShuttleRudder_4292377444
+	sym = wingShuttleRudder_4292377328
+	sym = wingShuttleRudder_4292377270
+	srfN = srfAttach,fuelTank3-2_4292391280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292377328
+	partName = Part
+	pos = -3.572218,35.49939,-2.781632
+	attPos = 0,0,0
+	attPos0 = 0.8665304,-4.0541,0.8665308
+	rot = -2.052308E-07,0.3826836,4.954707E-07,-0.9238796
+	attRot = 0,0,0,1
+	attRot0 = -4.954707E-07,0.9238794,-2.052308E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292378224
+	sym = wingShuttleRudder_4292377502
+	sym = wingShuttleRudder_4292377444
+	sym = wingShuttleRudder_4292377386
+	sym = wingShuttleRudder_4292377270
+	srfN = srfAttach,fuelTank3-2_4292391064
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingShuttleRudder_4292377270
+	partName = Part
+	pos = -4.916808,35.49939,2.236444
+	attPos = 0,0,0
+	attPos0 = 0.8665304,-4.0541,0.8665308
+	rot = 7.000023E-08,-0.1305259,5.317056E-07,-0.9914449
+	attRot = 0,0,0,1
+	attRot0 = -4.954707E-07,0.9238794,-2.052308E-07,0.3826836
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingShuttleRudder_4292378224
+	sym = wingShuttleRudder_4292377502
+	sym = wingShuttleRudder_4292377444
+	sym = wingShuttleRudder_4292377386
+	sym = wingShuttleRudder_4292377328
+	srfN = srfAttach,fuelTank3-2_4292390848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleControlSurface
+		isEnabled = True
+		ignorePitch = False
+		ignoreYaw = False
+		ignoreRoll = False
+		deploy = False
+		deployInvert = False
+		ignorePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		ignoreRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		deploy_UIFlight
+		{
+			controlEnabled = True
+		}
+		deployInvert_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = None
+			}
+			ActionExtend
+			{
+				actionGroup = None
+			}
+			ActionRetract
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292369806
+	partName = CompoundPart
+	pos = -1.979377,36.08858,4.118148
+	attPos = 0,0,0
+	attPos0 = -1.053227,-3.464909,0.608081
+	rot = -3.491057E-08,0.2588196,1.302877E-07,-0.9659259
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292368506
+	sym = strutConnector_4292368434
+	sym = strutConnector_4292368362
+	sym = strutConnector_4292368290
+	sym = strutConnector_4292368218
+	srfN = srfAttach,fuelTank3-2_4292391712
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292390848
+		pos = -1.558115,-0.008678856,-0.4487417
+		rot = 0,-0.2588202,4.555115E-09,0.9659255
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292368506
+	partName = CompoundPart
+	pos = 1.854997,36.08858,4.306894
+	attPos = 0,0,0
+	attPos0 = -1.053228,-3.464909,0.6080809
+	rot = 3.491041E-08,-0.2588185,1.302877E-07,-0.9659261
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292369806
+	sym = strutConnector_4292368434
+	sym = strutConnector_4292368362
+	sym = strutConnector_4292368290
+	sym = strutConnector_4292368218
+	srfN = srfAttach,fuelTank3-2_4292488516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292391712
+		pos = -1.558118,-0.008675042,-0.4487414
+		rot = 0,-0.2588202,-3.533759E-07,0.9659255
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292368434
+	partName = CompoundPart
+	pos = 3.935643,36.08858,1.080601
+	attPos = 0,0,0
+	attPos0 = -1.053227,-3.464909,0.608081
+	rot = 9.537717E-08,-0.7071065,9.537727E-08,-0.7071073
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.9659261
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292369806
+	sym = strutConnector_4292368506
+	sym = strutConnector_4292368362
+	sym = strutConnector_4292368290
+	sym = strutConnector_4292368218
+	srfN = srfAttach,fuelTank3-2_4292391496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292488516
+		pos = -1.558119,-0.008671227,-0.4487434
+		rot = 0,-0.2588203,-1.617799E-07,0.9659255
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292368362
+	partName = CompoundPart
+	pos = 2.181913,36.08858,-2.334437
+	attPos = 0,0,0
+	attPos0 = -1.053227,-3.464909,0.6080809
+	rot = 1.302877E-07,-0.9659258,3.491056E-08,-0.2588196
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292369806
+	sym = strutConnector_4292368506
+	sym = strutConnector_4292368434
+	sym = strutConnector_4292368290
+	sym = strutConnector_4292368218
+	srfN = srfAttach,fuelTank3-2_4292391280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292391496
+		pos = -1.558117,-0.008675042,-0.4487432
+		rot = 0,-0.2588199,-2.877277E-07,0.9659256
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292368290
+	partName = CompoundPart
+	pos = -1.65246,36.08858,-2.523182
+	attPos = 0,0,0
+	attPos0 = -1.053228,-3.464909,0.6080812
+	rot = 1.302877E-07,-0.9659261,-3.491041E-08,0.2588185
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292369806
+	sym = strutConnector_4292368506
+	sym = strutConnector_4292368434
+	sym = strutConnector_4292368362
+	sym = strutConnector_4292368218
+	srfN = srfAttach,fuelTank3-2_4292391064
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292391280
+		pos = -1.558116,-0.008671227,-0.4487428
+		rot = 0,-0.25882,3.82622E-08,0.9659256
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4292368218
+	partName = CompoundPart
+	pos = -3.733106,36.08858,0.7031099
+	attPos = 0,0,0
+	attPos0 = -1.053228,-3.464909,0.6080812
+	rot = 9.537728E-08,-0.7071074,-9.537716E-08,0.7071064
+	attRot = 0,0,0,1
+	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4292369806
+	sym = strutConnector_4292368506
+	sym = strutConnector_4292368434
+	sym = strutConnector_4292368362
+	sym = strutConnector_4292368290
+	srfN = srfAttach,fuelTank3-2_4292390848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4292391064
+		pos = -1.558112,-0.008671227,-0.4487424
+		rot = 0,-0.2588199,-8.620417E-08,0.9659256
+		dir = -0.9609271,-0.005347754,-0.2767501
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
 	}
 }
