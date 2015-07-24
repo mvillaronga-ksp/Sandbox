@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 21666.2117871551
+							_currentUT = 21667.7517871551
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 21298.947050826988
+							ORBITING = 21300.487050826989
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 21666.2117871551
+							_currentUT = 21667.7517871551
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 21298.947050827002
+							ORBITING = 21300.487050827003
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 21666.2117871551
+							_currentUT = 21667.7517871551
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 21298.947050827024
+							ORBITING = 21300.487050827025
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 21666.2117871551
+							_currentUT = 21667.7517871551
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 21298.947050826981
+							ORBITING = 21300.487050826981
 						}
 					}
 				}
@@ -934,9 +934,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 21667.6717871551
+		UT = 21690.0117871556
 		activeVessel = 0
-		mapViewFiltering = 1022
+		mapViewFiltering = 895
 		VESSEL
 		{
 			pid = a6ffae6ab90f43e59f9daf4714867d91
@@ -14722,741 +14722,6 @@ GAME
 				Light = False, 7992.62779298279
 				RCS = False, 9196.32935548805
 				SAS = False, 7804.48779297868
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = f937125a503d424ba443aa1b246dc3b2
-			name = L-SS-LifeSupport Debris
-			type = Debris
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 449.270039069113
-			lct = 7725.22779297695
-			root = 0
-			lat = 0.0854577034189345
-			lon = -36.430906780329
-			alt = 202430.690226645
-			hgt = -1
-			nrm = -0.6120864,0.253029,-0.7492173
-			rot = -0.3504073,-0.101783,-0.685266,0.6302901
-			CoM = -0.0328528,7.400411,-0.0001057204
-			stg = 1
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 803363.232736379
-				ECC = 0.00434678885665677
-				INC = 0.126737644173038
-				LPE = 62.7909493658952
-				LAN = 52.1512481666732
-				MNA = 0.31871615603492
-				EPH = 7799.14779297856
-				REF = 1
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856940
-				uid = 203269516
-				mid = 2724058476
-				launchID = 2
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 1
-				sqor = 0
-				sepI = 0
-				sidx = 1
-				attm = 0
-				srfN = , -1
-				attN = connect, -1
-				mass = 0.4552605
-				temp = 336.364213888962
-				tempExt = 334.135785685399
-				expt = 0.5
-				state = 1
-				connected = False
-				attached = False
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 2.384186E-07)
-					meshRot = (0, 1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = True
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 7725.20779297695
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 7577.56779297373
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 632cd436d29147ab967ca2e5027df562
-			name = L-SS-LifeSupport Debris
-			type = Debris
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 6157.49957033114
-			lct = 7725.22779297695
-			root = 0
-			lat = -0.157871981552095
-			lon = 7.19229046666632
-			alt = 201326.012215385
-			hgt = -1
-			nrm = 0.07084239,-0.8956161,-0.4391508
-			rot = -0.1822551,0.2344847,-0.6963254,0.6533995
-			CoM = -0.4614219,7.025511,-0.0001527894
-			stg = 1
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 800325.70147186
-				ECC = 0.00183990020106902
-				INC = 0.165665771515044
-				LPE = 119.211788504338
-				LAN = 76.1984286763661
-				MNA = 5.2025042289744
-				EPH = 7798.88779297856
-				REF = 1
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856110
-				uid = 2953114323
-				mid = 2724058476
-				launchID = 2
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 1
-				sqor = 0
-				sepI = 0
-				sidx = 2
-				attm = 0
-				srfN = , -1
-				attN = connect, -1
-				mass = 0.4552605
-				temp = 331.808907473715
-				tempExt = 330.30693131664
-				expt = 0.5
-				state = 1
-				connected = False
-				attached = False
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2 (L-SS-LifeSupport Debris)
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.713633E-07)
-					meshRot = (0, -1, 0, 0)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = True
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 7725.20779297695
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 7577.56779297373
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 1c1036e68a4d4bc1b850111f1734fdb4
-			name = L-SS-LifeSupport Debris
-			type = Debris
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 427.270039069113
-			lct = 7725.22779297695
-			root = 0
-			lat = 0.070002702188084
-			lon = -39.3479767366212
-			alt = 197433.490062272
-			hgt = -1
-			nrm = -0.2368514,-0.6138055,0.7530901
-			rot = -0.856498,0.3702154,0.03445449,-0.3580009
-			CoM = -0.03279661,7.400457,-4.673756E-05
-			stg = 1
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 796315.643206711
-				ECC = 0.00453829202922711
-				INC = 0.120808147607626
-				LPE = 252.888765062962
-				LAN = 41.7957423742456
-				MNA = 3.47188030391965
-				EPH = 7799.98779297858
-				REF = 1
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856064
-				uid = 109527113
-				mid = 2724058476
-				launchID = 2
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 1
-				sqor = 0
-				sepI = 0
-				sidx = 3
-				attm = 0
-				srfN = , -1
-				attN = connect, -1
-				mass = 0.4552605
-				temp = 336.387122818819
-				tempExt = 334.165677644805
-				expt = 0.5
-				state = 1
-				connected = False
-				attached = False
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.256702E-07)
-					meshRot = (0, -1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = True
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 7725.20779297695
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 7577.56779297373
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
