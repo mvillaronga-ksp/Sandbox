@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16815.4637305057
+							_currentUT = 16815.8437305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16448.198994177576
+							ORBITING = 16448.578994177577
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16815.4637305057
+							_currentUT = 16815.8437305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16448.19899417759
+							ORBITING = 16448.578994177591
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16815.4637305057
+							_currentUT = 16815.8437305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16448.198994177612
+							ORBITING = 16448.578994177613
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16815.4637305057
+							_currentUT = 16815.8437305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16448.198994177568
+							ORBITING = 16448.578994177569
 						}
 					}
 				}
@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 67
+		LastSave = 68
 	}
 	SCENARIO
 	{
@@ -934,7 +934,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16815.8437305057
+		UT = 16816.2237305057
 		activeVessel = 13
 		mapViewFiltering = 1022
 		VESSEL
@@ -17272,7 +17272,7 @@ GAME
 			landedAt = LaunchPad
 			splashed = False
 			met = 0
-			lct = 16815.8437305057
+			lct = 16816.2237305057
 			root = 0
 			lat = -0.0971674422654959
 			lon = 285.442403288201
@@ -17280,7 +17280,7 @@ GAME
 			hgt = 8.703142
 			nrm = 0.0007468421,0.9999997,8.11248E-07
 			rot = -0.7009887,-0.09221783,-0.09726541,0.7004642
-			CoM = -0.03433335,-4.584126,-0.0001423119
+			CoM = -0.03433335,-4.584126,-0.0001422997
 			stg = 3
 			prst = False
 			ref = 1850596535
@@ -17290,13 +17290,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300817.001025997
-				ECC = 0.994822703300641
-				INC = 0.0971674349194255
-				LPE = 90
-				LAN = 25.7079374792279
+				SMA = 300817.001025982
+				ECC = 0.994822703300642
+				INC = 0.0971674349156746
+				LPE = 89.9999999999999
+				LAN = 25.7142708383564
 				MNA = 3.14159265358979
-				EPH = 16815.8437305057
+				EPH = 16816.2237305057
 				REF = 1
 			}
 			PART
@@ -17321,8 +17321,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 48
 				mass = 0.5
-				temp = 287.495197700024
-				tempExt = 288.046957716772
+				temp = 287.501786974862
+				tempExt = 288.273355811217
 				expt = 0
 				state = 0
 				connected = True
@@ -17527,7 +17527,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 29.9813000004227
+					amount = 29.9705333339994
 					maxAmount = 30
 					flowState = True
 					isTweakable = True
@@ -17557,8 +17557,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.2
-				temp = 287.525545982511
-				tempExt = 288.070341126181
+				temp = 287.553444688009
+				tempExt = 290.310822108674
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17706,8 +17706,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 13.5
-				temp = 287.528807052921
-				tempExt = 292.380906159183
+				temp = 287.531463299194
+				tempExt = 292.931799166921
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18029,8 +18029,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 287.554267079998
-				tempExt = 288.033127122052
+				temp = 287.556739158564
+				tempExt = 288.259680706076
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18121,7 +18121,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3999.98130000041
+					amount = 3999.97053333398
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -18151,8 +18151,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 3
 				mass = 0.2
-				temp = 287.567541982475
-				tempExt = 288.126328935355
+				temp = 287.578491110703
+				tempExt = 288.340118858864
 				expt = 0.5
 				state = 1
 				connected = True
@@ -18443,8 +18443,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 3
 				mass = 0.0001
-				temp = 287.560897195176
-				tempExt = 287.623194356975
+				temp = 287.566399122732
+				tempExt = 287.667032204986
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18902,14 +18902,14 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 16815.8437305057
+							markUT = 16816.2237305057
 							deltaVExpended = 0
 							dragLosses = 0
 							gravityLosses = 0
 							steeringLosses = 0
-							markLatitude = -0.0971674359073827
-							markLongitude = -74.5575978206759
-							markAltitude = 76.5724869779078
+							markLatitude = -0.0971674359072431
+							markLongitude = -74.5575978206789
+							markAltitude = 76.5724869456608
 							markBodyIndex = 1
 							maxDragGees = 0
 							unlockParts = 
@@ -19017,7 +19017,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.9813000004227
+					amount = 4.97053333399941
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -19050,8 +19050,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.531049160725
-				tempExt = 287.60396797045
+				temp = 287.536756759846
+				tempExt = 287.644652753065
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19226,8 +19226,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.53104898437
-				tempExt = 287.603967440434
+				temp = 287.536756623985
+				tempExt = 287.644652241961
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19402,8 +19402,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.531049071086
-				tempExt = 287.603966941287
+				temp = 287.536756644329
+				tempExt = 287.644651769901
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19578,8 +19578,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.531049026275
-				tempExt = 287.603966426805
+				temp = 287.536756586582
+				tempExt = 287.644651278414
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19754,8 +19754,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.531048849937
-				tempExt = 287.60396589699
+				temp = 287.536756450743
+				tempExt = 287.644650767502
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19930,8 +19930,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.531048936671
-				tempExt = 287.603965398044
+				temp = 287.536756471111
+				tempExt = 287.644650295634
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20108,8 +20108,8 @@ GAME
 				attN = top, 13
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.540003182638
-				tempExt = 288.041504924981
+				temp = 287.561209201509
+				tempExt = 288.368727916401
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20407,8 +20407,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 12
 				mass = 0.05
-				temp = 287.546373070217
-				tempExt = 288.332030751914
+				temp = 287.563577409381
+				tempExt = 288.275402602114
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20592,8 +20592,8 @@ GAME
 				attN = bottom, 16
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543280180505
-				tempExt = 288.447484783658
+				temp = 287.560086384744
+				tempExt = 288.587061538314
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20692,8 +20692,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 14
 				mass = 0.05
-				temp = 287.524478593968
-				tempExt = 288.203810453894
+				temp = 287.524666606756
+				tempExt = 288.491907646719
 				expt = 0
 				state = 0
 				connected = True
@@ -20820,8 +20820,8 @@ GAME
 				attN = top, 14
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539848964693
-				tempExt = 287.76775802758
+				temp = 287.543121926114
+				tempExt = 287.862435828112
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -21135,8 +21135,8 @@ GAME
 				attN = top, 18
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.540073774209
-				tempExt = 288.04172588439
+				temp = 287.5608175134
+				tempExt = 288.355894978544
 				expt = 0.5
 				state = 1
 				connected = True
@@ -21434,8 +21434,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 17
 				mass = 0.05
-				temp = 287.546115892182
-				tempExt = 288.305011701446
+				temp = 287.563273535777
+				tempExt = 288.27114218691
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21619,8 +21619,8 @@ GAME
 				attN = bottom, 21
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543308751274
-				tempExt = 288.449104398166
+				temp = 287.560111782268
+				tempExt = 288.587317283323
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21719,8 +21719,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 287.524478712693
-				tempExt = 288.204897490697
+				temp = 287.524666904276
+				tempExt = 288.492442378377
 				expt = 0
 				state = 0
 				connected = True
@@ -21847,8 +21847,8 @@ GAME
 				attN = top, 19
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539846188154
-				tempExt = 287.767758712491
+				temp = 287.54312286838
+				tempExt = 287.862622409549
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -22162,8 +22162,8 @@ GAME
 				attN = top, 23
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.54028023514
-				tempExt = 288.04176826238
+				temp = 287.560956401056
+				tempExt = 288.356146006414
 				expt = 0.5
 				state = 1
 				connected = True
@@ -22461,8 +22461,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 22
 				mass = 0.05
-				temp = 287.546005759667
-				tempExt = 288.305403526371
+				temp = 287.563228751567
+				tempExt = 288.27119905699
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22646,8 +22646,8 @@ GAME
 				attN = bottom, 26
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543296730038
-				tempExt = 288.449013094488
+				temp = 287.560100051137
+				tempExt = 288.587297947654
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22746,8 +22746,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 24
 				mass = 0.05
-				temp = 287.524478664532
-				tempExt = 288.204776478133
+				temp = 287.524666825595
+				tempExt = 288.492393595103
 				expt = 0
 				state = 0
 				connected = True
@@ -22874,8 +22874,8 @@ GAME
 				attN = top, 24
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539849072774
-				tempExt = 287.767758049856
+				temp = 287.543125209676
+				tempExt = 287.862613469614
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -23189,8 +23189,8 @@ GAME
 				attN = top, 28
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.540027440115
-				tempExt = 288.04206714733
+				temp = 287.561230530107
+				tempExt = 288.368825230964
 				expt = 0.5
 				state = 1
 				connected = True
@@ -23488,8 +23488,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 27
 				mass = 0.05
-				temp = 287.546377893227
-				tempExt = 288.332032108049
+				temp = 287.563591265297
+				tempExt = 288.275672780335
 				expt = 0.5
 				state = 0
 				connected = True
@@ -23673,8 +23673,8 @@ GAME
 				attN = bottom, 31
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543280300092
-				tempExt = 288.447484852248
+				temp = 287.560086646873
+				tempExt = 288.587061613124
 				expt = 0.5
 				state = 0
 				connected = True
@@ -23773,8 +23773,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 29
 				mass = 0.05
-				temp = 287.524478594109
-				tempExt = 288.203810496487
+				temp = 287.524666607147
+				tempExt = 288.491907694229
 				expt = 0
 				state = 0
 				connected = True
@@ -23901,8 +23901,8 @@ GAME
 				attN = top, 29
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539848965728
-				tempExt = 287.767758027921
+				temp = 287.543121931523
+				tempExt = 287.862435838945
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -24216,8 +24216,8 @@ GAME
 				attN = top, 33
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.540003383088
-				tempExt = 288.041504856473
+				temp = 287.561209581761
+				tempExt = 288.368728413153
 				expt = 0.5
 				state = 1
 				connected = True
@@ -24515,8 +24515,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 32
 				mass = 0.05
-				temp = 287.546374915712
-				tempExt = 288.332031591228
+				temp = 287.563578574312
+				tempExt = 288.275403210046
 				expt = 0.5
 				state = 0
 				connected = True
@@ -24700,8 +24700,8 @@ GAME
 				attN = bottom, 36
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543280109045
-				tempExt = 288.447484817806
+				temp = 287.560086015101
+				tempExt = 288.58706008856
 				expt = 0.5
 				state = 0
 				connected = True
@@ -24800,8 +24800,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 34
 				mass = 0.05
-				temp = 287.524478593978
-				tempExt = 288.203810482605
+				temp = 287.524666606341
+				tempExt = 288.491906462477
 				expt = 0
 				state = 0
 				connected = True
@@ -24928,8 +24928,8 @@ GAME
 				attN = top, 34
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539845744657
-				tempExt = 287.767754991604
+				temp = 287.543118785214
+				tempExt = 287.862433078263
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -25243,8 +25243,8 @@ GAME
 				attN = top, 38
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.540003612577
-				tempExt = 288.041505065116
+				temp = 287.561209683863
+				tempExt = 288.368728385732
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25542,8 +25542,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 37
 				mass = 0.05
-				temp = 287.546374411467
-				tempExt = 288.332031350371
+				temp = 287.563578341836
+				tempExt = 288.275403146984
 				expt = 0.5
 				state = 0
 				connected = True
@@ -25727,8 +25727,8 @@ GAME
 				attN = bottom, 41
 				attN = top, -1
 				mass = 0.75
-				temp = 287.543280246974
-				tempExt = 288.447484828539
+				temp = 287.560086460618
+				tempExt = 288.587061570432
 				expt = 0.5
 				state = 0
 				connected = True
@@ -25827,8 +25827,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 39
 				mass = 0.05
-				temp = 287.524478594059
-				tempExt = 288.203810482592
+				temp = 287.52466660695
+				tempExt = 288.491907672425
 				expt = 0
 				state = 0
 				connected = True
@@ -25955,8 +25955,8 @@ GAME
 				attN = top, 39
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 287.539848965318
-				tempExt = 287.767758027797
+				temp = 287.543121928536
+				tempExt = 287.862435834746
 				expt = 1.149984
 				state = 0
 				connected = True
@@ -26268,8 +26268,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.520780382492
-				tempExt = 291.54104943524
+				temp = 287.521694275014
+				tempExt = 293.150383941389
 				expt = 0
 				state = 0
 				connected = True
@@ -26394,8 +26394,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.520780303336
-				tempExt = 291.540787793792
+				temp = 287.521694162207
+				tempExt = 293.150258843448
 				expt = 0
 				state = 0
 				connected = True
@@ -26520,8 +26520,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.521267294853
-				tempExt = 291.54060280748
+				temp = 287.522180369148
+				tempExt = 293.150164365233
 				expt = 0
 				state = 0
 				connected = True
@@ -26646,8 +26646,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.521267224606
-				tempExt = 291.540365478559
+				temp = 287.52218026781
+				tempExt = 293.150047607633
 				expt = 0
 				state = 0
 				connected = True
@@ -26772,8 +26772,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.520780092181
-				tempExt = 291.54007467005
+				temp = 287.521693857658
+				tempExt = 293.149908179594
 				expt = 0
 				state = 0
 				connected = True
@@ -26898,8 +26898,8 @@ GAME
 				sym = 46
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 287.520780029425
-				tempExt = 291.539857778429
+				temp = 287.521693765963
+				tempExt = 293.149798431089
 				expt = 0
 				state = 0
 				connected = True
@@ -27021,8 +27021,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 0
 				mass = 0.2
-				temp = 287.500046622106
-				tempExt = 288.098422826542
+				temp = 287.513700675304
+				tempExt = 288.326032973777
 				expt = 0.5
 				state = 1
 				connected = True
