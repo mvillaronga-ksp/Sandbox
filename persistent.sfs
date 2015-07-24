@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16813.7437305057
+							_currentUT = 16813.7637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.478994177571
+							ORBITING = 16446.498994177571
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16813.7437305057
+							_currentUT = 16813.7637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.478994177585
+							ORBITING = 16446.498994177586
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16813.7437305057
+							_currentUT = 16813.7637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.478994177607
+							ORBITING = 16446.498994177608
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16813.7437305057
+							_currentUT = 16813.7637305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.478994177563
+							ORBITING = 16446.498994177564
 						}
 					}
 				}
@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 46
+		LastSave = 47
 	}
 	SCENARIO
 	{
@@ -934,7 +934,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16814.1637305057
+		UT = 16814.0837305057
 		activeVessel = 13
 		mapViewFiltering = 1022
 		VESSEL
@@ -17264,7 +17264,7 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 5318254ba00b4f988446f4d7f4acb6fa
+			pid = 3f19163d21a447f6920c31c01e187c60
 			name = Spherical Core - Test
 			type = Probe
 			sit = PRELAUNCH
@@ -17272,39 +17272,39 @@ GAME
 			landedAt = LaunchPad
 			splashed = False
 			met = 0
-			lct = 16814.1637305057
+			lct = 16814.0837305057
 			root = 0
-			lat = -0.0971226718123319
-			lon = 285.442328316156
-			alt = 116.764068346703
-			hgt = 44.24479
+			lat = -0.0971226717832122
+			lon = 285.442328309627
+			alt = 116.853280255571
+			hgt = 44.334
 			nrm = 0.0007456157,0.9999999,1.435555E-06
 			rot = -0.7009888,-0.09221785,-0.0972654,0.7004643
-			CoM = -0.02746741,-17.59688,-3.654291E-05
+			CoM = -0.02746786,-17.60682,-3.721353E-05
 			stg = 11
 			prst = False
-			ref = 411748650
+			ref = 2976420987
 			ctrl = True
 			cPch = 0.2
 			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300828.410479153
-				ECC = 0.994822118719767
-				INC = 0.0971226629668661
-				LPE = 90.0000000000001
-				LAN = 25.6798639746082
-				MNA = 3.14159182714464
-				EPH = 16814.1637305057
+				SMA = 300828.450524943
+				ECC = 0.99482211666793
+				INC = 0.0971226630043924
+				LPE = 90
+				LAN = 25.6785306299796
+				MNA = 3.14159348003494
+				EPH = 16814.0837305057
 				REF = 1
 			}
 			PART
 			{
 				name = probeStackLarge
 				cid = 4294381140
-				uid = 411748650
-				mid = 229301568
+				uid = 2976420987
+				mid = 431346748
 				launchID = 4
 				parent = 0
 				position = 0,0,0
@@ -17321,8 +17321,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 46
 				mass = 0.5
-				temp = 287.20354941799
-				tempExt = 287.542325603704
+				temp = 287.202723326234
+				tempExt = 287.586366788042
 				expt = 0
 				state = 0
 				connected = True
@@ -17527,7 +17527,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 29.988100000269
+					amount = 29.9903666668844
 					maxAmount = 30
 					flowState = True
 					isTweakable = True
@@ -17539,8 +17539,8 @@ GAME
 			{
 				name = asasmodule1-2
 				cid = 4294371216
-				uid = 2896244000
-				mid = 229301568
+				uid = 1172516450
+				mid = 431346748
 				launchID = 4
 				parent = 0
 				position = 0,-0.439998626708984,0
@@ -17557,8 +17557,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.2
-				temp = 287.232031093356
-				tempExt = 287.565491845653
+				temp = 287.250238554148
+				tempExt = 287.61319189985
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17688,8 +17688,8 @@ GAME
 			{
 				name = TAL.Large.Spherical.Tank.Fuel
 				cid = 4294339324
-				uid = 2331354406
-				mid = 229301568
+				uid = 3927838293
+				mid = 431346748
 				launchID = 4
 				parent = 1
 				position = 0,-4.43999862670898,0
@@ -17706,8 +17706,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 13.5
-				temp = 287.239246030739
-				tempExt = 287.585964345706
+				temp = 287.284782451941
+				tempExt = 293.133819383844
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18011,8 +18011,8 @@ GAME
 			{
 				name = batteryBankLarge
 				cid = 4294222364
-				uid = 1362188414
-				mid = 229301568
+				uid = 3793058295
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 0,-8.29999923706055,0
@@ -18029,8 +18029,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 287.264993671215
-				tempExt = 287.60127137391
+				temp = 287.272249452749
+				tempExt = 287.573057487554
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18121,7 +18121,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3999.98810000026
+					amount = 3999.99036666688
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -18133,8 +18133,8 @@ GAME
 			{
 				name = dockingPortLarge
 				cid = 4294215332
-				uid = 1615151800
-				mid = 229301568
+				uid = 1252500228
+				mid = 431346748
 				launchID = 4
 				parent = 3
 				position = 0,-8.42499923706055,0
@@ -18151,8 +18151,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 3
 				mass = 0.2
-				temp = 287.27198104873
-				tempExt = 287.605589370443
+				temp = 287.272648271267
+				tempExt = 287.670318509864
 				expt = 0.5
 				state = 1
 				connected = True
@@ -18427,8 +18427,8 @@ GAME
 			{
 				name = decoupler1-2
 				cid = 4294109244
-				uid = 3147018131
-				mid = 229301568
+				uid = 3909311562
+				mid = 431346748
 				launchID = 4
 				parent = 4
 				position = 0,-9.16585922241211,0
@@ -18445,8 +18445,8 @@ GAME
 				attN = bottom, 6
 				attN = top, 4
 				mass = 0.4
-				temp = 287.280678582224
-				tempExt = 287.612469720479
+				temp = 287.293818036061
+				tempExt = 287.751128860612
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18607,8 +18607,8 @@ GAME
 			{
 				name = fairingSize3
 				cid = 4292236774
-				uid = 1267628334
-				mid = 229301568
+				uid = 3772290560
+				mid = 431346748
 				launchID = 4
 				parent = 5
 				position = 0,-9.7513313293457,0
@@ -18625,8 +18625,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 7
 				mass = 10.40661
-				temp = 287.281180859602
-				tempExt = 287.326021381081
+				temp = 287.316882548202
+				tempExt = 301.07542674981
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18803,8 +18803,8 @@ GAME
 			{
 				name = decoupler1-2
 				cid = 4292833974
-				uid = 3183836639
-				mid = 229301568
+				uid = 2281149046
+				mid = 431346748
 				launchID = 4
 				parent = 6
 				position = 0,-10.4021911621094,0
@@ -18821,8 +18821,8 @@ GAME
 				attN = bottom, 8
 				attN = top, 6
 				mass = 0.4
-				temp = 287.287817945054
-				tempExt = 287.620857247836
+				temp = 287.298770329299
+				tempExt = 287.802714288111
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18983,8 +18983,8 @@ GAME
 			{
 				name = KzResizableFairingBaseRing
 				cid = 4292833894
-				uid = 1663589587
-				mid = 229301568
+				uid = 3337813672
+				mid = 431346748
 				launchID = 4
 				parent = 7
 				position = 0,-11.2966613769531,0
@@ -19005,8 +19005,8 @@ GAME
 				attN = connect03, -1
 				attN = connect04, -1
 				mass = 0.235298
-				temp = 287.293076849191
-				tempExt = 287.339259493532
+				temp = 287.292586980886
+				tempExt = 287.353287256126
 				expt = 0
 				state = 0
 				connected = True
@@ -19234,8 +19234,8 @@ GAME
 			{
 				name = fuelTank4-2
 				cid = 4292833840
-				uid = 1303483065
-				mid = 229301568
+				uid = 2564524744
+				mid = 431346748
 				launchID = 4
 				parent = 8
 				position = 0,-11.7654113769531,0
@@ -19252,8 +19252,8 @@ GAME
 				attN = top, 8
 				attN = bottom, 10
 				mass = 0.5
-				temp = 287.297075187281
-				tempExt = 287.640666880274
+				temp = 287.296745164434
+				tempExt = 287.907177082502
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19512,8 +19512,8 @@ GAME
 			{
 				name = fuelTank1-2
 				cid = 4292833796
-				uid = 3005559995
-				mid = 229301568
+				uid = 1976607179
+				mid = 431346748
 				launchID = 4
 				parent = 9
 				position = 0,-14.1091613769531,0
@@ -19530,8 +19530,8 @@ GAME
 				attN = top, 9
 				attN = bottom, 11
 				mass = 2
-				temp = 287.315762113904
-				tempExt = 287.656219787344
+				temp = 287.315613807728
+				tempExt = 288.47671144444
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19790,8 +19790,8 @@ GAME
 			{
 				name = engineLargeSkipper
 				cid = 4292833752
-				uid = 3904585772
-				mid = 229301568
+				uid = 1297510071
+				mid = 431346748
 				launchID = 4
 				parent = 10
 				position = 0,-15.9841613769531,0
@@ -19808,8 +19808,8 @@ GAME
 				attN = top, 10
 				attN = bottom, 12
 				mass = 3
-				temp = 287.333410470766
-				tempExt = 287.507088734444
+				temp = 287.336927548833
+				tempExt = 287.664748407657
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20100,8 +20100,8 @@ GAME
 			{
 				name = decoupler1-2
 				cid = 4292833628
-				uid = 2314163444
-				mid = 229301568
+				uid = 2905417759
+				mid = 431346748
 				launchID = 4
 				parent = 11
 				position = 0,-18.8100204467773,0
@@ -20118,8 +20118,8 @@ GAME
 				attN = bottom, 13
 				attN = top, 11
 				mass = 0.4
-				temp = 287.355978343071
-				tempExt = 287.689637080093
+				temp = 287.356323018367
+				tempExt = 287.826893635924
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20280,8 +20280,8 @@ GAME
 			{
 				name = fuelTank2-2
 				cid = 4292833548
-				uid = 2954823765
-				mid = 229301568
+				uid = 605914531
+				mid = 431346748
 				launchID = 4
 				parent = 12
 				position = 0,-20.1129913330078,0
@@ -20298,8 +20298,8 @@ GAME
 				attN = top, 12
 				attN = bottom, 14
 				mass = 1
-				temp = 287.364542180643
-				tempExt = 287.705726810297
+				temp = 287.36426800415
+				tempExt = 288.143356620709
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20558,8 +20558,8 @@ GAME
 			{
 				name = fuelTank1-2
 				cid = 4292833504
-				uid = 3406255683
-				mid = 229301568
+				uid = 861898807
+				mid = 431346748
 				launchID = 4
 				parent = 13
 				position = 0,-22.9254913330078,0
@@ -20576,8 +20576,8 @@ GAME
 				attN = top, 13
 				attN = bottom, 15
 				mass = 2
-				temp = 287.387375998863
-				tempExt = 287.732097399667
+				temp = 287.387252221418
+				tempExt = 288.550407707693
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20836,8 +20836,8 @@ GAME
 			{
 				name = liquidEngine1-2
 				cid = 4292833460
-				uid = 1581027492
-				mid = 229301568
+				uid = 816033637
+				mid = 431346748
 				launchID = 4
 				parent = 14
 				position = 0,-25.8657913208008,0
@@ -20854,8 +20854,8 @@ GAME
 				attN = top, 14
 				attN = bottom, 16
 				mass = 6
-				temp = 287.412810227838
-				tempExt = 287.585053754018
+				temp = 287.415418345947
+				tempExt = 287.782787664667
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21146,8 +21146,8 @@ GAME
 			{
 				name = decoupler1-2
 				cid = 4292833344
-				uid = 2151573809
-				mid = 229301568
+				uid = 3212515575
+				mid = 431346748
 				launchID = 4
 				parent = 15
 				position = 0,-28.2474403381348,0
@@ -21164,8 +21164,8 @@ GAME
 				attN = bottom, 17
 				attN = top, 15
 				mass = 0.4
-				temp = 287.435330487742
-				tempExt = 287.764311909645
+				temp = 287.44030381032
+				tempExt = 287.901394174146
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21326,8 +21326,8 @@ GAME
 			{
 				name = Size3to2Adapter
 				cid = 4292833264
-				uid = 252380310
-				mid = 229301568
+				uid = 3901598434
+				mid = 431346748
 				launchID = 4
 				parent = 16
 				position = 0,-29.7129096984863,0
@@ -21344,8 +21344,8 @@ GAME
 				attN = top, 16
 				attN = bottom, 18
 				mass = 0.2
-				temp = 287.458603296931
-				tempExt = 287.780808086769
+				temp = 287.511554630814
+				tempExt = 288.592652701499
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21438,8 +21438,8 @@ GAME
 			{
 				name = Size3SmallTank
 				cid = 4292833230
-				uid = 3548843941
-				mid = 229301568
+				uid = 2996096112
+				mid = 431346748
 				launchID = 4
 				parent = 17
 				position = 0,-31.7729206085205,0
@@ -21456,8 +21456,8 @@ GAME
 				attN = top, 17
 				attN = bottom, 19
 				mass = 2.25
-				temp = 287.459502137138
-				tempExt = 287.80459543995
+				temp = 287.459207033954
+				tempExt = 288.413865806081
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21716,8 +21716,8 @@ GAME
 			{
 				name = Size3LargeTank
 				cid = 4292833186
-				uid = 954159482
-				mid = 229301568
+				uid = 1223282780
+				mid = 431346748
 				launchID = 4
 				parent = 18
 				position = 0,-36.4799194335938,0
@@ -21732,10 +21732,10 @@ GAME
 				attm = 0
 				srfN = srfAttach, -1
 				attN = top, 18
-				attN = bottom, 20
+				attN = bottom, 28
 				mass = 9
-				temp = 287.497544369842
-				tempExt = 287.847043348456
+				temp = 287.497811286561
+				tempExt = 290.429483422546
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21992,344 +21992,10 @@ GAME
 			}
 			PART
 			{
-				name = Size3AdvancedEngine
-				cid = 4292833142
-				uid = 1668753301
-				mid = 229301568
-				launchID = 4
-				parent = 19
-				position = 0,-41.7078895568848,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				dstg = 10
-				sqor = 3
-				sepI = 2
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = top, 19
-				attN = bottom, -1
-				mass = 9
-				temp = 287.54055137364
-				tempExt = 287.700039569948
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = Size3AdvancedEngine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					gimbalLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					gimbalLimiter_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					isJettisoned = True
-					EVENTS
-					{
-						Jettison
-						{
-							active = False
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 3.75
-					defaultScale = 3.75
-					defaultTransformScale = (1, 1, 1)
-					DryCost = 25000
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = tjs_EngineLight
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 0
-					maxAmount = 0.239999994635582
-					flowState = True
-					isTweakable = False
-					hideFlow = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
 				name = basicFin
 				cid = 4292833028
-				uid = 3476662786
-				mid = 229301568
+				uid = 3730610307
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = -1.85696482658386,-39.8599395751953,0
@@ -22342,13 +22008,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 21
 				sym = 22
 				sym = 23
-				sym = 24
 				srfN = srfAttach, 19
 				mass = 0.01
-				temp = 287.532949874836
-				tempExt = 287.817525325062
+				temp = 287.529707276516
+				tempExt = 287.771675642621
 				expt = 0.1
 				state = 0
 				connected = True
@@ -22452,8 +22118,8 @@ GAME
 			{
 				name = basicFin
 				cid = 4292832990
-				uid = 3553757175
-				mid = 229301568
+				uid = 1407101743
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = 0,-39.8599395751953,1.85696411132813
@@ -22466,13 +22132,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 21
+				sym = 20
+				sym = 22
 				sym = 23
-				sym = 24
 				srfN = srfAttach, 19
 				mass = 0.01
-				temp = 287.532972043397
-				tempExt = 287.817675998592
+				temp = 287.529776419913
+				tempExt = 287.772942354134
 				expt = 0.1
 				state = 0
 				connected = True
@@ -22576,8 +22242,8 @@ GAME
 			{
 				name = basicFin
 				cid = 4292832952
-				uid = 3360243663
-				mid = 229301568
+				uid = 1106939770
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = 1.85696423053741,-39.8599395751953,-1.01327896118164E-06
@@ -22590,13 +22256,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 20
 				sym = 21
-				sym = 22
-				sym = 24
+				sym = 23
 				srfN = srfAttach, 19
 				mass = 0.01
-				temp = 287.532970560746
-				tempExt = 287.817796248899
+				temp = 287.529835854342
+				tempExt = 287.774031196712
 				expt = 0.1
 				state = 0
 				connected = True
@@ -22700,8 +22366,8 @@ GAME
 			{
 				name = basicFin
 				cid = 4292832914
-				uid = 3154057238
-				mid = 229301568
+				uid = 857702129
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = -2.01165676116943E-07,-39.8599395751953,-1.85696482658386
@@ -22714,13 +22380,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 20
 				sym = 21
 				sym = 22
-				sym = 23
 				srfN = srfAttach, 19
 				mass = 0.01
-				temp = 287.532989529693
-				tempExt = 287.817904507383
+				temp = 287.529886943116
+				tempExt = 287.774967146337
 				expt = 0.1
 				state = 0
 				connected = True
@@ -22824,8 +22490,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4293373578
-				uid = 978839489
-				mid = 229301568
+				uid = 755476900
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = -1.85031974315643,-39.4348983764648,1.19209289550781E-07
@@ -22838,13 +22504,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 25
 				sym = 26
 				sym = 27
-				sym = 28
 				srfN = srfAttach, 19
 				mass = 0.45
-				temp = 287.521860420867
-				tempExt = 287.565499303306
+				temp = 287.523073657604
+				tempExt = 288.50139696635
 				expt = 0.1
 				state = 0
 				connected = True
@@ -22985,8 +22651,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292830718
-				uid = 83507702
-				mid = 229301568
+				uid = 3910914957
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = 0,-39.4348983764648,1.8503201007843
@@ -22999,13 +22665,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 25
+				sym = 24
+				sym = 26
 				sym = 27
-				sym = 28
 				srfN = srfAttach, 19
 				mass = 0.45
-				temp = 287.521871916032
-				tempExt = 287.566364547024
+				temp = 287.522577586082
+				tempExt = 288.512591767022
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23146,8 +22812,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292830660
-				uid = 88516481
-				mid = 229301568
+				uid = 1449862571
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = 1.85032021999359,-39.4348983764648,-2.98023223876953E-07
@@ -23160,13 +22826,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 24
 				sym = 25
-				sym = 26
-				sym = 28
+				sym = 27
 				srfN = srfAttach, 19
 				mass = 0.45
-				temp = 287.521863624386
-				tempExt = 287.56678874269
+				temp = 287.522587784997
+				tempExt = 288.51808199188
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23307,8 +22973,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292830602
-				uid = 4213512318
-				mid = 229301568
+				uid = 2425319947
+				mid = 431346748
 				launchID = 4
 				parent = 19
 				position = -2.01165676116943E-07,-39.4348983764648,-1.85031986236572
@@ -23321,13 +22987,13 @@ GAME
 				sepI = 2
 				sidx = -1
 				attm = 1
+				sym = 24
 				sym = 25
 				sym = 26
-				sym = 27
 				srfN = srfAttach, 19
 				mass = 0.45
-				temp = 287.521873488047
-				tempExt = 287.566997293945
+				temp = 287.522592789754
+				tempExt = 288.52077612532
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23466,10 +23132,292 @@ GAME
 			}
 			PART
 			{
+				name = Size3EngineCluster
+				cid = 4292719294
+				uid = 1997533824
+				mid = 431346748
+				launchID = 4
+				parent = 19
+				position = 0,-41.7471694946289,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				dstg = 10
+				sqor = 3
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 19
+				mass = 15
+				temp = 287.546906872505
+				tempExt = 288.131675944511
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = Size3EngineCluster
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					gimbalLimiter = 100
+					gimbalLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					gimbalLimiter_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						LockAction
+						{
+							actionGroup = None
+						}
+						FreeAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 3.75
+					defaultScale = 3.75
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 39000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = tjs_EngineLight
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.239999994635582
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
 				name = wingShuttleRudder
 				cid = 4292829742
-				uid = 2015367278
-				mid = 229301568
+				uid = 1794452213
+				mid = 431346748
 				launchID = 4
 				parent = 14
 				position = -1.20776581764221,-24.6762199401855,1.19209289550781E-07
@@ -23487,8 +23435,8 @@ GAME
 				sym = 32
 				srfN = srfAttach, 14
 				mass = 0.45
-				temp = 287.401519606192
-				tempExt = 287.443478445782
+				temp = 287.402778236304
+				tempExt = 288.406606732404
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23629,8 +23577,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292828290
-				uid = 695946618
-				mid = 229301568
+				uid = 1379648704
+				mid = 431346748
 				launchID = 4
 				parent = 14
 				position = 0,-24.6762199401855,1.20776605606079
@@ -23648,8 +23596,8 @@ GAME
 				sym = 32
 				srfN = srfAttach, 14
 				mass = 0.45
-				temp = 287.401533587994
-				tempExt = 287.445344543978
+				temp = 287.402781709445
+				tempExt = 288.408476375196
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23790,8 +23738,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292828230
-				uid = 3720733382
-				mid = 229301568
+				uid = 3209068133
+				mid = 431346748
 				launchID = 4
 				parent = 14
 				position = 1.20776617527008,-24.6762199401855,-1.78813934326172E-07
@@ -23809,8 +23757,8 @@ GAME
 				sym = 32
 				srfN = srfAttach, 14
 				mass = 0.45
-				temp = 287.401526516452
-				tempExt = 287.446259873689
+				temp = 287.402783413767
+				tempExt = 288.409393836386
 				expt = 0.1
 				state = 0
 				connected = True
@@ -23951,8 +23899,8 @@ GAME
 			{
 				name = wingShuttleRudder
 				cid = 4292828170
-				uid = 2373136605
-				mid = 229301568
+				uid = 3388609603
+				mid = 431346748
 				launchID = 4
 				parent = 14
 				position = -9.68575477600098E-08,-24.6762199401855,-1.20776605606079
@@ -23970,8 +23918,8 @@ GAME
 				sym = 31
 				srfN = srfAttach, 14
 				mass = 0.45
-				temp = 287.40153697896
-				tempExt = 287.446709431667
+				temp = 287.402784250102
+				tempExt = 288.409844048099
 				expt = 0.1
 				state = 0
 				connected = True
@@ -24112,8 +24060,8 @@ GAME
 			{
 				name = mumech.MJ2.AR202
 				cid = 4293956372
-				uid = 404086791
-				mid = 229301568
+				uid = 1093113514
+				mid = 431346748
 				launchID = 4
 				parent = 3
 				position = -1.22519671916962,-8.33406066894531,1.19209289550781E-07
@@ -24128,8 +24076,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 3
 				mass = 0.0001
-				temp = 287.269205752511
-				tempExt = 287.298979323384
+				temp = 287.270391429443
+				tempExt = 287.320996927799
 				expt = 0.5
 				state = 0
 				connected = True
@@ -24587,14 +24535,14 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 16814.1637305057
+							markUT = 16814.0837305057
 							deltaVExpended = 0
 							dragLosses = 0
 							gravityLosses = 0
 							steeringLosses = 0
-							markLatitude = -0.0971226644558534
-							markLongitude = -74.5576713558094
-							markAltitude = 99.1671776646981
+							markLatitude = -0.0971226645181067
+							markLongitude = -74.5576713615801
+							markAltitude = 99.2464447880629
 							markBodyIndex = 1
 							maxDragGees = 0
 							unlockParts = 
@@ -24702,7 +24650,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.98810000026899
+					amount = 4.99036666688442
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -24714,8 +24662,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294207634
-				uid = 2898268502
-				mid = 229301568
+				uid = 2130228851
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -3.73322772979736,-4.42375946044922,1.78813934326172E-07
@@ -24737,8 +24685,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244500633996
-				tempExt = 287.579431962104
+				temp = 287.324596053987
+				tempExt = 290.451520119224
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25013,8 +24961,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294206558
-				uid = 1264714885
-				mid = 229301568
+				uid = 2198315848
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -1.86661374568939,-4.42375946044922,3.23307013511658
@@ -25036,8 +24984,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244500548871
-				tempExt = 287.579429818401
+				temp = 287.324568819102
+				tempExt = 290.450595748867
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25312,8 +25260,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294206506
-				uid = 2465846005
-				mid = 229301568
+				uid = 2450868160
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 1.86661422252655,-4.42375946044922,3.23307013511658
@@ -25335,8 +25283,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244500463847
-				tempExt = 287.579427676303
+				temp = 287.324541604462
+				tempExt = 290.4496720421
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25611,8 +25559,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294206454
-				uid = 2628645445
-				mid = 229301568
+				uid = 3187342549
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 3.73322725296021,-4.42375946044922,-4.76837158203125E-07
@@ -25634,8 +25582,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244500378919
-				tempExt = 287.579425535808
+				temp = 287.324514410053
+				tempExt = 290.448748998454
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25910,8 +25858,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294206402
-				uid = 4019387160
-				mid = 229301568
+				uid = 2756745807
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 1.86661422252655,-4.42375946044922,-3.23307085037231
@@ -25933,8 +25881,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244500293987
-				tempExt = 287.579423396873
+				temp = 287.32448723586
+				tempExt = 290.447826617463
 				expt = 0.5
 				state = 1
 				connected = True
@@ -26209,8 +26157,8 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294206350
-				uid = 460219721
-				mid = 229301568
+				uid = 3464765256
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -1.86661374568939,-4.42375946044922,-3.233069896698
@@ -26232,8 +26180,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.244904718279
-				tempExt = 287.579014570626
+				temp = 287.324460081867
+				tempExt = 290.446904898658
 				expt = 0.5
 				state = 1
 				connected = True
@@ -26508,8 +26456,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294182320
-				uid = 936428481
-				mid = 229301568
+				uid = 1138637165
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -3.2577178478241,-4.43218994140625,1.88084411621094
@@ -26529,8 +26477,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.241858935545
-				tempExt = 287.336128737284
+				temp = 287.383174544297
+				tempExt = 290.248819013185
 				expt = 0.5
 				state = 0
 				connected = True
@@ -26684,8 +26632,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294181842
-				uid = 4127560321
-				mid = 229301568
+				uid = 2638160720
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 1.04308128356934E-07,-4.43218994140625,3.7616879940033
@@ -26705,8 +26653,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.24133293105
-				tempExt = 287.317789457796
+				temp = 287.383166331144
+				tempExt = 290.248647148692
 				expt = 0.5
 				state = 0
 				connected = True
@@ -26860,8 +26808,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294181804
-				uid = 3612725907
-				mid = 229301568
+				uid = 1356899247
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 3.25771832466125,-4.43218994140625,1.88084411621094
@@ -26881,8 +26829,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.24185868317
-				tempExt = 287.336124137095
+				temp = 287.383158118968
+				tempExt = 290.248475304375
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27036,8 +26984,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294181766
-				uid = 3380996738
-				mid = 229301568
+				uid = 299283068
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = 3.25771713256836,-4.43218994140625,-1.88084435462952
@@ -27057,8 +27005,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.241858528856
-				tempExt = 287.336121205593
+				temp = 287.383149907768
+				tempExt = 290.24830348023
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27212,8 +27160,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294181728
-				uid = 3225291078
-				mid = 229301568
+				uid = 2781573881
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -2.98023223876953E-07,-4.43218994140625,-3.76168894767761
@@ -27233,8 +27181,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.241332580007
-				tempExt = 287.317783180948
+				temp = 287.383141697544
+				tempExt = 290.248131676254
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27388,8 +27336,8 @@ GAME
 			{
 				name = lightnav.white
 				cid = 4294181690
-				uid = 4146602027
-				mid = 229301568
+				uid = 4282200420
+				mid = 431346748
 				launchID = 4
 				parent = 2
 				position = -3.2577178478241,-4.43218994140625,-1.88084447383881
@@ -27409,8 +27357,8 @@ GAME
 				sym = 44
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.241858276564
-				tempExt = 287.336116606858
+				temp = 287.383133488295
+				tempExt = 290.247959892446
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27564,8 +27512,8 @@ GAME
 			{
 				name = dockingPortLarge
 				cid = 4294358124
-				uid = 1752729505
-				mid = 229301568
+				uid = 3301747213
+				mid = 431346748
 				launchID = 4
 				parent = 0
 				position = 0,0.189998626708984,0
@@ -27582,8 +27530,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 0
 				mass = 0.2
-				temp = 287.203786282074
-				tempExt = 287.540293202706
+				temp = 287.204698568614
+				tempExt = 287.665123135012
 				expt = 0.5
 				state = 1
 				connected = True
