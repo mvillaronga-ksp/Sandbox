@@ -2,14 +2,14 @@ ship = Spherical Core - Test
 version = 1.0.4
 description = 
 type = VAB
-size = 21.64765,33.332,18.99358
+size = 21.99838,14.79537,19.22192
 PART
 {
 	part = probeStackLarge_4294381140
 	partName = Part
-	pos = 0.685116,26.70482,-0.1299937
+	pos = 0.8715588,12.42515,0.3773789
 	attPos = 0,0,0
-	attPos0 = 0.685116,26.70482,-0.1299937
+	attPos0 = 0.8715588,12.42515,0.3773789
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -243,7 +243,7 @@ PART
 {
 	part = asasmodule1-2_4294371216
 	partName = Part
-	pos = 0.685116,26.26482,-0.1299937
+	pos = 0.8715588,11.98515,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,-0.4399996,0
 	rot = 0,0,0,1
@@ -391,7 +391,7 @@ PART
 {
 	part = TAL.Large.Spherical.Tank.Fuel_4294339324
 	partName = Part
-	pos = 0.685116,22.26482,-0.1299937
+	pos = 0.8715588,7.985147,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,-4,0
 	rot = 0,0,0,1
@@ -409,18 +409,18 @@ PART
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = batteryBankLarge_4294222364
-	link = dockingPort2_4294207634
-	link = dockingPort2_4294206558
-	link = dockingPort2_4294206506
-	link = dockingPort2_4294206454
-	link = dockingPort2_4294206402
-	link = dockingPort2_4294206350
 	link = lightnav.white_4294182320
 	link = lightnav.white_4294181842
 	link = lightnav.white_4294181804
 	link = lightnav.white_4294181766
 	link = lightnav.white_4294181728
 	link = lightnav.white_4294181690
+	link = dockingPort2_4294206558
+	link = dockingPort2_4289777008
+	link = dockingPort2_4289776598
+	link = dockingPort2_4289776188
+	link = dockingPort2_4289775778
+	link = dockingPort2_4289775368
 	attN = top,asasmodule1-2_4294371216
 	attN = bottom,batteryBankLarge_4294222364
 	EVENTS
@@ -736,7 +736,7 @@ PART
 {
 	part = batteryBankLarge_4294222364
 	partName = Part
-	pos = 0.685116,18.40482,-0.1299937
+	pos = 0.8715588,4.125147,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,-3.86,0
 	rot = 0,0,0,1
@@ -858,7 +858,7 @@ PART
 {
 	part = dockingPortLarge_4294215332
 	partName = Part
-	pos = 0.685116,18.27982,-0.1299937
+	pos = 0.8715588,4.000147,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,-0.125,0
 	rot = 1,0,0,0
@@ -1149,1791 +1149,9 @@ PART
 }
 PART
 {
-	part = dockingPort2_4294207634
-	partName = Part
-	pos = -3.048112,22.28106,-0.1299935
-	attPos = 0,0,0
-	attPos0 = -3.733228,0.01624012,2.225177E-07
-	rot = 0.5000001,-0.4999999,0.5000001,0.4999999
-	attRot = 0,0,0,1
-	attRot0 = 0.5000001,-0.4999999,0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4292445876
-	sym = dockingPort2_4294206558
-	sym = dockingPort2_4294206506
-	sym = dockingPort2_4294206454
-	sym = dockingPort2_4294206402
-	sym = dockingPort2_4294206350
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4294206558
-	partName = Part
-	pos = -1.181498,22.28106,3.103076
-	attPos = 0,0,0
-	attPos0 = -1.866614,0.01624012,3.23307
-	rot = 0.6830128,-0.1830127,0.1830127,0.6830125
-	attRot = 0,0,0,1
-	attRot0 = 0.6830128,-0.1830127,0.1830127,0.6830125
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4290426706
-	sym = dockingPort2_4294207634
-	sym = dockingPort2_4294206506
-	sym = dockingPort2_4294206454
-	sym = dockingPort2_4294206402
-	sym = dockingPort2_4294206350
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4294206506
-	partName = Part
-	pos = 2.55173,22.28106,3.103076
-	attPos = 0,0,0
-	attPos0 = 1.866614,0.01624012,3.23307
-	rot = 0.6830128,0.1830127,-0.1830128,0.6830126
-	attRot = 0,0,0,1
-	attRot0 = 0.6830128,0.1830127,-0.1830128,0.6830126
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4290426266
-	sym = dockingPort2_4294207634
-	sym = dockingPort2_4294206558
-	sym = dockingPort2_4294206454
-	sym = dockingPort2_4294206402
-	sym = dockingPort2_4294206350
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4294206454
-	partName = Part
-	pos = 4.418343,22.28106,-0.1299942
-	attPos = 0,0,0
-	attPos0 = 3.733228,0.01624012,-5.488869E-07
-	rot = 0.5000001,0.4999999,-0.5000001,0.4999999
-	attRot = 0,0,0,1
-	attRot0 = 0.5000001,0.4999999,-0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4290425826
-	sym = dockingPort2_4294207634
-	sym = dockingPort2_4294206558
-	sym = dockingPort2_4294206506
-	sym = dockingPort2_4294206402
-	sym = dockingPort2_4294206350
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4294206402
-	partName = Part
-	pos = 2.55173,22.28106,-3.363065
-	attPos = 0,0,0
-	attPos0 = 1.866614,0.01624012,-3.233071
-	rot = 0.1830127,0.6830126,-0.6830129,0.1830126
-	attRot = 0,0,0,1
-	attRot0 = 0.1830127,0.6830126,-0.6830129,0.1830126
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4290425386
-	sym = dockingPort2_4294207634
-	sym = dockingPort2_4294206558
-	sym = dockingPort2_4294206506
-	sym = dockingPort2_4294206454
-	sym = dockingPort2_4294206350
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4294206350
-	partName = Part
-	pos = -1.181498,22.28106,-3.363064
-	attPos = 0,0,0
-	attPos0 = -1.866614,0.01624012,-3.23307
-	rot = -0.1830127,0.6830126,-0.6830129,-0.1830126
-	attRot = 0,0,0,1
-	attRot0 = -0.1830127,0.6830126,-0.6830129,-0.1830126
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = FTT.Structural.375.05_4290424946
-	sym = dockingPort2_4294207634
-	sym = dockingPort2_4294206558
-	sym = dockingPort2_4294206506
-	sym = dockingPort2_4294206454
-	sym = dockingPort2_4294206402
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = lightnav.white_4294182320
 	partName = Part
-	pos = -2.572602,22.27263,1.75085
+	pos = -2.386159,7.992958,2.258223
 	attPos = 0,0,0
 	attPos0 = -3.257717,0.007809639,1.880844
 	rot = 2.381895E-07,-0.9659259,-6.382267E-08,0.258819
@@ -3108,7 +1326,7 @@ PART
 {
 	part = lightnav.white_4294181842
 	partName = Part
-	pos = 0.6851161,22.27263,3.631694
+	pos = 0.8715589,7.992958,4.139067
 	attPos = 0,0,0
 	attPos0 = 7.046856E-08,0.007809639,3.761688
 	rot = 1.743668E-07,-0.7071068,-1.743668E-07,0.7071068
@@ -3283,7 +1501,7 @@ PART
 {
 	part = lightnav.white_4294181804
 	partName = Part
-	pos = 3.942834,22.27263,1.75085
+	pos = 4.129277,7.992958,2.258223
 	attPos = 0,0,0
 	attPos0 = 3.257718,0.007809639,1.880844
 	rot = 6.382267E-08,-0.258819,-2.381895E-07,0.9659259
@@ -3458,7 +1676,7 @@ PART
 {
 	part = lightnav.white_4294181766
 	partName = Part
-	pos = 3.942833,22.27263,-2.010838
+	pos = 4.129276,7.992958,-1.503465
 	attPos = 0,0,0
 	attPos0 = 3.257717,0.007809639,-1.880844
 	rot = -6.382268E-08,0.2588191,-2.381895E-07,0.9659259
@@ -3633,7 +1851,7 @@ PART
 {
 	part = lightnav.white_4294181728
 	partName = Part
-	pos = 0.6851157,22.27263,-3.891683
+	pos = 0.8715585,7.992958,-3.38431
 	attPos = 0,0,0
 	attPos0 = -2.946826E-07,0.007809639,-3.761688
 	rot = -1.743668E-07,0.7071068,-1.743668E-07,0.7071068
@@ -3808,7 +2026,7 @@ PART
 {
 	part = lightnav.white_4294181690
 	partName = Part
-	pos = -2.572602,22.27263,-2.010838
+	pos = -2.386159,7.992958,-1.503465
 	attPos = 0,0,0
 	attPos0 = -3.257717,0.007809639,-1.880844
 	rot = -2.381895E-07,0.9659259,-6.382269E-08,0.2588191
@@ -3983,7 +2201,7 @@ PART
 {
 	part = dockingPortLarge_4294358124
 	partName = Part
-	pos = 0.685116,26.89482,-0.1299937
+	pos = 0.8715588,12.61515,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,0.1899996,0
 	rot = 0,0,0,1
@@ -4274,7 +2492,7 @@ PART
 {
 	part = decoupler1-2_4294109244
 	partName = Part
-	pos = 0.685116,17.53896,-0.1299937
+	pos = 0.8715588,3.259287,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,0.74086,0
 	rot = 0,0,0,1
@@ -4453,7 +2671,7 @@ PART
 {
 	part = mumech.MJ2.AR202_4293956372
 	partName = Part
-	pos = -0.5400807,18.37076,-0.1299936
+	pos = -0.3536379,4.091087,0.3773791
 	attPos = 0,0,0
 	attPos0 = -1.225196,-0.03405762,5.960464E-08
 	rot = 2.512148E-15,0,6.102114E-08,1
@@ -5054,7 +3272,7 @@ PART
 {
 	part = fairingSize3_4292236774
 	partName = Part
-	pos = 0.685116,16.95349,-0.1299937
+	pos = 0.8715588,2.673817,0.3773789
 	attPos = 0,0,0
 	attPos0 = 0,-0.5854721,0
 	rot = 0,0,0,1
@@ -5068,8 +3286,8 @@ PART
 	sqor = 1
 	sepI = 0
 	attm = 0
-	modCost = 5958.963
-	modMass = 9.931605
+	modCost = 0
+	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	attN = top,decoupler1-2_4294109244
 	EVENTS
@@ -5090,7 +3308,7 @@ PART
 		{
 			DeleteFairing
 			{
-				active = True
+				active = False
 				guiActive = False
 				guiActiveEditor = True
 				guiIcon = Delete Fairing
@@ -5102,7 +3320,7 @@ PART
 			}
 			EditFairing
 			{
-				active = True
+				active = False
 				guiActive = False
 				guiActiveEditor = True
 				guiIcon = Edit Fairing
@@ -5114,7 +3332,7 @@ PART
 			}
 			BuildFairing
 			{
-				active = False
+				active = True
 				guiActive = False
 				guiActiveEditor = True
 				guiIcon = Build Fairing
@@ -5142,31 +3360,6 @@ PART
 			{
 				actionGroup = None
 			}
-		}
-		XSECTION
-		{
-			h = 0
-			r = 1.875
-		}
-		XSECTION
-		{
-			h = 4
-			r = 4.617443
-		}
-		XSECTION
-		{
-			h = 8
-			r = 4.617443
-		}
-		XSECTION
-		{
-			h = 12
-			r = 1.790633
-		}
-		XSECTION
-		{
-			h = 14.04715
-			r = 0.375
 		}
 	}
 	MODULE
@@ -5245,14 +3438,14 @@ PART
 }
 PART
 {
-	part = FTT.Structural.375.05_4292445876
+	part = dockingPort2_4294206558
 	partName = Part
-	pos = -6.080407,22.37499,-0.223921
+	pos = -2.860909,7.969193,0.3773792
 	attPos = 0,0,0
-	attPos0 = -0.09392834,3.032295,-0.09393055
-	rot = -1.490116E-08,-1,1.490116E-08,1.490116E-08
+	attPos0 = -3.732467,-0.01595497,2.235174E-07
+	rot = 0.4999999,-0.5000001,0.5000001,0.4999999
 	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
+	attRot0 = 0.4999999,-0.5000001,0.5000001,0.4999999
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -5264,15 +3457,14 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4292382506
-	link = launchClamp1_4289941856
-	sym = FTT.Structural.375.05_4290426706
-	sym = FTT.Structural.375.05_4290426266
-	sym = FTT.Structural.375.05_4290425826
-	sym = FTT.Structural.375.05_4290425386
-	sym = FTT.Structural.375.05_4290424946
-	srfN = srfAttach,dockingPort2_4294207634
-	attN = bottom,engineLargeSkipper_4292382506
+	link = stackDecoupler_4289734982
+	sym = dockingPort2_4289777008
+	sym = dockingPort2_4289776598
+	sym = dockingPort2_4289776188
+	sym = dockingPort2_4289775778
+	sym = dockingPort2_4289775368
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734982
 	EVENTS
 	{
 	}
@@ -5281,6 +3473,116 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
 	}
 	MODULE
 	{
@@ -5297,6 +3599,93 @@ PART
 		{
 		}
 		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
 		{
 		}
 	}
@@ -5347,14 +3736,14 @@ PART
 }
 PART
 {
-	part = FTT.Structural.375.05_4290426706
+	part = dockingPort2_4289777008
 	partName = Part
-	pos = -2.77899,22.37499,5.682155
+	pos = -0.9946748,7.969193,3.609791
 	attPos = 0,0,0
-	attPos0 = -0.09392824,3.032294,-0.09393045
-	rot = -6.291913E-08,-0.8660254,-9.446957E-09,0.5
+	attPos0 = -1.866234,-0.01595497,3.232412
+	rot = 0.6830127,-0.1830128,0.1830128,0.6830127
 	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
+	attRot0 = 0.6830127,-0.1830128,0.1830128,0.6830127
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -5366,14 +3755,2602 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
+	link = stackDecoupler_4289734236
+	sym = dockingPort2_4294206558
+	sym = dockingPort2_4289776598
+	sym = dockingPort2_4289776188
+	sym = dockingPort2_4289775778
+	sym = dockingPort2_4289775368
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734236
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4289776598
+	partName = Part
+	pos = 2.737793,7.969193,3.60979
+	attPos = 0,0,0
+	attPos0 = 1.866234,-0.01595497,3.232411
+	rot = 0.6830128,0.1830126,-0.1830126,0.6830128
+	attRot = 0,0,0,1
+	attRot0 = 0.6830128,0.1830126,-0.1830126,0.6830128
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = stackDecoupler_4289734182
+	sym = dockingPort2_4294206558
+	sym = dockingPort2_4289777008
+	sym = dockingPort2_4289776188
+	sym = dockingPort2_4289775778
+	sym = dockingPort2_4289775368
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734182
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4289776188
+	partName = Part
+	pos = 4.604026,7.969193,0.3773784
+	attPos = 0,0,0
+	attPos0 = 3.732467,-0.01595497,-5.51343E-07
+	rot = 0.5000001,0.4999999,-0.4999999,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0.5000001,0.4999999,-0.4999999,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = stackDecoupler_4289734128
+	sym = dockingPort2_4294206558
+	sym = dockingPort2_4289777008
+	sym = dockingPort2_4289776598
+	sym = dockingPort2_4289775778
+	sym = dockingPort2_4289775368
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734128
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4289775778
+	partName = Part
+	pos = 2.737792,7.969193,-2.855033
+	attPos = 0,0,0
+	attPos0 = 1.866233,-0.01595497,-3.232412
+	rot = 0.1830128,0.6830127,-0.6830127,0.1830128
+	attRot = 0,0,0,1
+	attRot0 = 0.1830128,0.6830127,-0.6830127,0.1830128
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = stackDecoupler_4289734074
+	sym = dockingPort2_4294206558
+	sym = dockingPort2_4289777008
+	sym = dockingPort2_4289776598
+	sym = dockingPort2_4289776188
+	sym = dockingPort2_4289775368
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734074
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4289775368
+	partName = Part
+	pos = -0.9946748,7.969193,-2.855033
+	attPos = 0,0,0
+	attPos0 = -1.866234,-0.01595497,-3.232412
+	rot = -0.1830125,0.6830128,-0.6830128,-0.1830125
+	attRot = 0,0,0,1
+	attRot0 = -0.1830125,0.6830128,-0.6830128,-0.1830125
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = stackDecoupler_4289734020
+	sym = dockingPort2_4294206558
+	sym = dockingPort2_4289777008
+	sym = dockingPort2_4289776598
+	sym = dockingPort2_4289776188
+	sym = dockingPort2_4289775778
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	attN = top,stackDecoupler_4289734020
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734982
+	partName = Part
+	pos = -3.208844,7.969193,0.3773791
+	attPos = 0,0,0
+	attPos0 = 4.669903E-08,0.347935,7.105427E-15
+	rot = -0.5,-0.5,-0.5,0.5
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.086163E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 1
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4290426706
+	sym = stackDecoupler_4289734236
+	sym = stackDecoupler_4289734182
+	sym = stackDecoupler_4289734128
+	sym = stackDecoupler_4289734074
+	sym = stackDecoupler_4289734020
+	attN = top,dockingPort2_4294206558
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734236
+	partName = Part
+	pos = -1.168642,7.969193,3.911111
+	attPos = 0,0,0
+	attPos0 = -5.955331E-08,0.3479348,-2.245011E-09
+	rot = -0.6830127,-0.1830127,-0.1830127,0.6830127
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.253705E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 2
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4289731232
+	sym = stackDecoupler_4289734982
+	sym = stackDecoupler_4289734182
+	sym = stackDecoupler_4289734128
+	sym = stackDecoupler_4289734074
+	sym = stackDecoupler_4289734020
+	attN = top,dockingPort2_4289777008
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734182
+	partName = Part
+	pos = 2.91176,7.969193,3.911111
+	attPos = 0,0,0
+	attPos0 = -3.329599E-08,0.347935,-3.816522E-08
+	rot = -0.6830127,0.1830128,0.1830128,0.6830127
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.253704E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 3
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4289730874
+	sym = stackDecoupler_4289734982
+	sym = stackDecoupler_4289734236
+	sym = stackDecoupler_4289734128
+	sym = stackDecoupler_4289734074
+	sym = stackDecoupler_4289734020
+	attN = top,dockingPort2_4289776598
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734128
+	partName = Part
+	pos = 4.951961,7.969193,0.3773785
+	attPos = 0,0,0
+	attPos0 = -6.452819E-09,0.347935,-1.065814E-14
+	rot = -0.5,0.5000001,0.5000001,0.5
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.384186E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 4
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4289730516
+	sym = stackDecoupler_4289734982
+	sym = stackDecoupler_4289734236
+	sym = stackDecoupler_4289734182
+	sym = stackDecoupler_4289734074
+	sym = stackDecoupler_4289734020
+	attN = top,dockingPort2_4289776188
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734074
+	partName = Part
+	pos = 2.91176,7.969193,-3.156354
+	attPos = 0,0,0
+	attPos0 = -2.311202E-08,0.3479351,4.939029E-08
+	rot = -0.1830127,0.6830128,0.6830128,0.1830127
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.23909E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 5
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4289730158
+	sym = stackDecoupler_4289734982
+	sym = stackDecoupler_4289734236
+	sym = stackDecoupler_4289734182
+	sym = stackDecoupler_4289734128
+	sym = stackDecoupler_4289734020
+	attN = top,dockingPort2_4289775778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = stackDecoupler_4289734020
+	partName = Part
+	pos = -1.168642,7.969193,-3.156353
+	attPos = 0,0,0
+	attPos0 = 7.363374E-08,0.347935,2.245013E-08
+	rot = 0.1830127,0.6830127,0.6830127,-0.1830127
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = -1,2.253704E-07,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 6
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = FTT.Structural.375.05_4289729800
+	sym = stackDecoupler_4289734982
+	sym = stackDecoupler_4289734236
+	sym = stackDecoupler_4289734182
+	sym = stackDecoupler_4289734128
+	sym = stackDecoupler_4289734074
+	attN = top,dockingPort2_4289775368
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 400
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4290426706
+	partName = Part
+	pos = -6.069327,7.937084,0.3588419
+	attPos = 0,0,0
+	attPos0 = -0.01853717,-2.860484,-0.03210831
+	rot = -8.940699E-08,-1,8.940695E-08,1.192093E-07
+	attRot = 0,0,0,1
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4290064738
 	link = launchClamp1_4289941482
-	sym = FTT.Structural.375.05_4292445876
-	sym = FTT.Structural.375.05_4290426266
-	sym = FTT.Structural.375.05_4290425826
-	sym = FTT.Structural.375.05_4290425386
-	sym = FTT.Structural.375.05_4290424946
-	srfN = srfAttach,dockingPort2_4294206558
+	sym = FTT.Structural.375.05_4289731232
+	sym = FTT.Structural.375.05_4289730874
+	sym = FTT.Structural.375.05_4289730516
+	sym = FTT.Structural.375.05_4289730158
+	sym = FTT.Structural.375.05_4289729800
+	srfN = srfAttach,stackDecoupler_4289734982
 	attN = bottom,engineLargeSkipper_4290064738
 	EVENTS
 	{
@@ -5449,738 +6426,18 @@ PART
 }
 PART
 {
-	part = FTT.Structural.375.05_4290426266
-	partName = Part
-	pos = 3.986533,22.37499,5.776083
-	attPos = 0,0,0
-	attPos0 = -0.09392796,3.032294,-0.09393009
-	rot = -6.160101E-08,-0.4999999,5.946132E-08,0.8660254
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4290064550
-	link = launchClamp1_4289941360
-	sym = FTT.Structural.375.05_4292445876
-	sym = FTT.Structural.375.05_4290426706
-	sym = FTT.Structural.375.05_4290425826
-	sym = FTT.Structural.375.05_4290425386
-	sym = FTT.Structural.375.05_4290424946
-	srfN = srfAttach,dockingPort2_4294206506
-	attN = bottom,engineLargeSkipper_4290064550
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = FTT.Structural.375.05_4290425826
-	partName = Part
-	pos = 7.450637,22.37499,-0.03606485
-	attPos = 0,0,0
-	attPos0 = -0.09392854,3.032295,-0.09393056
-	rot = 1.490116E-08,1.490116E-08,1.490116E-08,1
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4290064362
-	link = launchClamp1_4289941238
-	sym = FTT.Structural.375.05_4292445876
-	sym = FTT.Structural.375.05_4290426706
-	sym = FTT.Structural.375.05_4290426266
-	sym = FTT.Structural.375.05_4290425386
-	sym = FTT.Structural.375.05_4290424946
-	srfN = srfAttach,dockingPort2_4294206454
-	attN = bottom,engineLargeSkipper_4290064362
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = FTT.Structural.375.05_4290425386
-	partName = Part
-	pos = 4.149221,22.37499,-5.942146
-	attPos = 0,0,0
-	attPos0 = -0.09392824,3.032295,-0.09393039
-	rot = 3.525656E-08,0.5000001,1.821565E-08,0.8660254
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4290064174
-	link = launchClamp1_4289941116
-	sym = FTT.Structural.375.05_4292445876
-	sym = FTT.Structural.375.05_4290426706
-	sym = FTT.Structural.375.05_4290426266
-	sym = FTT.Structural.375.05_4290425826
-	sym = FTT.Structural.375.05_4290424946
-	srfN = srfAttach,dockingPort2_4294206402
-	attN = bottom,engineLargeSkipper_4290064174
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = FTT.Structural.375.05_4290424946
-	partName = Part
-	pos = -2.616302,22.37499,-6.036077
-	attPos = 0,0,0
-	attPos0 = -0.09392813,3.032295,-0.09393038
-	rot = 1.853049E-09,0.8660254,-2.580954E-08,0.5000001
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,-0.4999999,0.5000001,0.4999999
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4290063986
-	link = launchClamp1_4289940994
-	sym = FTT.Structural.375.05_4292445876
-	sym = FTT.Structural.375.05_4290426706
-	sym = FTT.Structural.375.05_4290426266
-	sym = FTT.Structural.375.05_4290425826
-	sym = FTT.Structural.375.05_4290425386
-	srfN = srfAttach,dockingPort2_4294206350
-	attN = bottom,engineLargeSkipper_4290063986
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = engineLargeSkipper_4292382506
-	partName = Part
-	pos = -6.080407,22.12499,-0.2239209
-	attPos = 0,0,0
-	attPos0 = -1.117587E-07,-0.25,-1.639128E-07
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 1.490116E-08,1,-1.490116E-08,1.490116E-08
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 0
-	sidx = 0
-	sqor = 2
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4290064738
-	sym = engineLargeSkipper_4290064550
-	sym = engineLargeSkipper_4290064362
-	sym = engineLargeSkipper_4290064174
-	sym = engineLargeSkipper_4290063986
-	attN = top,FTT.Structural.375.05_4292445876
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = engineLargeSkipper_4290064738
 	partName = Part
-	pos = -2.77899,22.12499,5.682155
+	pos = -6.069328,7.687084,0.3588419
 	attPos = 0,0,0
 	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
-	rot = 2.980233E-08,0.5,-5.746493E-08,0.8660254
+	rot = -7.450579E-08,1.043081E-07,-7.450582E-08,1
 	attRot = 0,0,0,1
 	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 2
-	dstg = 0
+	dstg = 2
 	sidx = 1
 	sqor = 2
 	sepI = 1
@@ -6188,11 +6445,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4292382506
-	sym = engineLargeSkipper_4290064550
-	sym = engineLargeSkipper_4290064362
-	sym = engineLargeSkipper_4290064174
-	sym = engineLargeSkipper_4290063986
+	sym = engineLargeSkipper_4289731184
+	sym = engineLargeSkipper_4289730826
+	sym = engineLargeSkipper_4289730468
+	sym = engineLargeSkipper_4289730110
+	sym = engineLargeSkipper_4289729752
 	attN = top,FTT.Structural.375.05_4290426706
 	EVENTS
 	{
@@ -6481,1500 +6738,30 @@ PART
 }
 PART
 {
-	part = engineLargeSkipper_4290064550
-	partName = Part
-	pos = 3.986533,22.12499,5.776083
-	attPos = 0,0,0
-	attPos0 = 1.266599E-07,-0.25,-1.490116E-08
-	rot = -1.329638E-08,0.8660254,-5.215406E-08,0.5
-	attRot = 0,0,0,1
-	attRot0 = 1.490117E-08,1,-1.490116E-08,-1.600212E-15
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 0
-	sidx = 2
-	sqor = 2
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4292382506
-	sym = engineLargeSkipper_4290064738
-	sym = engineLargeSkipper_4290064362
-	sym = engineLargeSkipper_4290064174
-	sym = engineLargeSkipper_4290063986
-	attN = top,FTT.Structural.375.05_4290426266
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = engineLargeSkipper_4290064362
-	partName = Part
-	pos = 7.450637,22.12499,-0.03606471
-	attPos = 0,0,0
-	attPos0 = -1.117587E-07,-0.25,1.862645E-07
-	rot = 0,1,0,0
-	attRot = 0,0,0,1
-	attRot0 = 1.490116E-08,1,-1.490116E-08,1.490116E-08
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 0
-	sidx = 3
-	sqor = 2
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4292382506
-	sym = engineLargeSkipper_4290064738
-	sym = engineLargeSkipper_4290064550
-	sym = engineLargeSkipper_4290064174
-	sym = engineLargeSkipper_4290063986
-	attN = top,FTT.Structural.375.05_4290425826
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = engineLargeSkipper_4290064174
-	partName = Part
-	pos = 4.149221,22.12499,-5.942146
-	attPos = 0,0,0
-	attPos0 = 1.117587E-07,-0.25,1.490117E-08
-	rot = -1.276145E-08,0.8660254,1.490119E-08,-0.5000001
-	attRot = 0,0,0,1
-	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.726544E-16
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 0
-	sidx = 4
-	sqor = 2
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4292382506
-	sym = engineLargeSkipper_4290064738
-	sym = engineLargeSkipper_4290064550
-	sym = engineLargeSkipper_4290064362
-	sym = engineLargeSkipper_4290063986
-	attN = top,FTT.Structural.375.05_4290425386
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = engineLargeSkipper_4290063986
-	partName = Part
-	pos = -2.616302,22.12499,-6.036077
-	attPos = 0,0,0
-	attPos0 = 3.72529E-07,-0.25,5.960462E-08
-	rot = 2.035533E-08,0.5000001,-1.850232E-08,-0.8660254
-	attRot = 0,0,0,1
-	attRot0 = 1.490116E-08,1,-1.490116E-08,5.330475E-16
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 0
-	sidx = 5
-	sqor = 2
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = engineLargeSkipper_4292382506
-	sym = engineLargeSkipper_4290064738
-	sym = engineLargeSkipper_4290064550
-	sym = engineLargeSkipper_4290064362
-	sym = engineLargeSkipper_4290064174
-	attN = top,FTT.Structural.375.05_4290424946
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEngines
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		isJettisoned = True
-		EVENTS
-		{
-			Jettison
-			{
-				active = False
-				guiActive = True
-				guiIcon = Jettison
-				guiName = Jettison
-				category = Jettison
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 2.5
-		defaultScale = 2.5
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 5300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_EngineLight
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = launchClamp1_4289941856
-	partName = Part
-	pos = -8.620013,20.88451,-0.2239207
-	attPos = 0,0,0
-	attPos0 = 2.539606,-1.490479,-4.172325E-07
-	rot = -9.039085E-09,0.7071069,-1.203435E-08,0.7071069
-	attRot = 0,0,0,1
-	attRot0 = -5.633845E-15,0.7071068,-5.338315E-15,-0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941482
-	sym = launchClamp1_4289941360
-	sym = launchClamp1_4289941238
-	sym = launchClamp1_4289941116
-	sym = launchClamp1_4289940994
-	srfN = srfAttach,FTT.Structural.375.05_4292445876
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ExtendingLaunchClamp
-		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = 9.039084E-09,-0.7071068,1.203434E-08,0.7071068
-		EVENTS
-		{
-			Release
-			{
-				active = False
-				guiActive = True
-				guiIcon = Release Clamp
-				guiName = Release Clamp
-				category = Release Clamp
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Generator
-				guiName = Activate Generator
-				category = Activate Generator
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = True
-				guiActive = True
-				guiIcon = Shutdown Generator
-				guiName = Shutdown Generator
-				category = Shutdown Generator
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RefuelingPump
-		isEnabled = True
-		enablePump = False
-		pump_rate = 100
-		EVENTS
-		{
-			TogglePump
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Toggle Pump
-				guiName = Toggle Pump
-				category = Toggle Pump
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = launchClamp1_4289941482
 	partName = Part
-	pos = -4.048793,20.88451,7.881518
+	pos = -8.608932,6.446603,0.3588426
 	attPos = 0,0,0
 	attPos0 = 2.539606,-1.490479,-2.527069E-07
-	rot = 5.105703E-08,0.9659259,-3.738682E-08,0.258819
+	rot = -3.615621E-09,0.7071069,-1.228249E-07,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
-	dstg = 0
+	istg = 2
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941856
-	sym = launchClamp1_4289941360
-	sym = launchClamp1_4289941238
-	sym = launchClamp1_4289941116
-	sym = launchClamp1_4289940994
+	sym = launchClamp1_4289730998
+	sym = launchClamp1_4289730640
+	sym = launchClamp1_4289730282
+	sym = launchClamp1_4289729924
+	sym = launchClamp1_4289729566
 	srfN = srfAttach,FTT.Structural.375.05_4290426706
 	EVENTS
 	{
@@ -7989,9 +6776,9 @@ PART
 	{
 		name = ExtendingLaunchClamp
 		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = -5.105703E-08,-0.9659259,3.738682E-08,0.258819
+		scaleFactor = 2.816567
+		height = 7.106755
+		towerRot = 3.615621E-09,-0.7071069,1.228249E-07,0.7071068
 		EVENTS
 		{
 			Release
@@ -8173,31 +6960,445 @@ PART
 }
 PART
 {
-	part = launchClamp1_4289941360
+	part = FTT.Structural.375.05_4289731232
 	partName = Part
-	pos = 5.256336,20.88451,7.975446
+	pos = -2.614938,7.937084,6.379095
 	attPos = 0,0,0
-	attPos0 = 2.539606,-1.490479,-1.639128E-07
-	rot = 4.821525E-09,0.9659259,-7.325638E-08,-0.2588192
+	attPos0 = -0.01853733,-2.860484,-0.03210829
+	rot = -2.727104E-08,-0.8660254,1.017768E-07,0.5000001
 	attRot = 0,0,0,1
-	attRot0 = -4.146698E-15,0.7071068,-2.934191E-15,-0.7071068
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
-	dstg = 0
+	istg = 2
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941856
+	link = engineLargeSkipper_4289731184
+	link = launchClamp1_4289730998
+	sym = FTT.Structural.375.05_4290426706
+	sym = FTT.Structural.375.05_4289730874
+	sym = FTT.Structural.375.05_4289730516
+	sym = FTT.Structural.375.05_4289730158
+	sym = FTT.Structural.375.05_4289729800
+	srfN = srfAttach,stackDecoupler_4289734236
+	attN = bottom,engineLargeSkipper_4289731184
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4289731184
+	partName = Part
+	pos = -2.614939,7.687084,6.379095
+	attPos = 0,0,0
+	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
+	rot = -8.142145E-08,0.5000001,-2.181683E-08,0.8660254
+	attRot = 0,0,0,1
+	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4290064738
+	sym = engineLargeSkipper_4289730826
+	sym = engineLargeSkipper_4289730468
+	sym = engineLargeSkipper_4289730110
+	sym = engineLargeSkipper_4289729752
+	attN = top,FTT.Structural.375.05_4289731232
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4289730998
+	partName = Part
+	pos = -3.88474,6.446604,8.578457
+	attPos = 0,0,0
+	attPos0 = 2.539606,-1.490479,-2.527069E-07
+	rot = -6.105866E-08,0.9659259,-5.999426E-08,0.258819
+	attRot = 0,0,0,1
+	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
 	sym = launchClamp1_4289941482
-	sym = launchClamp1_4289941238
-	sym = launchClamp1_4289941116
-	sym = launchClamp1_4289940994
-	srfN = srfAttach,FTT.Structural.375.05_4290426266
+	sym = launchClamp1_4289730640
+	sym = launchClamp1_4289730282
+	sym = launchClamp1_4289729924
+	sym = launchClamp1_4289729566
+	srfN = srfAttach,FTT.Structural.375.05_4289731232
 	EVENTS
 	{
 	}
@@ -8211,9 +7412,9 @@ PART
 	{
 		name = ExtendingLaunchClamp
 		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = -4.821525E-09,-0.9659258,7.325637E-08,-0.2588191
+		scaleFactor = 2.816567
+		height = 7.106755
+		towerRot = 6.105866E-08,-0.9659259,5.999426E-08,0.258819
 		EVENTS
 		{
 			Release
@@ -8395,31 +7596,445 @@ PART
 }
 PART
 {
-	part = launchClamp1_4289941238
+	part = FTT.Structural.375.05_4289730874
 	partName = Part
-	pos = 9.990243,20.88451,-0.03606509
+	pos = 4.325949,7.937084,6.397632
 	attPos = 0,0,0
-	attPos0 = 2.539606,-1.490479,-1.564622E-07
-	rot = -1.203435E-08,0.7071069,9.039085E-09,-0.7071069
+	attPos0 = -0.01853743,-2.860484,-0.03210799
+	rot = 3.27252E-08,-0.4999999,1.221322E-07,0.8660256
 	attRot = 0,0,0,1
-	attRot0 = -5.633845E-15,0.7071068,-5.652333E-15,-0.7071068
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
-	dstg = 0
+	istg = 2
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941856
+	link = engineLargeSkipper_4289730826
+	link = launchClamp1_4289730640
+	sym = FTT.Structural.375.05_4290426706
+	sym = FTT.Structural.375.05_4289731232
+	sym = FTT.Structural.375.05_4289730516
+	sym = FTT.Structural.375.05_4289730158
+	sym = FTT.Structural.375.05_4289729800
+	srfN = srfAttach,stackDecoupler_4289734182
+	attN = bottom,engineLargeSkipper_4289730826
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4289730826
+	partName = Part
+	pos = 4.32595,7.687084,6.397632
+	attPos = 0,0,0
+	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
+	rot = -1.017768E-07,0.8660256,2.7271E-08,0.4999999
+	attRot = 0,0,0,1
+	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4290064738
+	sym = engineLargeSkipper_4289731184
+	sym = engineLargeSkipper_4289730468
+	sym = engineLargeSkipper_4289730110
+	sym = engineLargeSkipper_4289729752
+	attN = top,FTT.Structural.375.05_4289730874
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4289730640
+	partName = Part
+	pos = 5.595753,6.446603,8.596994
+	attPos = 0,0,0
+	attPos0 = 2.539606,-1.490479,-2.527069E-07
+	rot = -1.081773E-07,0.9659259,-5.828125E-08,-0.2588192
+	attRot = 0,0,0,1
+	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
 	sym = launchClamp1_4289941482
-	sym = launchClamp1_4289941360
-	sym = launchClamp1_4289941116
-	sym = launchClamp1_4289940994
-	srfN = srfAttach,FTT.Structural.375.05_4290425826
+	sym = launchClamp1_4289730998
+	sym = launchClamp1_4289730282
+	sym = launchClamp1_4289729924
+	sym = launchClamp1_4289729566
+	srfN = srfAttach,FTT.Structural.375.05_4289730874
 	EVENTS
 	{
 	}
@@ -8433,9 +8048,9 @@ PART
 	{
 		name = ExtendingLaunchClamp
 		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = 1.203434E-08,-0.7071068,-9.039084E-09,-0.7071068
+		scaleFactor = 2.816567
+		height = 7.106755
+		towerRot = 1.081773E-07,-0.9659258,5.828124E-08,-0.2588192
 		EVENTS
 		{
 			Release
@@ -8617,31 +8232,445 @@ PART
 }
 PART
 {
-	part = launchClamp1_4289941116
+	part = FTT.Structural.375.05_4289730516
 	partName = Part
-	pos = 5.419024,20.88451,-8.141511
+	pos = 7.812446,7.937084,0.3959157
 	attPos = 0,0,0
-	attPos0 = 2.539608,-1.490481,-6.644226E-08
-	rot = -3.738684E-08,0.258819,1.216327E-08,-0.965926
+	attPos0 = -0.01853756,-2.860485,-0.03210831
+	rot = 7.45058E-08,1.341105E-07,7.450582E-08,1
 	attRot = 0,0,0,1
-	attRot0 = -6.048248E-15,0.7071068,-5.119436E-15,-0.7071068
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
-	dstg = 0
+	istg = 2
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941856
+	link = engineLargeSkipper_4289730468
+	link = launchClamp1_4289730282
+	sym = FTT.Structural.375.05_4290426706
+	sym = FTT.Structural.375.05_4289731232
+	sym = FTT.Structural.375.05_4289730874
+	sym = FTT.Structural.375.05_4289730158
+	sym = FTT.Structural.375.05_4289729800
+	srfN = srfAttach,stackDecoupler_4289734128
+	attN = bottom,engineLargeSkipper_4289730468
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4289730468
+	partName = Part
+	pos = 7.812446,7.687084,0.3959157
+	attPos = 0,0,0
+	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
+	rot = -5.960466E-08,1,5.960464E-08,-1.192093E-07
+	attRot = 0,0,0,1
+	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4290064738
+	sym = engineLargeSkipper_4289731184
+	sym = engineLargeSkipper_4289730826
+	sym = engineLargeSkipper_4289730110
+	sym = engineLargeSkipper_4289729752
+	attN = top,FTT.Structural.375.05_4289730516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4289730282
+	partName = Part
+	pos = 10.35205,6.446603,0.3959146
+	attPos = 0,0,0
+	attPos0 = 2.539606,-1.490479,-2.527069E-07
+	rot = -8.24859E-08,0.7071068,2.288123E-08,-0.707107
+	attRot = 0,0,0,1
+	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
 	sym = launchClamp1_4289941482
-	sym = launchClamp1_4289941360
-	sym = launchClamp1_4289941238
-	sym = launchClamp1_4289940994
-	srfN = srfAttach,FTT.Structural.375.05_4290425386
+	sym = launchClamp1_4289730998
+	sym = launchClamp1_4289730640
+	sym = launchClamp1_4289729924
+	sym = launchClamp1_4289729566
+	srfN = srfAttach,FTT.Structural.375.05_4289730516
 	EVENTS
 	{
 	}
@@ -8655,9 +8684,9 @@ PART
 	{
 		name = ExtendingLaunchClamp
 		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = 3.738684E-08,-0.258819,-1.216327E-08,-0.9659259
+		scaleFactor = 2.816567
+		height = 7.106754
+		towerRot = 8.248589E-08,-0.7071068,-2.288123E-08,-0.7071069
 		EVENTS
 		{
 			Release
@@ -8839,31 +8868,445 @@ PART
 }
 PART
 {
-	part = launchClamp1_4289940994
+	part = FTT.Structural.375.05_4289730158
 	partName = Part
-	pos = -3.886107,20.88451,-8.235443
+	pos = 4.358056,7.937083,-5.624338
 	attPos = 0,0,0
-	attPos0 = 2.539608,-1.490481,-5.697399E-07
-	rot = 1.489399E-08,-0.258819,2.010858E-08,-0.9659259
+	attPos0 = -0.01853748,-2.860484,-0.03210872
+	rot = 1.424876E-07,0.5000002,3.817945E-08,0.8660254
 	attRot = 0,0,0,1
-	attRot0 = -6.956491E-15,0.7071068,-6.014E-15,-0.7071068
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
-	dstg = 0
+	istg = 2
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = launchClamp1_4289941856
+	link = engineLargeSkipper_4289730110
+	link = launchClamp1_4289729924
+	sym = FTT.Structural.375.05_4290426706
+	sym = FTT.Structural.375.05_4289731232
+	sym = FTT.Structural.375.05_4289730874
+	sym = FTT.Structural.375.05_4289730516
+	sym = FTT.Structural.375.05_4289729800
+	srfN = srfAttach,stackDecoupler_4289734074
+	attN = bottom,engineLargeSkipper_4289730110
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4289730110
+	partName = Part
+	pos = 4.358056,7.687083,-5.624338
+	attPos = 0,0,0
+	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
+	rot = -3.272524E-08,0.8660254,1.221322E-07,-0.5000002
+	attRot = 0,0,0,1
+	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4290064738
+	sym = engineLargeSkipper_4289731184
+	sym = engineLargeSkipper_4289730826
+	sym = engineLargeSkipper_4289730468
+	sym = engineLargeSkipper_4289729752
+	attN = top,FTT.Structural.375.05_4289730158
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4289729924
+	partName = Part
+	pos = 5.627857,6.446603,-7.823701
+	attPos = 0,0,0
+	attPos0 = 2.539606,-1.490479,-2.527069E-07
+	rot = -1.084184E-07,0.2588189,7.893711E-08,-0.965926
+	attRot = 0,0,0,1
+	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
 	sym = launchClamp1_4289941482
-	sym = launchClamp1_4289941360
-	sym = launchClamp1_4289941238
-	sym = launchClamp1_4289941116
-	srfN = srfAttach,FTT.Structural.375.05_4290424946
+	sym = launchClamp1_4289730998
+	sym = launchClamp1_4289730640
+	sym = launchClamp1_4289730282
+	sym = launchClamp1_4289729566
+	srfN = srfAttach,FTT.Structural.375.05_4289730158
 	EVENTS
 	{
 	}
@@ -8877,9 +9320,645 @@ PART
 	{
 		name = ExtendingLaunchClamp
 		isEnabled = True
-		scaleFactor = 8.538638
-		height = 21.54466
-		towerRot = -1.489399E-08,0.258819,-2.010858E-08,-0.9659259
+		scaleFactor = 2.816567
+		height = 7.106754
+		towerRot = 1.084184E-07,-0.2588189,-7.89371E-08,-0.9659259
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Activate Generator
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Shutdown Generator
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RefuelingPump
+		isEnabled = True
+		enablePump = False
+		pump_rate = 100
+		EVENTS
+		{
+			TogglePump
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Toggle Pump
+				guiName = Toggle Pump
+				category = Toggle Pump
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FTT.Structural.375.05_4289729800
+	partName = Part
+	pos = -2.58283,7.937084,-5.642874
+	attPos = 0,0,0
+	attPos0 = -0.01853721,-2.860484,-0.03210849
+	rot = 1.221322E-07,0.8660255,-3.272519E-08,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0.5000001,-0.5000001,-0.4999999,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = engineLargeSkipper_4289729752
+	link = launchClamp1_4289729566
+	sym = FTT.Structural.375.05_4290426706
+	sym = FTT.Structural.375.05_4289731232
+	sym = FTT.Structural.375.05_4289730874
+	sym = FTT.Structural.375.05_4289730516
+	sym = FTT.Structural.375.05_4289730158
+	srfN = srfAttach,stackDecoupler_4289734020
+	attN = bottom,engineLargeSkipper_4289729752
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = engineLargeSkipper_4289729752
+	partName = Part
+	pos = -2.582831,7.687084,-5.642875
+	attPos = 0,0,0
+	attPos0 = 1.117587E-07,-0.25,-1.490115E-08
+	rot = 2.727099E-08,0.5,1.017768E-07,-0.8660255
+	attRot = 0,0,0,1
+	attRot0 = 1.490116E-08,1,-1.490116E-08,-1.34451E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = engineLargeSkipper_4290064738
+	sym = engineLargeSkipper_4289731184
+	sym = engineLargeSkipper_4289730826
+	sym = engineLargeSkipper_4289730468
+	sym = engineLargeSkipper_4289730110
+	attN = top,FTT.Structural.375.05_4289729800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiIcon = Jettison
+				guiName = Jettison
+				category = Jettison
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		gimbalLock_UIFlight
+		{
+			controlEnabled = True
+		}
+		gimbalLimiter_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 5300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_EngineLight
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4289729566
+	partName = Part
+	pos = -3.852634,6.446603,-7.842237
+	attPos = 0,0,0
+	attPos0 = 2.539606,-1.490479,-2.527069E-07
+	rot = -5.828126E-08,-0.2588191,1.081773E-07,-0.9659259
+	attRot = 0,0,0,1
+	attRot0 = -7.4358E-15,0.7071068,-6.557062E-15,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = launchClamp1_4289941482
+	sym = launchClamp1_4289730998
+	sym = launchClamp1_4289730640
+	sym = launchClamp1_4289730282
+	sym = launchClamp1_4289729924
+	srfN = srfAttach,FTT.Structural.375.05_4289729800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ExtendingLaunchClamp
+		isEnabled = True
+		scaleFactor = 2.816567
+		height = 7.106754
+		towerRot = 5.828125E-08,0.2588191,-1.081773E-07,-0.9659258
 		EVENTS
 		{
 			Release
