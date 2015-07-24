@@ -2,7 +2,7 @@ ship = Spherical Core - Test
 version = 1.0.4
 description = 
 type = VAB
-size = 11.91194,29.8326,11.91194
+size = 12.42569,29.8326,13.11328
 PART
 {
 	part = probeStackLarge_4294381140
@@ -7684,7 +7684,7 @@ PART
 	pos = -2.121841,12.42169,-2.936951
 	attPos = 0,0,0
 	attPos0 = -3.115519E-07,-1.1875,8.437695E-15
-	rot = 2.847699E-14,0.8660254,-4.011564E-14,-0.5000001
+	rot = 3.391525E-14,0.8660254,-5.324476E-14,-0.5000001
 	attRot = 0,0,0,1
 	attRot0 = 1.040719E-07,0.7933534,-7.985717E-08,0.6087615
 	mir = 1,1,1
@@ -8842,6 +8842,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292383194
 	link = strutConnector_4292368506
+	link = winglet_4290690304
 	sym = fuelTank3-2_4292391712
 	sym = fuelTank3-2_4292391496
 	sym = fuelTank3-2_4292391280
@@ -9120,7 +9121,7 @@ PART
 	pos = -0.342302,7.73419,3.704381
 	attPos = 0,0,0
 	attPos0 = 2.715749E-13,-4.6875,-1.618651E-13
-	rot = 2.83655E-14,-0.5000001,1.988026E-14,0.8660256
+	rot = 3.269101E-14,-0.5000001,2.551738E-14,0.8660256
 	attRot = 0,0,0,1
 	attRot0 = 6.53437E-15,-0.5,-2.342942E-15,0.8660254
 	mir = 1,1,1
@@ -9136,6 +9137,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292391668
 	link = strutConnector_4292369806
+	link = winglet_4290690260
 	sym = fuelTank3-2_4292488516
 	sym = fuelTank3-2_4292391496
 	sym = fuelTank3-2_4292391280
@@ -9430,6 +9432,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292383022
 	link = strutConnector_4292368434
+	link = winglet_4290690216
 	sym = fuelTank3-2_4292488516
 	sym = fuelTank3-2_4292391712
 	sym = fuelTank3-2_4292391280
@@ -9724,6 +9727,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292382850
 	link = strutConnector_4292368362
+	link = winglet_4290690172
 	sym = fuelTank3-2_4292488516
 	sym = fuelTank3-2_4292391712
 	sym = fuelTank3-2_4292391496
@@ -10002,7 +10006,7 @@ PART
 	pos = -2.121841,7.73419,-2.936951
 	attPos = 0,0,0
 	attPos0 = 2.394031E-13,-4.6875,-1.704855E-13
-	rot = -9.653473E-15,1,2.330555E-14,-2.753376E-08
+	rot = -1.23726E-14,1,2.987011E-14,-2.753376E-08
 	attRot = 0,0,0,1
 	attRot0 = 6.53437E-15,-0.5000001,-2.342943E-15,0.8660254
 	mir = 1,1,1
@@ -10018,6 +10022,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292382678
 	link = strutConnector_4292368290
+	link = winglet_4290690128
 	sym = fuelTank3-2_4292488516
 	sym = fuelTank3-2_4292391712
 	sym = fuelTank3-2_4292391496
@@ -10312,6 +10317,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = engineLargeSkipper_4292382506
 	link = strutConnector_4292368218
+	link = winglet_4290690482
 	sym = fuelTank3-2_4292488516
 	sym = fuelTank3-2_4292391712
 	sym = fuelTank3-2_4292391496
@@ -10590,7 +10596,7 @@ PART
 	pos = -0.342302,3.98419,3.704381
 	attPos = 0,0,0
 	attPos0 = 1.326748E-13,-3.75,-1.227762E-13
-	rot = -3.472723E-14,2.528248E-08,-5.57573E-14,1
+	rot = -4.337825E-14,2.528248E-08,-6.703153E-14,1
 	attRot = 0,0,0,1
 	attRot0 = -1.355101E-14,0.5,3.698574E-15,0.8660254
 	mir = 1,1,1
@@ -13087,7 +13093,7 @@ PART
 	pos = -3.149259,4.269281,-0.3187402
 	attPos = 0,0,0
 	attPos0 = -1.053228,-3.464909,0.6080812
-	rot = 9.537717E-08,-0.7071074,-9.537708E-08,0.7071064
+	rot = 9.537715E-08,-0.7071074,-9.537706E-08,0.7071064
 	attRot = 0,0,0,1
 	attRot0 = 3.491041E-08,-0.2588185,1.302877E-07,-0.965926
 	mir = 1,1,1
@@ -13157,6 +13163,756 @@ PART
 		{
 		}
 		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690482
+	partName = Part
+	pos = -4.755806,4.826891,1.824961
+	attPos = 0,0,0
+	attPos0 = 1.606546,-2.907299,0.9275413
+	rot = -6.136388E-08,0.2588183,-2.290139E-07,0.9659262
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659257,6.136425E-08,-0.2588198
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690304
+	sym = winglet_4290690260
+	sym = winglet_4290690216
+	sym = winglet_4290690172
+	sym = winglet_4290690128
+	srfN = srfAttach,fuelTank3-2_4292390848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690304
+	partName = Part
+	pos = 5.098618,4.826891,3.604505
+	attPos = 0,0,0
+	attPos0 = 1.606546,-2.907299,0.9275416
+	rot = 2.290138E-07,-0.9659259,6.136425E-08,-0.2588199
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659257,6.136425E-08,-0.2588198
+	mir = 1,1,-1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690482
+	sym = winglet_4290690260
+	sym = winglet_4290690216
+	sym = winglet_4290690172
+	sym = winglet_4290690128
+	srfN = srfAttach,fuelTank3-2_4292488516
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690260
+	partName = Part
+	pos = -0.3423037,4.826891,5.559462
+	attPos = 0,0,0
+	attPos0 = 1.606547,-2.907299,0.927542
+	rot = 1.676497E-07,-0.7071064,1.676499E-07,-0.7071075
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659256,6.136425E-08,-0.2588198
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690482
+	sym = winglet_4290690304
+	sym = winglet_4290690216
+	sym = winglet_4290690172
+	sym = winglet_4290690128
+	srfN = srfAttach,fuelTank3-2_4292391712
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690216
+	partName = Part
+	pos = 6.126037,4.826891,-2.08495
+	attPos = 0,0,0
+	attPos0 = 1.606546,-2.907299,0.9275416
+	rot = 2.290139E-07,-0.9659261,-6.136393E-08,0.2588184
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659256,6.136425E-08,-0.2588198
+	mir = 1,1,-1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690482
+	sym = winglet_4290690304
+	sym = winglet_4290690260
+	sym = winglet_4290690172
+	sym = winglet_4290690128
+	srfN = srfAttach,fuelTank3-2_4292391496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690172
+	partName = Part
+	pos = 1.712534,4.826891,-5.819448
+	attPos = 0,0,0
+	attPos0 = 1.606546,-2.907299,0.9275413
+	rot = 1.676499E-07,-0.7071074,-1.676496E-07,0.7071062
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659257,6.136425E-08,-0.2588198
+	mir = 1,1,-1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690482
+	sym = winglet_4290690304
+	sym = winglet_4290690260
+	sym = winglet_4290690216
+	sym = winglet_4290690128
+	srfN = srfAttach,fuelTank3-2_4292391280
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = winglet_4290690128
+	partName = Part
+	pos = -3.728387,4.826891,-3.864492
+	attPos = 0,0,0
+	attPos0 = 1.606546,-2.907299,0.9275415
+	rot = 6.136428E-08,-0.2588198,-2.290138E-07,0.9659258
+	attRot = 0,0,0,1
+	attRot0 = 2.290138E-07,-0.9659257,6.136425E-08,-0.2588198
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = winglet_4290690482
+	sym = winglet_4290690304
+	sym = winglet_4290690260
+	sym = winglet_4290690216
+	sym = winglet_4290690172
+	srfN = srfAttach,fuelTank3-2_4292391064
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
 		{
 		}
 	}
