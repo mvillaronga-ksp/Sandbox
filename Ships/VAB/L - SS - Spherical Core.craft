@@ -2,7 +2,7 @@ ship = L - SS - Spherical Core
 version = 1.0.4
 description = 
 type = VAB
-size = 17.34633,12.29325,16.78083
+size = 17.34633,12.29325,16.78084
 PART
 {
 	part = probeStackLarge_4294381140
@@ -421,17 +421,15 @@ PART
 	link = fuelLine_4288373888
 	link = fuelLine_4288373792
 	link = fuelLine_4288373696
-	link = lightstrobe.white_4287999938
-	link = lightstrobe.white_4287998874
-	link = lightstrobe.white_4287998836
-	link = lightstrobe.white_4287998798
-	link = lightstrobe.white_4287998760
-	link = lightstrobe.white_4287998722
-	link = lightstrobe.white_4287998684
-	link = lightstrobe.white_4287998646
 	link = launchClamp1_4287983268
 	link = launchClamp1_4287717742
 	link = launchClamp1_4287717620
+	link = lightstrobe.white_4287999938
+	link = lightstrobe.white_4285603424
+	link = lightstrobe.white_4285603386
+	link = lightstrobe.white_4285603348
+	link = lightstrobe.white_4285603310
+	link = lightstrobe.white_4285603272
 	attN = top,asasmodule1-2_4294371216
 	attN = bottom,batteryBankLarge_4294222364
 	EVENTS
@@ -540,7 +538,7 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 15172.800000000001
+			amount = 15172.799999999999
 			maxAmount = 23760
 		}
 		TANK
@@ -4023,10 +4021,10 @@ PART
 {
 	part = FTT.Structural.375.05_4289371662
 	partName = Part
-	pos = -2.592716,5.512425,6.452524
+	pos = -2.592716,5.512425,6.452526
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
-	rot = -2.727103E-08,-0.8660256,1.017768E-07,0.5000001
+	rot = -7.889017E-08,-0.8660256,1.315791E-07,0.5000001
 	attRot = 0,0,0,1
 	attRot0 = -5.24061E-08,-1.158268E-08,0.7071068,-0.7071069
 	mir = 1,1,1
@@ -4125,10 +4123,10 @@ PART
 {
 	part = strutConnector_4289371306
 	partName = CompoundPart
-	pos = -2.497062,5.762425,6.426894
+	pos = -2.497062,5.762425,6.426896
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
-	rot = -0.683013,0.6830129,-0.1830129,0.1830118
+	rot = -0.683013,0.6830128,-0.1830129,0.1830118
 	attRot = 0,0,0,1
 	attRot0 = -0.5000001,0.4999993,0.5,-0.5000007
 	mir = 1,1,1
@@ -4250,10 +4248,10 @@ PART
 {
 	part = liquidEngine2_4288463032
 	partName = Part
-	pos = -2.592716,4.072011,6.452524
+	pos = -2.592717,4.072011,6.452527
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = 2.146579E-07,-1.948374E-07,-1.497423E-07,1
+	rot = 2.499144E-07,-3.075227E-07,-1.184785E-07,1
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -4562,7 +4560,7 @@ PART
 {
 	part = stackDecoupler_4288378752
 	partName = Part
-	pos = -3.225351,5.467072,0.4284402
+	pos = -3.225351,5.467072,0.4284403
 	attPos = 0,0,0
 	attPos0 = 1.689682E-08,0.3479352,8.881784E-15
 	rot = 0.7071068,0.7071069,1.557769E-07,1.557769E-07
@@ -4745,7 +4743,7 @@ PART
 {
 	part = FTT.Structural.375.05_4288378698
 	partName = Part
-	pos = -6.085842,5.512424,0.4546251
+	pos = -6.085844,5.512424,0.4546255
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
 	rot = -4.470349E-08,-1,4.470348E-08,-1.639128E-07
@@ -4847,7 +4845,7 @@ PART
 {
 	part = strutConnector_4288378650
 	partName = CompoundPart
-	pos = -6.015821,5.762426,0.5246478
+	pos = -6.015823,5.762426,0.5246481
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
 	rot = -0.4999999,0.5000007,-0.5000005,0.4999992
@@ -4972,10 +4970,10 @@ PART
 {
 	part = liquidEngine2_4288378578
 	partName = Part
-	pos = -6.085836,4.072011,0.4546266
+	pos = -6.085837,4.072011,0.4546274
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = 1.564622E-07,-0.5000002,-2.756715E-07,0.8660254
+	rot = 1.192094E-07,-0.5000002,-3.576279E-07,0.8660254
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -5467,7 +5465,7 @@ PART
 {
 	part = FTT.Structural.375.05_4288378356
 	partName = Part
-	pos = 4.348179,5.512425,6.426345
+	pos = 4.348181,5.512425,6.426349
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
 	rot = -4.071073E-08,-0.5000002,1.09084E-08,0.8660255
@@ -5569,10 +5567,10 @@ PART
 {
 	part = strutConnector_4288378308
 	partName = CompoundPart
-	pos = 4.373809,5.762425,6.330692
+	pos = 4.373811,5.762425,6.330695
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
-	rot = -0.683013,0.6830125,0.1830126,-0.1830135
+	rot = -0.683013,0.6830125,0.1830127,-0.1830136
 	attRot = 0,0,0,1
 	attRot0 = -0.5000001,0.4999993,0.5,-0.5000007
 	mir = 1,1,1
@@ -5694,10 +5692,10 @@ PART
 {
 	part = liquidEngine2_4288378236
 	partName = Part
-	pos = 4.348178,4.072007,6.426342
+	pos = 4.348181,4.072006,6.426346
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = 2.167976E-07,0.5000002,-3.308009E-07,0.8660256
+	rot = 2.140705E-07,0.5000003,-3.409786E-07,0.8660256
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -6006,7 +6004,7 @@ PART
 {
 	part = stackDecoupler_4288378068
 	partName = Part
-	pos = 4.935452,5.467072,0.4284397
+	pos = 4.935452,5.467072,0.4284398
 	attPos = 0,0,0
 	attPos0 = -2.458054E-08,0.3479345,-8.881784E-15
 	rot = 1.557769E-07,1.557769E-07,-0.7071068,-0.7071069
@@ -6189,7 +6187,7 @@ PART
 {
 	part = FTT.Structural.375.05_4288378014
 	partName = Part
-	pos = 7.795938,5.512424,0.4022576
+	pos = 7.795939,5.512424,0.402258
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
 	rot = 4.470348E-08,-1.639128E-07,4.470349E-08,1
@@ -6291,7 +6289,7 @@ PART
 {
 	part = strutConnector_4288377966
 	partName = CompoundPart
-	pos = 7.725921,5.762424,0.3322351
+	pos = 7.725923,5.762424,0.3322356
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
 	rot = -0.5000005,0.4999992,0.4999999,-0.5000007
@@ -6416,10 +6414,10 @@ PART
 {
 	part = liquidEngine2_4288377894
 	partName = Part
-	pos = 7.795938,4.072011,0.4022548
+	pos = 7.795939,4.072011,0.4022546
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = -2.756715E-07,0.8660254,-1.564622E-07,0.5000002
+	rot = -3.576279E-07,0.8660254,-1.192094E-07,0.5000002
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -6911,10 +6909,10 @@ PART
 {
 	part = FTT.Structural.375.05_4288377672
 	partName = Part
-	pos = 4.302825,5.512418,-5.595644
+	pos = 4.302827,5.512417,-5.595646
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
-	rot = 1.221322E-07,0.5000001,3.272524E-08,0.8660256
+	rot = 1.017768E-07,0.5000001,2.727103E-08,0.8660256
 	attRot = 0,0,0,1
 	attRot0 = -5.24061E-08,-1.158268E-08,0.7071068,-0.7071069
 	mir = 1,1,1
@@ -7013,7 +7011,7 @@ PART
 {
 	part = strutConnector_4288377624
 	partName = CompoundPart
-	pos = 4.207171,5.762424,-5.570012
+	pos = 4.207173,5.762424,-5.570014
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
 	rot = -0.1830128,0.1830117,0.683013,-0.683013
@@ -7138,10 +7136,10 @@ PART
 {
 	part = liquidEngine2_4288377552
 	partName = Part
-	pos = 4.302819,4.072006,-5.595649
+	pos = 4.30282,4.072004,-5.595652
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = -1.155556E-07,1,-4.236657E-07,-3.249551E-07
+	rot = -1.053779E-07,1,-4.209386E-07,-3.961989E-07
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -7633,7 +7631,7 @@ PART
 {
 	part = FTT.Structural.375.05_4288377330
 	partName = Part
-	pos = -2.638074,5.512424,-5.569461
+	pos = -2.638075,5.512424,-5.569463
 	attPos = 0,0,0
 	attPos0 = 0.04535418,-2.860485,-0.02618477
 	rot = 5.161913E-08,0.8660253,2.980234E-08,0.5000005
@@ -7735,7 +7733,7 @@ PART
 {
 	part = strutConnector_4288377282
 	partName = CompoundPart
-	pos = -2.663697,5.762424,-5.473807
+	pos = -2.663698,5.762424,-5.473808
 	attPos = 0,0,0
 	attPos0 = -0.07002252,0.25,-0.07002292
 	rot = 0.1830125,-0.1830136,0.683013,-0.6830124
@@ -7860,10 +7858,10 @@ PART
 {
 	part = liquidEngine2_4288377210
 	partName = Part
-	pos = -2.638074,4.072011,-5.569461
+	pos = -2.638076,4.07201,-5.569463
 	attPos = 0,0,0
 	attPos0 = 3.764689E-07,-1.440411,5.367248E-07
-	rot = -2.406631E-07,0.8660256,-3.282172E-07,-0.5000001
+	rot = -2.508408E-07,0.8660256,-3.254901E-07,-0.5000001
 	attRot = 0,0,0,1
 	attRot0 = 1.036299E-07,0.8660255,-3.867519E-07,0.4999999
 	mir = 1,1,1
@@ -8920,1422 +8918,6 @@ PART
 }
 PART
 {
-	part = lightstrobe.white_4287999938
-	partName = Part
-	pos = -2.403493,5.502156,-1.452882
-	attPos = 0,0,0
-	attPos0 = -3.258544,0.01913023,-1.881322
-	rot = 1.114697E-07,0.9659259,2.986823E-08,0.2588191
-	attRot = 0,0,0,1
-	attRot0 = 1.114697E-07,0.9659259,2.986823E-08,0.2588191
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998874
-	partName = Part
-	pos = -2.779383,5.502156,1.402283
-	attPos = 0,0,0
-	attPos0 = -3.634434,0.01913023,0.9738433
-	rot = 1.144147E-07,0.9914449,-1.506298E-08,-0.1305262
-	attRot = 0,0,0,1
-	attRot0 = 1.144147E-07,0.9914449,-1.506298E-08,-0.1305262
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998836
-	partName = Part
-	pos = -1.026271,5.502156,3.686984
-	attPos = 0,0,0
-	attPos0 = -1.881322,0.01913023,3.258544
-	rot = 9.994103E-08,0.8660254,-5.770098E-08,-0.5
-	attRot = 0,0,0,1
-	attRot0 = 9.994103E-08,0.8660254,-5.770098E-08,-0.5
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998798
-	partName = Part
-	pos = 1.828894,5.502156,4.062874
-	attPos = 0,0,0
-	attPos0 = 0.9738429,0.01913023,3.634434
-	rot = 7.025226E-08,0.6087615,-9.155453E-08,-0.7933533
-	attRot = 0,0,0,1
-	attRot0 = 7.025226E-08,0.6087615,-9.155453E-08,-0.7933533
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998760
-	partName = Part
-	pos = 4.113595,5.502156,2.309762
-	attPos = 0,0,0
-	attPos0 = 3.258544,0.01913023,1.881322
-	rot = 2.986823E-08,0.2588191,-1.114697E-07,-0.9659259
-	attRot = 0,0,0,1
-	attRot0 = 2.986823E-08,0.2588191,-1.114697E-07,-0.9659259
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998722
-	partName = Part
-	pos = 4.489485,5.502156,-0.5454035
-	attPos = 0,0,0
-	attPos0 = 3.634434,0.01913023,-0.9738435
-	rot = -1.506298E-08,-0.1305262,-1.144147E-07,-0.9914449
-	attRot = 0,0,0,1
-	attRot0 = -1.506298E-08,-0.1305262,-1.144147E-07,-0.9914449
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998684
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998684
-	partName = Part
-	pos = 2.736373,5.502156,-2.830104
-	attPos = 0,0,0
-	attPos0 = 1.881322,0.01913023,-3.258544
-	rot = -5.770098E-08,-0.5,-9.994103E-08,-0.8660254
-	attRot = 0,0,0,1
-	attRot0 = -5.770098E-08,-0.5,-9.994103E-08,-0.8660254
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998646
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightstrobe.white_4287998646
-	partName = Part
-	pos = -0.1187929,5.502156,-3.205994
-	attPos = 0,0,0
-	attPos0 = -0.9738442,0.01913023,-3.634434
-	rot = -9.155453E-08,-0.7933534,-7.025224E-08,-0.6087614
-	attRot = 0,0,0,1
-	attRot0 = -9.155454E-08,-0.7933535,-7.025225E-08,-0.6087614
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightstrobe.white_4287999938
-	sym = lightstrobe.white_4287998874
-	sym = lightstrobe.white_4287998836
-	sym = lightstrobe.white_4287998798
-	sym = lightstrobe.white_4287998760
-	sym = lightstrobe.white_4287998722
-	sym = lightstrobe.white_4287998684
-	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = launchClamp1_4287983268
 	partName = Part
 	pos = -2.516553,2.929229,-1.518157
@@ -10779,7 +9361,7 @@ PART
 	pos = 4.226657,2.929229,-1.518157
 	attPos = 0,0,0
 	attPos0 = 3.371606,-2.553797,-1.946597
-	rot = -0.1442274,-0.4930173,-0.08326973,0.8539312
+	rot = -0.1442274,-0.4930173,-0.08326974,0.8539312
 	attRot = 0,0,0,1
 	attRot0 = -0.1442274,-0.4930173,-0.08326971,0.8539312
 	mir = 1,1,1
@@ -10811,7 +9393,7 @@ PART
 		isEnabled = True
 		scaleFactor = 1.271089
 		height = 3.207209
-		towerRot = 0.1442274,0.4930173,0.08326973,0.8539312
+		towerRot = 0.1442274,0.4930173,0.08326974,0.8539312
 		EVENTS
 		{
 			Release
@@ -10943,6 +9525,1056 @@ PART
 			}
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4287999938
+	partName = Part
+	pos = -2.410363,5.473153,-1.456848
+	attPos = 0,0,0
+	attPos0 = -3.265414,-0.00987339,-1.885288
+	rot = -6.901913E-07,0.9659259,-1.849362E-07,0.2588191
+	attRot = 0,0,0,1
+	attRot0 = -6.901913E-07,0.9659259,-1.849362E-07,0.2588191
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4285603424
+	sym = lightstrobe.white_4285603386
+	sym = lightstrobe.white_4285603348
+	sym = lightstrobe.white_4285603310
+	sym = lightstrobe.white_4285603272
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4285603424
+	partName = Part
+	pos = -2.410363,5.473153,2.313727
+	attPos = 0,0,0
+	attPos0 = -3.265414,-0.00987339,1.885287
+	rot = -6.901913E-07,0.9659259,1.849362E-07,-0.258819
+	attRot = 0,0,0,1
+	attRot0 = -6.901913E-07,0.9659259,1.849362E-07,-0.258819
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4287999938
+	sym = lightstrobe.white_4285603386
+	sym = lightstrobe.white_4285603348
+	sym = lightstrobe.white_4285603310
+	sym = lightstrobe.white_4285603272
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4285603386
+	partName = Part
+	pos = 0.8550512,5.473153,4.199016
+	attPos = 0,0,0
+	attPos0 = -1.192093E-07,-0.00987339,3.770576
+	rot = -5.052551E-07,0.7071068,5.052551E-07,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -5.052551E-07,0.7071068,5.052551E-07,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4287999938
+	sym = lightstrobe.white_4285603424
+	sym = lightstrobe.white_4285603348
+	sym = lightstrobe.white_4285603310
+	sym = lightstrobe.white_4285603272
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4285603348
+	partName = Part
+	pos = 4.120465,5.473153,2.313728
+	attPos = 0,0,0
+	attPos0 = 3.265414,-0.00987339,1.885288
+	rot = -1.849362E-07,0.2588191,6.901913E-07,-0.9659259
+	attRot = 0,0,0,1
+	attRot0 = -1.849362E-07,0.2588191,6.901913E-07,-0.9659259
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4287999938
+	sym = lightstrobe.white_4285603424
+	sym = lightstrobe.white_4285603386
+	sym = lightstrobe.white_4285603310
+	sym = lightstrobe.white_4285603272
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4285603310
+	partName = Part
+	pos = 4.120466,5.473153,-1.456848
+	attPos = 0,0,0
+	attPos0 = 3.265415,-0.00987339,-1.885288
+	rot = 1.849362E-07,-0.2588191,6.901913E-07,-0.9659259
+	attRot = 0,0,0,1
+	attRot0 = 1.849362E-07,-0.2588191,6.901913E-07,-0.9659259
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4287999938
+	sym = lightstrobe.white_4285603424
+	sym = lightstrobe.white_4285603386
+	sym = lightstrobe.white_4285603348
+	sym = lightstrobe.white_4285603272
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightstrobe.white_4285603272
+	partName = Part
+	pos = 0.8550524,5.473153,-3.342136
+	attPos = 0,0,0
+	attPos0 = 1.072884E-06,-0.00987339,-3.770576
+	rot = 5.052551E-07,-0.7071068,5.052552E-07,-0.7071069
+	attRot = 0,0,0,1
+	attRot0 = 5.052551E-07,-0.7071068,5.052552E-07,-0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightstrobe.white_4287999938
+	sym = lightstrobe.white_4285603424
+	sym = lightstrobe.white_4285603386
+	sym = lightstrobe.white_4285603348
+	sym = lightstrobe.white_4285603310
+	srfN = srfAttach,TAL.Large.Spherical.Tank.Fuel_4294339324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = Light
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
