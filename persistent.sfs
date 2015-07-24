@@ -590,11 +590,11 @@ GAME
 						_current = Kerbin
 						Kerbin
 						{
-							_current = PRELAUNCH
-							_currentUT = 26940.4310645167
-							PRELAUNCH = 6.5400000000004503
-							FLYING = 278.81984375005152
-							SUB_ORBITAL = 73.744892578094209
+							_current = ORBITING
+							_currentUT = 27253.6217676473
+							PRELAUNCH = 19.560000000284649
+							FLYING = 388.77960937741693
+							SUB_ORBITAL = 263.95583008104097
 							ORBITING = 26572.806328188592
 						}
 					}
@@ -672,9 +672,11 @@ GAME
 						_current = Kerbin
 						Kerbin
 						{
-							_current = PRELAUNCH
-							_currentUT = 26940.4310645167
-							PRELAUNCH = 0.36000000000058208
+							_current = ORBITING
+							_currentUT = 27253.6217676473
+							PRELAUNCH = 13.380000000284781
+							FLYING = 109.95976562736541
+							SUB_ORBITAL = 190.21093750294676
 						}
 					}
 				}
@@ -703,11 +705,11 @@ GAME
 						_current = Kerbin
 						Kerbin
 						{
-							_current = PRELAUNCH
-							_currentUT = 26940.4310645167
-							PRELAUNCH = 6.5400000000004503
-							FLYING = 278.81984375005152
-							SUB_ORBITAL = 73.744892578094209
+							_current = ORBITING
+							_currentUT = 27253.6217676473
+							PRELAUNCH = 19.560000000284649
+							FLYING = 388.77960937741693
+							SUB_ORBITAL = 263.95583008104097
 							ORBITING = 26572.806328188584
 						}
 					}
@@ -737,9 +739,11 @@ GAME
 						_current = Kerbin
 						Kerbin
 						{
-							_current = PRELAUNCH
-							_currentUT = 26940.4310645167
-							PRELAUNCH = 0.36000000000058208
+							_current = ORBITING
+							_currentUT = 27253.6217676473
+							PRELAUNCH = 13.380000000284781
+							FLYING = 109.95976562736541
+							SUB_ORBITAL = 190.21093750294676
 						}
 					}
 				}
@@ -902,7 +906,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 89
+		LastSave = 90
 	}
 	SCENARIO
 	{
@@ -926,9 +930,9 @@ GAME
 			STATUS_DATA
 			{
 				KerbalName = Loley Kerman
-				LastMeal = 16806.8037305056
+				LastMeal = 27042.6908301439
 				IsGrouchy = False
-				LastUpdate = 16806.8037305056
+				LastUpdate = 27264.4817676475
 			}
 			STATUS_DATA
 			{
@@ -947,16 +951,39 @@ GAME
 			STATUS_DATA
 			{
 				KerbalName = Jaree Kerman
-				LastMeal = 16806.8037305056
+				LastMeal = 27042.6908301439
 				IsGrouchy = False
-				LastUpdate = 16806.8037305056
+				LastUpdate = 27264.4817676475
+			}
+			STATUS_DATA
+			{
+				KerbalName = Lisphia Kerman
+				LastMeal = 27042.6908301439
+				IsGrouchy = False
+				LastUpdate = 27264.4817676475
+			}
+			STATUS_DATA
+			{
+				KerbalName = Mona Kerman
+				LastMeal = 27042.6908301439
+				IsGrouchy = False
+				LastUpdate = 27264.4817676475
+			}
+			VESSEL_DATA
+			{
+				VesselId = 4836e48e-03d4-4d30-9eb7-84f5f23e9ea4
+				VesselName = L-SS-LifeSupport
+				SuppliesLeft = 0
+				NumCrew = 4
+				LastFeeding = 27042.6908301439
+				LastUpdate = 27264.4817676475
 			}
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 26940.7910645167
+		UT = 27264.4817676475
 		activeVessel = 14
 		mapViewFiltering = 1023
 		VESSEL
@@ -11625,36 +11652,36 @@ GAME
 			pid = 4836e48e03d44d309eb784f5f23e9ea4
 			name = L-SS-LifeSupport
 			type = Station
-			sit = PRELAUNCH
-			landed = True
-			landedAt = LaunchPad
+			sit = ORBITING
+			landed = False
+			landedAt = 
 			splashed = False
-			met = 0
-			lct = 26940.7910645167
+			met = 311.010703130549
+			lct = 26953.451064517
 			root = 0
-			lat = -0.0971598341746633
-			lon = -74.5576588312595
-			alt = 116.458987156046
-			hgt = 44.02222
-			nrm = 0.0007457219,0.9999998,1.069705E-06
-			rot = -0.7009888,-0.09221788,-0.09726541,0.7004642
-			CoM = -0.02368004,-11.85332,0.004401516
-			stg = 7
+			lat = -4.84473006066733
+			lon = -62.7666577201073
+			alt = 122307.565830594
+			hgt = -1
+			nrm = -0.9221949,-0.07331117,0.3797135
+			rot = -0.4941884,-0.6626881,-0.5322745,0.1825002
+			CoM = -0.0007020101,-6.677254,0.002347207
+			stg = 2
 			prst = False
 			ref = 2718385398
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = -1.197018
+			cHdg = 0.7118579
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300831.158003135
-				ECC = 0.994821977954129
-				INC = 0.0971594027198926
-				LPE = 90.0000000000001
-				LAN = 194.457686516265
-				MNA = 3.14159265358979
-				EPH = 26940.7910645167
+				SMA = 725092.148879068
+				ECC = 0.0171392563059984
+				INC = 17.0406765570019
+				LPE = 274.763139245393
+				LAN = 285.58956090693
+				MNA = 4.95509714108892
+				EPH = 27264.4817676475
 				REF = 1
 			}
 			PART
@@ -11679,8 +11706,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 1
 				mass = 0.05
-				temp = 287.216572746983
-				tempExt = 287.59986925725
+				temp = 288.307336616551
+				tempExt = 288.676348406278
 				expt = 0.5
 				state = 1
 				connected = True
@@ -11870,7 +11897,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -11893,7 +11920,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -11973,8 +12000,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.15
-				temp = 287.21596949363
-				tempExt = 287.618296229493
+				temp = 288.30766953151
+				tempExt = 288.759311846938
 				expt = 0.5
 				state = 0
 				connected = True
@@ -12108,8 +12135,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 1.25
-				temp = 287.232308245264
-				tempExt = 288.125640920559
+				temp = 288.337253445131
+				tempExt = 288.835804018672
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12191,15 +12218,15 @@ GAME
 					HeatThrottle = 1
 					HeatThrottleSpeed = 0.05
 					avgHeatThrottle = 1
-					DirtyFlag = True
+					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 						StartResourceConverter
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start Converter
 							guiName = Start Greenhouse
@@ -12239,15 +12266,15 @@ GAME
 					HeatThrottle = 1
 					HeatThrottleSpeed = 0.05
 					avgHeatThrottle = 1
-					DirtyFlag = True
+					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 						StartResourceConverter
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start Converter
 							guiName = Start Agroponics
@@ -12287,15 +12314,15 @@ GAME
 					HeatThrottle = 1
 					HeatThrottleSpeed = 0.05
 					avgHeatThrottle = 1
-					DirtyFlag = True
+					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 						StartResourceConverter
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start Converter
 							guiName = Start Cultivator
@@ -12343,7 +12370,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 26940.791064516707
+					lastUpdateString = 27264.481767647532
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -12597,7 +12624,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 					}
@@ -12629,6 +12656,9 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				MODULE
@@ -12645,7 +12675,7 @@ GAME
 							guiActive = True
 							guiActiveEditor = True
 							guiIcon = 
-							guiName = Seat 0 inventory
+							guiName = Loley's inventory
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 2
@@ -12670,7 +12700,7 @@ GAME
 							guiActive = True
 							guiActiveEditor = True
 							guiIcon = 
-							guiName = Seat 1 inventory
+							guiName = Lisphia's inventory
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 2
@@ -12704,7 +12734,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9999.98659777741
+					amount = 9999.71871920611
 					maxAmount = 10000
 					flowState = True
 					isTweakable = False
@@ -12734,8 +12764,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 1.25
-				temp = 287.256015651376
-				tempExt = 288.135840915434
+				temp = 288.597649978674
+				tempExt = 289.365012729978
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12817,15 +12847,15 @@ GAME
 					HeatThrottle = 1
 					HeatThrottleSpeed = 0.05
 					avgHeatThrottle = 1
-					DirtyFlag = True
+					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 						StartResourceConverter
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start Converter
 							guiName = Start Habitat
@@ -12873,7 +12903,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 26940.791064516707
+					lastUpdateString = 27264.481767647532
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -13127,7 +13157,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 0
+					lastUpdateTime = 27264.4817676475
 					EVENTS
 					{
 					}
@@ -13159,6 +13189,9 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				MODULE
@@ -13175,7 +13208,7 @@ GAME
 							guiActive = True
 							guiActiveEditor = True
 							guiIcon = 
-							guiName = Seat 0 inventory
+							guiName = Mona's inventory
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 2
@@ -13200,7 +13233,7 @@ GAME
 							guiActive = True
 							guiActiveEditor = True
 							guiIcon = 
-							guiName = Seat 1 inventory
+							guiName = Jaree's inventory
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 2
@@ -13234,7 +13267,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9999.98659777741
+					amount = 9999.71871920611
 					maxAmount = 10000
 					flowState = True
 					isTweakable = False
@@ -13264,8 +13297,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 3
 				mass = 0.15
-				temp = 287.262442605152
-				tempExt = 287.651527519134
+				temp = 289.626514742715
+				tempExt = 291.214024471637
 				expt = 0.5
 				state = 0
 				connected = True
@@ -13399,8 +13432,8 @@ GAME
 				attN = top, 6
 				attN = bottom, 4
 				mass = 0.05
-				temp = 287.269546577599
-				tempExt = 287.625962550924
+				temp = 291.488878678126
+				tempExt = 293.735067577192
 				expt = 0.5
 				state = 1
 				connected = True
@@ -13590,7 +13623,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -13613,7 +13646,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -13693,8 +13726,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 7
 				mass = 0.05
-				temp = 287.274234252505
-				tempExt = 287.599905655862
+				temp = 293.249865138145
+				tempExt = 296.247699279569
 				expt = 0.5
 				state = 1
 				connected = True
@@ -13884,7 +13917,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -13907,7 +13940,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -13987,8 +14020,8 @@ GAME
 				attN = bottom, 8
 				attN = top, 6
 				mass = 0.04
-				temp = 287.270090294341
-				tempExt = 287.529706889015
+				temp = 298.69093188844
+				tempExt = 302.55874016364
 				expt = 0
 				state = 0
 				connected = True
@@ -14151,12 +14184,15 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.98659777742196
+					amount = 4.71871920619431
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -14186,8 +14222,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 9
 				mass = 0.05
-				temp = 287.277056202911
-				tempExt = 287.623093598905
+				temp = 300.277309021274
+				tempExt = 303.483846516699
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14278,7 +14314,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 999.986597777422
+					amount = 999.718719206185
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -14308,8 +14344,8 @@ GAME
 				attN = top, 8
 				attN = bottom, 43
 				mass = 0.064
-				temp = 287.286944547846
-				tempExt = 287.629111946515
+				temp = 301.802936326411
+				tempExt = 306.163159089619
 				expt = 32
 				state = 0
 				connected = True
@@ -14424,8 +14460,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 287.289175628511
-				tempExt = 287.62433358172
+				temp = 295.349147292095
+				tempExt = 299.162856320582
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14524,8 +14560,8 @@ GAME
 				attN = top, 12
 				attN = bottom, 10
 				mass = 0.5
-				temp = 287.252581128051
-				tempExt = 287.621856074545
+				temp = 289.400462388536
+				tempExt = 295.011076268518
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14624,8 +14660,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 11
 				mass = 0.25
-				temp = 287.22238260277
-				tempExt = 287.526514440778
+				temp = 288.156573275877
+				tempExt = 292.257559280273
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14722,8 +14758,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 12
 				mass = 0.05
-				temp = 287.211117835215
-				tempExt = 287.425986798844
+				temp = 287.414174739007
+				tempExt = 292.303284120936
 				expt = 0
 				state = 0
 				connected = True
@@ -14846,8 +14882,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 12
 				mass = 0.075
-				temp = 287.20991220961
-				tempExt = 287.577670467493
+				temp = 287.677066686563
+				tempExt = 291.644888875269
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15045,8 +15081,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 12
 				mass = 0.05
-				temp = 287.213958832875
-				tempExt = 287.517507557925
+				temp = 288.157918140493
+				tempExt = 289.881661701541
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15196,8 +15232,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 11
 				mass = 0.05
-				temp = 287.254658457337
-				tempExt = 287.515299812565
+				temp = 289.401037209265
+				tempExt = 294.596213913011
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15350,8 +15386,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 287.289160267152
-				tempExt = 287.624213569066
+				temp = 295.303128025127
+				tempExt = 299.006381241694
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15450,8 +15486,8 @@ GAME
 				attN = top, 19
 				attN = bottom, 17
 				mass = 0.5
-				temp = 287.252567357366
-				tempExt = 287.61674408595
+				temp = 289.383751122379
+				tempExt = 294.845471168452
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15550,8 +15586,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 18
 				mass = 0.25
-				temp = 287.222221719162
-				tempExt = 287.486091218803
+				temp = 288.14375126117
+				tempExt = 291.837550823525
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15648,8 +15684,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 287.211628993534
-				tempExt = 287.385677570497
+				temp = 287.411463704291
+				tempExt = 292.199621834031
 				expt = 0
 				state = 0
 				connected = True
@@ -15772,8 +15808,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 19
 				mass = 0.075
-				temp = 287.209911821903
-				tempExt = 287.577599475509
+				temp = 287.669533391472
+				tempExt = 291.339539864488
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15968,8 +16004,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 19
 				mass = 0.0001
-				temp = 287.227916605247
-				tempExt = 287.324382736157
+				temp = 288.147914269324
+				tempExt = 288.370920594128
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16427,16 +16463,16 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 26940.7910645167
-							deltaVExpended = 0
-							dragLosses = 0
-							gravityLosses = 0
-							steeringLosses = 0
-							markLatitude = -0.097159399431748
-							markLongitude = -74.5576611740677
-							markAltitude = 104.518480072264
+							markUT = 26953.451064517
+							deltaVExpended = 3902.96426349478
+							dragLosses = 99.094880996096
+							gravityLosses = 1654.75333193716
+							steeringLosses = 161.285146318596
+							markLatitude = -0.0971598741582451
+							markLongitude = -74.5576576891632
+							markAltitude = 89.7030243872316
 							markBodyIndex = 1
-							maxDragGees = 0
+							maxDragGees = 0.370511058685806
 							unlockParts = 
 							unlockTechs = 
 						}
@@ -16537,12 +16573,15 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.98659777742196
+					amount = 4.71871920619431
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -16573,8 +16612,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 287.213813110727
-				tempExt = 287.479741560087
+				temp = 288.146016106092
+				tempExt = 290.24082069445
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16724,8 +16763,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 18
 				mass = 0.05
-				temp = 287.254658372334
-				tempExt = 287.515299805296
+				temp = 289.384294429809
+				tempExt = 294.47420963515
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16878,8 +16917,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 287.289148043218
-				tempExt = 287.624094220905
+				temp = 295.298117042337
+				tempExt = 298.928902644619
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16978,8 +17017,8 @@ GAME
 				attN = top, 27
 				attN = bottom, 25
 				mass = 0.5
-				temp = 287.25258109738
-				tempExt = 287.621856070242
+				temp = 289.36310812265
+				tempExt = 294.849906661826
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17078,8 +17117,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 26
 				mass = 0.25
-				temp = 287.222382602714
-				tempExt = 287.526514440209
+				temp = 288.134640482061
+				tempExt = 292.123664789336
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17176,8 +17215,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 27
 				mass = 0.05
-				temp = 287.211117835214
-				tempExt = 287.425986798274
+				temp = 287.40770737077
+				tempExt = 292.176497080223
 				expt = 0
 				state = 0
 				connected = True
@@ -17300,8 +17339,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 27
 				mass = 0.075
-				temp = 287.20991220961
-				tempExt = 287.577670467338
+				temp = 287.6642480518
+				tempExt = 291.518777627157
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17499,8 +17538,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 27
 				mass = 0.05
-				temp = 287.213958832872
-				tempExt = 287.517507557339
+				temp = 288.136766420271
+				tempExt = 290.210171938895
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17650,8 +17689,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 26
 				mass = 0.05
-				temp = 287.254658457168
-				tempExt = 287.51529981269
+				temp = 289.363723412326
+				tempExt = 294.495689737097
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17804,8 +17843,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 287.289301494843
-				tempExt = 287.623998390607
+				temp = 295.277893235553
+				tempExt = 298.839671949293
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17904,8 +17943,8 @@ GAME
 				attN = top, 34
 				attN = bottom, 32
 				mass = 0.5
-				temp = 287.253095911063
-				tempExt = 287.622214568869
+				temp = 289.353472311832
+				tempExt = 294.809276580436
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18004,8 +18043,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 33
 				mass = 0.25
-				temp = 287.222384437623
-				tempExt = 287.526547610671
+				temp = 288.130667084475
+				tempExt = 292.124089628382
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18102,8 +18141,8 @@ GAME
 				sym = 28
 				srfN = srfAttach, 34
 				mass = 0.05
-				temp = 287.211117844446
-				tempExt = 287.426020616749
+				temp = 287.408484913446
+				tempExt = 292.169557971941
 				expt = 0
 				state = 0
 				connected = True
@@ -18226,8 +18265,8 @@ GAME
 				sym = 29
 				srfN = srfAttach, 34
 				mass = 0.075
-				temp = 287.209912239797
-				tempExt = 287.577681124727
+				temp = 287.663811635623
+				tempExt = 291.529598509085
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18425,8 +18464,8 @@ GAME
 				sym = 30
 				srfN = srfAttach, 34
 				mass = 0.05
-				temp = 287.213959038584
-				tempExt = 287.517541798091
+				temp = 288.131841053871
+				tempExt = 289.757250310423
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18576,8 +18615,8 @@ GAME
 				sym = 31
 				srfN = srfAttach, 33
 				mass = 0.05
-				temp = 287.254670667248
-				tempExt = 287.515341739705
+				temp = 289.354061328633
+				tempExt = 294.457921365667
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18727,8 +18766,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 287.273379194343
-				tempExt = 287.569484127355
+				temp = 296.97484624873
+				tempExt = 304.394326841285
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18889,8 +18928,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 287.273852898257
-				tempExt = 287.5692074648
+				temp = 296.973431989413
+				tempExt = 304.38591822884
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19051,8 +19090,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 287.273851695795
-				tempExt = 287.568850718262
+				temp = 296.972033716318
+				tempExt = 304.377517252048
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19213,8 +19252,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 287.273375572299
-				tempExt = 287.568410597646
+				temp = 296.970656453517
+				tempExt = 304.36912428033
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19374,8 +19413,8 @@ GAME
 				attN = bottom, 44
 				attN = top, 9
 				mass = 0.4
-				temp = 287.288966140749
-				tempExt = 287.802251954041
+				temp = 303.654764803167
+				tempExt = 313.027240464157
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19553,15 +19592,15 @@ GAME
 				srfN = , -1
 				attN = bottom, 45
 				attN = top, 43
-				attN = connect01, 68
-				attN = connect02, 67
-				attN = connect03, 66
-				attN = connect04, 69
+				attN = connect01, 51
+				attN = connect02, 50
+				attN = connect03, 49
+				attN = connect04, 52
 				mass = 0.235298
-				temp = 287.289716182109
-				tempExt = 287.493128486908
+				temp = 308.591194311158
+				tempExt = 333.956163595251
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -19805,10 +19844,10 @@ GAME
 				attN = top, 44
 				attN = bottom, 46
 				mass = 0.5
-				temp = 287.29330183831
-				tempExt = 287.877974064441
+				temp = 308.789191845963
+				tempExt = 341.442784915715
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -19907,7 +19946,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 360
+						amount = 0
 						maxAmount = 360
 					}
 					TANK
@@ -19921,7 +19960,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 440
+						amount = 0
 						maxAmount = 440
 					}
 					TANK
@@ -20043,7 +20082,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 360
+					amount = 0
 					maxAmount = 360
 					flowState = True
 					isTweakable = True
@@ -20053,7 +20092,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 440
+					amount = 0
 					maxAmount = 440
 					flowState = True
 					isTweakable = True
@@ -20083,10 +20122,10 @@ GAME
 				attN = top, 45
 				attN = bottom, 47
 				mass = 0.2
-				temp = 287.305594022482
-				tempExt = 287.712861847028
+				temp = 329.517863105225
+				tempExt = 364.437547231301
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -20232,10 +20271,10 @@ GAME
 				attN = top, 46
 				attN = bottom, 48
 				mass = 2
-				temp = 287.316192647695
-				tempExt = 288.298755816578
+				temp = 347.225728172772
+				tempExt = 386.533943344604
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -20334,7 +20373,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1440
+						amount = 409.85640401245195
 						maxAmount = 1440
 					}
 					TANK
@@ -20348,7 +20387,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1760
+						amount = 500.93560490418849
 						maxAmount = 1760
 					}
 					TANK
@@ -20470,7 +20509,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 1440
+					amount = 409.856404012452
 					maxAmount = 1440
 					flowState = True
 					isTweakable = True
@@ -20480,7 +20519,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 1760
+					amount = 500.935604904188
 					maxAmount = 1760
 					flowState = True
 					isTweakable = True
@@ -20508,12 +20547,12 @@ GAME
 				attm = 0
 				srfN = , -1
 				attN = top, 47
-				attN = bottom, 49
+				attN = bottom, -1
 				mass = 3
-				temp = 287.339007204918
-				tempExt = 287.585425831622
+				temp = 483.744811667379
+				tempExt = 446.993488694061
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -20532,9 +20571,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -20550,7 +20589,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -20561,7 +20600,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -20591,12 +20630,12 @@ GAME
 				{
 					name = ModuleJettison
 					isEnabled = True
-					isJettisoned = False
+					isJettisoned = True
 					EVENTS
 					{
 						Jettison
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Jettison
 							guiName = Jettison
@@ -20800,771 +20839,37 @@ GAME
 			}
 			PART
 			{
-				name = decoupler1-2
-				cid = 4289957408
-				uid = 3262150582
+				name = KzProcFairingSide2
+				cid = 4289856940
+				uid = 1304627094
 				mid = 959995982
 				launchID = 6
-				parent = 48
-				position = 0,-18.4981498718262,0
+				parent = 44
+				position = -1.4375,-10.7202911376953,-2.38418579101563E-07
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 3
-				sqor = 2
-				sepI = 2
-				sidx = 1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 50
-				attN = top, 48
-				mass = 0.4
-				temp = 287.359046044622
-				tempExt = 287.836285998353
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = decoupler1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = False
-					ejectionForcePercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (1, 1, 1)
-					DryCost = 550
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = tjs_DecouplerLight
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fuelTank2-2
-				cid = 4289957328
-				uid = 1209802173
-				mid = 959995982
-				launchID = 6
-				parent = 49
-				position = 0,-19.8011207580566,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 4
-				dstg = 4
-				sqor = -1
-				sepI = 2
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 49
-				attN = bottom, 51
-				mass = 1
-				temp = 287.364881354729
-				tempExt = 288.088311966398
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = fuelTank2-2
-				modCost = 734.4
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleFuelTanks
-					isEnabled = True
-					type = Default
-					utilization = 86
-					mass = 1
-					volume = 1600
-					type_UIEditor
-					{
-						controlEnabled = True
-					}
-					utilization_UIEditor
-					{
-						controlEnabled = True
-						minValue = 1
-						maxValue = 100
-						incrementSlide = 1
-					}
-					EVENTS
-					{
-						HideUI
-						{
-							active = False
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Hide UI
-							guiName = Hide UI
-							category = Hide UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ShowUI
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Show UI
-							guiName = Show UI
-							category = Show UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Empty
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Remove All Tanks
-							guiName = Remove All Tanks
-							category = Remove All Tanks
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					TANK
-					{
-						name = LiquidFuel
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 720
-						maxAmount = 720
-					}
-					TANK
-					{
-						name = Oxidizer
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 880
-						maxAmount = 880
-					}
-					TANK
-					{
-						name = MonoPropellant
-						note = 
-						utilization = 1
-						mass = 0.000625
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = XenonGas
-						note = (pressurized)
-						utilization = 56
-						mass = 0.000625
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Karbonite
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Karborundum
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 2000
-						loss_rate = 0
-						temperature = 300
-						fillable = False
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (1, 1, 1)
-					DryCost = 815.6
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 720
-					maxAmount = 720
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 880
-					maxAmount = 880
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelTank1-2
-				cid = 4289957284
-				uid = 2695551593
-				mid = 959995982
-				launchID = 6
-				parent = 50
-				position = 0,-22.6136207580566,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 4
-				dstg = 4
-				sqor = -1
-				sepI = 2
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 50
-				attN = bottom, 52
-				mass = 2
-				temp = 287.387781992169
-				tempExt = 288.374309689563
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = fuelTank1-2
-				modCost = 1468.8
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleFuelTanks
-					isEnabled = True
-					type = Default
-					utilization = 86
-					mass = 2
-					volume = 3200
-					type_UIEditor
-					{
-						controlEnabled = True
-					}
-					utilization_UIEditor
-					{
-						controlEnabled = True
-						minValue = 1
-						maxValue = 100
-						incrementSlide = 1
-					}
-					EVENTS
-					{
-						HideUI
-						{
-							active = False
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Hide UI
-							guiName = Hide UI
-							category = Hide UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ShowUI
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Show UI
-							guiName = Show UI
-							category = Show UI
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Empty
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Remove All Tanks
-							guiName = Remove All Tanks
-							category = Remove All Tanks
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					TANK
-					{
-						name = LiquidFuel
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 1440
-						maxAmount = 1440
-					}
-					TANK
-					{
-						name = Oxidizer
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 1760
-						maxAmount = 1760
-					}
-					TANK
-					{
-						name = MonoPropellant
-						note = 
-						utilization = 1
-						mass = 0.000625
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = XenonGas
-						note = (pressurized)
-						utilization = 56
-						mass = 0.000625
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Karbonite
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 0
-						loss_rate = 0
-						temperature = 300
-						fillable = True
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-					TANK
-					{
-						name = Karborundum
-						note = 
-						utilization = 1
-						mass = 0
-						cost = 2000
-						loss_rate = 0
-						temperature = 300
-						fillable = False
-						techRequired = 
-						amount = 0
-						maxAmount = 0
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (1, 1, 1)
-					DryCost = 1531.2
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 1440
-					maxAmount = 1440
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 1760
-					maxAmount = 1760
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = liquidEngine1-2
-				cid = 4289957240
-				uid = 2117288968
-				mid = 959995982
-				launchID = 6
-				parent = 51
-				position = 0,-25.5539207458496,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				dstg = 4
-				sqor = 3
-				sepI = 2
+				sqor = 1
+				sepI = 0
 				sidx = 0
 				attm = 0
+				sym = 50
+				sym = 51
+				sym = 52
 				srfN = , -1
-				attN = top, 51
-				attN = bottom, 53
-				mass = 6
-				temp = 287.416901148692
-				tempExt = 287.689447909854
+				attN = connect, 44
+				mass = 0.4552605
+				temp = 308.277388223387
+				tempExt = 332.385639434361
 				expt = 0.5
 				state = 0
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = liquidEngine1-2
-				modCost = 0
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
 				EVENTS
 				{
 				}
@@ -21576,68 +20881,52 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleEngines
+					name = ProceduralFairingSide
 					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 2.384186E-07)
+					meshRot = (0, 1, 0, -4.371139E-08)
+					shapeLock = False
+					shapeLock_UIFlight
 					{
 						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
 					}
 					EVENTS
 					{
-						Activate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 					}
 					ACTIONS
 					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
 					}
 				}
 				MODULE
 				{
-					name = ModuleJettison
+					name = ProceduralFairingDecoupler
 					isEnabled = True
-					isJettisoned = False
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
 					EVENTS
 					{
 						Jettison
@@ -21654,101 +20943,10 @@ GAME
 					}
 					ACTIONS
 					{
-						JettisonAction
+						ActionJettison
 						{
 							actionGroup = None
 						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					gimbalLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					gimbalLimiter_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
 					}
 				}
 				MODULE
@@ -21756,21 +20954,6 @@ GAME
 					name = ModuleAGX
 					isEnabled = True
 					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (1, 1, 1)
-					DryCost = 13000
 					EVENTS
 					{
 					}
@@ -21822,10 +21005,69 @@ GAME
 					{
 					}
 				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856110
+				uid = 3065045133
+				mid = 959995982
+				launchID = 6
+				parent = 44
+				position = 0,-10.7202911376953,1.43749952316284
+				rotation = 0,0.7071068,0,0.7071068
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				dstg = 3
+				sqor = 1
+				sepI = 0
+				sidx = 1
+				attm = 0
+				sym = 49
+				sym = 51
+				sym = 52
+				srfN = , -1
+				attN = connect, 44
+				mass = 0.4552605
+				temp = 308.277336342757
+				tempExt = 332.319068840332
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
 				MODULE
 				{
-					name = tjs_EngineLight
+					name = ProceduralFairingSide
 					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 1.713633E-07)
+					meshRot = (0, -1, 0, 0)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
 					EVENTS
 					{
 					}
@@ -21833,16 +21075,1914 @@ GAME
 					{
 					}
 				}
-				RESOURCE
+				MODULE
 				{
-					name = ElectricCharge
-					amount = 0
-					maxAmount = 0.239999994635582
-					flowState = True
-					isTweakable = False
-					hideFlow = True
-					flowMode = Both
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
 				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856064
+				uid = 658278758
+				mid = 959995982
+				launchID = 6
+				parent = 44
+				position = 1.4375,-10.7202911376953,0
+				rotation = 0,1,0,-4.371139E-08
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				dstg = 3
+				sqor = 1
+				sepI = 0
+				sidx = 2
+				attm = 0
+				sym = 49
+				sym = 50
+				sym = 52
+				srfN = , -1
+				attN = connect, 44
+				mass = 0.4552605
+				temp = 308.277296589624
+				tempExt = 332.2663142375
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 1.256702E-07)
+					meshRot = (0, -1, 0, -4.371139E-08)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856018
+				uid = 3459293729
+				mid = 959995982
+				launchID = 6
+				parent = 44
+				position = 0,-10.7202911376953,-1.4375
+				rotation = 0,0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				dstg = 3
+				sqor = 1
+				sepI = 0
+				sidx = 3
+				attm = 0
+				sym = 49
+				sym = 50
+				sym = 51
+				srfN = , -1
+				attN = connect, 44
+				mass = 0.4552605
+				temp = 308.277247377625
+				tempExt = 332.194646653425
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, -1.713634E-07)
+					meshRot = (0, -1, 0, 0)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = False
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971454
+				uid = 876042611
+				mid = 959995982
+				launchID = 6
+				parent = 3
+				position = -1.23245811462402,-5.1704216003418,8.94069671630859E-07
+				rotation = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 54
+				sym = 55
+				sym = 56
+				srfN = srfAttach, 3
+				mass = 0.001
+				temp = 288.608929532767
+				tempExt = 288.817505776483
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971420
+				uid = 725733361
+				mid = 959995982
+				launchID = 6
+				parent = 3
+				position = 0,-5.1704216003418,1.23245859146118
+				rotation = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 53
+				sym = 55
+				sym = 56
+				srfN = srfAttach, 3
+				mass = 0.001
+				temp = 288.609051211128
+				tempExt = 288.817309304543
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971386
+				uid = 2793959225
+				mid = 959995982
+				launchID = 6
+				parent = 3
+				position = 1.23245787620544,-5.1704216003418,0
+				rotation = -2.13083E-15,-2.091697E-07,8.723536E-09,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 53
+				sym = 54
+				sym = 56
+				srfN = srfAttach, 3
+				mass = 0.001
+				temp = 288.608976887243
+				tempExt = 288.816817327849
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971352
+				uid = 2195119676
+				mid = 959995982
+				launchID = 6
+				parent = 3
+				position = -1.04308128356934E-07,-5.1704216003418,-1.23245823383331
+				rotation = 6.16847E-09,0.7071066,6.168473E-09,0.707107
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 53
+				sym = 54
+				sym = 55
+				srfN = srfAttach, 3
+				mass = 0.001
+				temp = 288.608930836513
+				tempExt = 288.816468534375
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971318
+				uid = 4036617016
+				mid = 959995982
+				launchID = 6
+				parent = 2
+				position = -1.23255801200867,-2.06771087646484,8.94069671630859E-07
+				rotation = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 58
+				sym = 59
+				sym = 60
+				srfN = srfAttach, 2
+				mass = 0.001
+				temp = 288.340617835689
+				tempExt = 288.471415898383
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971284
+				uid = 2669103946
+				mid = 959995982
+				launchID = 6
+				parent = 2
+				position = 0,-2.06771087646484,1.23255848884583
+				rotation = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 57
+				sym = 59
+				sym = 60
+				srfN = srfAttach, 2
+				mass = 0.001
+				temp = 288.340574381708
+				tempExt = 288.471126495223
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971250
+				uid = 198094830
+				mid = 959995982
+				launchID = 6
+				parent = 2
+				position = 1.23255801200867,-2.06771087646484,0
+				rotation = -2.13083E-15,-2.091697E-07,8.723536E-09,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 57
+				sym = 58
+				sym = 60
+				srfN = srfAttach, 2
+				mass = 0.001
+				temp = 288.340609347401
+				tempExt = 288.471013064168
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = lightnav.white
+				cid = 4289971216
+				uid = 4008060368
+				mid = 959995982
+				launchID = 6
+				parent = 2
+				position = -1.04308128356934E-07,-2.06771087646484,-1.23255813121796
+				rotation = 6.16847E-09,0.7071066,6.168473E-09,0.707107
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sym = 57
+				sym = 58
+				sym = 59
+				srfN = srfAttach, 2
+				mass = 0.001
+				temp = 288.340551960463
+				tempExt = 288.470659271358
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = lightnav.white
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleNavLight
+					isEnabled = True
+					navLightSwitch = 0
+					EVENTS
+					{
+						FlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Flash
+							guiName = Flash
+							category = Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DoubleFlashEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Double Flash
+							guiName = Double Flash
+							category = Double Flash
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						IntervalEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Interval
+							guiName = Interval
+							category = Interval
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OnEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Light
+							guiName = Light
+							category = Light
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						LightToggle
+						{
+							actionGroup = None
+						}
+						FlashToggle
+						{
+							actionGroup = None
+						}
+						DoubleFlashToggle
+						{
+							actionGroup = None
+						}
+						IntervalToggle
+						{
+							actionGroup = None
+						}
+						Cycle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 26953.351064517
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 27135.6217676447
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = a36ded884af54a4eabf7355a53fb14c6
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 64.7546679698899
+			lct = 27023.4310645185
+			root = 0
+			lat = -0.459586500870404
+			lon = -73.8914740368453
+			alt = 74956.3594345842
+			hgt = -1
+			nrm = 0.6190906,-0.747855,-0.2396661
+			rot = -0.5019388,0.4760489,0.7204677,0.04859269
+			CoM = -0.0002838947,-10.60939,-2.083345E-05
+			stg = 4
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 346426.350042376
+				ECC = 0.986427487401861
+				INC = 12.2744265157714
+				LPE = 3.48848525712879
+				LAN = 285.469806706432
+				MNA = 2.49749059172831
+				EPH = 27077.9847754571
+				REF = 1
 			}
 			PART
 			{
@@ -21851,27 +22991,27 @@ GAME
 				uid = 225174757
 				mid = 959995982
 				launchID = 6
-				parent = 52
-				position = 0,-27.9355716705322,0
+				parent = 0
+				position = 0,0,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 3
-				dstg = 5
+				dstg = 1
 				sqor = 3
 				sepI = 3
 				sidx = 1
 				attm = 0
 				srfN = , -1
-				attN = bottom, 54
-				attN = top, 52
+				attN = bottom, 1
+				attN = top, -1
 				mass = 0.4
-				temp = 287.446394626073
-				tempExt = 287.912273382077
+				temp = 399.558132047196
+				tempExt = 401.153997215735
 				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
+				state = 1
+				connected = False
+				attached = False
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = decoupler1-2
 				modCost = 0
@@ -21889,7 +23029,7 @@ GAME
 					name = ModuleDecouple
 					isEnabled = True
 					ejectionForcePercent = 100
-					isDecoupled = False
+					isDecoupled = True
 					ejectionForcePercent_UIFlight
 					{
 						controlEnabled = True
@@ -21901,7 +23041,7 @@ GAME
 					{
 						Decouple
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Decouple
 							guiName = Decouple
@@ -22031,26 +23171,26 @@ GAME
 				uid = 317607403
 				mid = 959995982
 				launchID = 6
-				parent = 53
-				position = 0,-29.4010410308838,0
+				parent = 0
+				position = 0,-1.46546936035156,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 0
 				srfN = , -1
-				attN = top, 53
-				attN = bottom, 55
+				attN = top, 0
+				attN = bottom, 2
 				mass = 0.2
-				temp = 287.516891666958
-				tempExt = 288.464372390563
+				temp = 400.340564945805
+				tempExt = 401.715866022327
 				expt = 0.5
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = Size3to2Adapter
@@ -22143,26 +23283,26 @@ GAME
 				uid = 146570722
 				mid = 959995982
 				launchID = 6
-				parent = 54
-				position = 0,-31.461051940918,0
+				parent = 1
+				position = 0,-3.52548027038574,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 0
 				srfN = srfAttach, -1
-				attN = top, 54
-				attN = bottom, 56
+				attN = top, 1
+				attN = bottom, 3
 				mass = 2.25
-				temp = 287.459851242206
-				tempExt = 288.327955529179
+				temp = 401.173067204946
+				tempExt = 403.800833608633
 				expt = 0.5
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = Size3SmallTank
@@ -22260,7 +23400,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1620
+						amount = 0
 						maxAmount = 1620
 					}
 					TANK
@@ -22274,7 +23414,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1980
+						amount = 0
 						maxAmount = 1980
 					}
 					TANK
@@ -22396,7 +23536,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 1620
+					amount = 0
 					maxAmount = 1620
 					flowState = True
 					isTweakable = True
@@ -22406,7 +23546,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 1980
+					amount = 0
 					maxAmount = 1980
 					flowState = True
 					isTweakable = True
@@ -22421,26 +23561,26 @@ GAME
 				uid = 171280464
 				mid = 959995982
 				launchID = 6
-				parent = 55
-				position = 0,-36.1680526733398,0
+				parent = 2
+				position = 0,-8.23248100280762,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 0
 				srfN = srfAttach, -1
-				attN = top, 55
-				attN = bottom, 61
+				attN = top, 2
+				attN = bottom, 8
 				mass = 9
-				temp = 287.498315758289
-				tempExt = 289.855431995725
+				temp = 406.1185950138
+				tempExt = 407.733961284058
 				expt = 0.5
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = Size3LargeTank
@@ -22538,7 +23678,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 6480
+						amount = 0
 						maxAmount = 6480
 					}
 					TANK
@@ -22552,7 +23692,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 7920
+						amount = 0
 						maxAmount = 7920
 					}
 					TANK
@@ -22674,7 +23814,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 6480
+					amount = 0
 					maxAmount = 6480
 					flowState = True
 					isTweakable = True
@@ -22684,7 +23824,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 7920
+					amount = 0
 					maxAmount = 7920
 					flowState = True
 					isTweakable = True
@@ -22699,27 +23839,27 @@ GAME
 				uid = 3474139298
 				mid = 959995982
 				launchID = 6
-				parent = 56
-				position = -0.928984820842743,-39.6320495605469,-1.60904836654663
+				parent = 3
+				position = -0.928984820842743,-11.6964778900146,-1.60904836654663
 				rotation = 6.008121E-08,0.5,-1.040637E-07,-0.8660254
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 1
-				sym = 58
-				sym = 59
-				sym = 60
-				srfN = srfAttach, 56
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 3
 				mass = 0.01
-				temp = 287.538585606766
-				tempExt = 287.79374223166
+				temp = 405.624927023442
+				tempExt = 406.623188778113
 				expt = 0.1
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -22823,27 +23963,27 @@ GAME
 				uid = 3863467043
 				mid = 959995982
 				launchID = 6
-				parent = 56
-				position = -1.60904908180237,-39.6320495605469,0.928984582424164
+				parent = 3
+				position = -1.60904908180237,-11.6964778900146,0.928984582424164
 				rotation = -3.110033E-08,-0.2588191,-1.16068E-07,-0.9659258
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 59
-				sym = 60
-				srfN = srfAttach, 56
+				sym = 4
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 3
 				mass = 0.01
-				temp = 287.53874588177
-				tempExt = 287.795151014784
+				temp = 405.716941378589
+				tempExt = 406.85552569133
 				expt = 0.1
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -22947,27 +24087,27 @@ GAME
 				uid = 1797675268
 				mid = 959995982
 				launchID = 6
-				parent = 56
-				position = 0.928984940052032,-39.6320495605469,1.60904860496521
+				parent = 3
+				position = 0.928984940052032,-11.6964778900146,1.60904860496521
 				rotation = -1.040637E-07,-0.8660254,-6.008121E-08,-0.5
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 58
-				sym = 60
-				srfN = srfAttach, 56
+				sym = 4
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 3
 				mass = 0.01
-				temp = 287.538884669833
-				tempExt = 287.796378112705
+				temp = 405.65133902628
+				tempExt = 406.669846565718
 				expt = 0.1
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23071,27 +24211,27 @@ GAME
 				uid = 240161185
 				mid = 959995982
 				launchID = 6
-				parent = 56
-				position = 1.60904788970947,-39.6320495605469,-0.928984880447388
+				parent = 3
+				position = 1.60904788970947,-11.6964778900146,-0.928984880447388
 				rotation = -1.16068E-07,-0.9659258,3.110033E-08,0.2588191
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 6
-				dstg = 6
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 3
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 58
-				sym = 59
-				srfN = srfAttach, 56
+				sym = 4
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 3
 				mass = 0.01
-				temp = 287.538523493916
-				tempExt = 287.797026280645
+				temp = 405.713439330044
+				tempExt = 406.841606215605
 				expt = 0.1
 				state = 0
-				connected = True
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23195,25 +24335,25 @@ GAME
 				uid = 119332383
 				mid = 959995982
 				launchID = 6
-				parent = 56
-				position = 0,-41.435302734375,0
+				parent = 3
+				position = 0,-13.4997310638428,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 4
-				dstg = 6
-				sqor = 4
+				istg = 3
+				dstg = 2
+				sqor = 3
 				sepI = 3
-				sidx = 0
+				sidx = 2
 				attm = 0
 				srfN = , -1
-				attN = top, 56
+				attN = top, 3
 				mass = 15
-				temp = 287.546598281874
-				tempExt = 287.947144060397
+				temp = 418.926300801283
+				tempExt = 416.702292767254
 				expt = 0.5
-				state = 0
-				connected = True
+				state = 1
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = Size3EngineCluster
@@ -23231,11 +24371,11 @@ GAME
 				{
 					name = ModuleEnginesFX
 					isEnabled = True
-					staged = False
-					flameout = False
-					EngineIgnited = False
+					staged = True
+					flameout = True
+					EngineIgnited = True
 					engineShutdown = False
-					currentThrottle = 0
+					currentThrottle = 1
 					thrustPercentage = 100
 					manuallyOverridden = False
 					thrustPercentage_UIFlight
@@ -23249,7 +24389,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -23260,7 +24400,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -23470,6 +24610,1131 @@ GAME
 					flowMode = Both
 				}
 			}
+			ACTIONGROUPS
+			{
+				Stage = True, 26953.351064517
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 26950.9110645169
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 63d399c08198413c90a3f533fa7d3645
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 44.8800000009796
+			lct = 27181.4217676457
+			root = 0
+			lat = -2.76236353404519
+			lon = -69.1230652570924
+			alt = 123079.123805451
+			hgt = -1
+			nrm = -0.8054276,0.3016419,0.5101944
+			rot = -0.7703443,-0.2281353,-0.5573822,0.2094019
+			CoM = 0.001000553,-5.518182,0.0004094401
+			stg = 3
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 409770.210832756
+				ECC = 0.77009219196872
+				INC = 17.1401952439215
+				LPE = 6.93870238280466
+				LAN = 285.650633079035
+				MNA = 3.29229539394418
+				EPH = 27217.8217676465
+				REF = 1
+			}
+			PART
+			{
+				name = decoupler1-2
+				cid = 4289957408
+				uid = 3262150582
+				mid = 959995982
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 1
+				sqor = 2
+				sepI = 2
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 1
+				attN = top, -1
+				mass = 0.4
+				temp = 370.914845212467
+				tempExt = 376.004742361522
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = decoupler1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 2.5
+					defaultScale = 2.5
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 550
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = tjs_DecouplerLight
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTank2-2
+				cid = 4289957328
+				uid = 1209802173
+				mid = 959995982
+				launchID = 6
+				parent = 0
+				position = 0,-1.30297088623047,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 1
+				temp = 372.952878113967
+				tempExt = 377.655582583932
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = fuelTank2-2
+				modCost = 734.4
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Default
+					utilization = 86
+					mass = 1
+					volume = 1600
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						HideUI
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Hide UI
+							guiName = Hide UI
+							category = Hide UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ShowUI
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Show UI
+							guiName = Show UI
+							category = Show UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = LiquidFuel
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 720
+					}
+					TANK
+					{
+						name = Oxidizer
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 880
+					}
+					TANK
+					{
+						name = MonoPropellant
+						note = 
+						utilization = 1
+						mass = 0.000625
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = XenonGas
+						note = (pressurized)
+						utilization = 56
+						mass = 0.000625
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Karbonite
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Karborundum
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 2000
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 2.5
+					defaultScale = 2.5
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 815.6
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 720
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 880
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank1-2
+				cid = 4289957284
+				uid = 2695551593
+				mid = 959995982
+				launchID = 6
+				parent = 1
+				position = 0,-4.11547088623047,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 2
+				temp = 379.809459407574
+				tempExt = 382.050926240888
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = fuelTank1-2
+				modCost = 1468.8
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = Default
+					utilization = 86
+					mass = 2
+					volume = 3200
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						HideUI
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Hide UI
+							guiName = Hide UI
+							category = Hide UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ShowUI
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Show UI
+							guiName = Show UI
+							category = Show UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = LiquidFuel
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 1440
+					}
+					TANK
+					{
+						name = Oxidizer
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 1760
+					}
+					TANK
+					{
+						name = MonoPropellant
+						note = 
+						utilization = 1
+						mass = 0.000625
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = XenonGas
+						note = (pressurized)
+						utilization = 56
+						mass = 0.000625
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Karbonite
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Karborundum
+						note = 
+						utilization = 1
+						mass = 0
+						cost = 2000
+						loss_rate = 0
+						temperature = 300
+						fillable = False
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 2.5
+					defaultScale = 2.5
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1531.2
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 1440
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 1760
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine1-2
+				cid = 4289957240
+				uid = 2117288968
+				mid = 959995982
+				launchID = 6
+				parent = 2
+				position = 0,-7.05577087402344,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sepI = 2
+				sidx = 2
+				attm = 0
+				srfN = , -1
+				attN = top, 2
+				attN = bottom, -1
+				mass = 6
+				temp = 392.636418631319
+				tempExt = 389.198847053888
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = liquidEngine1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					isJettisoned = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					gimbalLimiter = 100
+					gimbalLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					gimbalLimiter_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						LockAction
+						{
+							actionGroup = None
+						}
+						FreeAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 2.5
+					defaultScale = 2.5
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 13000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = tjs_EngineLight
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.239999994635582
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
 			PART
 			{
 				name = basicFin
@@ -23477,27 +25742,27 @@ GAME
 				uid = 3400229903
 				mid = 959995982
 				launchID = 6
-				parent = 51
-				position = -1.20828104019165,-24.1332397460938,0
+				parent = 2
+				position = -1.20828104019165,-5.63508987426758,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 4
-				dstg = 4
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 63
-				sym = 64
-				sym = 65
-				srfN = srfAttach, 51
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
 				mass = 0.01
-				temp = 287.414129576275
-				tempExt = 287.677375539212
+				temp = 379.272601680365
+				tempExt = 380.969843069748
 				expt = 0.1
-				state = 0
-				connected = True
+				state = 1
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23601,27 +25866,27 @@ GAME
 				uid = 3052194649
 				mid = 959995982
 				launchID = 6
-				parent = 51
-				position = 0,-24.1332397460938,1.20828056335449
+				parent = 2
+				position = 0,-5.63508987426758,1.20828056335449
 				rotation = 0,0.7071068,0,0.7071068
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 4
-				dstg = 4
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 62
-				sym = 64
-				sym = 65
-				srfN = srfAttach, 51
+				sym = 4
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
 				mass = 0.01
-				temp = 287.414171568057
-				tempExt = 287.677979667661
+				temp = 379.278670232853
+				tempExt = 380.979300052969
 				expt = 0.1
-				state = 0
-				connected = True
+				state = 1
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23725,27 +25990,27 @@ GAME
 				uid = 2637709114
 				mid = 959995982
 				launchID = 6
-				parent = 51
-				position = 1.20828104019165,-24.1332397460938,-2.38418579101563E-07
+				parent = 2
+				position = 1.20828104019165,-5.63508987426758,-2.38418579101563E-07
 				rotation = 0,1,0,-4.371139E-08
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 4
-				dstg = 4
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 62
-				sym = 63
-				sym = 65
-				srfN = srfAttach, 51
+				sym = 4
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 2
 				mass = 0.01
-				temp = 287.414207717263
-				tempExt = 287.678499839366
+				temp = 379.293818500139
+				tempExt = 381.005337730758
 				expt = 0.1
-				state = 0
-				connected = True
+				state = 1
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23849,27 +26114,27 @@ GAME
 				uid = 1107212943
 				mid = 959995982
 				launchID = 6
-				parent = 51
-				position = -1.04308128356934E-07,-24.1332397460938,-1.20828104019165
+				parent = 2
+				position = -1.04308128356934E-07,-5.63508987426758,-1.20828104019165
 				rotation = 0,0.7071068,0,-0.7071068
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 4
-				dstg = 4
+				istg = 2
+				dstg = 2
 				sqor = -1
 				sepI = 2
 				sidx = -1
 				attm = 1
-				sym = 62
-				sym = 63
-				sym = 64
-				srfN = srfAttach, 51
+				sym = 4
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 2
 				mass = 0.01
-				temp = 287.414238839263
-				tempExt = 287.678947722032
+				temp = 379.302296039576
+				tempExt = 381.017702577361
 				expt = 0.1
-				state = 0
-				connected = True
+				state = 1
+				connected = False
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
 				rTrf = basicFin
@@ -23966,2081 +26231,13 @@ GAME
 					}
 				}
 			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856940
-				uid = 1304627094
-				mid = 959995982
-				launchID = 6
-				parent = 44
-				position = -1.4375,-10.7202911376953,-2.38418579101563E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 0
-				attm = 0
-				sym = 67
-				sym = 68
-				sym = 69
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 287.291335062232
-				tempExt = 287.420869697658
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 2.384186E-07)
-					meshRot = (0, 1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856110
-				uid = 3065045133
-				mid = 959995982
-				launchID = 6
-				parent = 44
-				position = 0,-10.7202911376953,1.43749952316284
-				rotation = 0,0.7071068,0,0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 1
-				attm = 0
-				sym = 66
-				sym = 68
-				sym = 69
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 287.290847657157
-				tempExt = 287.420600996422
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.713633E-07)
-					meshRot = (0, -1, 0, 0)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856064
-				uid = 658278758
-				mid = 959995982
-				launchID = 6
-				parent = 44
-				position = 1.4375,-10.7202911376953,0
-				rotation = 0,1,0,-4.371139E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 2
-				attm = 0
-				sym = 66
-				sym = 67
-				sym = 69
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 287.290847705871
-				tempExt = 287.420665857648
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.256702E-07)
-					meshRot = (0, -1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856018
-				uid = 3459293729
-				mid = 959995982
-				launchID = 6
-				parent = 44
-				position = 0,-10.7202911376953,-1.4375
-				rotation = 0,0.7071068,0,-0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 3
-				attm = 0
-				sym = 66
-				sym = 67
-				sym = 68
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 287.290847743919
-				tempExt = 287.420716543315
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, -1.713634E-07)
-					meshRot = (0, -1, 0, 0)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971454
-				uid = 876042611
-				mid = 959995982
-				launchID = 6
-				parent = 3
-				position = -1.23245811462402,-5.1704216003418,8.94069671630859E-07
-				rotation = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 71
-				sym = 72
-				sym = 73
-				srfN = srfAttach, 3
-				mass = 0.001
-				temp = 287.270629389836
-				tempExt = 287.678617669959
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971420
-				uid = 725733361
-				mid = 959995982
-				launchID = 6
-				parent = 3
-				position = 0,-5.1704216003418,1.23245859146118
-				rotation = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 70
-				sym = 72
-				sym = 73
-				srfN = srfAttach, 3
-				mass = 0.001
-				temp = 287.270620023636
-				tempExt = 287.678443846349
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971386
-				uid = 2793959225
-				mid = 959995982
-				launchID = 6
-				parent = 3
-				position = 1.23245787620544,-5.1704216003418,0
-				rotation = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 70
-				sym = 71
-				sym = 73
-				srfN = srfAttach, 3
-				mass = 0.001
-				temp = 287.270610666466
-				tempExt = 287.678270188406
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971352
-				uid = 2195119676
-				mid = 959995982
-				launchID = 6
-				parent = 3
-				position = -1.04308128356934E-07,-5.1704216003418,-1.23245823383331
-				rotation = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 70
-				sym = 71
-				sym = 72
-				srfN = srfAttach, 3
-				mass = 0.001
-				temp = 287.27060131829
-				tempExt = 287.678096695966
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971318
-				uid = 4036617016
-				mid = 959995982
-				launchID = 6
-				parent = 2
-				position = -1.23255801200867,-2.06771087646484,8.94069671630859E-07
-				rotation = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 75
-				sym = 76
-				sym = 77
-				srfN = srfAttach, 2
-				mass = 0.001
-				temp = 287.245199862219
-				tempExt = 287.617810028706
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971284
-				uid = 2669103946
-				mid = 959995982
-				launchID = 6
-				parent = 2
-				position = 0,-2.06771087646484,1.23255848884583
-				rotation = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 74
-				sym = 76
-				sym = 77
-				srfN = srfAttach, 2
-				mass = 0.001
-				temp = 287.245190537752
-				tempExt = 287.617645234074
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971250
-				uid = 198094830
-				mid = 959995982
-				launchID = 6
-				parent = 2
-				position = 1.23255801200867,-2.06771087646484,0
-				rotation = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 74
-				sym = 75
-				sym = 77
-				srfN = srfAttach, 2
-				mass = 0.001
-				temp = 287.245181222406
-				tempExt = 287.617480599334
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = lightnav.white
-				cid = 4289971216
-				uid = 4008060368
-				mid = 959995982
-				launchID = 6
-				parent = 2
-				position = -1.04308128356934E-07,-2.06771087646484,-1.23255813121796
-				rotation = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 74
-				sym = 75
-				sym = 76
-				srfN = srfAttach, 2
-				mass = 0.001
-				temp = 287.245171916148
-				tempExt = 287.617316124331
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = lightnav.white
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleNavLight
-					isEnabled = True
-					navLightSwitch = 0
-					EVENTS
-					{
-						FlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Flash
-							guiName = Flash
-							category = Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DoubleFlashEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Double Flash
-							guiName = Double Flash
-							category = Double Flash
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						IntervalEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Interval
-							guiName = Interval
-							category = Interval
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						OnEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Light
-							guiName = Light
-							category = Light
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						LightToggle
-						{
-							actionGroup = None
-						}
-						FlashToggle
-						{
-							actionGroup = None
-						}
-						DoubleFlashToggle
-						{
-							actionGroup = None
-						}
-						IntervalToggle
-						{
-							actionGroup = None
-						}
-						Cycle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
+				Stage = True, 26953.351064517
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 0
+				SAS = False, 27135.6217676447
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -26278,6 +26475,9 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -26366,6 +26566,9 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
 			}
 		}
 		KERBAL
