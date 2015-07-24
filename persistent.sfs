@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 81
+		LastSave = 82
 	}
 	SCENARIO
 	{
@@ -934,7 +934,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 22039.8953613816
+		UT = 22112.8553613829
 		activeVessel = 7
 		mapViewFiltering = 1023
 		VESSEL
@@ -1516,36 +1516,36 @@ GAME
 			pid = 4e1347a7f18d48f6a9f00895373d8b96
 			name = L - SS - Spherical Core
 			type = Probe
-			sit = SUB_ORBITAL
+			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 269.963574224275
+			met = 342.903574225529
 			lct = 21769.9317871573
 			root = 0
-			lat = -0.174162135580403
-			lon = -56.8934552194314
-			alt = 73370.6036187587
+			lat = -0.204091505838738
+			lon = -45.7057372399241
+			alt = 74984.7353584103
 			hgt = -1
-			nrm = -0.05394648,-0.08570433,-0.994859
-			rot = 0.200899,-0.2384131,-0.6799417,0.6636853
-			CoM = -2.011107E-06,-4.862753,-5.771411E-07
+			nrm = 0.4555038,-0.8490186,-0.2677383
+			rot = 0.6585842,-0.4911931,-0.5699633,-0.0117484
+			CoM = -4.514076E-05,-4.970006,-6.337974E-05
 			stg = 1
 			prst = False
 			ref = 2435069026
 			ctrl = True
-			cPch = 0.01599991
-			cHdg = 1.562
+			cPch = 0.6743903
+			cHdg = -3.850385
 			cMod = 0
 			ORBIT
 			{
-				SMA = 441347.6133472
-				ECC = 0.529521565619494
-				INC = 0.227768523570633
-				LPE = 53.6901216389691
-				LAN = 170.564810800893
-				MNA = 2.85960726700483
-				EPH = 22024.5053613816
+				SMA = 674883.496136679
+				ECC = 0.000379514423208713
+				INC = 0.229555289732214
+				LPE = 356.971471706143
+				LAN = 170.205896909213
+				MNA = 4.28844374382391
+				EPH = 22112.8553613829
 				REF = 1
 			}
 			PART
@@ -1570,8 +1570,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 48
 				mass = 0.5
-				temp = 374.950721467861
-				tempExt = 392.703659254545
+				temp = 409.236655382517
+				tempExt = 422.289736471997
 				expt = 0
 				state = 0
 				connected = True
@@ -1773,12 +1773,13 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 26.6931845051918
+					amount = 28.9420042492879
 					maxAmount = 30
 					flowState = True
 					isTweakable = True
@@ -1808,8 +1809,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.2
-				temp = 375.826519070223
-				tempExt = 395.346652817896
+				temp = 411.775171321534
+				tempExt = 426.147193763798
 				expt = 0.5
 				state = 0
 				connected = True
@@ -1957,8 +1958,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 13.5
-				temp = 375.867422865097
-				tempExt = 398.970760033828
+				temp = 412.078936961146
+				tempExt = 430.124284044562
 				expt = 0.5
 				state = 0
 				connected = True
@@ -2047,7 +2048,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1291.2105554363857
+						amount = 317.61758124962461
 						maxAmount = 19440
 					}
 					TANK
@@ -2061,7 +2062,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 1578.1573455288653
+						amount = 388.21037707862513
 						maxAmount = 23760
 					}
 					TANK
@@ -2240,7 +2241,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 1291.21055543639
+					amount = 317.617581249625
 					maxAmount = 19440
 					flowState = True
 					isTweakable = True
@@ -2250,7 +2251,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 1578.15734552887
+					amount = 388.210377078625
 					maxAmount = 23760
 					flowState = True
 					isTweakable = True
@@ -2280,8 +2281,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 375.865872487162
-				tempExt = 397.780771450861
+				temp = 412.002393513089
+				tempExt = 425.786715010641
 				expt = 0.5
 				state = 0
 				connected = True
@@ -2372,7 +2373,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3996.69318450562
+					amount = 3998.94200424857
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -2402,8 +2403,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 3
 				mass = 0.2
-				temp = 375.879116000213
-				tempExt = 382.172657786832
+				temp = 412.005891584471
+				tempExt = 423.090662682769
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2616,7 +2617,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -2694,8 +2695,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 3
 				mass = 0.0001
-				temp = 375.952828651039
-				tempExt = 377.84298950585
+				temp = 412.05220766439
+				tempExt = 414.651445276203
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3117,7 +3118,7 @@ GAME
 						}
 						MechJebModuleThrustController
 						{
-							limitThrottle = False
+							limitThrottle = True
 							unlockParts = 
 							unlockTechs = 
 							maxThrottle
@@ -3154,10 +3155,10 @@ GAME
 						MechJebModuleFlightRecorder
 						{
 							markUT = 21769.9317871573
-							deltaVExpended = 3617.25097059572
+							deltaVExpended = 4334.92291893511
 							dragLosses = 807.055154657888
-							gravityLosses = 1419.90605809828
-							steeringLosses = 13.1658390620577
+							gravityLosses = 1428.97638977582
+							steeringLosses = 13.473794898521
 							markLatitude = -0.0971674488567749
 							markLongitude = -74.5575977423674
 							markAltitude = 77.7255451778532
@@ -3265,12 +3266,13 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 1.69318450518901
+					amount = 3.94200424928683
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -3305,8 +3307,8 @@ GAME
 				attN = top, 7
 				attN = bottom, -1
 				mass = 0.05
-				temp = 453.673368939593
-				tempExt = 460.85121204733
+				temp = 474.945434371791
+				tempExt = 480.626868281831
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3519,7 +3521,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -3604,8 +3606,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 6
 				mass = 0.05
-				temp = 516.531922317388
-				tempExt = 509.795260176786
+				temp = 526.127568751854
+				tempExt = 520.587823828957
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3789,8 +3791,8 @@ GAME
 				attN = bottom, 10
 				attN = top, -1
 				mass = 0.75
-				temp = 562.138325793314
-				tempExt = 548.800507277724
+				temp = 563.406683572343
+				tempExt = 552.490091904395
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3889,8 +3891,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 8
 				mass = 0.05
-				temp = 451.499765403562
-				tempExt = 547.467904672347
+				temp = 479.766650117867
+				tempExt = 551.27262391189
 				expt = 0
 				state = 0
 				connected = True
@@ -4017,8 +4019,8 @@ GAME
 				attN = top, 8
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 601.415617681187
-				tempExt = 577.30024181362
+				temp = 595.980934933279
+				tempExt = 576.341758583669
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -4332,8 +4334,8 @@ GAME
 				attN = top, 12
 				attN = bottom, -1
 				mass = 0.05
-				temp = 448.199244806942
-				tempExt = 455.698869492155
+				temp = 470.717180007625
+				tempExt = 476.714082546947
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4546,7 +4548,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -4631,8 +4633,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 11
 				mass = 0.05
-				temp = 506.513874086576
-				tempExt = 500.62898428056
+				temp = 518.39818635597
+				tempExt = 513.646787753483
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4816,8 +4818,8 @@ GAME
 				attN = bottom, 15
 				attN = top, -1
 				mass = 0.75
-				temp = 548.773566815091
-				tempExt = 536.513035586696
+				temp = 553.109770173574
+				tempExt = 543.15924393295
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4916,8 +4918,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 13
 				mass = 0.05
-				temp = 445.474637499654
-				tempExt = 535.26877155425
+				temp = 472.280518429216
+				tempExt = 541.989160412915
 				expt = 0
 				state = 0
 				connected = True
@@ -5044,8 +5046,8 @@ GAME
 				attN = top, 13
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 584.874969390497
-				tempExt = 562.627176207631
+				temp = 583.518861466606
+				tempExt = 565.353636168765
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -5359,8 +5361,8 @@ GAME
 				attN = top, 17
 				attN = bottom, -1
 				mass = 0.05
-				temp = 446.933252646269
-				tempExt = 454.485073489398
+				temp = 469.632147470906
+				tempExt = 475.723681468021
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5573,7 +5575,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -5658,8 +5660,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 16
 				mass = 0.05
-				temp = 504.173042291784
-				tempExt = 498.413161588167
+				temp = 516.41078700305
+				tempExt = 511.846849684227
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5843,8 +5845,8 @@ GAME
 				attN = bottom, 20
 				attN = top, -1
 				mass = 0.75
-				temp = 545.616093501443
-				tempExt = 533.490673755247
+				temp = 550.460322943957
+				tempExt = 540.727049232632
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5943,8 +5945,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 18
 				mass = 0.05
-				temp = 445.725844332381
-				tempExt = 532.295767715176
+				temp = 471.696453690643
+				tempExt = 539.585278254457
 				expt = 0
 				state = 0
 				connected = True
@@ -6071,8 +6073,8 @@ GAME
 				attN = top, 18
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 580.519954557737
-				tempExt = 558.88556358293
+				temp = 580.304216403785
+				tempExt = 562.433984957567
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -6386,8 +6388,8 @@ GAME
 				attN = top, 22
 				attN = bottom, -1
 				mass = 0.05
-				temp = 449.896961184058
-				tempExt = 457.299800494045
+				temp = 471.828722566592
+				tempExt = 477.829124610513
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6600,7 +6602,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -6685,8 +6687,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 21
 				mass = 0.05
-				temp = 509.565886561119
-				tempExt = 503.310494042474
+				temp = 520.415452429747
+				tempExt = 515.494813754812
 				expt = 0.5
 				state = 0
 				connected = True
@@ -6870,8 +6872,8 @@ GAME
 				attN = bottom, 25
 				attN = top, -1
 				mass = 0.75
-				temp = 552.770652231853
-				tempExt = 539.981675310282
+				temp = 555.78682983624
+				tempExt = 545.594906290015
 				expt = 0.5
 				state = 0
 				connected = True
@@ -6970,8 +6972,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 23
 				mass = 0.05
-				temp = 450.790808297248
-				tempExt = 538.765493761987
+				temp = 477.016753011838
+				tempExt = 544.446470581735
 				expt = 0
 				state = 0
 				connected = True
@@ -7098,8 +7100,8 @@ GAME
 				attN = top, 23
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 588.918189138973
-				tempExt = 566.503435751327
+				temp = 586.729940259359
+				tempExt = 568.155756512755
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -7413,8 +7415,8 @@ GAME
 				attN = top, 27
 				attN = bottom, -1
 				mass = 0.05
-				temp = 450.066445683008
-				tempExt = 457.46622710236
+				temp = 471.889115794791
+				tempExt = 477.936524269622
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7627,7 +7629,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -7712,8 +7714,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 26
 				mass = 0.05
-				temp = 509.856795926604
-				tempExt = 503.505440141127
+				temp = 520.518289498223
+				tempExt = 515.628567543739
 				expt = 0.5
 				state = 0
 				connected = True
@@ -7897,8 +7899,8 @@ GAME
 				attN = bottom, 30
 				attN = top, -1
 				mass = 0.75
-				temp = 553.134380950891
-				tempExt = 540.22982518941
+				temp = 555.917367736751
+				tempExt = 545.741256957199
 				expt = 0.5
 				state = 0
 				connected = True
@@ -7997,8 +7999,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 28
 				mass = 0.05
-				temp = 448.638669568305
-				tempExt = 538.996439270631
+				temp = 475.466559360972
+				tempExt = 544.569672323982
 				expt = 0
 				state = 0
 				connected = True
@@ -8125,8 +8127,8 @@ GAME
 				attN = top, 28
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 589.088925825307
-				tempExt = 566.700310355802
+				temp = 586.887264620961
+				tempExt = 568.365630789789
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -8440,8 +8442,8 @@ GAME
 				attN = top, 32
 				attN = bottom, -1
 				mass = 0.05
-				temp = 450.888621577063
-				tempExt = 458.332400562892
+				temp = 472.587095092868
+				tempExt = 478.617158790389
 				expt = 0.5
 				state = 1
 				connected = True
@@ -8654,7 +8656,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -8739,8 +8741,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 31
 				mass = 0.05
-				temp = 511.362268800005
-				tempExt = 504.965618462667
+				temp = 521.786958816617
+				tempExt = 516.764908700577
 				expt = 0.5
 				state = 0
 				connected = True
@@ -8924,8 +8926,8 @@ GAME
 				attN = bottom, 35
 				attN = top, -1
 				mass = 0.75
-				temp = 555.153310517247
-				tempExt = 542.167565360518
+				temp = 557.603023887762
+				tempExt = 547.24068589086
 				expt = 0.5
 				state = 0
 				connected = True
@@ -9024,8 +9026,8 @@ GAME
 				sym = 29
 				srfN = srfAttach, 33
 				mass = 0.05
-				temp = 447.717578083906
-				tempExt = 540.897159504418
+				temp = 475.275304489753
+				tempExt = 546.049701131224
 				expt = 0
 				state = 0
 				connected = True
@@ -9152,8 +9154,8 @@ GAME
 				attN = top, 33
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 591.838854136583
-				tempExt = 569.085467700875
+				temp = 588.926714377406
+				tempExt = 570.103419171668
 				expt = 1.149984
 				state = 1
 				connected = True
@@ -9465,8 +9467,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.579562544994
-				tempExt = 397.506837046798
+				temp = 336.870197205044
+				tempExt = 428.579422856381
 				expt = 0
 				state = 0
 				connected = True
@@ -9591,8 +9593,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.580301040274
-				tempExt = 397.506681805752
+				temp = 336.870738581404
+				tempExt = 428.57923606813
 				expt = 0
 				state = 0
 				connected = True
@@ -9717,8 +9719,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.70405730341
-				tempExt = 397.507787305703
+				temp = 336.962381780581
+				tempExt = 428.579982938112
 				expt = 0
 				state = 0
 				connected = True
@@ -9843,8 +9845,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.64574517751
-				tempExt = 397.507027119757
+				temp = 336.919192738369
+				tempExt = 428.579348149647
 				expt = 0
 				state = 0
 				connected = True
@@ -9969,8 +9971,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.578331448135
-				tempExt = 397.506173549134
+				temp = 336.869263425808
+				tempExt = 428.578644203731
 				expt = 0
 				state = 0
 				connected = True
@@ -10095,8 +10097,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 316.748564301306
-				tempExt = 397.5077553591
+				temp = 336.995325247064
+				tempExt = 428.579743810746
 				expt = 0
 				state = 0
 				connected = True
@@ -10221,8 +10223,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 376.278994877125
-				tempExt = 380.155407424963
+				temp = 412.44371325667
+				tempExt = 416.694659858741
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10397,8 +10399,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 376.280635127291
-				tempExt = 380.100648590561
+				temp = 412.206222886392
+				tempExt = 416.815680259026
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10573,8 +10575,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 375.987867832666
-				tempExt = 377.682599778367
+				temp = 412.446804180004
+				tempExt = 417.113038498908
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10749,8 +10751,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 375.88195954466
-				tempExt = 377.055345146083
+				temp = 412.149201971983
+				tempExt = 414.422275467972
 				expt = 0.5
 				state = 0
 				connected = True
@@ -10925,8 +10927,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 376.223928042908
-				tempExt = 379.219863385706
+				temp = 412.235241955129
+				tempExt = 415.065612036814
 				expt = 0.5
 				state = 0
 				connected = True
@@ -11101,8 +11103,8 @@ GAME
 				sym = 46
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 376.264810237849
-				tempExt = 380.360853735845
+				temp = 412.127184549257
+				tempExt = 418.409434644647
 				expt = 0.5
 				state = 0
 				connected = True
@@ -11274,8 +11276,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 0
 				mass = 0.2
-				temp = 374.95596628776
-				tempExt = 380.150723306545
+				temp = 409.20130359738
+				tempExt = 419.860920341402
 				expt = 0.5
 				state = 1
 				connected = True
@@ -11488,7 +11490,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -11550,9 +11552,9 @@ GAME
 			{
 				Stage = True, 21769.9317871573
 				Gear = True, 0
-				Light = False, 0
+				Light = False, 22110.2553613828
 				RCS = False, 0
-				SAS = True, 22024.4853613816
+				SAS = False, 22053.4953613816
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -11576,11 +11578,6 @@ GAME
 			}
 			FLIGHTPLAN
 			{
-				MANEUVER
-				{
-					UT = 22068.5192408631
-					dV = -5.6843418860808E-14,-2.22044604925031E-16,718.30859375
-				}
 			}
 			CTRLSTATE
 			{
