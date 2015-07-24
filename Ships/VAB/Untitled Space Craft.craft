@@ -2,14 +2,14 @@ ship = Untitled Space Craft
 version = 1.0.4
 description = 
 type = VAB
-size = 4.81393,43.74702,4.813929
+size = 4.813929,44.48203,4.813929
 PART
 {
-	part = dockingPort2_4289975620
+	part = dockingPort2_4294279852
 	partName = Part
-	pos = 0.227014,59.21749,0.5036314
+	pos = 0.02464405,32.94481,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 0.227014,59.21749,0.5036314
+	attPos0 = 0.02464405,32.94481,-0.1306405
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -24,8 +24,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = OKS.Cap_4289975572
-	attN = bottom,OKS.Cap_4289975572
+	link = OKS.Cap_4294279804
+	attN = bottom,OKS.Cap_4294279804
 	EVENTS
 	{
 	}
@@ -297,11 +297,11 @@ PART
 }
 PART
 {
-	part = OKS.Cap_4289975572
+	part = OKS.Cap_4294279804
 	partName = Part
-	pos = 0.227014,58.9175,0.5036314
+	pos = 0.02464405,32.64481,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 0,-0.2999992,0
+	attPos0 = 0.2897058,42.75542,-0.2932848
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -316,9 +316,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = OKS.Aeroponics_4289975456
-	attN = top,dockingPort2_4289975620
-	attN = bottom,OKS.Aeroponics_4289975456
+	link = OKS.PDU_4294279688
+	attN = top,dockingPort2_4294279852
+	attN = bottom,OKS.PDU_4294279688
 	EVENTS
 	{
 	}
@@ -431,9 +431,9 @@ PART
 }
 PART
 {
-	part = OKS.Aeroponics_4289975456
+	part = OKS.PDU_4294279688
 	partName = Part
-	pos = 0.227014,57.1675,0.5036314
+	pos = 0.02464405,30.89481,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-1.75,0
 	rot = 0,0,0,1
@@ -450,13 +450,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = OKS.Kerbitat_4289975154
-	link = lightnav.white_4289971318
-	link = lightnav.white_4289971284
-	link = lightnav.white_4289971250
-	link = lightnav.white_4289971216
-	attN = top,OKS.Cap_4289975572
-	attN = bottom,OKS.Kerbitat_4289975154
+	link = asasmodule1-2_4294279230
+	link = mumech.MJ2.AR202_4294278196
+	link = mumech.MJ2.AR202_4294278136
+	attN = top,OKS.Cap_4294279804
+	attN = bottom,asasmodule1-2_4294279230
 	EVENTS
 	{
 	}
@@ -465,6 +463,947 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleFieldRepair
+		isEnabled = True
+		EVENTS
+		{
+			PerformMaintenance
+			{
+				active = True
+				guiActive = False
+				guiIcon = Perform maintenance
+				guiName = Perform maintenance
+				category = Perform maintenance
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceConverter
+		isEnabled = True
+		HeatThrottle = 1
+		HeatThrottleSpeed = 0.05
+		avgHeatThrottle = 1
+		DirtyFlag = True
+		EfficiencyBonus = 1
+		IsActivated = False
+		lastUpdateTime = 0
+		EVENTS
+		{
+			StartResourceConverter
+			{
+				active = False
+				guiActive = True
+				guiIcon = Start Converter
+				guiName = Start PDU
+				category = Start Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopResourceConverter
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop Converter
+				guiName = Stop PDU
+				category = Stop Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			StopResourceConverterAction
+			{
+				actionGroup = None
+			}
+			StartResourceConverterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = MKSModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ExWorkshop
+		isEnabled = True
+		lastUpdateString = 0
+		EVENTS
+		{
+			ExDiscoverWorkshops
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Toggle Flag
+				guiName = Toggle Flag
+				category = Toggle Flag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePowerDistributor
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RasterPropMonitorComputer
+		isEnabled = True
+		data = 
+		vesselDescription = 
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = SCANsat
+		isEnabled = True
+		scanning = False
+		EVENTS
+		{
+			startScan
+			{
+				active = False
+				guiActive = True
+				guiIcon = Start RADAR Scan
+				guiName = Start Eyeball Scan
+				category = Start RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			stopScan
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop RADAR Scan
+				guiName = Stop Eyeball Scan
+				category = Stop RADAR Scan
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			analyze
+			{
+				active = False
+				guiActive = True
+				guiIcon = Analyze Data
+				guiName = Analyze Data
+				category = Analyze Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			reviewEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EVACollect
+			{
+				active = False
+				guiActive = False
+				guiIcon = Collect Stored Data
+				guiName = Collect Stored Data
+				category = Collect Stored Data
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			editorExtend
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Extend
+				guiName = Extend
+				category = Extend
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			editorRetract
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Retract
+				guiName = Retract
+				category = Retract
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			startScanAction
+			{
+				actionGroup = None
+				active = False
+			}
+			stopScanAction
+			{
+				actionGroup = None
+				active = False
+			}
+			toggleScanAction
+			{
+				actionGroup = None
+				active = False
+			}
+			analyzeData
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleLifeSupport
+		isEnabled = True
+		lastUpdateTime = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		EVENTS
+		{
+			ShowInventory
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = 
+				guiName = Seat 0 inventory
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		EVENTS
+		{
+			ShowInventory
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = 
+				guiName = Seat 1 inventory
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = EnrichedUranium
+		amount = 250
+		maxAmount = 250
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = DepletedUranium
+		amount = 0
+		maxAmount = 250
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = XenonGas
+		amount = 0
+		maxAmount = 250
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 120000
+		maxAmount = 120000
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = asasmodule1-2_4294279230
+	partName = Part
+	pos = 0.02464405,29.09481,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-1.8,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = batteryBankLarge_4294279194
+	link = ladder1_4294278296
+	link = ladder1_4294278246
+	attN = top,OKS.PDU_4294279688
+	attN = bottom,batteryBankLarge_4294279194
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = batteryBankLarge_4294279194
+	partName = Part
+	pos = 0.02464405,28.73481,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-0.3599997,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = OKS.ColonyHub_4294279156
+	link = ladder1_4294278396
+	link = ladder1_4294278346
+	attN = top,asasmodule1-2_4294279230
+	attN = bottom,OKS.ColonyHub_4294279156
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 2.5
+		defaultScale = 2.5
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 4500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 4000
+		maxAmount = 4000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = OKS.ColonyHub_4294279156
+	partName = Part
+	pos = 0.02464405,27.05981,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-1.675,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = OKS.Cap_4294278844
+	link = LifeSupportMiniPack_4294278680
+	link = LifeSupportMiniPack_4294278626
+	link = LifeSupportMiniPack_4294278572
+	link = LifeSupportMiniPack_4294278518
+	link = lightnav.white_4294278464
+	link = lightnav.white_4294278430
+	attN = top,batteryBankLarge_4294279194
+	attN = bottom,OKS.Cap_4294278844
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data (0)
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceLab
+		isEnabled = True
+		dataStored = 0
+		storedScience = 0
+		EVENTS
+		{
+			TransmitScience
+			{
+				active = True
+				guiActive = True
+				guiIcon = Transmit Science
+				guiName = Transmit Science
+				category = Transmit Science
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CleanModulesEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Clean Experiments
+				guiName = Clean Experiments
+				category = Clean Experiments
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		EXPERIMENT_DATA
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceConverter
+		isEnabled = True
+		HeatThrottle = 1
+		HeatThrottleSpeed = 0.05
+		avgHeatThrottle = 1
+		DirtyFlag = True
+		EfficiencyBonus = 1
+		IsActivated = False
+		lastUpdateTime = 0
+		EVENTS
+		{
+			StartResourceConverter
+			{
+				active = False
+				guiActive = True
+				guiIcon = Start Converter
+				guiName = Start Research
+				category = Start Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			StopResourceConverter
+			{
+				active = False
+				guiActive = True
+				guiIcon = Stop Converter
+				guiName = Stop Research
+				category = Stop Converter
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			StopResourceConverterAction
+			{
+				actionGroup = None
+			}
+			StartResourceConverterAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleCleaningBin
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -572,102 +1511,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleResourceConverter
-		isEnabled = True
-		HeatThrottle = 1
-		HeatThrottleSpeed = 0.05
-		avgHeatThrottle = 1
-		DirtyFlag = True
-		EfficiencyBonus = 1
-		IsActivated = False
-		lastUpdateTime = 0
-		EVENTS
-		{
-			StartResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Start Converter
-				guiName = Start Agroponics
-				category = Start Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop Converter
-				guiName = Stop Agroponics
-				category = Stop Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			StopResourceConverterAction
-			{
-				actionGroup = None
-			}
-			StartResourceConverterAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleResourceConverter
-		isEnabled = True
-		HeatThrottle = 1
-		HeatThrottleSpeed = 0.05
-		avgHeatThrottle = 1
-		DirtyFlag = True
-		EfficiencyBonus = 1
-		IsActivated = False
-		lastUpdateTime = 0
-		EVENTS
-		{
-			StartResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Start Converter
-				guiName = Start Cultivator
-				category = Start Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop Converter
-				guiName = Stop Cultivator
-				category = Stop Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			StopResourceConverterAction
-			{
-				actionGroup = None
-			}
-			StartResourceConverterAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
 		name = MKSModule
 		isEnabled = True
 		EVENTS
@@ -726,6 +1569,17 @@ PART
 	}
 	MODULE
 	{
+		name = USI_ModuleResourceDistributor
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleAGX
 		isEnabled = True
 		placeHolder = Hello World
@@ -747,7 +1601,7 @@ PART
 		name = RasterPropMonitorComputer
 		isEnabled = True
 		data = 
-		vesselDescription = Contains the Aeroponics and Kerbitat.  Intended to be installed second
+		vesselDescription = 
 		EVENTS
 		{
 		}
@@ -1028,495 +1882,11 @@ PART
 		hideFlow = False
 		flowMode = Both
 	}
-}
-PART
-{
-	part = OKS.Kerbitat_4289975154
-	partName = Part
-	pos = 0.227014,54.0675,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0,-3.1,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = OKS.Cap_4289974856
-	link = lightnav.white_4289971454
-	link = lightnav.white_4289971420
-	link = lightnav.white_4289971386
-	link = lightnav.white_4289971352
-	attN = top,OKS.Aeroponics_4289975456
-	attN = bottom,OKS.Cap_4289974856
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		controlSrcStatusText = 
-		EVENTS
-		{
-			MakeReference
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control From Here
-				guiName = Control From Here
-				category = Control From Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			RenameVessel
-			{
-				active = True
-				guiActive = True
-				guiIcon = Rename Vessel
-				guiName = Rename Vessel
-				category = Rename Vessel
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleFieldRepair
-		isEnabled = True
-		EVENTS
-		{
-			PerformMaintenance
-			{
-				active = True
-				guiActive = False
-				guiIcon = Perform maintenance
-				guiName = Perform maintenance
-				category = Perform maintenance
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleResourceConverter
-		isEnabled = True
-		HeatThrottle = 1
-		HeatThrottleSpeed = 0.05
-		avgHeatThrottle = 1
-		DirtyFlag = True
-		EfficiencyBonus = 1
-		IsActivated = False
-		lastUpdateTime = 0
-		EVENTS
-		{
-			StartResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Start Converter
-				guiName = Start Habitat
-				category = Start Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopResourceConverter
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop Converter
-				guiName = Stop Habitat
-				category = Stop Converter
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			StopResourceConverterAction
-			{
-				actionGroup = None
-			}
-			StartResourceConverterAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = MKSModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ExWorkshop
-		isEnabled = True
-		lastUpdateString = 0
-		EVENTS
-		{
-			ExDiscoverWorkshops
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = True
-		EVENTS
-		{
-			ToggleFlag
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Toggle Flag
-				guiName = Toggle Flag
-				category = Toggle Flag
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RasterPropMonitorComputer
-		isEnabled = True
-		data = 
-		vesselDescription = Contains the Aeroponics and Kerbitat.  Intended to be installed second
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = SCANsat
-		isEnabled = True
-		scanning = False
-		EVENTS
-		{
-			startScan
-			{
-				active = False
-				guiActive = True
-				guiIcon = Start RADAR Scan
-				guiName = Start Eyeball Scan
-				category = Start RADAR Scan
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			stopScan
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop RADAR Scan
-				guiName = Stop Eyeball Scan
-				category = Stop RADAR Scan
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			analyze
-			{
-				active = False
-				guiActive = True
-				guiIcon = Analyze Data
-				guiName = Analyze Data
-				category = Analyze Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			reviewEvent
-			{
-				active = False
-				guiActive = True
-				guiIcon = Review Data
-				guiName = Review Data
-				category = Review Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EVACollect
-			{
-				active = False
-				guiActive = False
-				guiIcon = Collect Stored Data
-				guiName = Collect Stored Data
-				category = Collect Stored Data
-				guiActiveUnfocused = True
-				unfocusedRange = 1.5
-				externalToEVAOnly = True
-			}
-			editorExtend
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Extend
-				guiName = Extend
-				category = Extend
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			editorRetract
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Retract
-				guiName = Retract
-				category = Retract
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			startScanAction
-			{
-				actionGroup = None
-				active = False
-			}
-			stopScanAction
-			{
-				actionGroup = None
-				active = False
-			}
-			toggleScanAction
-			{
-				actionGroup = None
-				active = False
-			}
-			analyzeData
-			{
-				actionGroup = None
-				active = False
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleLifeSupport
-		isEnabled = True
-		lastUpdateTime = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = JSINonTransparentPod
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Log
-		{
-			flight = 0
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
-		EVENTS
-		{
-			ShowInventory
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = 
-				guiName = Seat 0 inventory
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
-		EVENTS
-		{
-			ShowInventory
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = 
-				guiName = Seat 1 inventory
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
 	RESOURCE
 	{
-		name = Machinery
-		amount = 2000
-		maxAmount = 2000
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Recyclables
+		name = Organics
 		amount = 0
-		maxAmount = 2000
+		maxAmount = 500
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1524,20 +1894,20 @@ PART
 	}
 	RESOURCE
 	{
-		name = ElectricCharge
-		amount = 10000
-		maxAmount = 10000
+		name = Mulch
+		amount = 0
+		maxAmount = 500
 		flowState = True
-		isTweakable = False
+		isTweakable = True
 		hideFlow = False
 		flowMode = Both
 	}
 }
 PART
 {
-	part = OKS.Cap_4289974856
+	part = OKS.Cap_4294278844
 	partName = Part
-	pos = 0.227014,52.3175,0.5036314
+	pos = 0.02464405,25.30981,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-1.75,0
 	rot = 1,0,0,0
@@ -1554,9 +1924,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = dockingPort2_4289974740
-	attN = top,dockingPort2_4289974740
-	attN = bottom,OKS.Kerbitat_4289975154
+	link = dockingPort2_4294278728
+	attN = top,dockingPort2_4294278728
+	attN = bottom,OKS.ColonyHub_4294279156
 	EVENTS
 	{
 	}
@@ -1669,9 +2039,9 @@ PART
 }
 PART
 {
-	part = dockingPort2_4289974740
+	part = dockingPort2_4294278728
 	partName = Part
-	pos = 0.227014,52.01749,0.5036314
+	pos = 0.02464405,25.00981,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,0.3000002,0
 	rot = 1,0,0,0
@@ -1688,9 +2058,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = dockingPort2_4289974692
-	attN = top,dockingPort2_4289974692
-	attN = bottom,OKS.Cap_4289974856
+	link = dockingPort2_4294250034
+	attN = top,dockingPort2_4294250034
+	attN = bottom,OKS.Cap_4294278844
 	EVENTS
 	{
 	}
@@ -1962,519 +2332,27 @@ PART
 }
 PART
 {
-	part = dockingPort2_4289974692
+	part = LifeSupportMiniPack_4294278680
 	partName = Part
-	pos = 0.227014,51.45174,0.5036314
+	pos = -1.335018,27.82046,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 0,0.5657663,0
-	rot = 0,0,0,-1
-	attRot = 0,0,0,-0.9999999
-	attRot0 = 1,0,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = probeCoreOcto2_4289974644
-	attN = top,dockingPort2_4289974740
-	attN = bottom,probeCoreOcto2_4289974644
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = True
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = RMMModule
-		isEnabled = True
-		trackingActive = False
-		trackingPrimary = False
-		trackID = 
-		trackPartCount = 0
-		returnMission = False
-		returnMissionDeparted = False
-		trackFolderName = 
-		trackName = 
-		trackCompanyName = 
-		trackVehicleName = 
-		trackLaunchSystemName = 
-		trackPrice = 0
-		trackVehicleReturnFee = 0
-		trackMissionStartTime = 0
-		trackMissionTime = 0
-		trackBody = 
-		trackMaxOrbitAltitude = 0
-		trackDescription = 
-		trackMinimumCrew = 0
-		trackMaximumCrew = 0
-		trackReturnEnabled = False
-		trackSafeReturn = False
-		trackReturnResources = 
-		trackReturnCargoMass = 0
-		trackPort = 0
-		trackDockingDistance = 0.15
-		missionUnderway = False
-		missionFolderName = 
-		missionArrivalTime = 0
-		missionCrewCount = 0
-		missionRepeat = False
-		missionRepeatDelay = 0
-		missionPreferedCrew = 
-		SMAsave = 0
-		ECCsave = 0
-		INCsave = 0
-		PortCode = 
-		OrderingEnabled = True
-		commercialvehiclemode = False
-		vehicleAutoDepart = False
-		commercialvehicleFolderName = 
-		commercialvehiclePartCount = 0
-		EVENTS
-		{
-			tracking
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Track Mission
-				guiName = Track Mission
-				category = Track Mission
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			setAutoDepart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Commence Return
-				guiName = Commence Return
-				category = Commence Return
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			register
-			{
-				active = True
-				guiActive = True
-				guiIcon = Register Docking Port
-				guiName = Register Docking Port
-				category = Register Docking Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = probeCoreOcto2_4289974644
-	partName = Part
-	pos = 0.227014,51.39067,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0,-0.06106186,0
-	rot = 0,0,0,1
+	attPos0 = -1.359662,0.7606516,1.490116E-08
+	rot = 6.321903E-09,0.7071066,-6.321899E-09,0.707107
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
+	attRot0 = 6.321903E-09,0.7071066,-6.321899E-09,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
-	attm = 0
+	sepI = 1
+	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = batteryBank_4289974600
-	attN = bottom,batteryBank_4289974600
-	attN = top,dockingPort2_4289974692
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCommand
-		isEnabled = True
-		controlSrcStatusText = 
-		EVENTS
-		{
-			MakeReference
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control From Here
-				guiName = Control From Here
-				category = Control From Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			RenameVessel
-			{
-				active = True
-				guiActive = True
-				guiIcon = Rename Vessel
-				guiName = Rename Vessel
-				category = Rename Vessel
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSAS
-		isEnabled = True
-		standaloneToggle = True
-		standaloneToggle_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 1480
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = SequencerStorage
-		isEnabled = True
-		serializedSequences = 
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTripLogger
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		Log
-		{
-			flight = 0
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 5
-		maxAmount = 5
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = batteryBank_4289974600
-	partName = Part
-	pos = 0.227014,51.21875,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0,-0.171917,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = strutOcto_4289974564
-	attN = top,probeCoreOcto2_4289974644
-	attN = bottom,strutOcto_4289974564
+	sym = LifeSupportMiniPack_4294278626
+	srfN = srfAttach,OKS.ColonyHub_4294279156
 	EVENTS
 	{
 	}
@@ -2499,21 +2377,6 @@ PART
 		{
 		}
 		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 1.25
-		defaultScale = 1.25
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 880
-		EVENTS
-		{
-		}
-		ACTIONS
 		{
 		}
 	}
@@ -2563,9 +2426,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = ElectricCharge
-		amount = 1000
-		maxAmount = 1000
+		name = Supplies
+		amount = 100
+		maxAmount = 100
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2574,150 +2437,27 @@ PART
 }
 PART
 {
-	part = strutOcto_4289974564
+	part = LifeSupportMiniPack_4294278626
 	partName = Part
-	pos = 0.227014,50.59296,0.5036314
+	pos = 1.384305,27.82046,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 0,-0.6257935,0
-	rot = 0,0,0,1
+	attPos0 = 1.359662,0.7606516,-1.341105E-07
+	rot = -6.3219E-09,0.7071069,-6.321903E-09,-0.7071067
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = -6.3219E-09,0.7071069,-6.321903E-09,-0.7071067
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 1260
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = AES.Outrigger_4289974530
-	link = AES.Outrigger_4289973884
-	link = AES.Outrigger_4289973178
-	link = AES.Outrigger_4289972532
-	link = solarPanels3_4289971886
-	link = solarPanels3_4289971778
-	link = solarPanels3_4289971670
-	link = solarPanels3_4289971562
-	link = decoupler1-2_4289957754
-	attN = top,batteryBank_4289974600
-	attN = bottom,decoupler1-2_4289957754
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 400
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 1280
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = AES.Outrigger_4289974530
-	partName = Part
-	pos = 0.227014,50.64053,-1.046061
-	attPos = 0,0,0
-	attPos0 = -4.097819E-08,0.0475769,-1.549692
-	rot = 0,0.7071068,0,-0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071068,0,-0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.5m_4289974480
-	sym = AES.Outrigger_4289973884
-	sym = AES.Outrigger_4289973178
-	sym = AES.Outrigger_4289972532
-	srfN = srfAttach,strutOcto_4289974564
-	attN = top,TAL.Cubic.Truss.Mini.5m_4289974480
+	sym = LifeSupportMiniPack_4294278680
+	srfN = srfAttach,OKS.ColonyHub_4294279156
 	EVENTS
 	{
 	}
@@ -2742,517 +2482,6 @@ PART
 		{
 		}
 		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = TAL.Cubic.Truss.Mini.5m_4289974480
-	partName = Part
-	pos = 0.227014,53.27053,-1.046061
-	attPos = 0,0,0
-	attPos0 = 0,2.630001,0
-	rot = 0,0,0,-1
-	attRot = 0,0,0,-0.9999999
-	attRot0 = 0,0.7071068,0,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.2.5m_4289974222
-	link = RCSBlock_4289973932
-	sym = TAL.Cubic.Truss.Mini.5m_4289973834
-	sym = TAL.Cubic.Truss.Mini.5m_4289973128
-	sym = TAL.Cubic.Truss.Mini.5m_4289972482
-	attN = top,TAL.Cubic.Truss.Mini.2.5m_4289974222
-	attN = bottom,AES.Outrigger_4289974530
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = TAL.Cubic.Truss.Mini.2.5m_4289974222
-	partName = Part
-	pos = 0.227014,57.02053,-1.046061
-	attPos = 0,0,0
-	attPos0 = 0,3.75,0
-	rot = 0,-0.7071069,0,-0.7071069
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071068,0,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = strutConnector_4289974084
-	link = radialRCSTank_4289974016
-	link = RCSBlock_4289973980
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972224
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289973576
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972870
-	attN = bottom,TAL.Cubic.Truss.Mini.5m_4289974480
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = strutConnector_4289974084
-	partName = CompoundPart
-	pos = 0.2277759,58.27053,-1.043217
-	attPos = 0,0,0
-	attPos0 = -0.00284362,1.25,0.0007619559
-	rot = 0.707107,-0.7071068,0,-2.318077E-07
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4289972086
-	sym = strutConnector_4289973438
-	sym = strutConnector_4289972732
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289974222
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4289975456
-		pos = -0.02035151,-0.008346118,-0.3394407
-		rot = 0,-0.7071067,-1.590154E-07,0.7071069
-		dir = -0.05982475,-0.02453652,-0.9979073
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = radialRCSTank_4289974016
-	partName = Part
-	pos = 0.227014,58.49054,-1.106669
-	attPos = 0,0,0
-	attPos0 = 0.06060853,1.469999,1.467568E-08
-	rot = 1.264406E-07,-0.7071071,0.7071068,4.214685E-08
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 0.4999998,0.5000001,-0.5,0.5000001
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 72
-	modMass = -7.450581E-09
-	modSize = (0.0, 0.0, 0.0)
-	sym = radialRCSTank_4289973370
-	sym = radialRCSTank_4289972018
-	sym = radialRCSTank_4289972664
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289974222
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = RCS
-		utilization = 86
-		mass = 0.075
-		volume = 60
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 60
-			maxAmount = 60
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 128
-		EVENTS
-		{
-		}
-		ACTIONS
 		{
 		}
 	}
@@ -3302,9 +2531,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 60
-		maxAmount = 60
+		name = Supplies
+		amount = 100
+		maxAmount = 100
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -3313,331 +2542,27 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289973980
+	part = LifeSupportMiniPack_4294278572
 	partName = Part
-	pos = 0.2262717,58.09628,-1.322566
+	pos = -1.333806,26.29979,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 0.2765051,1.075731,-0.0007422202
-	rot = 7.375691E-08,-0.7071068,-7.375693E-08,0.707107
+	attPos0 = -1.358451,-0.7600164,1.490116E-08
+	rot = 6.168473E-09,0.7071066,-6.16847E-09,0.707107
 	attRot = 0,0,0,1
-	attRot0 = -1.04308E-07,1,1.507289E-14,-1.685874E-07
+	attRot0 = 6.168473E-09,0.7071066,-6.16847E-09,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973274
-	sym = RCSBlock_4289971982
-	sym = RCSBlock_4289972628
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289974222
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4289973932
-	partName = Part
-	pos = 0.2262717,53.02357,-1.321616
-	attPos = 0,0,0
-	attPos0 = -0.0007422829,-0.2469692,-0.2755546
-	rot = -5.408657E-08,-0.7071066,5.408661E-08,0.7071072
-	attRot = 0,0,0,1
-	attRot0 = 5.408657E-08,0.7071066,-5.40866E-08,-0.7071071
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973226
-	sym = RCSBlock_4289972580
-	sym = RCSBlock_4289971934
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4289974480
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = AES.Outrigger_4289973884
-	partName = Part
-	pos = -1.322678,50.64053,0.5036314
-	attPos = 0,0,0
-	attPos0 = -1.549692,0.0475769,-4.470348E-08
-	rot = 0,0,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.5m_4289973834
-	sym = AES.Outrigger_4289974530
-	sym = AES.Outrigger_4289973178
-	sym = AES.Outrigger_4289972532
-	srfN = srfAttach,strutOcto_4289974564
-	attN = top,TAL.Cubic.Truss.Mini.5m_4289973834
+	sym = LifeSupportMiniPack_4294278518
+	srfN = srfAttach,OKS.ColonyHub_4294279156
 	EVENTS
 	{
 	}
@@ -3662,518 +2587,6 @@ PART
 		{
 		}
 		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = TAL.Cubic.Truss.Mini.5m_4289973834
-	partName = Part
-	pos = -1.322678,53.27053,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0,2.630001,0
-	rot = 0,-0.7071068,0,-0.7071068
-	attRot = 0,0,0,-0.9999999
-	attRot0 = 0,0.7071068,0,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.2.5m_4289973576
-	link = RCSBlock_4289973226
-	sym = TAL.Cubic.Truss.Mini.5m_4289974480
-	sym = TAL.Cubic.Truss.Mini.5m_4289973128
-	sym = TAL.Cubic.Truss.Mini.5m_4289972482
-	attN = top,TAL.Cubic.Truss.Mini.2.5m_4289973576
-	attN = bottom,AES.Outrigger_4289973884
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = TAL.Cubic.Truss.Mini.2.5m_4289973576
-	partName = Part
-	pos = -1.322678,57.02053,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0,3.75,0
-	rot = 0,-1,0,0
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071068,0,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = strutConnector_4289973438
-	link = radialRCSTank_4289973370
-	link = mumech.MJ2.AR202_4289973334
-	link = RCSBlock_4289973274
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972224
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289974222
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972870
-	attN = bottom,TAL.Cubic.Truss.Mini.5m_4289973834
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = strutConnector_4289973438
-	partName = CompoundPart
-	pos = -1.319835,58.27053,0.5028692
-	attPos = 0,0,0
-	attPos0 = -0.002843619,1.25,0.0007619555
-	rot = 0.5000001,-0.5000002,-0.5000001,0.4999999
-	attRot = 0,0,0,1
-	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4289972086
-	sym = strutConnector_4289974084
-	sym = strutConnector_4289972732
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289973576
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-		tgt = 4289975456
-		pos = -0.02035147,-0.008345978,-0.3394417
-		rot = 0,-0.7071066,-2.330918E-07,0.7071071
-		dir = -0.05982475,-0.02453652,-0.9979073
-	}
-	MODULE
-	{
-		name = CModuleLinkedMesh
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = CModuleStrut
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = radialRCSTank_4289973370
-	partName = Part
-	pos = -1.383287,58.49054,0.5036314
-	attPos = 0,0,0
-	attPos0 = 0.06060852,1.469999,1.44502E-08
-	rot = 0.5000001,-0.5000001,0.4999999,0.5000002
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 0.4999998,0.5000001,-0.5000001,0.5000001
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 72
-	modMass = -7.450581E-09
-	modSize = (0.0, 0.0, 0.0)
-	sym = radialRCSTank_4289972018
-	sym = radialRCSTank_4289974016
-	sym = radialRCSTank_4289972664
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289973576
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = RCS
-		utilization = 86
-		mass = 0.075
-		volume = 60
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 60
-			maxAmount = 60
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 128
-		EVENTS
-		{
-		}
-		ACTIONS
 		{
 		}
 	}
@@ -4223,9 +2636,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 60
-		maxAmount = 60
+		name = Supplies
+		amount = 100
+		maxAmount = 100
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -4234,26 +2647,854 @@ PART
 }
 PART
 {
-	part = mumech.MJ2.AR202_4289973334
+	part = LifeSupportMiniPack_4294278518
 	partName = Part
-	pos = -1.322678,57.56501,0.7234913
+	pos = 1.383095,26.29979,-0.1306405
 	attPos = 0,0,0
-	attPos0 = 5.24186E-08,0.5444775,-0.2198596
-	rot = 3.30131E-08,0.707107,3.301309E-08,0.7071068
+	attPos0 = 1.358451,-0.7600164,-1.341105E-07
+	rot = -6.16847E-09,0.7071069,-6.168473E-09,-0.7071067
 	attRot = 0,0,0,1
-	attRot0 = 3.301309E-08,0.7071067,-3.301309E-08,-0.7071069
+	attRot0 = -6.16847E-09,0.7071069,-6.168473E-09,-0.7071067
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289973576
+	sym = LifeSupportMiniPack_4294278572
+	srfN = srfAttach,OKS.ColonyHub_4294279156
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Supplies
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = lightnav.white_4294278464
+	partName = Part
+	pos = -1.208353,27.063,-0.1306405
+	attPos = 0,0,0
+	attPos0 = -1.232998,0.003191948,5.960464E-08
+	rot = -8.940519E-09,-1,-2.826166E-15,-2.528811E-07
+	attRot = 0,0,0,1
+	attRot0 = -8.940519E-09,-1,-2.826166E-15,-2.528811E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightnav.white_4294278430
+	srfN = srfAttach,OKS.ColonyHub_4294279156
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = None
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = lightnav.white_4294278430
+	partName = Part
+	pos = 1.257642,27.063,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 1.232998,0.003191948,-1.639128E-07
+	rot = -2.435364E-15,-2.091697E-07,8.940519E-09,1
+	attRot = 0,0,0,1
+	attRot0 = -2.435364E-15,-2.091697E-07,8.940519E-09,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = lightnav.white_4294278464
+	srfN = srfAttach,OKS.ColonyHub_4294279156
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleNavLight
+		isEnabled = True
+		navLightSwitch = 0
+		EVENTS
+		{
+			FlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Flash
+				guiName = Flash
+				category = Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DoubleFlashEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Double Flash
+				guiName = Double Flash
+				category = Double Flash
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			IntervalEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Interval
+				guiName = Interval
+				category = Interval
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			OnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Light
+				guiName = Light
+				category = Light
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			LightToggle
+			{
+				actionGroup = None
+			}
+			FlashToggle
+			{
+				actionGroup = None
+			}
+			DoubleFlashToggle
+			{
+				actionGroup = None
+			}
+			IntervalToggle
+			{
+				actionGroup = None
+			}
+			Cycle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = ladder1_4294278396
+	partName = Part
+	pos = 0.02464405,28.79276,1.117275
+	attPos = 0,0,0
+	attPos0 = 0,0.05794907,1.247917
+	rot = -1.610318E-07,0.7071068,-1.610318E-07,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -1.610318E-07,0.7071068,-1.610318E-07,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = ladder1_4294278346
+	srfN = srfAttach,batteryBankLarge_4294279194
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = ladder1_4294278346
+	partName = Part
+	pos = 0.02464405,28.79276,-1.378558
+	attPos = 0,0,0
+	attPos0 = -1.080334E-07,0.05794907,-1.247917
+	rot = -1.610318E-07,0.7071068,1.610318E-07,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -1.610318E-07,0.7071068,1.610318E-07,-0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = ladder1_4294278396
+	srfN = srfAttach,batteryBankLarge_4294279194
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = ladder1_4294278296
+	partName = Part
+	pos = 0.02464405,29.24799,1.076807
+	attPos = 0,0,0
+	attPos0 = 0,0.1531811,1.207448
+	rot = -1.071077E-07,0.7071068,-1.071077E-07,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -1.071077E-07,0.7071068,-1.071077E-07,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = ladder1_4294278246
+	srfN = srfAttach,asasmodule1-2_4294279230
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = ladder1_4294278246
+	partName = Part
+	pos = 0.02464405,29.24799,-1.338089
+	attPos = 0,0,0
+	attPos0 = -1.043081E-07,0.1531811,-1.207448
+	rot = -1.071077E-07,0.7071068,1.071077E-07,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = -1.071077E-07,0.7071068,1.071077E-07,-0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = ladder1_4294278296
+	srfN = srfAttach,asasmodule1-2_4294279230
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = mumech.MJ2.AR202_4294278196
+	partName = Part
+	pos = 0.02464405,31.31409,0.8700905
+	attPos = 0,0,0
+	attPos0 = 0,0.4192772,1.000732
+	rot = 3.039275E-07,0.7071068,3.039275E-07,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 3.039275E-07,0.7071068,3.039275E-07,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = mumech.MJ2.AR202_4294278136
+	srfN = srfAttach,OKS.PDU_4294279688
 	EVENTS
 	{
 	}
@@ -4835,29 +4076,27 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289973274
+	part = mumech.MJ2.AR202_4294278136
 	partName = Part
-	pos = -1.599183,58.09628,0.5043743
+	pos = 0.02464405,31.31409,-1.131373
 	attPos = 0,0,0
-	attPos0 = 0.2765049,1.075731,-0.0007422207
-	rot = -1.507289E-14,1.685874E-07,-1.04308E-07,1
+	attPos0 = -8.568168E-08,0.4192772,-1.000732
+	rot = 3.039275E-07,0.7071068,-3.039275E-07,-0.7071068
 	attRot = 0,0,0,1
-	attRot0 = -1.04308E-07,1,1.507289E-14,-1.685874E-07
+	attRot0 = 3.039275E-07,0.7071068,-3.039275E-07,-0.7071069
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 3
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289971982
-	sym = RCSBlock_4289973980
-	sym = RCSBlock_4289972628
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289973576
+	sym = mumech.MJ2.AR202_4294278196
+	srfN = srfAttach,OKS.PDU_4294279688
 	EVENTS
 	{
 	}
@@ -4869,29 +4108,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleCommand
 		isEnabled = True
-		rcsEnabled = True
+		controlSrcStatusText = 
 		EVENTS
 		{
-			Disable
+			MakeReference
 			{
 				active = True
 				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Enable
+			RenameVessel
 			{
-				active = False
+				active = True
 				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4899,10 +4138,93 @@ PART
 		}
 		ACTIONS
 		{
-			ToggleAction
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		running_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
 			{
 				actionGroup = None
 			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = MechJebAR202
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -4929,8 +4251,764 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
+		defaultTransformScale = (0.75, 0.75, 0.75)
+		DryCost = 750
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = dockingPort2_4294250034
+	partName = Part
+	pos = 0.02464405,24.44404,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,0.5657654,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = -1,0,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = probeCoreOcto2_4294249986
+	attN = top,dockingPort2_4294278728
+	attN = bottom,probeCoreOcto2_4294249986
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = True
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = RMMModule
+		isEnabled = True
+		trackingActive = False
+		trackingPrimary = False
+		trackID = 
+		trackPartCount = 0
+		returnMission = False
+		returnMissionDeparted = False
+		trackFolderName = 
+		trackName = 
+		trackCompanyName = 
+		trackVehicleName = 
+		trackLaunchSystemName = 
+		trackPrice = 0
+		trackVehicleReturnFee = 0
+		trackMissionStartTime = 0
+		trackMissionTime = 0
+		trackBody = 
+		trackMaxOrbitAltitude = 0
+		trackDescription = 
+		trackMinimumCrew = 0
+		trackMaximumCrew = 0
+		trackReturnEnabled = False
+		trackSafeReturn = False
+		trackReturnResources = 
+		trackReturnCargoMass = 0
+		trackPort = 0
+		trackDockingDistance = 0.15
+		missionUnderway = False
+		missionFolderName = 
+		missionArrivalTime = 0
+		missionCrewCount = 0
+		missionRepeat = False
+		missionRepeatDelay = 0
+		missionPreferedCrew = 
+		SMAsave = 0
+		ECCsave = 0
+		INCsave = 0
+		PortCode = 
+		OrderingEnabled = True
+		commercialvehiclemode = False
+		vehicleAutoDepart = False
+		commercialvehicleFolderName = 
+		commercialvehiclePartCount = 0
+		EVENTS
+		{
+			tracking
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Track Mission
+				guiName = Track Mission
+				category = Track Mission
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			setAutoDepart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Commence Return
+				guiName = Commence Return
+				category = Commence Return
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			register
+			{
+				active = True
+				guiActive = True
+				guiIcon = Register Docking Port
+				guiName = Register Docking Port
+				category = Register Docking Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = probeCoreOcto2_4294249986
+	partName = Part
+	pos = 0.02464405,24.38297,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-0.06106186,0
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = batteryBank_4294249942
+	attN = bottom,batteryBank_4294249942
+	attN = top,dockingPort2_4294250034
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		standaloneToggle_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 1480
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = SequencerStorage
+		isEnabled = True
+		serializedSequences = 
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryBank_4294249942
+	partName = Part
+	pos = 0.02464405,24.21105,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-0.171917,0
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutOcto_4294249906
+	attN = top,probeCoreOcto2_4294249986
+	attN = bottom,strutOcto_4294249906
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 880
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 1000
+		maxAmount = 1000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = strutOcto_4294249906
+	partName = Part
+	pos = 0.02464405,23.58526,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,-0.6257935,0
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 1260
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = AES.Outrigger_4294249872
+	link = AES.Outrigger_4294249226
+	link = AES.Outrigger_4294248520
+	link = AES.Outrigger_4294247874
+	link = solarPanels3_4294247228
+	link = solarPanels3_4294247120
+	link = solarPanels3_4294247012
+	link = solarPanels3_4294246904
+	link = decoupler1-2_4294243664
+	attN = top,batteryBank_4294249942
+	attN = bottom,decoupler1-2_4294243664
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 400
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 1280
 		EVENTS
 		{
 		}
@@ -4985,14 +5063,14 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289973226
+	part = AES.Outrigger_4294249872
 	partName = Part
-	pos = -1.598233,53.02357,0.5043743
+	pos = 0.02464405,23.63283,-1.680333
 	attPos = 0,0,0
-	attPos0 = -0.0007422835,-0.2469692,-0.2755546
-	rot = 2.260933E-14,3.371748E-07,7.649E-08,1
+	attPos0 = -4.097819E-08,0.0475769,-1.549692
+	rot = 0,-0.7071068,0,0.7071068
 	attRot = 0,0,0,1
-	attRot0 = 5.408657E-08,0.7071066,-5.40866E-08,-0.7071071
+	attRot0 = 0,0.7071068,0,-0.7071068
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -5004,10 +5082,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973932
-	sym = RCSBlock_4289972580
-	sym = RCSBlock_4289971934
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4289973834
+	link = TAL.Cubic.Truss.Mini.5m_4294249822
+	link = radialRCSTank_4294228472
+	sym = AES.Outrigger_4294249226
+	sym = AES.Outrigger_4294248520
+	sym = AES.Outrigger_4294247874
+	srfN = srfAttach,strutOcto_4294249906
+	attN = top,TAL.Cubic.Truss.Mini.5m_4294249822
 	EVENTS
 	{
 	}
@@ -5019,29 +5100,868 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleAGX
 		isEnabled = True
-		rcsEnabled = True
+		placeHolder = Hello World
 		EVENTS
 		{
-			Disable
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TAL.Cubic.Truss.Mini.5m_4294249822
+	partName = Part
+	pos = 0.02464405,26.26283,-1.680333
+	attPos = 0,0,0
+	attPos0 = 0,2.630001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,-0.9999999
+	attRot0 = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TAL.Cubic.Truss.Mini.2.5m_4294249564
+	link = RCSBlock_4294220070
+	sym = TAL.Cubic.Truss.Mini.5m_4294249176
+	sym = TAL.Cubic.Truss.Mini.5m_4294248470
+	sym = TAL.Cubic.Truss.Mini.5m_4294247824
+	attN = top,TAL.Cubic.Truss.Mini.2.5m_4294249564
+	attN = bottom,AES.Outrigger_4294249872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TAL.Cubic.Truss.Mini.2.5m_4294249564
+	partName = Part
+	pos = 0.02464405,30.01283,-1.680333
+	attPos = 0,0,0
+	attPos0 = 0,3.75,0
+	rot = 0,0.7071069,0,0.7071069
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutConnector_4294249426
+	link = RCSBlock_4294223418
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294247566
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248918
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248212
+	attN = bottom,TAL.Cubic.Truss.Mini.5m_4294249822
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294249426
+	partName = CompoundPart
+	pos = 0.02540598,31.26283,-1.67749
+	attPos = 0,0,0
+	attPos0 = -0.00284362,1.25,0.0007619559
+	rot = -0.707107,0.7071068,0,2.318077E-07
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294247428
+	sym = strutConnector_4294248780
+	sym = strutConnector_4294248074
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294249564
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294278136
+		pos = -0.02563298,-0.01051355,-0.427591
+		rot = 0,-0.7071064,1.759253E-08,0.7071072
+		dir = -0.05982475,-0.02453652,-0.9979073
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = AES.Outrigger_4294249226
+	partName = Part
+	pos = -1.525048,23.63283,-0.1306405
+	attPos = 0,0,0
+	attPos0 = -1.549692,0.0475769,-4.470348E-08
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TAL.Cubic.Truss.Mini.5m_4294249176
+	link = radialRCSTank_4294248712
+	sym = AES.Outrigger_4294249872
+	sym = AES.Outrigger_4294248520
+	sym = AES.Outrigger_4294247874
+	srfN = srfAttach,strutOcto_4294249906
+	attN = top,TAL.Cubic.Truss.Mini.5m_4294249176
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TAL.Cubic.Truss.Mini.5m_4294249176
+	partName = Part
+	pos = -1.525048,26.26283,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,2.630001,0
+	rot = 0,0.7071068,0,0.7071068
+	attRot = 0,0,0,-0.9999999
+	attRot0 = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = TAL.Cubic.Truss.Mini.2.5m_4294248918
+	link = RCSBlock_4294248568
+	sym = TAL.Cubic.Truss.Mini.5m_4294249822
+	sym = TAL.Cubic.Truss.Mini.5m_4294248470
+	sym = TAL.Cubic.Truss.Mini.5m_4294247824
+	attN = top,TAL.Cubic.Truss.Mini.2.5m_4294248918
+	attN = bottom,AES.Outrigger_4294249226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = TAL.Cubic.Truss.Mini.2.5m_4294248918
+	partName = Part
+	pos = -1.525048,30.01283,-0.1306405
+	attPos = 0,0,0
+	attPos0 = 0,3.75,0
+	rot = 0,1,0,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutConnector_4294248780
+	link = mumech.MJ2.AR202_4294248676
+	link = RCSBlock_4294248616
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294247566
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294249564
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248212
+	attN = bottom,TAL.Cubic.Truss.Mini.5m_4294249176
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294248780
+	partName = CompoundPart
+	pos = -1.522205,31.26283,-0.1314036
+	attPos = 0,0,0
+	attPos0 = -0.002843619,1.25,0.0007619555
+	rot = -0.5000001,0.5000002,0.5000001,-0.4999999
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294247428
+	sym = strutConnector_4294249426
+	sym = strutConnector_4294248074
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294248918
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294279688
+		pos = -0.03278361,-0.01344567,-0.5468507
+		rot = 0,-0.7071062,1.505588E-06,0.7071074
+		dir = -0.05982475,-0.02453652,-0.9979073
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = mumech.MJ2.AR202_4294248676
+	partName = Part
+	pos = -1.525048,30.55731,0.08921918
+	attPos = 0,0,0
+	attPos0 = 5.24186E-08,0.5444775,-0.2198596
+	rot = -3.30131E-08,-0.707107,-3.301309E-08,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 3.301309E-08,0.7071067,-3.301309E-08,-0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294248918
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
 			{
 				active = True
 				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Enable
+			RenameVessel
 			{
-				active = False
+				active = True
 				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -5049,10 +5969,93 @@ PART
 		}
 		ACTIONS
 		{
-			ToggleAction
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		running_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
 			{
 				actionGroup = None
 			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = MechJebAR202
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -5079,8 +6082,8 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
+		defaultTransformScale = (0.75, 0.75, 0.75)
+		DryCost = 750
 		EVENTS
 		{
 		}
@@ -5132,15 +6135,40 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = AES.Outrigger_4289973178
+	part = AES.Outrigger_4294248520
 	partName = Part
-	pos = 0.2270142,50.64053,2.053324
+	pos = 0.02464429,23.63283,1.419052
 	attPos = 0,0,0
 	attPos0 = 1.750886E-07,0.0475769,1.549692
-	rot = 0,-0.7071068,0,-0.7071068
+	rot = 0,0.7071068,0,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.7071069,0,-0.7071068
 	mir = 1,1,1
@@ -5154,12 +6182,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.5m_4289973128
-	sym = AES.Outrigger_4289974530
-	sym = AES.Outrigger_4289973884
-	sym = AES.Outrigger_4289972532
-	srfN = srfAttach,strutOcto_4289974564
-	attN = top,TAL.Cubic.Truss.Mini.5m_4289973128
+	link = TAL.Cubic.Truss.Mini.5m_4294248470
+	link = radialRCSTank_4294228434
+	sym = AES.Outrigger_4294249872
+	sym = AES.Outrigger_4294249226
+	sym = AES.Outrigger_4294247874
+	srfN = srfAttach,strutOcto_4294249906
+	attN = top,TAL.Cubic.Truss.Mini.5m_4294248470
 	EVENTS
 	{
 	}
@@ -5234,12 +6263,12 @@ PART
 }
 PART
 {
-	part = TAL.Cubic.Truss.Mini.5m_4289973128
+	part = TAL.Cubic.Truss.Mini.5m_4294248470
 	partName = Part
-	pos = 0.2270142,53.27053,2.053324
+	pos = 0.02464429,26.26283,1.419052
 	attPos = 0,0,0
 	attPos0 = 0,2.630001,0
-	rot = 0,-1,0,8.42937E-08
+	rot = 0,1,0,-8.42937E-08
 	attRot = 0,0,0,-0.9999999
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -5253,13 +6282,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.2.5m_4289972870
-	link = RCSBlock_4289972580
-	sym = TAL.Cubic.Truss.Mini.5m_4289974480
-	sym = TAL.Cubic.Truss.Mini.5m_4289973834
-	sym = TAL.Cubic.Truss.Mini.5m_4289972482
-	attN = top,TAL.Cubic.Truss.Mini.2.5m_4289972870
-	attN = bottom,AES.Outrigger_4289973178
+	link = TAL.Cubic.Truss.Mini.2.5m_4294248212
+	link = RCSBlock_4294219912
+	sym = TAL.Cubic.Truss.Mini.5m_4294249822
+	sym = TAL.Cubic.Truss.Mini.5m_4294249176
+	sym = TAL.Cubic.Truss.Mini.5m_4294247824
+	attN = top,TAL.Cubic.Truss.Mini.2.5m_4294248212
+	attN = bottom,AES.Outrigger_4294248520
 	EVENTS
 	{
 	}
@@ -5334,12 +6363,12 @@ PART
 }
 PART
 {
-	part = TAL.Cubic.Truss.Mini.2.5m_4289972870
+	part = TAL.Cubic.Truss.Mini.2.5m_4294248212
 	partName = Part
-	pos = 0.2270142,57.02053,2.053324
+	pos = 0.02464429,30.01283,1.419052
 	attPos = 0,0,0
 	attPos0 = 0,3.75,0
-	rot = 0,-0.7071068,0,0.7071068
+	rot = 0,0.7071069,0,-0.7071069
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -5353,13 +6382,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = strutConnector_4289972732
-	link = radialRCSTank_4289972664
-	link = RCSBlock_4289972628
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972224
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289974222
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289973576
-	attN = bottom,TAL.Cubic.Truss.Mini.5m_4289973128
+	link = strutConnector_4294248074
+	link = RCSBlock_4294223260
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294247566
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294249564
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248918
+	attN = bottom,TAL.Cubic.Truss.Mini.5m_4294248470
 	EVENTS
 	{
 	}
@@ -5434,12 +6462,12 @@ PART
 }
 PART
 {
-	part = strutConnector_4289972732
+	part = strutConnector_4294248074
 	partName = CompoundPart
-	pos = 0.2262523,58.27053,2.05048
+	pos = 0.02388236,31.26283,1.416208
 	attPos = 0,0,0
 	attPos0 = -0.00284362,1.25,0.0007619546
-	rot = -7.194918E-08,-1.809319E-07,-0.707107,0.7071068
+	rot = 8.42937E-08,1.47514E-07,0.707107,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
 	mir = 1,1,1
@@ -5453,10 +6481,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4289972086
-	sym = strutConnector_4289974084
-	sym = strutConnector_4289973438
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972870
+	sym = strutConnector_4294247428
+	sym = strutConnector_4294249426
+	sym = strutConnector_4294248780
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294248212
 	EVENTS
 	{
 	}
@@ -5465,9 +6493,9 @@ PART
 	}
 	PARTDATA
 	{
-		tgt = 4289975456
-		pos = -0.02035151,-0.008346065,-0.3394418
-		rot = 0,-0.7071067,-2.818404E-07,0.7071069
+		tgt = 4294278196
+		pos = -0.02563489,-0.01051344,-0.427592
+		rot = 0,-0.7071064,2.774361E-07,0.7071072
 		dir = -0.05982475,-0.02453652,-0.9979073
 	}
 	MODULE
@@ -5557,510 +6585,12 @@ PART
 }
 PART
 {
-	part = radialRCSTank_4289972664
+	part = AES.Outrigger_4294247874
 	partName = Part
-	pos = 0.2270142,58.49054,2.113933
-	attPos = 0,0,0
-	attPos0 = 0.06060853,1.469999,1.377374E-08
-	rot = 0.7071067,1.14096E-07,-1.773163E-07,0.7071069
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 0.4999998,0.5000001,-0.5,0.5000001
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 72
-	modMass = -7.450581E-09
-	modSize = (0.0, 0.0, 0.0)
-	sym = radialRCSTank_4289973370
-	sym = radialRCSTank_4289972018
-	sym = radialRCSTank_4289974016
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972870
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = RCS
-		utilization = 86
-		mass = 0.075
-		volume = 60
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = 
-			utilization = 1
-			mass = 0
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 60
-			maxAmount = 60
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 128
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MonoPropellant
-		amount = 60
-		maxAmount = 60
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = RCSBlock_4289972628
-	partName = Part
-	pos = 0.2277566,58.09628,2.329829
-	attPos = 0,0,0
-	attPos0 = 0.2765051,1.075731,-0.0007422225
-	rot = -7.375692E-08,0.707107,-7.375689E-08,0.7071066
-	attRot = 0,0,0,1
-	attRot0 = -1.04308E-07,1,1.130468E-14,-1.685874E-07
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973274
-	sym = RCSBlock_4289971982
-	sym = RCSBlock_4289973980
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972870
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = RCSBlock_4289972580
-	partName = Part
-	pos = 0.2277566,53.02357,2.328878
-	attPos = 0,0,0
-	attPos0 = -0.0007422819,-0.2469692,-0.2755545
-	rot = 5.408661E-08,0.7071072,5.408657E-08,0.7071066
-	attRot = 0,0,0,1
-	attRot0 = 5.408657E-08,0.7071066,-5.40866E-08,-0.7071071
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 3
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973226
-	sym = RCSBlock_4289973932
-	sym = RCSBlock_4289971934
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4289973128
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 620
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = AES.Outrigger_4289972532
-	partName = Part
-	pos = 1.776706,50.64053,0.5036314
+	pos = 1.574336,23.63283,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 1.549692,0.0475769,-1.341105E-07
-	rot = 0,-1,0,0
+	rot = 0,1,0,0
 	attRot = 0,0,0,1
 	attRot0 = 0,-1,0,0
 	mir = 1,1,1
@@ -6074,12 +6604,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.5m_4289972482
-	sym = AES.Outrigger_4289974530
-	sym = AES.Outrigger_4289973884
-	sym = AES.Outrigger_4289973178
-	srfN = srfAttach,strutOcto_4289974564
-	attN = top,TAL.Cubic.Truss.Mini.5m_4289972482
+	link = TAL.Cubic.Truss.Mini.5m_4294247824
+	link = radialRCSTank_4294228396
+	sym = AES.Outrigger_4294249872
+	sym = AES.Outrigger_4294249226
+	sym = AES.Outrigger_4294248520
+	srfN = srfAttach,strutOcto_4294249906
+	attN = top,TAL.Cubic.Truss.Mini.5m_4294247824
 	EVENTS
 	{
 	}
@@ -6154,12 +6685,12 @@ PART
 }
 PART
 {
-	part = TAL.Cubic.Truss.Mini.5m_4289972482
+	part = TAL.Cubic.Truss.Mini.5m_4294247824
 	partName = Part
-	pos = 1.776706,53.27053,0.5036314
+	pos = 1.574336,26.26283,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,2.630001,0
-	rot = 0,-0.7071068,0,0.7071068
+	rot = 0,0.7071068,0,-0.7071068
 	attRot = 0,0,0,-0.9999999
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -6173,13 +6704,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = TAL.Cubic.Truss.Mini.2.5m_4289972224
-	link = RCSBlock_4289971934
-	sym = TAL.Cubic.Truss.Mini.5m_4289974480
-	sym = TAL.Cubic.Truss.Mini.5m_4289973834
-	sym = TAL.Cubic.Truss.Mini.5m_4289973128
-	attN = top,TAL.Cubic.Truss.Mini.2.5m_4289972224
-	attN = bottom,AES.Outrigger_4289972532
+	link = TAL.Cubic.Truss.Mini.2.5m_4294247566
+	link = RCSBlock_4294219754
+	sym = TAL.Cubic.Truss.Mini.5m_4294249822
+	sym = TAL.Cubic.Truss.Mini.5m_4294249176
+	sym = TAL.Cubic.Truss.Mini.5m_4294248470
+	attN = top,TAL.Cubic.Truss.Mini.2.5m_4294247566
+	attN = bottom,AES.Outrigger_4294247874
 	EVENTS
 	{
 	}
@@ -6254,12 +6785,12 @@ PART
 }
 PART
 {
-	part = TAL.Cubic.Truss.Mini.2.5m_4289972224
+	part = TAL.Cubic.Truss.Mini.2.5m_4294247566
 	partName = Part
-	pos = 1.776706,57.02053,0.5036314
+	pos = 1.574336,30.01283,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,3.75,0
-	rot = 0,0,0,1
+	rot = 0,0,0,-1
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
@@ -6273,13 +6804,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = strutConnector_4289972086
-	link = radialRCSTank_4289972018
-	link = RCSBlock_4289971982
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289974222
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289973576
-	sym = TAL.Cubic.Truss.Mini.2.5m_4289972870
-	attN = bottom,TAL.Cubic.Truss.Mini.5m_4289972482
+	link = strutConnector_4294247428
+	link = RCSBlock_4294223576
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294249564
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248918
+	sym = TAL.Cubic.Truss.Mini.2.5m_4294248212
+	attN = bottom,TAL.Cubic.Truss.Mini.5m_4294247824
 	EVENTS
 	{
 	}
@@ -6354,12 +6884,12 @@ PART
 }
 PART
 {
-	part = strutConnector_4289972086
+	part = strutConnector_4294247428
 	partName = CompoundPart
-	pos = 1.773863,58.27053,0.5043933
+	pos = 1.571493,31.26283,-0.1298786
 	attPos = 0,0,0
 	attPos0 = -0.002843619,1.25,0.0007619555
-	rot = -0.5000001,0.4999999,-0.5000001,0.5000002
+	rot = 0.5000001,-0.4999999,0.5000001,-0.5000002
 	attRot = 0,0,0,1
 	attRot0 = -0.5000001,0.4999998,-0.5000001,0.5000001
 	mir = 1,1,1
@@ -6373,10 +6903,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = strutConnector_4289974084
-	sym = strutConnector_4289973438
-	sym = strutConnector_4289972732
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972224
+	sym = strutConnector_4294249426
+	sym = strutConnector_4294248780
+	sym = strutConnector_4294248074
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294247566
 	EVENTS
 	{
 	}
@@ -6385,9 +6915,9 @@ PART
 	}
 	PARTDATA
 	{
-		tgt = 4289975456
-		pos = -0.02035147,-0.008346306,-0.3394417
-		rot = 0,-0.7071069,-2.330919E-07,0.7071068
+		tgt = 4294279688
+		pos = -0.03278361,-0.01344599,-0.5468512
+		rot = 0,-0.7071072,1.685874E-07,0.7071064
 		dir = -0.05982475,-0.02453652,-0.9979073
 	}
 	MODULE
@@ -6477,14 +7007,658 @@ PART
 }
 PART
 {
-	part = radialRCSTank_4289972018
+	part = solarPanels3_4294247228
 	partName = Part
-	pos = 1.837315,58.49054,0.5036314
+	pos = 0.79461,23.71596,-0.9006065
 	attPos = 0,0,0
-	attPos0 = 0.06060852,1.469999,1.44502E-08
-	rot = 0.4999999,0.5000002,-0.5000001,0.5000001
+	attPos0 = 0.7699655,0.1306896,-0.7699655
+	rot = 0,-0.9238796,0,0.3826835
+	attRot = 0,0,0,1
+	attRot0 = 0,0.9238796,0,-0.3826835
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294247120
+	sym = solarPanels3_4294247012
+	sym = solarPanels3_4294246904
+	srfN = srfAttach,strutOcto_4294249906
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294247120
+	partName = Part
+	pos = -0.7453215,23.71596,-0.9006065
+	attPos = 0,0,0
+	attPos0 = -0.7699654,0.1306896,-0.7699655
+	rot = 0,-0.3826834,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,0.3826834,0,-0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294247228
+	sym = solarPanels3_4294247012
+	sym = solarPanels3_4294246904
+	srfN = srfAttach,strutOcto_4294249906
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294247012
+	partName = Part
+	pos = -0.7453215,23.71596,0.6393248
+	attPos = 0,0,0
+	attPos0 = -0.7699655,0.1306896,0.7699655
+	rot = 0,0.3826835,0,0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.3826835,0,-0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294247228
+	sym = solarPanels3_4294247120
+	sym = solarPanels3_4294246904
+	srfN = srfAttach,strutOcto_4294249906
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294246904
+	partName = Part
+	pos = 0.79461,23.71596,0.6393248
+	attPos = 0,0,0
+	attPos0 = 0.7699655,0.1306896,0.7699654
+	rot = 0,0.9238796,0,0.3826834
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.9238796,0,-0.3826834
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294247228
+	sym = solarPanels3_4294247120
+	sym = solarPanels3_4294247012
+	srfN = srfAttach,strutOcto_4294249906
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = radialRCSTank_4294248712
+	partName = Part
+	pos = -1.709379,23.95928,-0.121018
+	attPos = 0,0,0
+	attPos0 = -0.1843311,0.3264523,0.009622514
+	rot = 0.5,-0.5,0.5,0.5
 	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 0.4999998,0.5000001,-0.5000001,0.5000001
+	attRot0 = 0.5,-0.5,0.5,0.5
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -6496,10 +7670,10 @@ PART
 	modCost = 72
 	modMass = -7.450581E-09
 	modSize = (0.0, 0.0, 0.0)
-	sym = radialRCSTank_4289973370
-	sym = radialRCSTank_4289974016
-	sym = radialRCSTank_4289972664
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972224
+	sym = radialRCSTank_4294228472
+	sym = radialRCSTank_4294228434
+	sym = radialRCSTank_4294228396
+	srfN = srfAttach,AES.Outrigger_4294249226
 	EVENTS
 	{
 	}
@@ -6675,14 +7849,608 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289971982
+	part = radialRCSTank_4294228472
 	partName = Part
-	pos = 2.053211,58.09628,0.5028893
+	pos = 0.01502155,23.95928,-1.864665
 	attPos = 0,0,0
-	attPos0 = 0.2765049,1.075731,-0.0007422207
-	rot = -1.04308E-07,1,1.507289E-14,-1.685874E-07
+	attPos0 = -0.1843311,0.3264523,0.009622517
+	rot = 0,-0.7071068,0.7071068,0
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = 0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 72
+	modMass = -7.450581E-09
+	modSize = (0.0, 0.0, 0.0)
+	sym = radialRCSTank_4294248712
+	sym = radialRCSTank_4294228434
+	sym = radialRCSTank_4294228396
+	srfN = srfAttach,AES.Outrigger_4294249872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = RCS
+		utilization = 86
+		mass = 0.075
+		volume = 60
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 60
+			maxAmount = 60
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 128
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 60
+		maxAmount = 60
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = radialRCSTank_4294228434
+	partName = Part
+	pos = 0.03426683,23.95928,1.603383
+	attPos = 0,0,0
+	attPos0 = -0.1843311,0.3264523,0.009622518
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = 0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 72
+	modMass = -7.450581E-09
+	modSize = (0.0, 0.0, 0.0)
+	sym = radialRCSTank_4294248712
+	sym = radialRCSTank_4294228472
+	sym = radialRCSTank_4294228396
+	srfN = srfAttach,AES.Outrigger_4294248520
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = RCS
+		utilization = 86
+		mass = 0.075
+		volume = 60
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 60
+			maxAmount = 60
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 128
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 60
+		maxAmount = 60
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = radialRCSTank_4294228396
+	partName = Part
+	pos = 1.758667,23.95928,-0.1402631
+	attPos = 0,0,0
+	attPos0 = -0.1843311,0.3264523,0.009622514
+	rot = 0.5,0.5,-0.5,0.5
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = 0.5,-0.5,0.5,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 72
+	modMass = -7.450581E-09
+	modSize = (0.0, 0.0, 0.0)
+	sym = radialRCSTank_4294248712
+	sym = radialRCSTank_4294228472
+	sym = radialRCSTank_4294228434
+	srfN = srfAttach,AES.Outrigger_4294247874
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = RCS
+		utilization = 86
+		mass = 0.075
+		volume = 60
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = 
+			utilization = 1
+			mass = 0
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 60
+			maxAmount = 60
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 128
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Scrap Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		EVENTS
+		{
+			ScrapPart
+			{
+				active = True
+				guiActive = False
+				guiIcon = Scrap part
+				guiName = Salvage Part
+				category = Scrap part
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 60
+		maxAmount = 60
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = RCSBlock_4294248616
+	partName = Part
+	pos = -1.80145,31.06943,-0.1298982
+	attPos = 0,0,0
+	attPos0 = 0.2764023,1.056597,-0.0007422356
+	rot = -2.512148E-14,3.371748E-07,-8.940685E-08,1
 	attRot = 0,0,0,1
-	attRot0 = -1.04308E-07,1,1.507289E-14,-1.685874E-07
+	attRot0 = 8.940685E-08,-1,-2.512148E-14,3.371748E-07
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -6694,10 +8462,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973274
-	sym = RCSBlock_4289973980
-	sym = RCSBlock_4289972628
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4289972224
+	sym = RCSBlock_4294223576
+	sym = RCSBlock_4294223418
+	sym = RCSBlock_4294223260
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294248918
 	EVENTS
 	{
 	}
@@ -6825,14 +8593,14 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289971934
+	part = RCSBlock_4294223576
 	partName = Part
-	pos = 2.052261,53.02357,0.5028893
+	pos = 1.850738,31.06943,-0.1313828
 	attPos = 0,0,0
-	attPos0 = -0.0007422835,-0.2469692,-0.2755546
-	rot = 7.649E-08,1,-2.260933E-14,-3.371748E-07
+	attPos0 = 0.2764023,1.056597,-0.0007422356
+	rot = -8.940685E-08,1,2.512148E-14,-3.371748E-07
 	attRot = 0,0,0,1
-	attRot0 = 5.408657E-08,0.7071066,-5.40866E-08,-0.7071071
+	attRot0 = 8.940684E-08,-1,-2.512148E-14,3.371748E-07
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -6844,10 +8612,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = RCSBlock_4289973226
-	sym = RCSBlock_4289973932
-	sym = RCSBlock_4289972580
-	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4289972482
+	sym = RCSBlock_4294248616
+	sym = RCSBlock_4294223418
+	sym = RCSBlock_4294223260
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294247566
 	EVENTS
 	{
 	}
@@ -6975,14 +8743,14 @@ PART
 }
 PART
 {
-	part = solarPanels3_4289971886
+	part = RCSBlock_4294223418
 	partName = Part
-	pos = 0.9969796,50.72366,-0.2663337
+	pos = 0.02390178,31.06943,-1.956736
 	attPos = 0,0,0
-	attPos0 = 0.7699655,0.1306896,-0.7699655
-	rot = 0,0.9238796,0,-0.3826835
+	attPos0 = 0.2764024,1.056597,-0.0007422351
+	rot = 6.322018E-08,-0.7071066,-6.322022E-08,0.7071071
 	attRot = 0,0,0,1
-	attRot0 = 0,0.9238796,0,-0.3826835
+	attRot0 = 8.940685E-08,-1,-2.512148E-14,3.371748E-07
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -6994,10 +8762,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = solarPanels3_4289971778
-	sym = solarPanels3_4289971670
-	sym = solarPanels3_4289971562
-	srfN = srfAttach,strutOcto_4289974564
+	sym = RCSBlock_4294248616
+	sym = RCSBlock_4294223576
+	sym = RCSBlock_4294223260
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294249564
 	EVENTS
 	{
 	}
@@ -7009,48 +8777,37 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleRCS
 		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			Extend
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Retract
+			Enable
 			{
 				active = False
-				guiActive = False
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 		}
 		ACTIONS
 		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7080,8 +8837,8 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 380
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
 		EVENTS
 		{
 		}
@@ -7136,14 +8893,14 @@ PART
 }
 PART
 {
-	part = solarPanels3_4289971778
+	part = RCSBlock_4294223260
 	partName = Part
-	pos = -0.5429515,50.72366,-0.2663337
+	pos = 0.02538664,31.06943,1.695454
 	attPos = 0,0,0
-	attPos0 = -0.7699654,0.1306896,-0.7699655
-	rot = 0,0.3826834,0,-0.9238796
+	attPos0 = 0.2764024,1.056597,-0.0007422366
+	rot = -6.322022E-08,0.7071071,-6.322018E-08,0.7071066
 	attRot = 0,0,0,1
-	attRot0 = 0,0.3826834,0,-0.9238796
+	attRot0 = 8.940685E-08,-1,-2.512148E-14,3.371748E-07
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -7155,10 +8912,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = solarPanels3_4289971886
-	sym = solarPanels3_4289971670
-	sym = solarPanels3_4289971562
-	srfN = srfAttach,strutOcto_4289974564
+	sym = RCSBlock_4294248616
+	sym = RCSBlock_4294223576
+	sym = RCSBlock_4294223418
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.2.5m_4294248212
 	EVENTS
 	{
 	}
@@ -7170,48 +8927,37 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleRCS
 		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			Extend
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Retract
+			Enable
 			{
 				active = False
-				guiActive = False
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 		}
 		ACTIONS
 		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7241,8 +8987,8 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 380
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
 		EVENTS
 		{
 		}
@@ -7297,14 +9043,14 @@ PART
 }
 PART
 {
-	part = solarPanels3_4289971670
+	part = RCSBlock_4294248568
 	partName = Part
-	pos = -0.5429515,50.72366,1.273597
+	pos = -1.800657,25.57192,-0.1298982
 	attPos = 0,0,0
-	attPos0 = -0.7699655,0.1306896,0.7699655
-	rot = 0,-0.3826835,0,-0.9238796
+	attPos0 = -0.0007422686,-0.6909122,-0.2756092
+	rot = 1.256074E-14,2.528811E-07,4.668763E-08,1
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.3826835,0,-0.9238796
+	attRot0 = -3.301313E-08,-0.7071066,3.301315E-08,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -7316,10 +9062,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = solarPanels3_4289971886
-	sym = solarPanels3_4289971778
-	sym = solarPanels3_4289971562
-	srfN = srfAttach,strutOcto_4289974564
+	sym = RCSBlock_4294220070
+	sym = RCSBlock_4294219912
+	sym = RCSBlock_4294219754
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4294249176
 	EVENTS
 	{
 	}
@@ -7331,48 +9077,37 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleRCS
 		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			Extend
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Retract
+			Enable
 			{
 				active = False
-				guiActive = False
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 		}
 		ACTIONS
 		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7402,8 +9137,8 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 380
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
 		EVENTS
 		{
 		}
@@ -7458,14 +9193,14 @@ PART
 }
 PART
 {
-	part = solarPanels3_4289971562
+	part = RCSBlock_4294220070
 	partName = Part
-	pos = 0.9969796,50.72366,1.273597
+	pos = 0.02390178,25.57192,-1.955943
 	attPos = 0,0,0
-	attPos0 = 0.7699655,0.1306896,0.7699654
-	rot = 0,-0.9238796,0,-0.3826834
+	attPos0 = -0.000742268,-0.6909122,-0.2756092
+	rot = -3.301313E-08,-0.7071067,3.301315E-08,0.7071071
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.9238796,0,-0.3826834
+	attRot0 = -3.301313E-08,-0.7071066,3.301315E-08,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -7477,10 +9212,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = solarPanels3_4289971886
-	sym = solarPanels3_4289971778
-	sym = solarPanels3_4289971670
-	srfN = srfAttach,strutOcto_4289974564
+	sym = RCSBlock_4294248568
+	sym = RCSBlock_4294219912
+	sym = RCSBlock_4294219754
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4294249822
 	EVENTS
 	{
 	}
@@ -7492,48 +9227,37 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = ModuleRCS
 		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			Extend
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Retract
+			Enable
 			{
 				active = False
-				guiActive = False
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
 		}
 		ACTIONS
 		{
-			ExtendPanelsAction
-			{
-				actionGroup = None
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7563,8 +9287,8 @@ PART
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 380
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
 		EVENTS
 		{
 		}
@@ -7619,29 +9343,29 @@ PART
 }
 PART
 {
-	part = lightnav.white_4289971454
+	part = RCSBlock_4294219912
 	partName = Part
-	pos = -1.005444,54.04707,0.5036323
+	pos = 0.02538669,25.57192,1.694661
 	attPos = 0,0,0
-	attPos0 = -1.232458,-0.02043724,5.960464E-08
-	rot = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
+	attPos0 = -0.0007422688,-0.6909122,-0.2756092
+	rot = 3.301315E-08,0.7071071,3.301313E-08,0.7071066
 	attRot = 0,0,0,1
-	attRot0 = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
+	attRot0 = -3.301313E-08,-0.7071066,3.301315E-08,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971420
-	sym = lightnav.white_4289971386
-	sym = lightnav.white_4289971352
-	srfN = srfAttach,OKS.Kerbitat_4289975154
+	sym = RCSBlock_4294248568
+	sym = RCSBlock_4294220070
+	sym = RCSBlock_4294219754
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4294248470
 	EVENTS
 	{
 	}
@@ -7653,51 +9377,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleNavLight
+		name = ModuleRCS
 		isEnabled = True
-		navLightSwitch = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			FlashEvent
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			DoubleFlashEvent
+			Enable
 			{
-				active = True
+				active = False
 				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -7705,23 +9407,7 @@ PART
 		}
 		ACTIONS
 		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7747,6 +9433,21 @@ PART
 	}
 	MODULE
 	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = USI_ModuleRecycleablePart
 		isEnabled = True
 		EVENTS
@@ -7792,29 +9493,29 @@ PART
 }
 PART
 {
-	part = lightnav.white_4289971420
+	part = RCSBlock_4294219754
 	partName = Part
-	pos = 0.227014,54.04707,1.73609
+	pos = 1.849945,25.57192,-0.1313828
 	attPos = 0,0,0
-	attPos0 = -1.490116E-08,-0.02043724,1.232458
-	rot = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
+	attPos0 = -0.0007422686,-0.6909122,-0.2756093
+	rot = 4.668763E-08,1,-1.256074E-14,-2.528811E-07
 	attRot = 0,0,0,1
-	attRot0 = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
+	attRot0 = -3.301313E-08,-0.7071066,3.301315E-08,0.707107
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971454
-	sym = lightnav.white_4289971386
-	sym = lightnav.white_4289971352
-	srfN = srfAttach,OKS.Kerbitat_4289975154
+	sym = RCSBlock_4294248568
+	sym = RCSBlock_4294220070
+	sym = RCSBlock_4294219912
+	srfN = srfAttach,TAL.Cubic.Truss.Mini.5m_4294247824
 	EVENTS
 	{
 	}
@@ -7826,51 +9527,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleNavLight
+		name = ModuleRCS
 		isEnabled = True
-		navLightSwitch = 0
+		rcsEnabled = True
 		EVENTS
 		{
-			FlashEvent
+			Disable
 			{
 				active = True
 				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			DoubleFlashEvent
+			Enable
 			{
-				active = True
+				active = False
 				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -7878,23 +9557,7 @@ PART
 		}
 		ACTIONS
 		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -7920,174 +9583,16 @@ PART
 	}
 	MODULE
 	{
-		name = USI_ModuleRecycleablePart
+		name = TweakScale
 		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightnav.white_4289971386
-	partName = Part
-	pos = 1.459472,54.04707,0.5036314
-	attPos = 0,0,0
-	attPos0 = 1.232458,-0.02043724,-1.639128E-07
-	rot = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-	attRot = 0,0,0,1
-	attRot0 = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971454
-	sym = lightnav.white_4289971420
-	sym = lightnav.white_4289971352
-	srfN = srfAttach,OKS.Kerbitat_4289975154
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 620
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
 		{
 		}
 	}
@@ -8138,879 +9643,14 @@ PART
 }
 PART
 {
-	part = lightnav.white_4289971352
+	part = decoupler1-2_4294243664
 	partName = Part
-	pos = 0.2270139,54.04707,-0.7288268
-	attPos = 0,0,0
-	attPos0 = -1.341105E-07,-0.02043724,-1.232458
-	rot = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-	attRot = 0,0,0,1
-	attRot0 = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971454
-	sym = lightnav.white_4289971420
-	sym = lightnav.white_4289971386
-	srfN = srfAttach,OKS.Kerbitat_4289975154
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightnav.white_4289971318
-	partName = Part
-	pos = -1.005544,57.14978,0.5036323
-	attPos = 0,0,0
-	attPos0 = -1.232558,-0.01771164,5.960464E-08
-	rot = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
-	attRot = 0,0,0,1
-	attRot0 = -8.723536E-09,-1,-2.512148E-15,-2.528811E-07
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971284
-	sym = lightnav.white_4289971250
-	sym = lightnav.white_4289971216
-	srfN = srfAttach,OKS.Aeroponics_4289975456
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightnav.white_4289971284
-	partName = Part
-	pos = 0.227014,57.14978,1.73619
-	attPos = 0,0,0
-	attPos0 = -1.490116E-08,-0.01771164,1.232558
-	rot = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
-	attRot = 0,0,0,1
-	attRot0 = -6.168473E-09,-0.707107,6.16847E-09,0.7071066
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971318
-	sym = lightnav.white_4289971250
-	sym = lightnav.white_4289971216
-	srfN = srfAttach,OKS.Aeroponics_4289975456
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightnav.white_4289971250
-	partName = Part
-	pos = 1.459572,57.14978,0.5036314
-	attPos = 0,0,0
-	attPos0 = 1.232558,-0.01771164,-1.639128E-07
-	rot = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-	attRot = 0,0,0,1
-	attRot0 = -2.13083E-15,-2.091697E-07,8.723536E-09,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971318
-	sym = lightnav.white_4289971284
-	sym = lightnav.white_4289971216
-	srfN = srfAttach,OKS.Aeroponics_4289975456
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = lightnav.white_4289971216
-	partName = Part
-	pos = 0.2270139,57.14978,-0.7289267
-	attPos = 0,0,0
-	attPos0 = -1.341105E-07,-0.01771164,-1.232558
-	rot = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-	attRot = 0,0,0,1
-	attRot0 = 6.16847E-09,0.7071066,6.168473E-09,0.707107
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = lightnav.white_4289971318
-	sym = lightnav.white_4289971284
-	sym = lightnav.white_4289971250
-	srfN = srfAttach,OKS.Aeroponics_4289975456
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleNavLight
-		isEnabled = True
-		navLightSwitch = 0
-		EVENTS
-		{
-			FlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Flash
-				guiName = Flash
-				category = Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DoubleFlashEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Double Flash
-				guiName = Double Flash
-				category = Double Flash
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			IntervalEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Interval
-				guiName = Interval
-				category = Interval
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			OnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Light
-				guiName = Light
-				category = Light
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			LightToggle
-			{
-				actionGroup = None
-			}
-			FlashToggle
-			{
-				actionGroup = None
-			}
-			DoubleFlashToggle
-			{
-				actionGroup = None
-			}
-			IntervalToggle
-			{
-				actionGroup = None
-			}
-			Cycle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		TOGGLE
-		{
-		}
-		HOLD
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Scrap Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		EVENTS
-		{
-			ScrapPart
-			{
-				active = True
-				guiActive = False
-				guiIcon = Scrap part
-				guiName = Salvage Part
-				category = Scrap part
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = decoupler1-2_4289957754
-	partName = Part
-	pos = 0.227014,49.62717,0.5036314
+	pos = 0.02464405,22.61947,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-0.9657955,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 0,0,0,-1
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -9022,9 +9662,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = KzResizableFairingBaseRing_4289957674
-	attN = bottom,KzResizableFairingBaseRing_4289957674
-	attN = top,strutOcto_4289974564
+	link = KzResizableFairingBaseRing_4294243584
+	attN = bottom,KzResizableFairingBaseRing_4294243584
+	attN = top,strutOcto_4294249906
 	EVENTS
 	{
 	}
@@ -9182,9 +9822,9 @@ PART
 }
 PART
 {
-	part = KzResizableFairingBaseRing_4289957674
+	part = KzResizableFairingBaseRing_4294243584
 	partName = Part
-	pos = 0.227014,48.7327,0.5036314
+	pos = 0.02464405,21.725,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-0.9864702,0
 	rot = 0,0,0,1
@@ -9201,9 +9841,9 @@ PART
 	modCost = 235.298
 	modMass = 0.235298
 	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank4-2_4289957620
-	attN = bottom,fuelTank4-2_4289957620
-	attN = top,decoupler1-2_4289957754
+	link = fuelTank4-2_4294243530
+	attN = bottom,fuelTank4-2_4294243530
+	attN = top,decoupler1-2_4294243664
 	EVENTS
 	{
 	}
@@ -9221,9 +9861,9 @@ PART
 		fuelCrossFeed = False
 		autoStrutSides = True
 		autoShape = True
-		manualMaxSize = 4.200801
-		manualCylStart = 2.029
-		manualCylEnd = 10.129
+		manualMaxSize = 4.448491
+		manualCylStart = 1.929
+		manualCylEnd = 9.229
 		extraRadius_UIFlight
 		{
 			controlEnabled = True
@@ -9428,9 +10068,9 @@ PART
 }
 PART
 {
-	part = fuelTank4-2_4289957620
+	part = fuelTank4-2_4294243530
 	partName = Part
-	pos = 0.227014,48.26395,0.5036314
+	pos = 0.02464405,21.25625,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-0.46875,0
 	rot = 0,0,0,1
@@ -9447,9 +10087,9 @@ PART
 	modCost = 367.2
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank1-2_4289957576
-	attN = top,KzResizableFairingBaseRing_4289957674
-	attN = bottom,fuelTank1-2_4289957576
+	link = fuelTank1-2_4294243486
+	attN = top,KzResizableFairingBaseRing_4294243584
+	attN = bottom,fuelTank1-2_4294243486
 	EVENTS
 	{
 	}
@@ -9716,9 +10356,9 @@ PART
 }
 PART
 {
-	part = fuelTank1-2_4289957576
+	part = fuelTank1-2_4294243486
 	partName = Part
-	pos = 0.227014,45.9202,0.5036314
+	pos = 0.02464405,18.9125,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.34375,0
 	rot = 0,0,0,1
@@ -9735,9 +10375,9 @@ PART
 	modCost = 1468.8
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = engineLargeSkipper_4289957532
-	attN = top,fuelTank4-2_4289957620
-	attN = bottom,engineLargeSkipper_4289957532
+	link = engineLargeSkipper_4294243442
+	attN = top,fuelTank4-2_4294243530
+	attN = bottom,engineLargeSkipper_4294243442
 	EVENTS
 	{
 	}
@@ -10004,9 +10644,9 @@ PART
 }
 PART
 {
-	part = engineLargeSkipper_4289957532
+	part = engineLargeSkipper_4294243442
 	partName = Part
-	pos = 0.227014,44.0452,0.5036314
+	pos = 0.02464405,17.0375,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-1.875,0
 	rot = 0,0,0,1
@@ -10023,9 +10663,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = decoupler1-2_4289957408
-	attN = top,fuelTank1-2_4289957576
-	attN = bottom,decoupler1-2_4289957408
+	link = decoupler1-2_4294243318
+	attN = top,fuelTank1-2_4294243486
+	attN = bottom,decoupler1-2_4294243318
 	EVENTS
 	{
 	}
@@ -10313,9 +10953,9 @@ PART
 }
 PART
 {
-	part = decoupler1-2_4289957408
+	part = decoupler1-2_4294243318
 	partName = Part
-	pos = 0.227014,41.21934,0.5036314
+	pos = 0.02464405,14.21164,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.825859,0
 	rot = 0,0,0,1
@@ -10332,9 +10972,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank2-2_4289957328
-	attN = bottom,fuelTank2-2_4289957328
-	attN = top,engineLargeSkipper_4289957532
+	link = fuelTank2-2_4294243238
+	attN = bottom,fuelTank2-2_4294243238
+	attN = top,engineLargeSkipper_4294243442
 	EVENTS
 	{
 	}
@@ -10492,9 +11132,9 @@ PART
 }
 PART
 {
-	part = fuelTank2-2_4289957328
+	part = fuelTank2-2_4294243238
 	partName = Part
-	pos = 0.227014,39.91637,0.5036314
+	pos = 0.02464405,12.90867,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-1.302971,0
 	rot = 0,0,0,1
@@ -10511,9 +11151,9 @@ PART
 	modCost = 734.4
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = fuelTank1-2_4289957284
-	attN = top,decoupler1-2_4289957408
-	attN = bottom,fuelTank1-2_4289957284
+	link = fuelTank1-2_4294243194
+	attN = top,decoupler1-2_4294243318
+	attN = bottom,fuelTank1-2_4294243194
 	EVENTS
 	{
 	}
@@ -10780,9 +11420,9 @@ PART
 }
 PART
 {
-	part = fuelTank1-2_4289957284
+	part = fuelTank1-2_4294243194
 	partName = Part
-	pos = 0.227014,37.10387,0.5036314
+	pos = 0.02464405,10.09617,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.8125,0
 	rot = 0,0,0,1
@@ -10799,13 +11439,13 @@ PART
 	modCost = 1468.8
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = liquidEngine1-2_4289957240
-	link = basicFin_4289874418
-	link = basicFin_4289873650
-	link = basicFin_4289873606
-	link = basicFin_4289873562
-	attN = top,fuelTank2-2_4289957328
-	attN = bottom,liquidEngine1-2_4289957240
+	link = liquidEngine1-2_4294243150
+	link = basicFin_4294242566
+	link = basicFin_4294242528
+	link = basicFin_4294242490
+	link = basicFin_4294242452
+	attN = top,fuelTank2-2_4294243238
+	attN = bottom,liquidEngine1-2_4294243150
 	EVENTS
 	{
 	}
@@ -11072,9 +11712,9 @@ PART
 }
 PART
 {
-	part = liquidEngine1-2_4289957240
+	part = liquidEngine1-2_4294243150
 	partName = Part
-	pos = 0.227014,34.16357,0.5036314
+	pos = 0.02464405,7.155867,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.940308,0
 	rot = 0,0,0,1
@@ -11091,9 +11731,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = decoupler1-2_4289957124
-	attN = top,fuelTank1-2_4289957284
-	attN = bottom,decoupler1-2_4289957124
+	link = decoupler1-2_4294243034
+	attN = top,fuelTank1-2_4294243194
+	attN = bottom,decoupler1-2_4294243034
 	EVENTS
 	{
 	}
@@ -11381,9 +12021,9 @@ PART
 }
 PART
 {
-	part = decoupler1-2_4289957124
+	part = decoupler1-2_4294243034
 	partName = Part
-	pos = 0.227014,31.78192,0.5036314
+	pos = 0.02464405,4.774218,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.381645,0
 	rot = 0,0,0,1
@@ -11400,9 +12040,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3to2Adapter_4289919188
-	attN = bottom,Size3to2Adapter_4289919188
-	attN = top,liquidEngine1-2_4289957240
+	link = Size3to2Adapter_4294242954
+	attN = bottom,Size3to2Adapter_4294242954
+	attN = top,liquidEngine1-2_4294243150
 	EVENTS
 	{
 	}
@@ -11560,9 +12200,9 @@ PART
 }
 PART
 {
-	part = Size3to2Adapter_4289919188
+	part = Size3to2Adapter_4294242954
 	partName = Part
-	pos = 0.227014,30.31645,0.5036314
+	pos = 0.02464405,3.308748,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-1.465471,0
 	rot = 0,0,0,1
@@ -11579,9 +12219,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3SmallTank_4289929040
-	attN = top,decoupler1-2_4289957124
-	attN = bottom,Size3SmallTank_4289929040
+	link = Size3SmallTank_4294242920
+	attN = top,decoupler1-2_4294243034
+	attN = bottom,Size3SmallTank_4294242920
 	EVENTS
 	{
 	}
@@ -11671,9 +12311,9 @@ PART
 }
 PART
 {
-	part = Size3SmallTank_4289929040
+	part = Size3SmallTank_4294242920
 	partName = Part
-	pos = 0.227014,28.25645,0.5036314
+	pos = 0.02464405,1.248737,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-2.060001,0
 	rot = 0,0,0,1
@@ -11690,9 +12330,9 @@ PART
 	modCost = 1652.4
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3LargeTank_4289927522
-	attN = top,Size3to2Adapter_4289919188
-	attN = bottom,Size3LargeTank_4289927522
+	link = Size3LargeTank_4294242876
+	attN = top,Size3to2Adapter_4294242954
+	attN = bottom,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -11959,9 +12599,9 @@ PART
 }
 PART
 {
-	part = Size3LargeTank_4289927522
+	part = Size3LargeTank_4294242876
 	partName = Part
-	pos = 0.227014,23.54945,0.5036314
+	pos = 0.02464405,-3.458263,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-4.706999,0
 	rot = 0,0,0,1
@@ -11978,13 +12618,13 @@ PART
 	modCost = 6609.6
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = Size3AdvancedEngine_4289956956
-	link = basicFin_4289875042
-	link = basicFin_4289874858
-	link = basicFin_4289874816
-	link = basicFin_4289874774
-	attN = top,Size3SmallTank_4289929040
-	attN = bottom,Size3AdvancedEngine_4289956956
+	link = Size3AdvancedEngine_4294242832
+	link = basicFin_4294242718
+	link = basicFin_4294242680
+	link = basicFin_4294242642
+	link = basicFin_4294242604
+	attN = top,Size3SmallTank_4294242920
+	attN = bottom,Size3AdvancedEngine_4294242832
 	EVENTS
 	{
 	}
@@ -12251,9 +12891,9 @@ PART
 }
 PART
 {
-	part = Size3AdvancedEngine_4289956956
+	part = Size3AdvancedEngine_4294242832
 	partName = Part
-	pos = 0.227014,18.32147,0.5036314
+	pos = 0.02464405,-8.686234,-0.1306405
 	attPos = 0,0,0
 	attPos0 = 0,-5.22798,0
 	rot = 0,0,0,1
@@ -12270,7 +12910,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	attN = top,Size3LargeTank_4289927522
+	attN = top,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -12582,9 +13222,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289875042
+	part = basicFin_4294242718
 	partName = Part
-	pos = -1.629951,20.16942,0.5036315
+	pos = -1.832321,-6.838284,-0.1306405
 	attPos = 0,0,0
 	attPos0 = -1.856965,-3.380028,1.192093E-07
 	rot = 6.28037E-16,0,1.977312E-08,1
@@ -12601,10 +13241,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289874858
-	sym = basicFin_4289874816
-	sym = basicFin_4289874774
-	srfN = srfAttach,Size3LargeTank_4289927522
+	sym = basicFin_4294242680
+	sym = basicFin_4294242642
+	sym = basicFin_4294242604
+	srfN = srfAttach,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -12705,9 +13345,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289874858
+	part = basicFin_4294242680
 	partName = Part
-	pos = 0.227014,20.16942,2.360596
+	pos = 0.02464405,-6.838284,1.726324
 	attPos = 0,0,0
 	attPos0 = 1.490116E-08,-3.380028,1.856964
 	rot = 1.398171E-08,0.7071068,1.398171E-08,0.7071068
@@ -12724,10 +13364,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289875042
-	sym = basicFin_4289874816
-	sym = basicFin_4289874774
-	srfN = srfAttach,Size3LargeTank_4289927522
+	sym = basicFin_4294242718
+	sym = basicFin_4294242642
+	sym = basicFin_4294242604
+	srfN = srfAttach,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -12828,9 +13468,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289874816
+	part = basicFin_4294242642
 	partName = Part
-	pos = 2.083979,20.16942,0.5036311
+	pos = 1.881608,-6.838284,-0.1306415
 	attPos = 0,0,0
 	attPos0 = 1.856965,-3.380028,-2.980232E-07
 	rot = 1.977312E-08,1,-1.492347E-15,-4.371139E-08
@@ -12847,10 +13487,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289875042
-	sym = basicFin_4289874858
-	sym = basicFin_4289874774
-	srfN = srfAttach,Size3LargeTank_4289927522
+	sym = basicFin_4294242718
+	sym = basicFin_4294242680
+	sym = basicFin_4294242604
+	srfN = srfAttach,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -12951,9 +13591,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289874774
+	part = basicFin_4294242604
 	partName = Part
-	pos = 0.2270138,20.16942,-1.353333
+	pos = 0.02464381,-6.838284,-1.987605
 	attPos = 0,0,0
 	attPos0 = -2.235174E-07,-3.380028,-1.856964
 	rot = 1.398171E-08,0.7071068,-1.398171E-08,-0.7071068
@@ -12970,10 +13610,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289875042
-	sym = basicFin_4289874858
-	sym = basicFin_4289874816
-	srfN = srfAttach,Size3LargeTank_4289927522
+	sym = basicFin_4294242718
+	sym = basicFin_4294242680
+	sym = basicFin_4294242642
+	srfN = srfAttach,Size3LargeTank_4294242876
 	EVENTS
 	{
 	}
@@ -13074,9 +13714,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289874418
+	part = basicFin_4294242566
 	partName = Part
-	pos = -0.9812671,35.58426,0.5036314
+	pos = -1.183637,8.576548,-0.1306405
 	attPos = 0,0,0
 	attPos0 = -1.208281,-1.519613,5.960464E-08
 	rot = 0,0,0,1
@@ -13093,10 +13733,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289873650
-	sym = basicFin_4289873606
-	sym = basicFin_4289873562
-	srfN = srfAttach,fuelTank1-2_4289957284
+	sym = basicFin_4294242528
+	sym = basicFin_4294242490
+	sym = basicFin_4294242452
+	srfN = srfAttach,fuelTank1-2_4294243194
 	EVENTS
 	{
 	}
@@ -13197,9 +13837,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289873650
+	part = basicFin_4294242528
 	partName = Part
-	pos = 0.227014,35.58426,1.711912
+	pos = 0.02464405,8.576548,1.077641
 	attPos = 0,0,0
 	attPos0 = -1.490116E-08,-1.519613,1.208281
 	rot = 0,0.7071068,0,0.7071068
@@ -13216,10 +13856,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289874418
-	sym = basicFin_4289873606
-	sym = basicFin_4289873562
-	srfN = srfAttach,fuelTank1-2_4289957284
+	sym = basicFin_4294242566
+	sym = basicFin_4294242490
+	sym = basicFin_4294242452
+	srfN = srfAttach,fuelTank1-2_4294243194
 	EVENTS
 	{
 	}
@@ -13320,9 +13960,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289873606
+	part = basicFin_4294242490
 	partName = Part
-	pos = 1.435295,35.58426,0.5036312
+	pos = 1.232925,8.576548,-0.1306415
 	attPos = 0,0,0
 	attPos0 = 1.208281,-1.519613,-1.788139E-07
 	rot = 0,1,0,-4.371139E-08
@@ -13339,10 +13979,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289874418
-	sym = basicFin_4289873650
-	sym = basicFin_4289873562
-	srfN = srfAttach,fuelTank1-2_4289957284
+	sym = basicFin_4294242566
+	sym = basicFin_4294242528
+	sym = basicFin_4294242452
+	srfN = srfAttach,fuelTank1-2_4294243194
 	EVENTS
 	{
 	}
@@ -13443,9 +14083,9 @@ PART
 }
 PART
 {
-	part = basicFin_4289873562
+	part = basicFin_4294242452
 	partName = Part
-	pos = 0.2270139,35.58426,-0.7046497
+	pos = 0.02464393,8.576548,-1.338921
 	attPos = 0,0,0
 	attPos0 = -1.341105E-07,-1.519613,-1.208281
 	rot = 0,0.7071068,0,-0.7071068
@@ -13462,10 +14102,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = basicFin_4289874418
-	sym = basicFin_4289873650
-	sym = basicFin_4289873606
-	srfN = srfAttach,fuelTank1-2_4289957284
+	sym = basicFin_4294242566
+	sym = basicFin_4294242528
+	sym = basicFin_4294242490
+	srfN = srfAttach,fuelTank1-2_4294243194
 	EVENTS
 	{
 	}
