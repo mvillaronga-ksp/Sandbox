@@ -591,11 +591,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16814.0237305057
+							_currentUT = 16814.5237305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.758994177573
+							ORBITING = 16447.258994177584
 						}
 					}
 				}
@@ -615,11 +615,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16814.0237305057
+							_currentUT = 16814.5237305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.758994177588
+							ORBITING = 16447.258994177599
 						}
 					}
 				}
@@ -639,33 +639,13 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16814.0237305057
+							_currentUT = 16814.5237305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.75899417761
+							ORBITING = 16447.25899417762
 						}
 					}
-				}
-				profession
-				{
-					current = Engineer
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
-				}
-				profession
-				{
-					current = Pilot
-				}
-			}
-			KerbalExt
-			{
-				experience
-				{
 				}
 				profession
 				{
@@ -686,6 +666,26 @@ GAME
 			{
 				experience
 				{
+				}
+				profession
+				{
+					current = Engineer
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
+				}
+				profession
+				{
+					current = Pilot
+				}
+			}
+			KerbalExt
+			{
+				experience
+				{
 					_current = Passenger
 					Passenger
 					{
@@ -693,11 +693,11 @@ GAME
 						Kerbin
 						{
 							_current = ORBITING
-							_currentUT = 16814.0237305057
+							_currentUT = 16814.5237305057
 							PRELAUNCH = 6.1799999999998683
 							FLYING = 278.81984375005152
 							SUB_ORBITAL = 73.744892578094209
-							ORBITING = 16446.758994177566
+							ORBITING = 16447.258994177577
 						}
 					}
 				}
@@ -880,7 +880,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 64
+		LastSave = 65
 	}
 	SCENARIO
 	{
@@ -934,7 +934,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 16814.2837305057
+		UT = 17478.4237402776
 		activeVessel = 13
 		mapViewFiltering = 1022
 		VESSEL
@@ -17267,36 +17267,36 @@ GAME
 			pid = 051b620e3d5a4c9aaabab59eba9aae76
 			name = Spherical Core - Test
 			type = Probe
-			sit = PRELAUNCH
-			landed = True
-			landedAt = LaunchPad
+			sit = ORBITING
+			landed = False
+			landedAt = 
 			splashed = False
-			met = 0
-			lct = 16814.2837305057
+			met = 650.84000977156
+			lct = 16827.583730506
 			root = 0
-			lat = -0.0971674298119266
-			lon = 285.442403712174
-			alt = 82.4735233969986
-			hgt = 9.96197
-			nrm = 0.0007469443,0.9999999,6.635887E-07
-			rot = -0.7009888,-0.09221785,-0.0972654,0.7004643
-			CoM = -0.03284718,-5.306123,-0.000203391
-			stg = 3
+			lat = 8.8023072028411
+			lon = 6.77595497272506
+			alt = 72233.8146571784
+			hgt = -1
+			nrm = -0.8246264,-0.1285861,0.5508692
+			rot = -0.06453715,-0.6684422,-0.7018462,-0.2375543
+			CoM = 9.852098E-05,-4.566557,-1.047141E-06
+			stg = 1
 			prst = False
 			ref = 1252215207
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = -1.359908
+			cHdg = -2.613203
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300817.29615517
-				ECC = 0.99482268818014
-				INC = 0.0971674296419154
-				LPE = 90
-				LAN = 25.6819379906162
-				MNA = 3.14159265358979
-				EPH = 16814.2837305057
+				SMA = 675501.94047598
+				ECC = 0.00483854162287288
+				INC = 8.80304140612248
+				LPE = 92.0963998097569
+				LAN = 297.33268323213
+				MNA = 6.25984709499833
+				EPH = 17478.4237402776
 				REF = 1
 			}
 			PART
@@ -17319,10 +17319,10 @@ GAME
 				attm = 0
 				srfN = , -1
 				attN = bottom, 1
-				attN = top, 44
+				attN = top, 38
 				mass = 0.5
-				temp = 287.484709207262
-				tempExt = 288.115265034398
+				temp = 448.28282028448
+				tempExt = 449.118735453984
 				expt = 0
 				state = 0
 				connected = True
@@ -17377,7 +17377,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Idle
+					stateString = Running
 					WheelState = Active
 					EVENTS
 					{
@@ -17522,12 +17522,15 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 30
+					amount = 4.72850038766784
 					maxAmount = 30
 					flowState = True
 					isTweakable = True
@@ -17557,8 +17560,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.2
-				temp = 287.535400101324
-				tempExt = 291.457681877966
+				temp = 448.401797689401
+				tempExt = 449.613849106218
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17579,7 +17582,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Idle
+					stateString = Running
 					WheelState = Active
 					EVENTS
 					{
@@ -17706,8 +17709,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 13.5
-				temp = 287.518327751158
-				tempExt = 293.785947209949
+				temp = 448.413088895344
+				tempExt = 450.141296174551
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17796,7 +17799,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 16534.599999999999
+						amount = 1506.4919669862829
 						maxAmount = 19440
 					}
 					TANK
@@ -17810,7 +17813,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 20338
+						amount = 1970.3124040943062
 						maxAmount = 23760
 					}
 					TANK
@@ -17989,7 +17992,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 16534.6
+					amount = 1506.49196698628
 					maxAmount = 19440
 					flowState = True
 					isTweakable = True
@@ -17999,7 +18002,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 20338
+					amount = 1970.31240409431
 					maxAmount = 23760
 					flowState = True
 					isTweakable = True
@@ -18029,8 +18032,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 287.544479032907
-				tempExt = 288.077522927123
+				temp = 448.341285660177
+				tempExt = 448.917648230602
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18121,7 +18124,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4000
+					amount = 3974.72850038721
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -18151,8 +18154,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 3
 				mass = 0.2
-				temp = 287.555294519001
-				tempExt = 288.197851735194
+				temp = 447.742001034948
+				tempExt = 448.042640250642
 				expt = 0.5
 				state = 1
 				connected = True
@@ -18342,7 +18345,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -18365,7 +18368,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -18445,8 +18448,8 @@ GAME
 				attN = bottom, 6
 				attN = top, 4
 				mass = 0.4
-				temp = 287.563238257609
-				tempExt = 288.475661313764
+				temp = 447.195747821268
+				tempExt = 447.005181499036
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18625,10 +18628,10 @@ GAME
 				attN = top, 5
 				attN = bottom, -1
 				mass = 0.475
-				temp = 287.563406218301
-				tempExt = 288.671520593747
+				temp = 446.486563511482
+				tempExt = 445.651409777516
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -18647,7 +18650,7 @@ GAME
 				{
 					name = ModuleProceduralFairing
 					isEnabled = True
-					fsm = st_idle
+					fsm = st_flight_deployed
 					EVENTS
 					{
 						DeleteFairing
@@ -18794,8 +18797,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 3
 				mass = 0.0001
-				temp = 287.551278198203
-				tempExt = 287.622405512088
+				temp = 448.34255184571
+				tempExt = 448.467451284444
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19253,16 +19256,16 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 16814.2837305057
-							deltaVExpended = 0
-							dragLosses = 0
-							gravityLosses = 0
-							steeringLosses = 0
-							markLatitude = -0.0971674306475659
-							markLongitude = -74.5575973716278
-							markAltitude = 77.1590191387804
+							markUT = 16827.583730506
+							deltaVExpended = 4216.48441758655
+							dragLosses = 512.621497602899
+							gravityLosses = 1568.60734021877
+							steeringLosses = 36.448965743747
+							markLatitude = -0.0971673761647271
+							markLongitude = -74.5575940692405
+							markAltitude = 77.9819574265974
 							markBodyIndex = 1
-							maxDragGees = 0
+							maxDragGees = 1.00879697727726
 							unlockParts = 
 							unlockTechs = 
 						}
@@ -19363,12 +19366,15 @@ GAME
 					Log
 					{
 						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
 					}
 				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 5
+					amount = 0
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -19401,8 +19407,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.608258242527
-				tempExt = 288.764995274141
+				temp = 448.432269039688
+				tempExt = 448.837714947399
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19577,8 +19583,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.608250734398
-				tempExt = 288.764895924596
+				temp = 448.432236555093
+				tempExt = 448.837480526629
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19753,8 +19759,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.60824322724
-				tempExt = 288.764796587896
+				temp = 448.440336270099
+				tempExt = 448.680214547863
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19929,8 +19935,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.608235721053
-				tempExt = 288.764697264039
+				temp = 448.440879798695
+				tempExt = 448.750531355096
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20105,8 +20111,8 @@ GAME
 				sym = 13
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.608228215838
-				tempExt = 288.764597953024
+				temp = 448.437651279897
+				tempExt = 448.800154843035
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20281,8 +20287,8 @@ GAME
 				sym = 12
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 287.608220711593
-				tempExt = 288.764498654848
+				temp = 448.415648174474
+				tempExt = 448.903763023731
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20450,17 +20456,17 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 19
-				sym = 24
-				sym = 29
+				sym = 18
+				sym = 22
+				sym = 26
+				sym = 30
 				sym = 34
-				sym = 39
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.54803500444
-				tempExt = 288.34185957201
+				temp = 457.729275808255
+				tempExt = 456.81067959277
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20650,7 +20656,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -20673,7 +20679,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -20749,17 +20755,17 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 20
-				sym = 25
-				sym = 30
+				sym = 19
+				sym = 23
+				sym = 27
+				sym = 31
 				sym = 35
-				sym = 40
 				srfN = srfAttach, 14
 				attN = bottom, 16
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540734939295
-				tempExt = 288.774718486553
+				temp = 463.342537775716
+				tempExt = 461.290667625876
 				expt = 0.5
 				state = 0
 				connected = True
@@ -20845,25 +20851,25 @@ GAME
 				rotation = -2.83122E-07,-3.427267E-07,-2.831221E-07,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 7
 				attm = 0
-				sym = 21
-				sym = 26
-				sym = 31
+				sym = 20
+				sym = 24
+				sym = 28
+				sym = 32
 				sym = 36
-				sym = 41
 				srfN = , -1
 				attN = top, 15
 				attN = bottom, -1
 				mass = 3
-				temp = 287.52589053268
-				tempExt = 287.996375431878
+				temp = 465.222613486261
+				tempExt = 463.444522991654
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -20882,9 +20888,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -20900,7 +20906,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -20911,7 +20917,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -21140,235 +21146,12 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.0197925921501987
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
 					hideFlow = True
 					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = launchClamp1
-				cid = 4289941482
-				uid = 1200320775
-				mid = 3446037769
-				launchID = 4
-				parent = 15
-				position = -9.30436706542969,-5.96013784408569,0.0136969685554504
-				rotation = -2.138355E-08,0.7071065,-3.790115E-07,0.7071072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 22
-				sym = 27
-				sym = 32
-				sym = 37
-				sym = 42
-				srfN = srfAttach, 15
-				mass = 0.1
-				temp = 287.650264241445
-				tempExt = 288.637706840999
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847397
-					height = 4.661347
-					towerRot = 2.138353E-08,-0.7071065,3.790114E-07,0.7071071
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
 				}
 			}
 			PART
@@ -21389,15 +21172,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 23
-				sym = 28
+				sym = 21
+				sym = 25
+				sym = 29
 				sym = 33
-				sym = 38
-				sym = 43
+				sym = 37
 				srfN = srfAttach, 15
 				mass = 0.05
-				temp = 287.514355280216
-				tempExt = 288.44393136127
+				temp = 494.870295169176
+				tempExt = 461.66448255818
 				expt = 0
 				state = 0
 				connected = True
@@ -21516,16 +21299,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 14
-				sym = 24
-				sym = 29
+				sym = 22
+				sym = 26
+				sym = 30
 				sym = 34
-				sym = 39
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.548035011721
-				tempExt = 288.341702667727
+				temp = 457.621483032942
+				tempExt = 456.724431364706
 				expt = 0.5
 				state = 1
 				connected = True
@@ -21715,7 +21498,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -21738,7 +21521,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -21803,7 +21586,7 @@ GAME
 				uid = 488466359
 				mid = 3446037769
 				launchID = 4
-				parent = 19
+				parent = 18
 				position = -3.37051963806152,-4.46965408325195,5.86530685424805
 				rotation = -1.036299E-07,-0.8660256,3.867519E-07,0.4999999
 				mirror = 1,1,1
@@ -21815,16 +21598,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 15
-				sym = 25
-				sym = 30
+				sym = 23
+				sym = 27
+				sym = 31
 				sym = 35
-				sym = 40
-				srfN = srfAttach, 19
-				attN = bottom, 21
+				srfN = srfAttach, 18
+				attN = bottom, 20
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540793690991
-				tempExt = 288.774886594231
+				temp = 463.168317789105
+				tempExt = 461.142732393317
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21905,30 +21688,30 @@ GAME
 				uid = 34632483
 				mid = 3446037769
 				launchID = 4
-				parent = 20
+				parent = 19
 				position = -3.37051963806152,-4.71965408325195,5.86530685424805
 				rotation = -3.867519E-07,0.4999998,-1.036299E-07,0.8660257
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 8
 				attm = 0
 				sym = 16
-				sym = 26
-				sym = 31
+				sym = 24
+				sym = 28
+				sym = 32
 				sym = 36
-				sym = 41
 				srfN = , -1
-				attN = top, 20
+				attN = top, 19
 				attN = bottom, -1
 				mass = 3
-				temp = 287.526361804636
-				tempExt = 287.996746502299
+				temp = 465.025976173134
+				tempExt = 463.268855528129
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -21947,9 +21730,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -21965,7 +21748,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -21976,7 +21759,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -22205,7 +21988,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.0166666662941376
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -22215,235 +21998,12 @@ GAME
 			}
 			PART
 			{
-				name = launchClamp1
-				cid = 4289371428
-				uid = 1413012303
-				mid = 3446037769
-				launchID = 4
-				parent = 20
-				position = -4.64032125473022,-5.96013879776001,8.06466960906982
-				rotation = -2.080245E-07,0.9659259,-3.175418E-07,0.2588195
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 27
-				sym = 32
-				sym = 37
-				sym = 42
-				srfN = srfAttach, 20
-				mass = 0.1
-				temp = 287.650305440797
-				tempExt = 288.637907061465
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847398
-					height = 4.661347
-					towerRot = 2.080244E-07,-0.9659258,3.175418E-07,0.2588194
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = strutConnector
 				cid = 4289371306
 				uid = 3450402191
 				mid = 3446037769
 				launchID = 4
-				parent = 20
+				parent = 19
 				position = -3.27486562728882,-4.21965408325195,5.83967590332031
 				rotation = -0.683013,0.6830128,-0.1830132,0.1830117
 				mirror = 1,1,1
@@ -22454,15 +22014,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 18
-				sym = 28
+				sym = 17
+				sym = 25
+				sym = 29
 				sym = 33
-				sym = 38
-				sym = 43
-				srfN = srfAttach, 20
+				sym = 37
+				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 287.514355343819
-				tempExt = 288.44405289826
+				temp = 494.250003528334
+				tempExt = 461.511270330685
 				expt = 0
 				state = 0
 				connected = True
@@ -22581,16 +22141,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 14
-				sym = 19
-				sym = 29
+				sym = 18
+				sym = 26
+				sym = 30
 				sym = 34
-				sym = 39
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.547020287498
-				tempExt = 288.323359754801
+				temp = 458.026651047114
+				tempExt = 457.08547460461
 				expt = 0.5
 				state = 1
 				connected = True
@@ -22780,7 +22340,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -22803,7 +22363,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -22868,7 +22428,7 @@ GAME
 				uid = 3169856437
 				mid = 3446037769
 				launchID = 4
-				parent = 24
+				parent = 22
 				position = 3.39424395561218,-4.46965408325195,5.85160827636719
 				rotation = 9.817561E-08,-0.5000002,3.663966E-07,0.8660254
 				mirror = 1,1,1
@@ -22880,16 +22440,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 15
-				sym = 20
-				sym = 30
+				sym = 19
+				sym = 27
+				sym = 31
 				sym = 35
-				sym = 40
-				srfN = srfAttach, 24
-				attN = bottom, 26
+				srfN = srfAttach, 22
+				attN = bottom, 24
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540380712773
-				tempExt = 288.774852076579
+				temp = 463.818729743623
+				tempExt = 461.729632772363
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22970,30 +22530,30 @@ GAME
 				uid = 829087888
 				mid = 3446037769
 				launchID = 4
-				parent = 25
+				parent = 23
 				position = 3.39424395561218,-4.71965408325195,5.85160875320435
 				rotation = -3.86752E-07,0.8660254,1.036298E-07,0.5000003
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 9
 				attm = 0
 				sym = 16
-				sym = 21
-				sym = 31
+				sym = 20
+				sym = 28
+				sym = 32
 				sym = 36
-				sym = 41
 				srfN = , -1
-				attN = top, 25
+				attN = top, 23
 				attN = bottom, -1
 				mass = 3
-				temp = 287.526353668774
-				tempExt = 287.997164207574
+				temp = 465.756232332985
+				tempExt = 463.941911361829
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -23012,9 +22572,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -23030,7 +22590,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -23041,7 +22601,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -23270,7 +22830,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.0133333330353101
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -23280,235 +22840,12 @@ GAME
 			}
 			PART
 			{
-				name = launchClamp1
-				cid = 4289370998
-				uid = 3859180634
-				mid = 3446037769
-				launchID = 4
-				parent = 25
-				position = 4.66404724121094,-5.96013832092285,8.05097198486328
-				rotation = -3.24532E-07,0.9659262,-1.748437E-07,-0.2588187
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 22
-				sym = 32
-				sym = 37
-				sym = 42
-				srfN = srfAttach, 25
-				mass = 0.1
-				temp = 287.650132607015
-				tempExt = 288.6381159253
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847398
-					height = 4.661347
-					towerRot = 3.245319E-07,-0.9659259,1.748437E-07,-0.2588187
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = strutConnector
 				cid = 4289370876
 				uid = 2689160187
 				mid = 3446037769
 				launchID = 4
-				parent = 25
+				parent = 23
 				position = 3.4198739528656,-4.21965408325195,5.75595569610596
 				rotation = -0.6830131,0.6830123,0.1830124,-0.1830136
 				mirror = 1,1,1
@@ -23519,15 +22856,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 18
-				sym = 23
+				sym = 17
+				sym = 21
+				sym = 29
 				sym = 33
-				sym = 38
-				sym = 43
-				srfN = srfAttach, 25
+				sym = 37
+				srfN = srfAttach, 23
 				mass = 0.05
-				temp = 287.51435463667
-				tempExt = 288.444568418922
+				temp = 496.464220452346
+				tempExt = 462.113483918523
 				expt = 0
 				state = 0
 				connected = True
@@ -23646,16 +22983,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 14
-				sym = 19
-				sym = 24
+				sym = 18
+				sym = 22
+				sym = 30
 				sym = 34
-				sym = 39
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.547002617771
-				tempExt = 288.323163371071
+				temp = 457.971182715473
+				tempExt = 457.030269291592
 				expt = 0.5
 				state = 1
 				connected = True
@@ -23845,7 +23182,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -23868,7 +23205,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -23933,7 +23270,7 @@ GAME
 				uid = 1333746296
 				mid = 3446037769
 				launchID = 4
-				parent = 29
+				parent = 26
 				position = 6.76476287841797,-4.46965408325195,-0.0136967301368713
 				rotation = 2.682208E-07,-2.384186E-07,2.68221E-07,1
 				mirror = 1,1,1
@@ -23945,16 +23282,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 15
-				sym = 20
-				sym = 25
+				sym = 19
+				sym = 23
+				sym = 31
 				sym = 35
-				sym = 40
-				srfN = srfAttach, 29
-				attN = bottom, 31
+				srfN = srfAttach, 26
+				attN = bottom, 28
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540322905497
-				tempExt = 288.774683727653
+				temp = 463.730780420543
+				tempExt = 461.629598618428
 				expt = 0.5
 				state = 0
 				connected = True
@@ -24035,30 +23372,30 @@ GAME
 				uid = 70098542
 				mid = 3446037769
 				launchID = 4
-				parent = 30
+				parent = 27
 				position = 6.76476287841797,-4.71965456008911,-0.0136968493461609
 				rotation = -2.831221E-07,1,2.83122E-07,3.427267E-07
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 10
 				attm = 0
 				sym = 16
-				sym = 21
-				sym = 26
+				sym = 20
+				sym = 24
+				sym = 32
 				sym = 36
-				sym = 41
 				srfN = , -1
-				attN = top, 30
+				attN = top, 27
 				attN = bottom, -1
 				mass = 3
-				temp = 287.52588203424
-				tempExt = 287.996790802547
+				temp = 465.660221315664
+				tempExt = 463.851155418698
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -24077,9 +23414,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -24095,7 +23432,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -24106,7 +23443,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -24335,7 +23672,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.00999999977648258
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -24345,235 +23682,12 @@ GAME
 			}
 			PART
 			{
-				name = launchClamp1
-				cid = 4289370568
-				uid = 3769526100
-				mid = 3446037769
-				launchID = 4
-				parent = 30
-				position = 9.30436897277832,-5.96013784408569,-0.013696700334549
-				rotation = -3.790115E-07,0.7071072,2.138355E-08,-0.7071065
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 22
-				sym = 27
-				sym = 37
-				sym = 42
-				srfN = srfAttach, 30
-				mass = 0.1
-				temp = 287.650091743228
-				tempExt = 288.637914414808
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847397
-					height = 4.661347
-					towerRot = 3.790114E-07,-0.7071071,-2.138353E-08,-0.7071065
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = strutConnector
 				cid = 4289370446
 				uid = 3401364106
 				mid = 3446037769
 				launchID = 4
-				parent = 30
+				parent = 27
 				position = 6.69473838806152,-4.21965408325195,-0.083719402551651
 				rotation = -0.5000005,0.4999991,0.4999999,-0.5000006
 				mirror = 1,1,1
@@ -24584,15 +23698,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 18
-				sym = 23
-				sym = 28
-				sym = 38
-				sym = 43
-				srfN = srfAttach, 30
+				sym = 17
+				sym = 21
+				sym = 25
+				sym = 33
+				sym = 37
+				srfN = srfAttach, 27
 				mass = 0.05
-				temp = 287.514354574128
-				tempExt = 288.444444087635
+				temp = 496.718752010943
+				tempExt = 462.016401250655
 				expt = 0
 				state = 0
 				connected = True
@@ -24711,16 +23825,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 14
-				sym = 19
-				sym = 24
-				sym = 29
-				sym = 39
+				sym = 18
+				sym = 22
+				sym = 26
+				sym = 34
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.54699289213
-				tempExt = 288.322971673213
+				temp = 457.543723844549
+				tempExt = 456.673347357457
 				expt = 0.5
 				state = 1
 				connected = True
@@ -24910,7 +24024,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -24933,7 +24047,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -24998,7 +24112,7 @@ GAME
 				uid = 2364274497
 				mid = 3446037769
 				launchID = 4
-				parent = 34
+				parent = 30
 				position = 3.37052130699158,-4.46965599060059,-5.86530685424805
 				rotation = 3.867519E-07,0.4999999,1.036299E-07,0.8660256
 				mirror = 1,1,1
@@ -25010,16 +24124,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 15
-				sym = 20
-				sym = 25
-				sym = 30
-				sym = 40
-				srfN = srfAttach, 34
-				attN = bottom, 36
+				sym = 19
+				sym = 23
+				sym = 27
+				sym = 35
+				srfN = srfAttach, 30
+				attN = bottom, 32
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540322757336
-				tempExt = 288.774683589461
+				temp = 463.041876293177
+				tempExt = 461.038564427823
 				expt = 0.5
 				state = 0
 				connected = True
@@ -25100,30 +24214,30 @@ GAME
 				uid = 3880959041
 				mid = 3446037769
 				launchID = 4
-				parent = 35
+				parent = 31
 				position = 3.37052130699158,-4.71965599060059,-5.86530685424805
 				rotation = -1.036299E-07,0.8660257,3.867519E-07,-0.4999998
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 11
 				attm = 0
 				sym = 16
-				sym = 21
-				sym = 26
-				sym = 31
-				sym = 41
+				sym = 20
+				sym = 24
+				sym = 28
+				sym = 36
 				srfN = , -1
-				attN = top, 35
+				attN = top, 31
 				attN = bottom, -1
 				mass = 3
-				temp = 287.525882022931
-				tempExt = 287.996790127963
+				temp = 464.883795061323
+				tempExt = 463.150925776903
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -25142,9 +24256,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -25160,7 +24274,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -25171,7 +24285,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -25400,7 +24514,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.00666666651765505
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -25410,235 +24524,12 @@ GAME
 			}
 			PART
 			{
-				name = launchClamp1
-				cid = 4289370138
-				uid = 2658090804
-				mid = 3446037769
-				launchID = 4
-				parent = 35
-				position = 4.64032363891602,-5.96014165878296,-8.06467056274414
-				rotation = -3.175418E-07,0.2588195,2.080245E-07,-0.9659259
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 22
-				sym = 27
-				sym = 32
-				sym = 42
-				srfN = srfAttach, 35
-				mass = 0.1
-				temp = 287.650091676652
-				tempExt = 288.637913988558
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847397
-					height = 4.661346
-					towerRot = 3.175418E-07,-0.2588194,-2.080244E-07,-0.9659258
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = strutConnector
 				cid = 4289370016
 				uid = 530526078
 				mid = 3446037769
 				launchID = 4
-				parent = 35
+				parent = 31
 				position = 3.27486777305603,-4.21965599060059,-5.83967590332031
 				rotation = -0.1830132,0.1830117,0.683013,-0.6830128
 				mirror = 1,1,1
@@ -25649,15 +24540,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 18
-				sym = 23
-				sym = 28
-				sym = 33
-				sym = 43
-				srfN = srfAttach, 35
+				sym = 17
+				sym = 21
+				sym = 25
+				sym = 29
+				sym = 37
+				srfN = srfAttach, 31
 				mass = 0.05
-				temp = 287.514354573722
-				tempExt = 288.444443170984
+				temp = 494.230608710812
+				tempExt = 461.404841541002
 				expt = 0
 				state = 0
 				connected = True
@@ -25776,16 +24667,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 14
-				sym = 19
-				sym = 24
-				sym = 29
-				sym = 34
+				sym = 18
+				sym = 22
+				sym = 26
+				sym = 30
 				srfN = srfAttach, 2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 287.546991109224
-				tempExt = 288.322784653677
+				temp = 457.79056708212
+				tempExt = 456.896904024031
 				expt = 0.5
 				state = 1
 				connected = True
@@ -25975,7 +24866,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -25998,7 +24889,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -26063,7 +24954,7 @@ GAME
 				uid = 2125318843
 				mid = 3446037769
 				launchID = 4
-				parent = 39
+				parent = 34
 				position = -3.39424252510071,-4.46965456008911,-5.8516092300415
 				rotation = 3.663966E-07,0.8660253,-9.817555E-08,0.5000004
 				mirror = 1,1,1
@@ -26075,16 +24966,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sym = 15
-				sym = 20
-				sym = 25
-				sym = 30
-				sym = 35
-				srfN = srfAttach, 39
-				attN = bottom, 41
+				sym = 19
+				sym = 23
+				sym = 27
+				sym = 31
+				srfN = srfAttach, 34
+				attN = bottom, 36
 				attN = top, -1
 				mass = 0.75
-				temp = 287.540380261396
-				tempExt = 288.774851499425
+				temp = 463.436905419123
+				tempExt = 461.399509507859
 				expt = 0.5
 				state = 0
 				connected = True
@@ -26165,30 +25056,30 @@ GAME
 				uid = 728031118
 				mid = 3446037769
 				launchID = 4
-				parent = 40
+				parent = 35
 				position = -3.39424276351929,-4.71965456008911,-5.85160875320435
 				rotation = 9.272136E-08,0.5000005,3.460412E-07,-0.8660253
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 0
-				sqor = 2
+				sqor = 1
 				sepI = 1
-				sidx = 1
+				sidx = 12
 				attm = 0
 				sym = 16
-				sym = 21
-				sym = 26
-				sym = 31
-				sym = 36
+				sym = 20
+				sym = 24
+				sym = 28
+				sym = 32
 				srfN = , -1
-				attN = top, 40
+				attN = top, 35
 				attN = bottom, -1
 				mass = 3
-				temp = 287.526353634322
-				tempExt = 287.997162152834
+				temp = 465.32581310921
+				tempExt = 463.550997181057
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
@@ -26207,9 +25098,9 @@ GAME
 				{
 					name = ModuleEngines
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -26225,7 +25116,7 @@ GAME
 					{
 						Activate
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Activate Engine
 							guiName = Activate Engine
@@ -26236,7 +25127,7 @@ GAME
 						}
 						Shutdown
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Shutdown Engine
 							guiName = Shutdown Engine
@@ -26465,7 +25356,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.00333333325882753
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -26475,235 +25366,12 @@ GAME
 			}
 			PART
 			{
-				name = launchClamp1
-				cid = 4289369708
-				uid = 1381419021
-				mid = 3446037769
-				launchID = 4
-				parent = 40
-				position = -4.66404485702515,-5.96013832092285,-8.0509729385376
-				rotation = -1.748438E-07,-0.2588185,3.245319E-07,-0.9659261
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 22
-				sym = 27
-				sym = 32
-				sym = 37
-				srfN = srfAttach, 40
-				mass = 0.1
-				temp = 287.650132403923
-				tempExt = 288.638114626903
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ExtendingLaunchClamp
-					isEnabled = True
-					scaleFactor = 1.847398
-					height = 4.661347
-					towerRot = 1.748438E-07,0.2588185,-3.245319E-07,-0.9659261
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = RefuelingPump
-					isEnabled = True
-					enablePump = False
-					pump_rate = 100
-					EVENTS
-					{
-						TogglePump
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Pump
-							guiName = Toggle Pump
-							category = Toggle Pump
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = strutConnector
 				cid = 4289369586
 				uid = 2774663518
 				mid = 3446037769
 				launchID = 4
-				parent = 40
+				parent = 35
 				position = -3.41987252235413,-4.21965408325195,-5.75595569610596
 				rotation = 0.1830123,-0.1830135,0.6830131,-0.6830124
 				mirror = 1,1,1
@@ -26714,15 +25382,15 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 18
-				sym = 23
-				sym = 28
+				sym = 17
+				sym = 21
+				sym = 25
+				sym = 29
 				sym = 33
-				sym = 38
-				srfN = srfAttach, 40
+				srfN = srfAttach, 35
 				mass = 0.05
-				temp = 287.514354635424
-				tempExt = 288.444565528649
+				temp = 495.032287908116
+				tempExt = 461.771498566396
 				expt = 0
 				state = 0
 				connected = True
@@ -26844,8 +25512,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 0
 				mass = 0.2
-				temp = 287.490289343124
-				tempExt = 288.162566082203
+				temp = 448.28061278246
+				tempExt = 448.81012241261
 				expt = 0.5
 				state = 1
 				connected = True
@@ -27035,7 +25703,7 @@ GAME
 						tracking
 						{
 							active = True
-							guiActive = True
+							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Track Mission
 							guiName = Track Mission
@@ -27058,7 +25726,7 @@ GAME
 						register
 						{
 							active = True
-							guiActive = False
+							guiActive = True
 							guiIcon = Register Docking Port
 							guiName = Register Docking Port
 							category = Register Docking Port
@@ -27118,11 +25786,11 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
+				Stage = True, 16827.343730506
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 0
+				SAS = False, 17477.1637402775
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -27146,12 +25814,17 @@ GAME
 			}
 			FLIGHTPLAN
 			{
+				MANEUVER
+				{
+					UT = 17485.7354812971
+					dV = 0,-8.88178419700125E-16,91.84765625
+				}
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 0
+				pitch = -0.2970779
+				yaw = -0.8058408
+				roll = 0.0001970549
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
