@@ -906,7 +906,7 @@ GAME
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 97
+		LastSave = 98
 	}
 	SCENARIO
 	{
@@ -932,7 +932,7 @@ GAME
 				KerbalName = Loley Kerman
 				LastMeal = 27045.151064519
 				IsGrouchy = False
-				LastUpdate = 42670.4232715514
+				LastUpdate = 43972.6139355778
 			}
 			STATUS_DATA
 			{
@@ -953,21 +953,21 @@ GAME
 				KerbalName = Jaree Kerman
 				LastMeal = 27045.151064519
 				IsGrouchy = False
-				LastUpdate = 42670.4232715514
+				LastUpdate = 43972.6139355778
 			}
 			STATUS_DATA
 			{
 				KerbalName = Lisphia Kerman
 				LastMeal = 27045.151064519
 				IsGrouchy = False
-				LastUpdate = 42670.4232715514
+				LastUpdate = 43972.6139355778
 			}
 			STATUS_DATA
 			{
 				KerbalName = Mona Kerman
 				LastMeal = 27045.151064519
 				IsGrouchy = False
-				LastUpdate = 42670.4232715514
+				LastUpdate = 43972.6139355778
 			}
 			VESSEL_DATA
 			{
@@ -976,14 +976,14 @@ GAME
 				SuppliesLeft = 0
 				NumCrew = 4
 				LastFeeding = 27045.151064519
-				LastUpdate = 42670.4232715514
+				LastUpdate = 43972.6139355778
 			}
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 42670.4232715514
+		UT = 43972.6139355778
 		activeVessel = 14
 		mapViewFiltering = 1023
 		VESSEL
@@ -1569,32 +1569,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 5164.31927735925
+			met = 22202.6621484205
 			lct = 21769.9317871573
 			root = 0
-			lat = -0.208133787999535
-			lon = -73.7389669155507
-			alt = 199973.09366743
+			lat = -0.0827297216731475
+			lon = 46.2042611766833
+			alt = 199956.9282348
 			hgt = -1
-			nrm = -0.0003103076,7.099457E-05,-0.9999999
-			rot = 0.09851469,-0.1014433,-0.6996086,0.7003942
-			CoM = -7.118848E-06,-4.285277,-4.769462E-05
+			nrm = -0.0003270453,0.665507,-0.7463917
+			rot = 0.5181395,-0.520205,-0.4806687,0.4794537
+			CoM = -3.285074E-05,-4.284146,0.001633356
 			stg = 0
 			prst = False
 			ref = 2435069026
 			ctrl = True
-			cPch = 
-			cHdg = 
+			cPch = 0
+			cHdg = 0
 			cMod = 0
 			ORBIT
 			{
-				SMA = 799996.822089561
-				ECC = 2.97521882764663E-05
-				INC = 0.229577716216232
-				LPE = 299.414788064759
-				LAN = 170.206096068909
-				MNA = 6.20550572203553
-				EPH = 26934.2710645166
+				SMA = 799996.945973879
+				ECC = 6.06579014601731E-05
+				INC = 0.229576784323535
+				LPE = 310.938988874491
+				LAN = 170.206126658377
+				MNA = 0.487617063184684
+				EPH = 43972.6139355778
 				REF = 1
 			}
 			PART
@@ -1619,14 +1619,14 @@ GAME
 				attN = bottom, 1
 				attN = top, 24
 				mass = 0.5
-				temp = 422.307664604595
-				tempExt = 421.646853936581
+				temp = 418.132678430765
+				tempExt = 417.438482112622
 				expt = 0
 				state = 1
 				connected = True
 				attached = True
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = probeStackLarge
+				rTrf = probeStackLarge (L - SS - Spherical Core)
 				modCost = 0
 				EVENTS
 				{
@@ -1858,8 +1858,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.2
-				temp = 422.322066685526
-				tempExt = 421.671941682687
+				temp = 418.14115573577
+				tempExt = 417.444177657831
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2007,8 +2007,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 13.5
-				temp = 422.325062226392
-				tempExt = 421.696549319186
+				temp = 418.143547913458
+				tempExt = 417.447664820872
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2097,7 +2097,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 98.879249099464374
+						amount = 98.879249099464403
 						maxAmount = 19440
 					}
 					TANK
@@ -2111,7 +2111,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 120.86352667298465
+						amount = 120.863526672985
 						maxAmount = 23760
 					}
 					TANK
@@ -2330,8 +2330,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.2
-				temp = 422.320573816532
-				tempExt = 421.673951309276
+				temp = 418.139027118054
+				tempExt = 417.445250367337
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2422,7 +2422,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3458.83395788473
+					amount = 3436.56524103433
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -2452,8 +2452,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 3
 				mass = 0.2
-				temp = 422.278356943821
-				tempExt = 421.662080966411
+				temp = 418.095588004637
+				tempExt = 417.444036121851
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2744,8 +2744,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 3
 				mass = 0.0001
-				temp = 422.205671334273
-				tempExt = 421.68446434588
+				temp = 418.017981203338
+				tempExt = 417.466697312977
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3010,8 +3010,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.209278831859
-				tempExt = 421.664612261395
+				temp = 418.018404866448
+				tempExt = 417.42722369448
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3309,8 +3309,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.21021743856
-				tempExt = 421.668909347677
+				temp = 418.01878036256
+				tempExt = 417.428967905393
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3371,7 +3371,7 @@ GAME
 						}
 						SetAsTarget
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiIcon = Set as Target
 							guiName = Set as Target
@@ -3382,7 +3382,7 @@ GAME
 						}
 						UnsetTarget
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Unset Target
 							guiName = Unset Target
@@ -3608,8 +3608,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.210211767546
-				tempExt = 421.668882999212
+				temp = 418.018773687829
+				tempExt = 417.428936693694
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3907,8 +3907,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.209251456124
-				tempExt = 421.664483933627
+				temp = 418.018384204356
+				tempExt = 417.427127089836
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4206,8 +4206,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.208792009724
-				tempExt = 421.662252901365
+				temp = 418.018759706556
+				tempExt = 417.428871329171
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4505,8 +4505,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.05
-				temp = 422.208780393078
-				tempExt = 421.662198253521
+				temp = 418.018753037835
+				tempExt = 417.428840145286
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4802,8 +4802,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265118804985
-				tempExt = 421.742930714472
+				temp = 421.514721140309
+				tempExt = 417.501831401388
 				expt = 0
 				state = 1
 				connected = True
@@ -4928,8 +4928,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265120929587
-				tempExt = 421.742936547647
+				temp = 421.514734738145
+				tempExt = 417.501838395069
 				expt = 0
 				state = 1
 				connected = True
@@ -5054,8 +5054,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265123052504
-				tempExt = 421.742942380796
+				temp = 421.514748251067
+				tempExt = 417.501845387892
 				expt = 0
 				state = 1
 				connected = True
@@ -5180,8 +5180,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265125173308
-				tempExt = 421.742948213917
+				temp = 421.51476168222
+				tempExt = 417.501852379889
 				expt = 0
 				state = 1
 				connected = True
@@ -5306,8 +5306,8 @@ GAME
 				sym = 17
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265127291909
-				tempExt = 421.742954047009
+				temp = 421.514775034782
+				tempExt = 417.501859371093
 				expt = 0
 				state = 1
 				connected = True
@@ -5432,8 +5432,8 @@ GAME
 				sym = 16
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 425.265129409523
-				tempExt = 421.742959880083
+				temp = 421.514788312342
+				tempExt = 417.50186636154
 				expt = 0
 				state = 1
 				connected = True
@@ -5558,8 +5558,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235428654702
-				tempExt = 421.706586608915
+				temp = 418.04481759225
+				tempExt = 417.462310496444
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5580,7 +5580,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -5734,8 +5734,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235428528372
-				tempExt = 421.706585817749
+				temp = 418.044817530816
+				tempExt = 417.462310110996
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5756,7 +5756,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -5910,8 +5910,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235585528746
-				tempExt = 421.707567401676
+				temp = 418.044837000238
+				tempExt = 417.462431660608
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5932,7 +5932,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -6086,8 +6086,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235428316704
-				tempExt = 421.706584491702
+				temp = 418.04481756949
+				tempExt = 417.462310353604
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6108,7 +6108,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -6262,8 +6262,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235428190376
-				tempExt = 421.706583700547
+				temp = 418.044817507716
+				tempExt = 417.462309965965
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6284,7 +6284,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -6438,8 +6438,8 @@ GAME
 				sym = 22
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 422.235428064049
-				tempExt = 421.706582909397
+				temp = 418.044836977187
+				tempExt = 417.462431515809
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6460,7 +6460,7 @@ GAME
 				{
 					name = ModuleNavLight
 					isEnabled = True
-					navLightSwitch = 0
+					navLightSwitch = 4
 					EVENTS
 					{
 						FlashEvent
@@ -6611,8 +6611,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 0
 				mass = 0.2
-				temp = 422.266908503625
-				tempExt = 421.629654357068
+				temp = 418.092173748183
+				tempExt = 417.431472919222
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6887,7 +6887,7 @@ GAME
 			{
 				Stage = False, 26840.0910645145
 				Gear = True, 0
-				Light = False, 26861.971064515
+				Light = True, 43902.5739355891
 				RCS = False, 0
 				SAS = False, 26775.2510645131
 				Brakes = False, 0
@@ -6922,7 +6922,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0.4800005
+				mainThrottle = 0
 			}
 		}
 		VESSEL
@@ -6934,32 +6934,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.203172553368281
-			lon = -73.7392264411511
-			alt = 199973.713495964
+			lat = -0.0671574783276751
+			lon = 46.1998514006765
+			alt = 199978.104116901
 			hgt = -1
-			nrm = -0.1313216,0.2649493,0.955278
-			rot = -0.543957,-0.8390633,0.0008035746,0.009103185
-			CoM = -1.060375,-2.823232,-0.02674743
+			nrm = -0.3381604,0.7406406,0.5806022
+			rot = 0.4201908,0.6531276,0.3455163,0.5267661
+			CoM = -1.060272,-2.823005,-0.02655112
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
+			cPch = 0.5019999
+			cHdg = 0.618
+			cMod = 0
 			ORBIT
 			{
-				SMA = 799998.119109149
-				ECC = 3.13646129971203E-05
-				INC = 0.233172591563029
-				LPE = 302.948684694112
-				LAN = 165.8577767112
-				MNA = 6.21971724717169
-				EPH = 26934.2710645166
+				SMA = 799998.272405089
+				ECC = 3.4449147481825E-05
+				INC = 0.233173472030872
+				LPE = 306.155089026372
+				LAN = 165.857736088083
+				MNA = 0.584124711499475
+				EPH = 43948.7139355817
 				REF = 1
 			}
 			PART
@@ -6978,20 +6978,20 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 0
-				sidx = 1
+				sidx = 0
 				attm = 0
 				srfN = , -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.902411580243
-				tempExt = 422.437911945523
+				temp = 420.721612241867
+				tempExt = 417.847177445557
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -7164,8 +7164,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.953455883521
-				tempExt = 422.484414710761
+				temp = 420.705303826291
+				tempExt = 420.210837725824
 				expt = 0.5
 				state = 0
 				connected = False
@@ -7259,8 +7259,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.573543681365
-				tempExt = 422.519789250534
+				temp = 423.123841852486
+				tempExt = 420.247243114544
 				expt = 0
 				state = 0
 				connected = False
@@ -7376,14 +7376,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 7
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.162723777734
-				tempExt = 422.645354876511
+				temp = 420.911812732846
+				tempExt = 420.396676887273
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -7701,6 +7701,11 @@ GAME
 			FLIGHTPLAN
 			{
 			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = fe212ef5-3c31-410f-856c-48f5042e7199
+			}
 			CTRLSTATE
 			{
 				pitch = 0
@@ -7721,32 +7726,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.205633307266054
-			lon = -73.7382669079586
-			alt = 199912.657577381
+			lat = -0.0744533032384093
+			lon = 46.3235242033496
+			alt = 199780.954255096
 			hgt = -1
-			nrm = -0.8520634,-0.2358206,0.4673078
-			rot = -0.3906931,-0.7731918,-0.4356903,0.2443509
-			CoM = -1.060368,-2.823234,-0.02674805
+			nrm = -0.9023538,0.3188027,0.2900394
+			rot = 0.02418492,0.7519743,0.5847129,0.3034151
+			CoM = -0.3636859,-1.933728,-0.01865087
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
 			cPch = 0
 			cHdg = 0
-			cMod = -1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 799975.151019686
-				ECC = 0.000280750818263667
-				INC = 0.231213767658955
-				LPE = 11.4274666730798
-				LAN = 168.012651809962
-				MNA = 4.98748059611527
-				EPH = 26934.2710645166
+				SMA = 799975.203144978
+				ECC = 0.000281232470652011
+				INC = 0.231215296663597
+				LPE = 11.353233306907
+				LAN = 168.012454754505
+				MNA = 5.63400749906444
+				EPH = 43925.7739355853
 				REF = 1
 			}
 			PART
@@ -7771,14 +7776,14 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.937324461114
-				tempExt = 422.49247775998
+				temp = 420.390085169297
+				tempExt = 419.720283685734
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -7951,8 +7956,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.988101694967
-				tempExt = 422.544463446498
+				temp = 420.373949212428
+				tempExt = 419.886536175796
 				expt = 0.5
 				state = 0
 				connected = False
@@ -8046,8 +8051,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.590595609722
-				tempExt = 422.572574948701
+				temp = 422.766262831761
+				tempExt = 419.922432626601
 				expt = 0
 				state = 0
 				connected = False
@@ -8163,14 +8168,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 6
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.193324755992
-				tempExt = 422.68732657783
+				temp = 420.576645505952
+				tempExt = 420.064170679036
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -8508,32 +8513,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.210616923840458
-			lon = -73.7382575641137
-			alt = 199912.542779669
+			lat = -0.0900935263967331
+			lon = 46.3230666307569
+			alt = 199780.884747747
 			hgt = -1
-			nrm = -0.8232191,-0.2748743,-0.496744
-			rot = -0.2043258,-0.4606262,-0.756283,0.4172655
-			CoM = -1.060386,-2.823241,-0.02673926
+			nrm = -0.8790821,0.2960062,-0.3736238
+			rot = -0.3235471,0.6208612,0.7134547,-0.02882864
+			CoM = -0.3630306,-1.933975,-0.01858786
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
 			cPch = 0
 			cHdg = 0
-			cMod = -1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 799975.263058926
-				ECC = 0.00028111526571947
-				INC = 0.228286958474428
-				LPE = 7.0033388115588
-				LAN = 172.425646845816
-				MNA = 4.98767615359812
-				EPH = 26934.2710645166
+				SMA = 799974.936852488
+				ECC = 0.00028109898335156
+				INC = 0.22828935804587
+				LPE = 7.01926738511526
+				LAN = 172.425262039498
+				MNA = 5.63498723583219
+				EPH = 43926.6739355852
 				REF = 1
 			}
 			PART
@@ -8552,20 +8557,20 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 0
-				sidx = 2
+				sidx = 0
 				attm = 0
 				srfN = , -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.856529275208
-				tempExt = 422.411714702158
+				temp = 420.314304874466
+				tempExt = 419.644372179329
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -8738,8 +8743,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.907235554076
-				tempExt = 422.463295235291
+				temp = 420.298195726315
+				tempExt = 419.811335362392
 				expt = 0.5
 				state = 0
 				connected = False
@@ -8833,8 +8838,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.501794675963
-				tempExt = 422.491567811575
+				temp = 422.685554050606
+				tempExt = 419.847163140842
 				expt = 0
 				state = 0
 				connected = False
@@ -8950,14 +8955,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 8
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.11244131963
-				tempExt = 422.606551792451
+				temp = 420.500781775871
+				tempExt = 419.989229282164
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -9295,32 +9300,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.213096327415095
-			lon = -73.7392042889972
-			alt = 199973.494139767
+			lat = -0.0983412510435835
+			lon = 46.1986180539458
+			alt = 199980.554181866
 			hgt = -1
-			nrm = -0.07555769,0.1739901,-0.9818444
-			rot = 0.03848211,-0.02606156,-0.8380311,0.5436395
-			CoM = -1.06038,-2.823213,-0.02673899
+			nrm = -0.2875966,0.6464086,-0.7067137
+			rot = 0.5628903,-0.3659951,-0.6220426,0.4028214
+			CoM = -1.060263,-2.823004,-0.02689561
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
 			cPch = 0
 			cHdg = 0
-			cMod = -1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 799998.398281724
-				ECC = 3.1685937198498E-05
-				INC = 0.227342048271584
-				LPE = 294.397507800171
-				LAN = 174.666672036436
-				MNA = 6.21522079286593
-				EPH = 26934.2710645166
+				SMA = 799998.390043092
+				ECC = 3.1794940095178E-05
+				INC = 0.227342029038473
+				LPE = 294.490544627037
+				LAN = 174.666680441687
+				MNA = 0.577843716118077
+				EPH = 43927.3539355851
 				REF = 1
 			}
 			PART
@@ -9339,20 +9344,20 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 0
-				sidx = 3
+				sidx = 0
 				attm = 0
 				srfN = , -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.8225091242
-				tempExt = 422.357213306605
+				temp = 420.645580666441
+				tempExt = 417.777021603088
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -9525,8 +9530,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.873575920802
-				tempExt = 422.403916275377
+				temp = 420.62928592417
+				tempExt = 420.134971905018
 				expt = 0.5
 				state = 0
 				connected = False
@@ -9620,8 +9625,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.485269121886
-				tempExt = 422.439643121121
+				temp = 423.047376693932
+				tempExt = 420.171367180611
 				expt = 0
 				state = 0
 				connected = False
@@ -9737,14 +9742,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 9
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.082976950171
-				tempExt = 422.565531433533
+				temp = 420.835853310811
+				tempExt = 420.32119105719
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -10082,32 +10087,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.210610258421766
-			lon = -73.740155570569
-			alt = 200033.927515106
+			lat = -0.0909976989439887
+			lon = 46.0741701877275
+			alt = 200178.876175242
 			hgt = -1
-			nrm = 0.7697967,0.4121262,-0.4874065
-			rot = 0.3413085,0.3717594,-0.6808303,0.5308236
-			CoM = -1.060393,-2.82323,-0.02673792
+			nrm = 0.3918938,0.8445293,-0.3649513
+			rot = 0.6964929,-0.05093835,-0.3080928,0.6460509
+			CoM = -1.06025,-2.822862,-0.02678568
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
 			cPch = 0
 			cHdg = 0
-			cMod = -1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 800021.554570685
-				ECC = 0.000266085438004531
-				INC = 0.228285175675044
-				LPE = 199.922445442489
-				LAN = 172.426529800759
-				MNA = 1.61948160001845
-				EPH = 26934.2710645166
+				SMA = 800021.546049106
+				ECC = 0.000265950771595061
+				INC = 0.228285173423927
+				LPE = 199.956900083998
+				LAN = 172.42652959848
+				MNA = 2.26731617875589
+				EPH = 43928.4739355849
 				REF = 1
 			}
 			PART
@@ -10126,20 +10131,20 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 0
-				sidx = 4
+				sidx = 0
 				attm = 0
 				srfN = , -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.904512065195
-				tempExt = 422.451410914492
+				temp = 421.030565905246
+				tempExt = 420.353080070355
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -10312,8 +10317,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.95398866457
-				tempExt = 422.494724471625
+				temp = 421.014261319409
+				tempExt = 420.517559405039
 				expt = 0.5
 				state = 0
 				connected = False
@@ -10407,8 +10412,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.554505728339
-				tempExt = 422.539747053644
+				temp = 423.459412878052
+				tempExt = 420.554301814409
 				expt = 0
 				state = 0
 				connected = False
@@ -10524,14 +10529,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 10
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.158542995269
-				tempExt = 422.659846844278
+				temp = 421.222541767332
+				tempExt = 420.707882708931
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -10869,32 +10874,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 94.1600000020553
+			met = 17132.5028710633
 			lct = 26840.0910645145
 			root = 0
-			lat = -0.205676567286775
-			lon = -73.7401644918412
-			alt = 200034.078456651
+			lat = -0.0754515817381458
+			lon = 46.0743160683554
+			alt = 200179.202567357
 			hgt = -1
-			nrm = 0.7409205,0.4646483,0.4849114
-			rot = 0.550976,0.6722849,-0.3936239,0.2991971
-			CoM = -1.060379,-2.823237,-0.02675102
+			nrm = 0.3652031,0.88061,0.3019151
+			rot = 0.6755106,0.3282842,0.04688147,0.658572
+			CoM = -1.060271,-2.822937,-0.02674881
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = False
 			cPch = 0
 			cHdg = 0
-			cMod = -1
+			cMod = 0
 			ORBIT
 			{
-				SMA = 800021.506771261
-				ECC = 0.000266508791611015
-				INC = 0.231208574486344
-				LPE = 204.323856155772
-				LAN = 168.014700269217
-				MNA = 1.61966203790168
-				EPH = 26934.2710645166
+				SMA = 800021.487140403
+				ECC = 0.000266426632566863
+				INC = 0.231208602141832
+				LPE = 204.355746867772
+				LAN = 168.014696176813
+				MNA = 2.27011907544789
+				EPH = 43929.4539355848
 				REF = 1
 			}
 			PART
@@ -10913,20 +10918,20 @@ GAME
 				dstg = 1
 				sqor = 0
 				sepI = 0
-				sidx = 5
+				sidx = 0
 				attm = 0
 				srfN = , -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.05
-				temp = 422.937881458265
-				tempExt = 422.484388933963
+				temp = 421.057925794402
+				tempExt = 420.379391270564
 				expt = 0.5
 				state = 1
 				connected = False
 				attached = False
 				flag = 000_USITools/Flags/USI-LD
-				rTrf = stackDecoupler
+				rTrf = stackDecoupler (L - SS - Spherical Core Debris)
 				modCost = 0
 				EVENTS
 				{
@@ -11099,8 +11104,8 @@ GAME
 				attN = bottom, 3
 				attN = top, -1
 				mass = 0.75
-				temp = 422.987437998457
-				tempExt = 422.528076475702
+				temp = 421.041587955434
+				tempExt = 420.543982491434
 				expt = 0.5
 				state = 0
 				connected = False
@@ -11194,8 +11199,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.05
-				temp = 425.592508793762
-				tempExt = 422.572323142403
+				temp = 423.492182456068
+				tempExt = 420.58081493269
 				expt = 0
 				state = 0
 				connected = False
@@ -11311,14 +11316,14 @@ GAME
 				dstg = 2
 				sqor = 0
 				sepI = 0
-				sidx = 11
+				sidx = 1
 				attm = 0
 				srfN = , -1
 				attN = top, 1
 				attN = bottom, -1
 				mass = 3.002797
-				temp = 423.192081731203
-				tempExt = 422.694363670166
+				temp = 421.250198082425
+				tempExt = 420.734402609131
 				expt = 1.149984
 				state = 1
 				connected = False
@@ -11656,32 +11661,32 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 15720.8722070345
+			met = 17023.0428710609
 			lct = 26949.5510645169
 			root = 0
-			lat = 0.171251707222875
-			lon = 219.98690874151
-			alt = 125080.753704357
+			lat = -0.0819793262536378
+			lon = 46.2056153763385
+			alt = 199899.404519203
 			hgt = -1
-			nrm = 0.6651697,0.1291723,0.7354344
-			rot = -0.1493676,-0.9548481,0.2425789,0.08432062
-			CoM = -0.002551056,-7.359343,0.002129285
-			stg = 2
+			nrm = 0.4588884,-0.8884726,0.006151403
+			rot = -0.2256856,0.5302235,-0.5836501,-0.5720853
+			CoM = 0.0005743285,-7.435089,0.0004832711
+			stg = 1
 			prst = False
-			ref = 3828117387
+			ref = 3955528316
 			ctrl = True
-			cPch = 0.2550062
-			cHdg = 2.865528
+			cPch = 0.523006
+			cHdg = 2.733528
 			cMod = 0
 			ORBIT
 			{
-				SMA = 762418.87654047
-				ECC = 0.0490472861817296
-				INC = 0.22812237438885
-				LPE = 128.254553726973
-				LAN = 169.629370325955
-				MNA = 0.0518756589145057
-				EPH = 42670.4232715514
+				SMA = 799871.388109468
+				ECC = 4.3716356380338E-05
+				INC = 0.228917724004348
+				LPE = 150.922478059466
+				LAN = 170.100561382714
+				MNA = 3.282367501193
+				EPH = 43972.6139355778
 				REF = 1
 			}
 			PART
@@ -11706,8 +11711,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 1
 				mass = 0.05
-				temp = 303.348022584533
-				tempExt = 303.388013623533
+				temp = 304.72777407
+				tempExt = 304.618278460141
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12000,8 +12005,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.15
-				temp = 303.3480595474
-				tempExt = 303.39544703595
+				temp = 304.739041293605
+				tempExt = 304.626466337511
 				expt = 0.5
 				state = 0
 				connected = True
@@ -12135,8 +12140,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 1.25
-				temp = 303.351272319904
-				tempExt = 303.403866118483
+				temp = 304.748614200099
+				tempExt = 304.63720209294
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12221,7 +12226,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 						StartResourceConverter
@@ -12269,7 +12274,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 						StartResourceConverter
@@ -12317,7 +12322,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 						StartResourceConverter
@@ -12370,7 +12375,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 42670.42327155135
+					lastUpdateString = 43972.613935577843
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -12624,7 +12629,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 					}
@@ -12734,7 +12739,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9534.43582358454
+					amount = 9492.09642331951
 					maxAmount = 10000
 					flowState = True
 					isTweakable = False
@@ -12764,8 +12769,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 1.25
-				temp = 303.379531748238
-				tempExt = 303.459778386252
+				temp = 304.798573490519
+				tempExt = 304.714587961337
 				expt = 0.5
 				state = 1
 				connected = True
@@ -12850,7 +12855,7 @@ GAME
 					DirtyFlag = False
 					EfficiencyBonus = 0
 					IsActivated = False
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 						StartResourceConverter
@@ -12903,7 +12908,7 @@ GAME
 				{
 					name = ExWorkshop
 					isEnabled = True
-					lastUpdateString = 42670.42327155135
+					lastUpdateString = 43972.613935577843
 					EVENTS
 					{
 						ExDiscoverWorkshops
@@ -13157,7 +13162,7 @@ GAME
 				{
 					name = ModuleLifeSupport
 					isEnabled = True
-					lastUpdateTime = 42670.4232715514
+					lastUpdateTime = 43972.6139355778
 					EVENTS
 					{
 					}
@@ -13267,7 +13272,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9534.43582358454
+					amount = 9492.09642331951
 					maxAmount = 10000
 					flowState = True
 					isTweakable = False
@@ -13297,8 +13302,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 3
 				mass = 0.15
-				temp = 303.490705480331
-				tempExt = 303.653487852355
+				temp = 304.981777509955
+				tempExt = 304.976518688029
 				expt = 0.5
 				state = 0
 				connected = True
@@ -13432,8 +13437,8 @@ GAME
 				attN = top, 6
 				attN = bottom, 4
 				mass = 0.05
-				temp = 303.690883012977
-				tempExt = 303.916602065003
+				temp = 305.303001215219
+				tempExt = 305.324919702801
 				expt = 0.5
 				state = 1
 				connected = True
@@ -13726,8 +13731,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 7
 				mass = 0.05
-				temp = 303.879705545681
-				tempExt = 304.177754726827
+				temp = 305.619240954358
+				tempExt = 305.660379671572
 				expt = 0.5
 				state = 1
 				connected = True
@@ -14020,8 +14025,8 @@ GAME
 				attN = bottom, 8
 				attN = top, 6
 				mass = 0.04
-				temp = 304.462231105805
-				tempExt = 304.829568048838
+				temp = 306.744644753436
+				tempExt = 306.46043849357
 				expt = 0
 				state = 0
 				connected = True
@@ -14192,7 +14197,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 2.98878800280852
+					amount = 0
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -14222,8 +14227,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 9
 				mass = 0.05
-				temp = 304.623883753335
-				tempExt = 304.924132792704
+				temp = 307.008656706907
+				tempExt = 306.557253277698
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14314,7 +14319,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 534.435823585766
+					amount = 492.096423296983
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -14344,8 +14349,8 @@ GAME
 				attN = top, 8
 				attN = bottom, 43
 				mass = 0.064
-				temp = 304.772302981138
-				tempExt = 305.197156711627
+				temp = 307.282325099922
+				tempExt = 306.821531907205
 				expt = 32
 				state = 0
 				connected = True
@@ -14460,8 +14465,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 304.678388835672
-				tempExt = 304.947485685954
+				temp = 306.448606466643
+				tempExt = 306.295956429052
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14560,8 +14565,8 @@ GAME
 				attN = top, 12
 				attN = bottom, 10
 				mass = 0.5
-				temp = 304.536212182563
-				tempExt = 304.829568311962
+				temp = 305.85569182781
+				tempExt = 305.965993117382
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14660,8 +14665,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 11
 				mass = 0.25
-				temp = 304.656452903994
-				tempExt = 304.673837683224
+				temp = 305.457829822682
+				tempExt = 305.665357420113
 				expt = 0.5
 				state = 0
 				connected = True
@@ -14758,8 +14763,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 12
 				mass = 0.05
-				temp = 304.800790838612
-				tempExt = 304.674088840714
+				temp = 305.273795537255
+				tempExt = 305.67720956247
 				expt = 0
 				state = 0
 				connected = True
@@ -14882,8 +14887,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 12
 				mass = 0.075
-				temp = 304.692206080608
-				tempExt = 304.676174119258
+				temp = 305.360844767781
+				tempExt = 305.598369055157
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15081,8 +15086,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 12
 				mass = 0.05
-				temp = 304.654938293476
-				tempExt = 304.672277599267
+				temp = 305.45788738456
+				tempExt = 305.573459385374
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15232,8 +15237,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 11
 				mass = 0.05
-				temp = 304.536246404246
-				tempExt = 304.806651080962
+				temp = 305.835139013515
+				tempExt = 305.949480302878
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15386,8 +15391,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 304.670543759179
-				tempExt = 304.939230533221
+				temp = 306.424052801824
+				tempExt = 306.26758474945
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15486,8 +15491,8 @@ GAME
 				attN = top, 19
 				attN = bottom, 17
 				mass = 0.5
-				temp = 304.522414050586
-				tempExt = 304.82121027194
+				temp = 305.814161919049
+				tempExt = 305.927715294406
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15586,8 +15591,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 18
 				mass = 0.25
-				temp = 304.631505252289
-				tempExt = 304.647622931978
+				temp = 305.401690930969
+				tempExt = 305.61968153878
 				expt = 0.5
 				state = 0
 				connected = True
@@ -15684,8 +15689,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 304.770765104781
-				tempExt = 304.648014443985
+				temp = 305.218087913929
+				tempExt = 305.624376191837
 				expt = 0
 				state = 0
 				connected = True
@@ -15808,8 +15813,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 19
 				mass = 0.075
-				temp = 304.665671382384
-				tempExt = 304.649849939988
+				temp = 305.303657213557
+				tempExt = 305.550278870102
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16004,8 +16009,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 19
 				mass = 0.0001
-				temp = 304.63156573537
-				tempExt = 304.633007827642
+				temp = 305.401694320096
+				tempExt = 305.399597383316
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16464,10 +16469,10 @@ GAME
 						MechJebModuleFlightRecorder
 						{
 							markUT = 26949.5510645169
-							deltaVExpended = 3583.12622716102
-							dragLosses = 122.756401588155
-							gravityLosses = 662.292470755567
-							steeringLosses = 86.8061436617474
+							deltaVExpended = 3638.57937240543
+							dragLosses = 122.756402044214
+							gravityLosses = 859.044227217218
+							steeringLosses = 90.0044789731883
 							markLatitude = -0.097159783992928
 							markLongitude = -74.5576571144442
 							markAltitude = 89.6454731462756
@@ -16581,7 +16586,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 2.98878800280852
+					amount = 0
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -16612,8 +16617,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 19
 				mass = 0.05
-				temp = 304.629702441548
-				tempExt = 304.646093714115
+				temp = 305.401709846309
+				tempExt = 305.47906430102
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16763,8 +16768,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 18
 				mass = 0.05
-				temp = 304.522456358338
-				tempExt = 304.792048831657
+				temp = 305.792855825563
+				tempExt = 305.909868010602
 				expt = 0.5
 				state = 0
 				connected = True
@@ -16917,8 +16922,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 304.679605631927
-				tempExt = 304.942703644555
+				temp = 306.443496037935
+				tempExt = 306.280012298788
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17017,8 +17022,8 @@ GAME
 				attN = top, 27
 				attN = bottom, 25
 				mass = 0.5
-				temp = 304.540383940361
-				tempExt = 304.827415149788
+				temp = 305.850455394358
+				tempExt = 305.955705205437
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17117,8 +17122,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 26
 				mass = 0.25
-				temp = 304.661784024653
-				tempExt = 304.679187868767
+				temp = 305.456806396646
+				tempExt = 305.642243858838
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17215,8 +17220,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 27
 				mass = 0.05
-				temp = 304.806180148053
-				tempExt = 304.679293480421
+				temp = 305.276015341273
+				tempExt = 305.671759455926
 				expt = 0
 				state = 0
 				connected = True
@@ -17339,8 +17344,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 27
 				mass = 0.075
-				temp = 304.697663944679
-				tempExt = 304.681544832012
+				temp = 305.36152781121
+				tempExt = 305.595420218492
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17538,8 +17543,8 @@ GAME
 				sym = 37
 				srfN = srfAttach, 27
 				mass = 0.05
-				temp = 304.660267161959
-				tempExt = 304.677631027298
+				temp = 305.4568175779
+				tempExt = 305.58507425363
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17689,8 +17694,8 @@ GAME
 				sym = 38
 				srfN = srfAttach, 26
 				mass = 0.05
-				temp = 304.540414821125
-				tempExt = 304.800449025885
+				temp = 305.829157816808
+				tempExt = 305.939551988528
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17843,8 +17848,8 @@ GAME
 				attN = bottom, -1
 				attN = mount, -1
 				mass = 0.003
-				temp = 304.680711780369
-				tempExt = 304.939329469046
+				temp = 306.439620238998
+				tempExt = 306.269811546874
 				expt = 0.5
 				state = 0
 				connected = True
@@ -17943,8 +17948,8 @@ GAME
 				attN = top, 34
 				attN = bottom, 32
 				mass = 0.5
-				temp = 304.543404914853
-				tempExt = 304.825862742781
+				temp = 305.845202421182
+				tempExt = 305.947396164215
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18043,8 +18048,8 @@ GAME
 				attN = top, -1
 				attN = bottom, 33
 				mass = 0.25
-				temp = 304.665944561606
-				tempExt = 304.683356385881
+				temp = 305.45219623703
+				tempExt = 305.652888850707
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18141,8 +18146,8 @@ GAME
 				sym = 28
 				srfN = srfAttach, 34
 				mass = 0.05
-				temp = 304.810347516365
-				tempExt = 304.68264244385
+				temp = 305.271827613498
+				tempExt = 305.664137541655
 				expt = 0
 				state = 0
 				connected = True
@@ -18265,8 +18270,8 @@ GAME
 				sym = 29
 				srfN = srfAttach, 34
 				mass = 0.075
-				temp = 304.701981285498
-				tempExt = 304.685763215734
+				temp = 305.357181523093
+				tempExt = 305.58745447849
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18464,8 +18469,8 @@ GAME
 				sym = 30
 				srfN = srfAttach, 34
 				mass = 0.05
-				temp = 304.664492621693
-				tempExt = 304.68183445393
+				temp = 305.452247803826
+				tempExt = 305.564710098388
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18615,8 +18620,8 @@ GAME
 				sym = 31
 				srfN = srfAttach, 33
 				mass = 0.05
-				temp = 304.543440138726
-				tempExt = 304.804055851061
+				temp = 305.823642319987
+				tempExt = 305.931407472746
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18766,8 +18771,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 304.499284357569
-				tempExt = 305.080898170434
+				temp = 307.169869632675
+				tempExt = 306.67043100051
 				expt = 0.5
 				state = 0
 				connected = True
@@ -18928,8 +18933,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 304.501878167971
-				tempExt = 305.080453292344
+				temp = 307.169692956823
+				tempExt = 306.669598118596
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19090,8 +19095,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 304.499110117649
-				tempExt = 305.079627801587
+				temp = 307.169536242212
+				tempExt = 306.668628299073
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19252,8 +19257,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 9
 				mass = 0.0175
-				temp = 304.501695741628
-				tempExt = 305.079183421906
+				temp = 307.169363678937
+				tempExt = 306.66779724611
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19413,8 +19418,8 @@ GAME
 				attN = bottom, 44
 				attN = top, 9
 				mass = 0.4
-				temp = 304.863819941181
-				tempExt = 305.619000125789
+				temp = 307.586199733508
+				tempExt = 307.311296924582
 				expt = 0.5
 				state = 0
 				connected = True
@@ -19592,13 +19597,13 @@ GAME
 				srfN = , -1
 				attN = bottom, 45
 				attN = top, 43
-				attN = connect01, 51
-				attN = connect02, 50
-				attN = connect03, 49
-				attN = connect04, 52
+				attN = connect01, -1
+				attN = connect02, -1
+				attN = connect03, -1
+				attN = connect04, -1
 				mass = 0.235298
-				temp = 305.00604208046
-				tempExt = 307.02602259178
+				temp = 308.878234962399
+				tempExt = 308.292753086616
 				expt = 0
 				state = 1
 				connected = True
@@ -19844,8 +19849,8 @@ GAME
 				attN = top, 44
 				attN = bottom, 46
 				mass = 0.5
-				temp = 305.014982226068
-				tempExt = 307.539934790077
+				temp = 309.063800540065
+				tempExt = 308.624031344318
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20122,8 +20127,8 @@ GAME
 				attN = top, 45
 				attN = bottom, 47
 				mass = 0.2
-				temp = 305.834292788706
-				tempExt = 309.227213261811
+				temp = 309.351450350593
+				tempExt = 308.918586721131
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20144,7 +20149,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Running
+					stateString = Idle
 					WheelState = Active
 					EVENTS
 					{
@@ -20271,8 +20276,8 @@ GAME
 				attN = top, 46
 				attN = bottom, 48
 				mass = 2
-				temp = 306.434593964953
-				tempExt = 310.95260237767
+				temp = 309.632226460937
+				tempExt = 309.134057812555
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20373,7 +20378,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 757.73176623632821
+						amount = 695.15538794497513
 						maxAmount = 1440
 					}
 					TANK
@@ -20387,7 +20392,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 926.11660317778421
+						amount = 849.63436304390507
 						maxAmount = 1760
 					}
 					TANK
@@ -20509,7 +20514,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 757.731766236328
+					amount = 695.155387944975
 					maxAmount = 1440
 					flowState = True
 					isTweakable = True
@@ -20519,7 +20524,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 926.116603177784
+					amount = 849.634363043905
 					maxAmount = 1760
 					flowState = True
 					isTweakable = True
@@ -20539,9 +20544,9 @@ GAME
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 2
+				istg = 1
 				dstg = 2
-				sqor = 2
+				sqor = 1
 				sepI = 0
 				sidx = 0
 				attm = 0
@@ -20549,8 +20554,8 @@ GAME
 				attN = top, 47
 				attN = bottom, -1
 				mass = 3
-				temp = 320.522966980814
-				tempExt = 316.906210766895
+				temp = 309.625474162959
+				tempExt = 309.519443287762
 				expt = 0.5
 				state = 1
 				connected = True
@@ -20839,682 +20844,6 @@ GAME
 			}
 			PART
 			{
-				name = KzProcFairingSide2
-				cid = 4289856940
-				uid = 122441650
-				mid = 4067008348
-				launchID = 6
-				parent = 44
-				position = -1.4375,-10.7202911376953,-2.38418579101563E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 0
-				attm = 0
-				sym = 50
-				sym = 51
-				sym = 52
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 304.990542239162
-				tempExt = 306.918174790173
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 2.384186E-07)
-					meshRot = (0, 1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856110
-				uid = 959158412
-				mid = 4067008348
-				launchID = 6
-				parent = 44
-				position = 0,-10.7202911376953,1.43749952316284
-				rotation = 0,0.7071068,0,0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 1
-				attm = 0
-				sym = 49
-				sym = 51
-				sym = 52
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 304.990543975063
-				tempExt = 306.919512422019
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.713633E-07)
-					meshRot = (0, -1, 0, 0)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856064
-				uid = 1835572323
-				mid = 4067008348
-				launchID = 6
-				parent = 44
-				position = 1.4375,-10.7202911376953,0
-				rotation = 0,1,0,-4.371139E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 2
-				attm = 0
-				sym = 49
-				sym = 50
-				sym = 52
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 304.990530450187
-				tempExt = 306.901102759222
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, 1.256702E-07)
-					meshRot = (0, -1, 0, -4.371139E-08)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = KzProcFairingSide2
-				cid = 4289856018
-				uid = 544779870
-				mid = 4067008348
-				launchID = 6
-				parent = 44
-				position = 0,-10.7202911376953,-1.4375
-				rotation = 0,0.7071068,0,-0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 3
-				sqor = 1
-				sepI = 0
-				sidx = 3
-				attm = 0
-				sym = 49
-				sym = 50
-				sym = 51
-				srfN = , -1
-				attN = connect, 44
-				mass = 0.4552605
-				temp = 304.990538625333
-				tempExt = 306.911995225987
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = 000_USITools/Flags/USI-LD
-				rTrf = KzProcFairingSide2
-				modCost = 2276.302
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralFairingSide
-					isEnabled = True
-					numSegs = 6
-					numSideParts = 4
-					baseRad = 1.3225
-					maxRad = 2.100401
-					cylStart = 2.029
-					cylEnd = 10.129
-					topRad = 0
-					inlineHeight = 0
-					sideThickness = 0.115
-					meshPos = (1.4375, 0.2355003, -1.713634E-07)
-					meshRot = (0, -1, 0, 0)
-					shapeLock = False
-					shapeLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralFairingDecoupler
-					isEnabled = True
-					ejectionPower = 0.32
-					torqueAmount = 0.01
-					decoupled = False
-					ejectionPower_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					torqueAmount_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.01
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionJettison
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAGX
-					isEnabled = True
-					placeHolder = Hello World
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Scrap Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = USI_ModuleRecycleablePart
-					isEnabled = True
-					EVENTS
-					{
-						ScrapPart
-						{
-							active = True
-							guiActive = False
-							guiIcon = Scrap part
-							guiName = Salvage Part
-							category = Scrap part
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = lightnav.white
 				cid = 4289971454
 				uid = 3341690499
@@ -21531,13 +20860,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 54
-				sym = 55
-				sym = 56
+				sym = 50
+				sym = 51
+				sym = 52
 				srfN = srfAttach, 3
 				mass = 0.001
-				temp = 303.38069166838
-				tempExt = 303.401866674092
+				temp = 304.785225587226
+				tempExt = 304.711511531715
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21705,13 +21034,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 53
-				sym = 55
-				sym = 56
+				sym = 49
+				sym = 51
+				sym = 52
 				srfN = srfAttach, 3
 				mass = 0.001
-				temp = 303.380112607689
-				tempExt = 303.396078617038
+				temp = 304.785189891045
+				tempExt = 304.711288028616
 				expt = 0.5
 				state = 0
 				connected = True
@@ -21879,13 +21208,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 53
-				sym = 54
-				sym = 56
+				sym = 49
+				sym = 50
+				sym = 52
 				srfN = srfAttach, 3
 				mass = 0.001
-				temp = 303.380683255744
-				tempExt = 303.401812562771
+				temp = 304.785223699481
+				tempExt = 304.711499716826
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22053,13 +21382,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 53
-				sym = 54
-				sym = 55
+				sym = 49
+				sym = 50
+				sym = 51
 				srfN = srfAttach, 3
 				mass = 0.001
-				temp = 303.380689472694
-				tempExt = 303.40176661144
+				temp = 304.785188003426
+				tempExt = 304.711276214639
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22227,13 +21556,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 58
-				sym = 59
-				sym = 60
+				sym = 54
+				sym = 55
+				sym = 56
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 303.351707889036
-				tempExt = 303.366465983472
+				temp = 304.731356000491
+				tempExt = 304.637113160623
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22401,13 +21730,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 59
-				sym = 60
+				sym = 53
+				sym = 55
+				sym = 56
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 303.351678184514
-				tempExt = 303.372333012358
+				temp = 304.731320479159
+				tempExt = 304.636890748081
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22575,13 +21904,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 58
-				sym = 60
+				sym = 53
+				sym = 54
+				sym = 56
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 303.351334717458
-				tempExt = 303.363190124556
+				temp = 304.731354463754
+				tempExt = 304.637103542262
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22749,13 +22078,13 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 57
-				sym = 58
-				sym = 59
+				sym = 53
+				sym = 54
+				sym = 55
 				srfN = srfAttach, 2
 				mass = 0.001
-				temp = 303.351842522984
-				tempExt = 303.370253171147
+				temp = 304.731318942463
+				tempExt = 304.636881130044
 				expt = 0.5
 				state = 0
 				connected = True
@@ -22907,11 +22236,11 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = False, 27207.058134833
+				Stage = True, 43821.0539356021
 				Gear = True, 0
-				Light = False, 0
+				Light = False, 43894.1939355904
 				RCS = False, 0
-				SAS = False, 42642.1432715559
+				SAS = False, 43767.0339356108
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -22935,22 +22264,999 @@ GAME
 			}
 			FLIGHTPLAN
 			{
-				MANEUVER
-				{
-					UT = 43776.5270137432
-					dV = 3.39046648074773,-0.0518453418999574,51.9792490030155
-				}
 			}
 			TARGET
 			{
-				type = Vessel
+				type = PartModule
 				vesselID = 4e1347a7-f18d-48f6-a9f0-0895373d8b96
+				partID = 1411334027
+				moduleIdx = 0
 			}
 			CTRLSTATE
 			{
-				pitch = 0.9999999
-				yaw = 0.9999999
-				roll = 0.0001846935
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 48228bb31f1f464996a684ab1c59d9f4
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 151.519999975746
+			lct = 43821.0739356021
+			root = 0
+			lat = -0.0994947575485853
+			lon = 46.1608484259569
+			alt = 199864.944261673
+			hgt = -1
+			nrm = 0.02730468,0.1305799,-0.9910618
+			rot = -0.2750864,-0.882585,0.04574237,0.3785219
+			CoM = -0.03270976,7.40035,1.659517E-05
+			stg = 1
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = 0
+			ORBIT
+			{
+				SMA = 796411.982429125
+				ECC = 0.00439377101955697
+				INC = 0.197025396987992
+				LPE = 140.607145248775
+				LAN = 179.220343687424
+				MNA = 3.24922375043353
+				EPH = 43951.9739355811
+				REF = 1
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856940
+				uid = 122441650
+				mid = 4067008348
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = connect, -1
+				mass = 0.4552605
+				temp = 307.131713739555
+				tempExt = 305.622375852522
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 2.384186E-07)
+					meshRot = (0, 1, 0, -4.371139E-08)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = True
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 43821.0539356021
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 43767.0339356108
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 02dae1a65f0e476980f0aed1d7a06f0e
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 151.519999975746
+			lct = 43821.0739356021
+			root = 0
+			lat = -0.122694176186468
+			lon = 46.2198085862517
+			alt = 200342.298861133
+			hgt = -1
+			nrm = -0.3731115,-0.5655118,0.7355165
+			rot = -0.09332,0.2485378,0.6897954,0.6735746
+			CoM = -0.032631,7.400345,-0.0002981795
+			stg = 1
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0.6380002
+			cHdg = -0.6040004
+			cMod = 0
+			ORBIT
+			{
+				SMA = 801269.953689426
+				ECC = 0.00225451859797926
+				INC = 0.167441718852799
+				LPE = 253.817764137685
+				LAN = 196.211223390474
+				MNA = 0.971101889166775
+				EPH = 43951.2339355813
+				REF = 1
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856110
+				uid = 959158412
+				mid = 4067008348
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sepI = 0
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = connect, -1
+				mass = 0.4552605
+				temp = 307.133848671487
+				tempExt = 305.695110111144
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 1.713633E-07)
+					meshRot = (0, -1, 0, 0)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = True
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 43821.0539356021
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 43767.0339356108
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = dfd62545e81c4a00b027dd7c5b92abe9
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 151.519999975746
+			lct = 43821.0739356021
+			root = 0
+			lat = -0.0590237158815949
+			lon = 46.2513153386967
+			alt = 200162.66519853
+			hgt = -1
+			nrm = -0.6563088,0.749519,-0.08648786
+			rot = -0.3478245,-0.8741768,-0.2258874,-0.2526024
+			CoM = -0.03254662,7.400301,0.0001687456
+			stg = 1
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = 0
+			ORBIT
+			{
+				SMA = 803029.998931477
+				ECC = 0.00401956558099393
+				INC = 0.271842582995277
+				LPE = 319.874691748948
+				LAN = 161.596564822764
+				MNA = 0.421475854007748
+				EPH = 43950.5739355814
+				REF = 1
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856064
+				uid = 1835572323
+				mid = 4067008348
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sepI = 0
+				sidx = 2
+				attm = 0
+				srfN = , -1
+				attN = connect, -1
+				mass = 0.4552605
+				temp = 307.141915110897
+				tempExt = 305.738444359317
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, 1.256702E-07)
+					meshRot = (0, -1, 0, -4.371139E-08)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = True
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 43821.0539356021
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 43767.0339356108
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 60d337e461ba4b61b419e3ad700a8347
+			name = L-SS-LifeSupport Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 151.519999975746
+			lct = 43821.0739356021
+			root = 0
+			lat = -0.0352815197315367
+			lon = 46.1922687536255
+			alt = 199692.181960863
+			hgt = -1
+			nrm = -0.2418834,0.8508552,-0.4664098
+			rot = -0.4929025,-0.8447799,-0.2082928,-0.002896302
+			CoM = -0.0328167,7.400429,2.228528E-05
+			stg = 1
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = 0
+			ORBIT
+			{
+				SMA = 798186.858183314
+				ECC = 0.00203828149129145
+				INC = 0.324019854514126
+				LPE = 152.117751808737
+				LAN = 155.283050067209
+				MNA = 3.46177397313393
+				EPH = 43950.0139355815
+				REF = 1
+			}
+			PART
+			{
+				name = KzProcFairingSide2
+				cid = 4289856018
+				uid = 544779870
+				mid = 4067008348
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sepI = 0
+				sidx = 3
+				attm = 0
+				srfN = , -1
+				attN = connect, -1
+				mass = 0.4552605
+				temp = 307.124968261043
+				tempExt = 305.645709524776
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = 000_USITools/Flags/USI-LD
+				rTrf = KzProcFairingSide2
+				modCost = 2276.302
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralFairingSide
+					isEnabled = True
+					numSegs = 6
+					numSideParts = 4
+					baseRad = 1.3225
+					maxRad = 2.100401
+					cylStart = 2.029
+					cylEnd = 10.129
+					topRad = 0
+					inlineHeight = 0
+					sideThickness = 0.115
+					meshPos = (1.4375, 0.2355003, -1.713634E-07)
+					meshRot = (0, -1, 0, 0)
+					shapeLock = False
+					shapeLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralFairingDecoupler
+					isEnabled = True
+					ejectionPower = 0.32
+					torqueAmount = 0.01
+					decoupled = True
+					ejectionPower_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					torqueAmount_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.01
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionJettison
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Scrap Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					EVENTS
+					{
+						ScrapPart
+						{
+							active = True
+							guiActive = False
+							guiIcon = Scrap part
+							guiName = Salvage Part
+							category = Scrap part
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 43821.0539356021
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 43767.0339356108
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
